@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "arithmetic": "Python integers and fractions.Fraction only",
+  "counts": {
+    "vandermonde": 230,
+    "layer_vs_mixture_moments": 192,
+    "normalization": 48,
+    "entropy_derivative": 48,
+    "harmonic_bound": 5150,
+    "binomial_moments": 240,
+    "F_increment": 100
+  },
+  "total_checked_instances": 6008,
+  "scope": "Finite diagnostics only. General statements are proved in the manuscript; no Lean verification is claimed."
+}
