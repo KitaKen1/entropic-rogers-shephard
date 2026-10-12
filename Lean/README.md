@@ -53,6 +53,13 @@ in extension modules which reuse the compiled ingredients during development bui
 | `EntropicRogersShephard/BodyLayers.lean` | Measurable finite layer volumes and integrability of the Beta-weighted tilt and log tilt |
 | `EntropicRogersShephard/BodyMoments.lean` | Real layer-cake identity, power normalization and logarithmic entropy moment |
 | `EntropicRogersShephard/BodyEntropyBound.lean` | Actual uniform-convex-body entropy increment bounded by F(n) |
+| `EntropicRogersShephard/PowerDensity.lean` | Normalized powers on a finite support, finite entropy and the direct density-log identity |
+| `EntropicRogersShephard/BoundedDensity.lean` | Integrable difference slices, pointwise convolution bounds and finite entropy on compact supports |
+| `EntropicRogersShephard/FiberVolume.lean` | Measurable and compact simplex-fiber bodies and their actual volume |
+| `EntropicRogersShephard/FiberEntropy.lean` | Actual uniform-lift factorization, marginal density and original lift entropy |
+| `EntropicRogersShephard/FiberDifference.lean` | Actual lifted difference density as a simplex-difference mixture, by Fubini |
+| `EntropicRogersShephard/FiberDifferenceBounds.lean` | Compact difference support, pointwise bounds and finite lifted-difference entropy |
+| `EntropicRogersShephard/LogConcavity.lean` | Native log concavity, positive-support interior continuity and compact positive bounds |
 
 `EntropicRogersShephard/Audit.lean` records axiom dependencies of the proved
 intermediate results.
@@ -126,6 +133,41 @@ Layer volumes are measured inside the compact difference support before taking
 real values, preserving their measurability and finiteness even at nonpositive
 levels. Both body entropies are integrable.
 
+For a measurable finite-volume support `K` of positive volume and measurable
+`rho`, with `0 < c <= rho <= C` on `K`, let `Z = integral_K rho^m` and
+`f = 1_K rho^m / Z`. The normalized power is a probability density with finite
+entropy. The actual uniform density `q` on its simplex-fiber lift satisfies
+
+```math
+\operatorname{vol}(B_\rho)=V_m Z,\qquad
+q(x,y)=f(x)u_{\rho(x)}(y),\qquad \int q(x,y)\,dy=f(x),
+```
+
+and the original lift entropy is proved directly:
+
+```math
+h(f)=\log Z-m\int f\log\rho,\qquad
+h(q)=h(f)+\log V_m+m\int f\log\rho.
+```
+
+Product-measure Fubini gives the actual lifted difference density:
+
+```math
+G(s,t)=\int f(x)f(x-s)g_{\rho(x),\rho(x-s)}(t)\,dx.
+```
+
+When `K` is compact and `rho` is continuous on `K`, the lifted body and difference
+support are compact, and both difference entropies are integrable. These facts
+prepare the mixture calculation; the mixture entropy lower bound and the final
+fiber cancellation are still unproved. A general conditional-entropy chain
+rule is not needed for the original lift calculation.
+
+The native pointwise log-concavity definition also gives a convex positive set,
+concavity of its logarithm, and continuity on its interior. That interior is
+nonempty for a probability density and agrees with the positive set almost
+everywhere. Every nonempty compact subset of the interior has positive lower
+and upper density bounds. The exponential tail estimate remains to be proved.
+
 ## Build
 
 From this directory:
@@ -161,8 +203,8 @@ from source. Compilation logs and source hashes are saved in `verification/`.
 ## Validation
 
 The public proof file and its audit compiled successfully against the pinned,
-already built Mathlib checkout. The audit covers all 222 intermediate theorems
-and the imported Brunn–Minkowski theorem. All 223 depend only on `propext`,
+already built Mathlib checkout. The audit covers all 275 intermediate theorems
+and the imported Brunn–Minkowski theorem. All 276 depend only on `propext`,
 `Classical.choice`, and `Quot.sound`; none depends on `sorryAx` or a new axiom.
 All nine dependency commits match the manifest. The source hashes and audit
 results are in `verification/axiom-audit.json`, with build results in
@@ -178,7 +220,9 @@ theorem declaration in this project's proof modules.
    proved. Use them in the fiber calculation below.
 3. The convex-body entropy upper bound is proved. Use it on the simplex-fiber
    body in dimension n+m.
-4. Connect the simplex-fiber mixture calculation to the entropy increment.
+4. The original fiber volume, marginal density, entropy identity and actual
+   difference-mixture formula are proved. Apply the simplex entropy comparison
+   to that mixture, transport the body to dimension n+m and cancel the fiber terms.
 5. Normalize the power approximations, control convolution limits and exponential
    tails, and pass to general log-concave densities.
 6. Prove sharpness for exponential products and their invertible affine images.
@@ -194,18 +238,19 @@ They are not a prediction of automatic execution time. Updated 2026-10-12.
 | 1 | Density formulas to probability laws | 6–12 | 3 |
 | 2 | Simplex-difference entropy formula and scale comparison — proved | 0 | 5 |
 | 3 | Convex-body entropy upper bound — proved | 0 | 4 |
-| 4 | Simplex-fiber lift and entropy cancellation | 16–32 | 4 |
+| 4 | Mixture entropy lower bound, dimension transport and fiber cancellation | 12–24 | 4 |
 | 5 | General log-concave densities and tail limits | 20–44 | 5 |
 | 6 | Sharpness, final theorem and audit | 8–16 | 4 |
 
-The remaining total is 50–104 hours, rounded to 50–105; a contingency allowance
-gives a planning range of 65–135 hours. At 30 working hours per week, this is
-about 3–5 weeks.
+The remaining total is 46–96 hours, rounded to 45–100; a contingency allowance
+gives a planning range of 60–125 hours. At 30 working hours per week, this is
+about 2–5 weeks.
 Milestones 2 and 3 feed into 4, then 5 and 6. The general-density and tail-limit
 connections carry the greatest uncertainty. The next central milestone is 4.
 
 ## Conclusion
 
-The simplex comparison and the convex-body upper bound are proved for their actual
-densities. Completion still requires the fiber lift and entropy cancellation,
+The simplex comparison, convex-body upper bound, original fiber entropy and
+actual difference-mixture formula are proved. Completion still requires the
+mixture entropy lower bound and fiber cancellation,
 general-density limits, sharpness and the final probability-law connection.

@@ -1,0 +1,6 @@
+EntropicRogersShephard/LogConcavity.lean:53:6: warning: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [he] at this
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`

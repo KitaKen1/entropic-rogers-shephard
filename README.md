@@ -68,8 +68,11 @@ harmonic estimates, integer log moments, and entropy convergence tools. The
 simplex overlap formula is now connected to a normalized difference density with
 finite entropy, orthant superlevel volumes, and the exact harmonic entropy formula.
 The simplex comparison at all positive scales and the uniform-convex-body entropy
-upper bound are proved. Weighted integral comparison and compact convex
-approximation tools are also available. The full inequality is not yet formally proved; the remaining
+upper bound are proved. The original simplex-fiber volume, marginal density and
+entropy identity, and the actual lifted-difference mixture formula are also proved.
+The mixture entropy comparison and cancellation remain in progress. Positive-support
+interior continuity and compact positive density bounds are available for the
+general-density limit. The full inequality is not yet formally proved; the remaining
 analytic connections and a work estimate are listed in the Lean project README.
 
 ## Conclusion

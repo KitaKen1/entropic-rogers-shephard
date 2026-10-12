@@ -90,14 +90,36 @@
     "status": "reused"
   },
   {
-    "module": "EntropicRogersShephard.SimplexEntropy",
-    "sha256": "242d5b30e00d1611ed4cb0f72cee5ebf077c1197431159592f06e30fdae69837",
+    "module": "EntropicRogersShephard.PowerDensity",
+    "sha256": "135ef869e48cbb1207bd00a14a7ef1fa0c1ea7bdb63eca61c1137100562202a2",
     "status": "reused"
   },
   {
-    "module": "EntropicRogersShephard.SimplexScaling",
-    "sha256": "7015e289ec78893a43c6dd8425fdc29a88a2865e394c7724052072c089a81b7f",
+    "module": "EntropicRogersShephard.FiberVolume",
+    "sha256": "8d09ab85e68cf0dbdea59476c99bd663713b603526bee1d49a55eb15533a359b",
     "status": "reused"
+  },
+  {
+    "module": "EntropicRogersShephard.BoundedDensity",
+    "sha256": "72aba381cd03b14a3bfd8978da339caeae350f5dd3185bf6f754c5ed43395a43",
+    "status": "reused"
+  },
+  {
+    "module": "EntropicRogersShephard.FiberEntropy",
+    "sha256": "1c640a601c6df429488c96811afcb1120d7a925f8976b2f72056c64a929663aa",
+    "status": "reused"
+  },
+  {
+    "module": "EntropicRogersShephard.FiberDifference",
+    "sha256": "3e685b4c2b075c193ac26fbd7bc7451eda1f4bdb2b4b16a7181139b287ca657b",
+    "seconds": 48.55,
+    "exit_code": 0
+  },
+  {
+    "module": "EntropicRogersShephard.FiberDifferenceBounds",
+    "sha256": "ecac7caa6a0aa6ed4269c9fe363c1749131eda224e91944f8039ed2a0f04ef11",
+    "seconds": 70.05,
+    "exit_code": 0
   },
   {
     "module": "EntropicRogersShephard.ConvexVolume",
@@ -115,9 +137,24 @@
     "status": "reused"
   },
   {
+    "module": "EntropicRogersShephard.LogConcavity",
+    "sha256": "c93b314fe1332f78c6c3d00ebac933518dc217dff72b58c46684821c25ccdb08",
+    "status": "reused"
+  },
+  {
+    "module": "EntropicRogersShephard.SimplexEntropy",
+    "sha256": "242d5b30e00d1611ed4cb0f72cee5ebf077c1197431159592f06e30fdae69837",
+    "status": "reused"
+  },
+  {
+    "module": "EntropicRogersShephard.SimplexScaling",
+    "sha256": "7015e289ec78893a43c6dd8425fdc29a88a2865e394c7724052072c089a81b7f",
+    "status": "reused"
+  },
+  {
     "module": "EntropicRogersShephard.Audit",
-    "sha256": "96c494d7b9789a02ec4f00589349b415f045f58a91bcc7fe2d201bd09de5f1c4",
-    "seconds": 87.25,
+    "sha256": "ec7ea8be68dd0f9c879091f637cedb1044b69287aada98e7ad8bd492ef9ade4a",
+    "seconds": 157.99,
     "exit_code": 0
   }
 ]
