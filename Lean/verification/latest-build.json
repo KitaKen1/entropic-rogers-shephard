@@ -260,9 +260,24 @@
     "status": "reused"
   },
   {
+    "module": "EntropicRogersShephard.ProductDensity",
+    "sha256": "6c52800f6d52828d712cd54ad5060ecae63e9b759372c1582a778dd794917d4c",
+    "status": "reused"
+  },
+  {
+    "module": "EntropicRogersShephard.ExponentialExample",
+    "sha256": "5d048cb51c59cf92544c2b570ee87ecb5e60cb79ac1e890fb191263a64996bf2",
+    "status": "reused"
+  },
+  {
+    "module": "EntropicRogersShephard.ExponentialSharpness",
+    "sha256": "75832716d8bef23b9e3ca2622f536325d06545629a4cf302f30f4c3aa35dbacb",
+    "status": "reused"
+  },
+  {
     "module": "EntropicRogersShephard.Audit",
-    "sha256": "b80e50d6f09d0a90ba7c270ea982051a09374aa9a6e93dd28db419147abbeb59",
-    "seconds": 25.53,
+    "sha256": "aaaf1bf7713ab49ae4a8509b70f9384a67c787724f08801262296efb46d2ba82",
+    "seconds": 24.2,
     "exit_code": 0
   }
 ]

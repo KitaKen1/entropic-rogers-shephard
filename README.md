@@ -71,8 +71,10 @@ from log concavity and probability normalization.
 the difference of independent random vectors with this density has the actual
 difference-convolution density, and connects it to the entropy bound.
 
-Sharpness for exponential products and their invertible affine images remains
-to be formalized. The remaining work and time estimates are in the Lean README.
+[ExponentialSharpness.lean](Lean/EntropicRogersShephard/ExponentialSharpness.lean)
+computes the exponential-product equality example in every dimension and proves
+that the constant cannot be improved. Its invertible affine images and the final
+presentation remain to be formalized. The work estimates are in the Lean README.
 
 ## Conclusion
 

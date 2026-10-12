@@ -37,7 +37,13 @@ result = {'audited_theorems': len(expected), 'allowed_axioms': sorted(allowed),
               'EntropicRogersShephard.sharp_entropic_rogers_shephard_density' in reported,
           'probability_law_connection_proved':
               'EntropicRogersShephard.sharp_entropic_rogers_shephard_random_vectors' in reported,
-          'sharpness_proved': False,
+          'sharpness_proved':
+              'EntropicRogersShephard.entropy_increment_constant_optimal' in reported,
+          'constant_optimality_proved':
+              'EntropicRogersShephard.entropy_increment_constant_optimal' in reported,
+          'exponential_product_equality_proved':
+              'EntropicRogersShephard.sharpness_exponential_product' in reported,
+          'affine_image_equality_proved': False,
           'full_main_theorem_scope': 'Density inequality, probability-law connection, and sharpness for exponential products and invertible affine images.',
           'source_sha256': records}
 (ROOT / 'verification/axiom-audit.json').write_text(json.dumps(result, indent=2) + '\n')

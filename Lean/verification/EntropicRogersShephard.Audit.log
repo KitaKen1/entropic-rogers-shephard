@@ -153,6 +153,36 @@ EntropicRogersShephard.sharp_entropic_rogers_shephard_random_vectors.{u_1} {Ω :
         EntropicRogersShephard.differentialEntropy (EntropicRogersShephard.differenceDensity f) MeasureTheory.volume -
             EntropicRogersShephard.differentialEntropy f MeasureTheory.volume ≤
           ↑n * Real.log 2
+EntropicRogersShephard.sharpness_exponential_product (n : ℕ) :
+  EntropicRogersShephard.IsProbabilityDensity n
+      (EntropicRogersShephard.productDensity n EntropicRogersShephard.oneSidedExponential) ∧
+    EntropicRogersShephard.IsLogConcave n
+        (EntropicRogersShephard.productDensity n EntropicRogersShephard.oneSidedExponential) ∧
+      MeasureTheory.Integrable
+          (fun x => (EntropicRogersShephard.productDensity n EntropicRogersShephard.oneSidedExponential x).negMulLog)
+          MeasureTheory.volume ∧
+        MeasureTheory.Integrable
+            (fun s =>
+              (EntropicRogersShephard.differenceDensity
+                  (EntropicRogersShephard.productDensity n EntropicRogersShephard.oneSidedExponential) s).negMulLog)
+            MeasureTheory.volume ∧
+          EntropicRogersShephard.differentialEntropy
+                (EntropicRogersShephard.differenceDensity
+                  (EntropicRogersShephard.productDensity n EntropicRogersShephard.oneSidedExponential))
+                MeasureTheory.volume -
+              EntropicRogersShephard.differentialEntropy
+                (EntropicRogersShephard.productDensity n EntropicRogersShephard.oneSidedExponential)
+                MeasureTheory.volume =
+            ↑n * Real.log 2
+EntropicRogersShephard.entropy_increment_constant_optimal (n : ℕ) {C : ℝ}
+  (hC :
+    ∀ (f : (Fin n → ℝ) → ℝ),
+      EntropicRogersShephard.IsProbabilityDensity n f →
+        EntropicRogersShephard.IsLogConcave n f →
+          EntropicRogersShephard.differentialEntropy (EntropicRogersShephard.differenceDensity f) MeasureTheory.volume -
+              EntropicRogersShephard.differentialEntropy f MeasureTheory.volume ≤
+            C) :
+  ↑n * Real.log 2 ≤ C
 'brunn_minkowski' depends on axioms: [propext, Classical.choice, Quot.sound]
 'EntropicRogersShephard.harmonic_term_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
 'EntropicRogersShephard.neg_log_one_sub_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
@@ -390,6 +420,29 @@ EntropicRogersShephard.sharp_entropic_rogers_shephard_random_vectors.{u_1} {Ω :
 'EntropicRogersShephard.entropy_tendsto_of_exponential_envelope' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
+'EntropicRogersShephard.measurable_oneSidedExponential' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.oneSidedExponential_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.oneSidedExponential_of_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.oneSidedExponential_of_neg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.integrable_oneSidedExponential' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.integral_oneSidedExponential' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.scalarLogConcave_oneSidedExponential' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.integrable_comp_abs_of_integrableOn' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.integrableOn_exponential_first_moment' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'EntropicRogersShephard.integral_exponential_first_moment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.oneSidedExponential_entropy' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.integrable_unitLaplace' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.integral_unitLaplace' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.unitLaplace_first_moment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.unitLaplace_entropy' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.oneSidedExponential_difference_kernel' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'EntropicRogersShephard.integral_oneSidedExponential_difference' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
 'EntropicRogersShephard.integrable_exp_neg_mul_abs' depends on axioms: [propext, Classical.choice, Quot.sound]
 'EntropicRogersShephard.integrable_exp_neg_mul_norm' depends on axioms: [propext, Classical.choice, Quot.sound]
 'EntropicRogersShephard.abs_negMulLog_le_square_add_sqrt' depends on axioms: [propext, Classical.choice, Quot.sound]
@@ -401,6 +454,20 @@ EntropicRogersShephard.sharp_entropic_rogers_shephard_random_vectors.{u_1} {Ω :
 'EntropicRogersShephard.integrable_negMulLog_logconcave_probability_density' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
+'EntropicRogersShephard.differenceDensity_productDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.isProbabilityDensity_exponential_product' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'EntropicRogersShephard.isLogConcave_exponential_product' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.differenceDensity_exponential_product' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'EntropicRogersShephard.exponential_product_entropy' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.exponential_product_difference_entropy' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'EntropicRogersShephard.sharpness_exponential_product' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.entropy_increment_constant_optimal' depends on axioms: [propext, Classical.choice, Quot.sound]
 'EntropicRogersShephard.logconcave_ray_log_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
 'EntropicRogersShephard.logconcave_probability_density_exponential_envelope' depends on axioms: [propext,
  Classical.choice,
@@ -612,6 +679,16 @@ EntropicRogersShephard.sharp_entropic_rogers_shephard_random_vectors.{u_1} {Ω :
 'EntropicRogersShephard.sharp_entropic_rogers_shephard_random_vectors' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
+'EntropicRogersShephard.measurable_productDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.productDensity_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.integrable_productDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.integral_productDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.isProbabilityDensity_productDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.isLogConcave_productDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.productDensity_coordinate_moment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.productDensity_sum_moment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.negMulLog_productDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.productDensity_entropy' depends on axioms: [propext, Classical.choice, Quot.sound]
 'EntropicRogersShephard.volume_smul_real' depends on axioms: [propext, Classical.choice, Quot.sound]
 'EntropicRogersShephard.volume_root_smul' depends on axioms: [propext, Classical.choice, Quot.sound]
 'EntropicRogersShephard.brunn_minkowski_volume_roots' depends on axioms: [propext, Classical.choice, Quot.sound]
