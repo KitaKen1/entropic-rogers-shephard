@@ -6,7 +6,7 @@
   "pdf_visual_review": "All 8 rendered pages inspected",
   "exact_diagnostics": "6008 finite instances passed; not a formal proof",
   "sha256": {
-    "README.md": "a8e3acf8a8c207d3c70800406851b2bd03c774159ced7a2b20a942e0ab8f81f3",
+    "README.md": "8203ca2e26d74b405462955c6eebc22c2d4807584cc5e682cdb3fbd10c66aea2",
     "PDF/entropic-rogers-shephard.pdf": "42b4b272d226ab92665d29d548faad81f9b89d650348a54d5a07bd67a2478086",
     "verification/check_exact_identities.py": "14693520263d905ba64cae0a059108c87ad2d8f5cce6579198f0ca75a321869e",
     "verification/results.json": "bbd1461b2cbb083c645324ba7f4f9057fab3cb9d9e785187a0071d3f26c6ce90"

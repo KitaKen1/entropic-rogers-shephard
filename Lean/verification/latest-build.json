@@ -42,13 +42,53 @@
   {
     "module": "EntropicRogersShephard.LayerNormalization",
     "sha256": "32716df5943dd997d99606663f87fc0fe33f68481fb464f11216fe1e823db3fc",
-    "seconds": 170.01,
+    "status": "reused"
+  },
+  {
+    "module": "EntropicRogersShephard.LayerCoefficients",
+    "sha256": "2c7da5e264de0c99258b535dc42402ced3b97e0b4b24da43cf1abdf1802ee5b2",
+    "status": "reused"
+  },
+  {
+    "module": "EntropicRogersShephard.LayerLogMoments",
+    "sha256": "c65b4623ba7a2c72b80e5fe4c420789701b4afb43da09f375c1b986c47bdd239",
+    "status": "reused"
+  },
+  {
+    "module": "EntropicRogersShephard.SimplexEntropy",
+    "sha256": "242d5b30e00d1611ed4cb0f72cee5ebf077c1197431159592f06e30fdae69837",
+    "status": "reused"
+  },
+  {
+    "module": "EntropicRogersShephard.SimplexScaling",
+    "sha256": "7015e289ec78893a43c6dd8425fdc29a88a2865e394c7724052072c089a81b7f",
+    "status": "reused"
+  },
+  {
+    "module": "EntropicRogersShephard.ConvexVolume",
+    "sha256": "a2edbe8dc8de548a37e8f436a27fcb11cc623e11d87bddc870a993ee0b6b8e70",
+    "status": "reused"
+  },
+  {
+    "module": "EntropicRogersShephard.ConvexExhaustion",
+    "sha256": "39970f2eb66ebea3c9b7acbcedbc88eedfa62cac50f6420ede94e5fc077d2af5",
+    "status": "reused"
+  },
+  {
+    "module": "EntropicRogersShephard.ConvexApproximation",
+    "sha256": "b5d67d19bc055b925f7e7882c46b5a5fc2b10b0061abc1ad6e473509f4be3b15",
+    "status": "reused"
+  },
+  {
+    "module": "EntropicRogersShephard.MonotoneTilt",
+    "sha256": "ff95daf0c9caefb6daf0d39735a0f984b1a1719c1f47696be315f6d2daa31f82",
+    "seconds": 316.37,
     "exit_code": 0
   },
   {
     "module": "EntropicRogersShephard.Audit",
-    "sha256": "4b622e8c1c0f293c096737b80f4091b5a7f987b3b89e6f9878201a07847b8726",
-    "seconds": 147.51,
+    "sha256": "c7dfd0da0c18280c7a0eff359556db99a7e298d7fbcf289c1f049ac6c5bb1e3e",
+    "seconds": 129.24,
     "exit_code": 0
   }
 ]

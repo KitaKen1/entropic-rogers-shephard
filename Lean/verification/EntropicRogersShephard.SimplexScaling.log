@@ -1,0 +1,12 @@
+EntropicRogersShephard/SimplexScaling.lean:45:6: warning: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+EntropicRogersShephard/SimplexScaling.lean:45:6: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+EntropicRogersShephard/SimplexScaling.lean:99:78: warning: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+EntropicRogersShephard/SimplexScaling.lean:99:78: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`

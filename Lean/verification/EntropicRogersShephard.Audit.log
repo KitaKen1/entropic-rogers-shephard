@@ -9,6 +9,45 @@ EntropicRogersShephard.orthant_polynomial_moment_normalization (m : ℕ) [NeZero
   (hba : b ≤ a) :
   ∫ (t : ℝ) in 0..b, EntropicRogersShephard.orthantVolumePolynomial m a b t * (↑m * t ^ (m - 1)) =
     a ^ m * b ^ m * (MeasureTheory.volume (EntropicRogersShephard.simplex m 1)).toReal
+EntropicRogersShephard.differentialEntropy_uniformSimplexDifference (m : ℕ) [NeZero m] {a b : ℝ} (ha : 0 < a)
+  (hb : 0 < b) (hba : b ≤ a) :
+  EntropicRogersShephard.differentialEntropy
+      (EntropicRogersShephard.crossDifferenceDensity
+        (EntropicRogersShephard.uniformDensity (EntropicRogersShephard.simplex m a))
+        (EntropicRogersShephard.uniformDensity (EntropicRogersShephard.simplex m b)))
+      MeasureTheory.volume =
+    ↑m * Real.log a + Real.log (MeasureTheory.volume (EntropicRogersShephard.simplex m 1)).toReal +
+      ↑m *
+        (∑ j ∈ Finset.range (m + 1),
+            EntropicRogersShephard.binomialWeight m (1 - b / a) j * EntropicRogersShephard.H (2 * m - j) -
+          EntropicRogersShephard.H m)
+EntropicRogersShephard.simplex_difference_entropy_scale_bound_all (m : ℕ) [NeZero m] {a b : ℝ} (ha : 0 < a)
+  (hb : 0 < b) :
+  EntropicRogersShephard.differentialEntropy
+        (EntropicRogersShephard.crossDifferenceDensity
+          (EntropicRogersShephard.uniformDensity (EntropicRogersShephard.simplex m 1))
+          (EntropicRogersShephard.uniformDensity (EntropicRogersShephard.simplex m 1)))
+        MeasureTheory.volume +
+      ↑m / 2 * (Real.log a + Real.log b) ≤
+    EntropicRogersShephard.differentialEntropy
+      (EntropicRogersShephard.crossDifferenceDensity
+        (EntropicRogersShephard.uniformDensity (EntropicRogersShephard.simplex m a))
+        (EntropicRogersShephard.uniformDensity (EntropicRogersShephard.simplex m b)))
+      MeasureTheory.volume
+EntropicRogersShephard.compact_convex_exhaustion {n : ℕ} {C : Set (Fin n → ℝ)} (hC : Convex ℝ C) :
+  ∃ K,
+    Monotone K ∧
+      (∀ (j : ℕ), IsCompact (K j)) ∧
+        (∀ (j : ℕ), Convex ℝ (K j)) ∧
+          (∀ (j : ℕ), K j ⊆ interior C) ∧ ⋃ j, K j = interior C ∧ ⋃ j, K j =ᵐ[MeasureTheory.volume] C
+EntropicRogersShephard.convex_isBounded_of_volume_ne_top {n : ℕ} [NeZero n] {C : Set (Fin n → ℝ)} (hC : Convex ℝ C)
+  (hfin : MeasureTheory.volume C ≠ ⊤) {x : Fin n → ℝ} {r : ℝ} (hr : 0 < r) (hball : Metric.ball x r ⊆ C) :
+  Bornology.IsBounded C
+EntropicRogersShephard.integral_mul_le_product_of_monotone_antitone.{u_1} {α : Type u_1} [LinearOrder α]
+  [MeasurableSpace α] {μ : MeasureTheory.Measure α} [MeasureTheory.IsProbabilityMeasure μ] {S : Set α} {r l : α → ℝ}
+  (hS : ∀ᵐ (x : α) ∂μ, x ∈ S) (hr : MeasureTheory.Integrable r μ) (hl : MeasureTheory.Integrable l μ)
+  (hrl : MeasureTheory.Integrable (fun x => r x * l x) μ) (hrmono : MonotoneOn r S) (hlanti : AntitoneOn l S) :
+  ∫ (x : α), r x * l x ∂μ ≤ (∫ (x : α), r x ∂μ) * ∫ (x : α), l x ∂μ
 'brunn_minkowski' depends on axioms: [propext, Classical.choice, Quot.sound]
 'EntropicRogersShephard.harmonic_term_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
 'EntropicRogersShephard.neg_log_one_sub_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
@@ -82,6 +121,12 @@ EntropicRogersShephard.orthant_polynomial_moment_normalization (m : ℕ) [NeZero
 'EntropicRogersShephard.isCompact_bodyOverlap' depends on axioms: [propext, Classical.choice, Quot.sound]
 'EntropicRogersShephard.measurableSet_bodyOverlap' depends on axioms: [propext, Classical.choice, Quot.sound]
 'EntropicRogersShephard.weighted_mem_bodyOverlap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.compact_convex_exhaustion' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.convex_isBounded_of_volume_ne_top' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.exists_seq_isOpen_convex_isCompact_closure_subset_iUnion_eq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'EntropicRogersShephard.convex_ball_point_volume_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
 'EntropicRogersShephard.crossDifferenceDensity_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
 'EntropicRogersShephard.measurable_crossDifferenceDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
 'EntropicRogersShephard.crossDifferenceDensity_eq_convolution' depends on axioms: [propext,
@@ -108,6 +153,22 @@ EntropicRogersShephard.orthant_polynomial_moment_normalization (m : ℕ) [NeZero
 'EntropicRogersShephard.volume_simplex_pos_of_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
 'EntropicRogersShephard.isProbabilityDensity_uniformSimplex' depends on axioms: [propext, Classical.choice, Quot.sound]
 'EntropicRogersShephard.differentialEntropy_uniformSimplex' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.add_pow_mul_pow_common_degree' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.orthantCoefficient_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.orthantVolumePolynomial_binomial' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.orthantCoefficient_moment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.orthantCoefficient_polynomial_normalization' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'EntropicRogersShephard.orthantCoefficient_beta' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.intervalIntegrable_radiusLogKernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.radiusLogKernel_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.integral_radiusLogKernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.orthant_polynomial_log_moment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.radiusLogPrimitive_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.lintegral_overlapRadius_log_primitive' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
 'EntropicRogersShephard.continuous_positiveMass' depends on axioms: [propext, Classical.choice, Quot.sound]
 'EntropicRogersShephard.continuous_negativeMass' depends on axioms: [propext, Classical.choice, Quot.sound]
 'EntropicRogersShephard.continuous_overlapRadius' depends on axioms: [propext, Classical.choice, Quot.sound]
@@ -129,6 +190,13 @@ EntropicRogersShephard.orthant_polynomial_moment_normalization (m : ℕ) [NeZero
  Classical.choice,
  Quot.sound]
 'EntropicRogersShephard.orthant_polynomial_moment_normalization' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'EntropicRogersShephard.integral_pair_difference' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.integral_mul_le_product_of_pair_nonpos' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'EntropicRogersShephard.integral_mul_le_product_of_monotone_antitone' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
 'EntropicRogersShephard.isClosed_simplexOn' depends on axioms: [propext, Classical.choice, Quot.sound]
@@ -168,5 +236,52 @@ EntropicRogersShephard.orthant_polynomial_moment_normalization (m : ℕ) [NeZero
  Classical.choice,
  Quot.sound]
 'EntropicRogersShephard.layer_coefficients_forced_by_normalization' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'EntropicRogersShephard.radiusLogPrimitive_eq_density_entropy' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'EntropicRogersShephard.integrable_radiusLogPrimitive_overlap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'EntropicRogersShephard.integral_radiusLogPrimitive_eq_entropy' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'EntropicRogersShephard.integral_overlapRadius_log_primitive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.binomialWeight_unit_ratio' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.differentialEntropy_uniformSimplexDifference_unit' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'EntropicRogersShephard.positiveMass_smul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.negativeMass_smul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.overlapRadius_smul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.crossDifferenceDensity_uniformSimplex_scaling' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'EntropicRogersShephard.differentialEntropy_scaling' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.differentialEntropy_uniformSimplexDifference_scaling' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'EntropicRogersShephard.differentialEntropy_uniformSimplexDifference' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'EntropicRogersShephard.sum_binomialWeight_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.differentialEntropy_uniformSimplexDifference_equal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'EntropicRogersShephard.simplex_difference_entropy_scale_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'EntropicRogersShephard.simplex_difference_entropy_scale_strict' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'EntropicRogersShephard.overlapRadius_swap_neg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.crossDifferenceDensity_uniformSimplex_swap_neg' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'EntropicRogersShephard.differentialEntropy_uniformSimplexDifference_swap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'EntropicRogersShephard.simplex_difference_entropy_scale_bound_all' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]

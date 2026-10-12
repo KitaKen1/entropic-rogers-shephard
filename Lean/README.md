@@ -39,6 +39,14 @@ in extension modules which reuse the compiled ingredients during development bui
 | `EntropicRogersShephard/OrthantGeometry.lean` | Sign-flip transport, two coordinate-simplex blocks, null intersections between distinct orthants, exact closed-superlevel volumes |
 | `EntropicRogersShephard/LayerMoments.lean` | Bounded weighted layer cake and all positive integer radius moments |
 | `EntropicRogersShephard/LayerNormalization.lean` | Real superlevel-volume polynomial and its moment normalization from the actual difference density |
+| `EntropicRogersShephard/LayerCoefficients.lean` | Binomial expansion and identification of every Beta-weighted coefficient from actual normalization |
+| `EntropicRogersShephard/LayerLogMoments.lean` | Continuous logarithmic primitive and the exact logarithmic layer moment |
+| `EntropicRogersShephard/SimplexEntropy.lean` | Connection of the logarithmic moment to the actual density entropy at unit smaller scale |
+| `EntropicRogersShephard/SimplexScaling.lean` | Haar scale transport, exact harmonic entropy formula, equal-scale increment and all-positive-scale comparison |
+| `EntropicRogersShephard/MonotoneTilt.lean` | Oppositely ordered factors have nonpositive covariance, using only three L1 hypotheses |
+| `EntropicRogersShephard/ConvexVolume.lean` | Tau Ceti ball-and-point lower bound for the volume of a convex set |
+| `EntropicRogersShephard/ConvexExhaustion.lean` | Tau Ceti exhaustion of an open convex set from inside |
+| `EntropicRogersShephard/ConvexApproximation.lean` | Compact convex exhaustion of a support a.e.; finite-volume convex sets containing a ball are bounded |
 
 `EntropicRogersShephard/Audit.lean` records axiom dependencies of the proved
 intermediate results.
@@ -73,11 +81,28 @@ gives the actual moment-normalization identity for every `a ≥ b > 0`, `m ≥ 1
 \int_0^b W_m(a,b,t)\,m t^{m-1}\,dt = a^m b^m V_m.
 ```
 
-Binomial expansion of `W_m(1+s,1,t)` and evaluation with the integer Beta formulas
-still need to turn this integral identity into the polynomial hypothesis of
-`layer_coefficients_forced_by_normalization`. The logarithmic moment and the
-actual simplex-difference entropy have not yet been identified with the harmonic
-formula, so the harmonic-average comparison remains an intermediate result.
+Expanding this identity and evaluating integer Beta moments now fixes every
+coefficient. If `C_j` denotes the coefficient of `(a-b)^j (b-t)^(m-j)` in `W_m`,
+then `C_j m B(m,m-j+1) = choose(m,j) V_m`. No block-volume factorial formula is
+needed. The continuous primitive `r^m(-log r + 1/m)` and integer Beta-log moments
+give the actual entropy formula for `a ≥ b > 0`:
+
+```math
+h(g_{a,b})=m\log a+\log V_m+
+  m\left(\sum_{j=0}^m w_j H_{2m-j}-H_m\right),\qquad
+w_j=\binom mj(1-b/a)^j(b/a)^{m-j}.
+```
+
+Haar scaling recovers every positive scale, and reflection exchanges `a,b`.
+The harmonic comparison is therefore connected to the actual entropies:
+
+```math
+h(g_{a,b})\ge h(g_{1,1})+\frac m2(\log a+\log b),\qquad
+h(g_{1,1})-h(U)=F(m).
+```
+
+The inequality holds for all `a,b > 0`; it is strict for ordered unequal scales.
+These are simplex statements, not the full log-concave-density theorem.
 
 ## Build
 
@@ -93,6 +118,13 @@ The `LeanPool/Isoperimetric` dependency consists of three unchanged modules from
 Lean Pool. Their source commit, original copyright notices, and Apache 2.0 license
 are recorded in `LeanPool/NOTICE` and `LeanPool/LICENSE`.
 
+Two convex-geometry proofs are adapted from Tau Ceti commit
+`f6d68999ea925d5e176a965434bfcde852d376f3`, with copyright and Apache-2.0 license
+retained in `EntropicRogersShephard/NOTICE` and `EntropicRogersShephard/LICENSE`.
+The source hashes and changes are in `verification/tauceti-provenance.json`.
+They are compiled against this project's fixed Mathlib; Tau Ceti is not a Lake
+dependency. Its source snapshot uses a different Mathlib revision.
+
 For development against an existing, already built Mathlib checkout, the local
 runner compiles only this project's modules and reads the external cache:
 
@@ -107,8 +139,8 @@ from source. Compilation logs and source hashes are saved in `verification/`.
 ## Validation
 
 The public proof file and its audit compiled successfully against the pinned,
-already built Mathlib checkout. The audit covers all 130 intermediate theorems
-and the imported Brunn–Minkowski theorem. All 131 depend only on `propext`,
+already built Mathlib checkout. The audit covers all 170 intermediate theorems
+and the imported Brunn–Minkowski theorem. All 171 depend only on `propext`,
 `Classical.choice`, and `Quot.sound`; none depends on `sorryAx` or a new axiom.
 All nine dependency commits match the manifest. The source hashes and audit
 results are in `verification/axiom-audit.json`, with build results in
@@ -120,10 +152,10 @@ theorem declaration in this project's proof modules.
 
 1. Connect the density formulas to the difference pushforward of product probability
    measures, for the final probability-variable statement.
-2. Expand the proved orthant-volume polynomial, identify the coefficients with
-   Beta moments, and evaluate the logarithmic moment to obtain the harmonic
-   difference-entropy formula.
-3. Prove the convex-body entropy upper bound using Brunn–Minkowski and level sets.
+2. The simplex-difference entropy formula and all-positive-scale comparison are
+   proved. Use them in the fiber calculation below.
+3. Prove the convex-body entropy upper bound using Brunn–Minkowski, level sets,
+   the logarithmic primitive and the proved monotone-tilt inequality.
 4. Connect the simplex-fiber mixture calculation to the entropy increment.
 5. Normalize the power approximations, control convolution limits and exponential
    tails, and pass to general log-concave densities.
@@ -138,20 +170,21 @@ They are not a prediction of automatic execution time. Updated 2026-10-12.
 | Order | Milestone | Remaining hours | Difficulty (1–5) |
 | --- | --- | --- | --- |
 | 1 | Density formulas to probability laws | 6–12 | 3 |
-| 2 | Binomial/Beta coefficient extraction and simplex-difference entropy | 14–28 | 5 |
-| 3 | Convex-body entropy upper bound | 14–28 | 4 |
+| 2 | Simplex-difference entropy formula and scale comparison — proved | 0 | 5 |
+| 3 | Convex-body entropy upper bound | 12–24 | 4 |
 | 4 | Simplex-fiber lift and entropy cancellation | 16–32 | 4 |
-| 5 | General log-concave densities and tail limits | 22–48 | 5 |
+| 5 | General log-concave densities and tail limits | 20–44 | 5 |
 | 6 | Sharpness, final theorem and audit | 8–16 | 4 |
 
-The remaining total is 80–164 hours; a contingency allowance gives a planning
-range of 100–210 hours. At 30 working hours per week, this is about 4–7 weeks.
+The remaining total is 62–128 hours, rounded to 65–130; a contingency allowance
+gives a planning range of 80–170 hours. At 30 working hours per week, this is
+about 3–6 weeks.
 Milestones 2 and 3 feed into 4, then 5 and 6. The general-density and tail-limit
-connections carry the greatest uncertainty. The next central milestone is 2.
+connections carry the greatest uncertainty. The next central milestone is 3.
 
 ## Conclusion
 
-The actual difference density is connected to the orthant superlevel volumes and
-their normalized integer moment. Completion still requires coefficient extraction,
-the harmonic entropy formula, the convex-body upper bound, the lift and the
-general-density limits listed above.
+The actual simplex-difference density is connected to its harmonic entropy formula
+and the comparison at every positive pair of scales. Completion still requires the
+convex-body upper bound, the fiber lift, general-density limits, sharpness and the
+final probability-law connection.

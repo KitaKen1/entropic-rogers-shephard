@@ -1,0 +1,20 @@
+[
+  {
+    "local_path": "EntropicRogersShephard/ConvexVolume.lean",
+    "repository": "TauCetiProject/TauCeti",
+    "commit": "f6d68999ea925d5e176a965434bfcde852d376f3",
+    "upstream_path": "TauCeti/Analysis/Convex/Measure.lean",
+    "upstream_sha256": "662a9dd547acd424c524a3ef1bf7f80e9f050dad795cac0bd53c02615faf8eb6",
+    "license": "Apache-2.0",
+    "changes": "Retained the required theorem only; adjusted imports, namespace and module header."
+  },
+  {
+    "local_path": "EntropicRogersShephard/ConvexExhaustion.lean",
+    "repository": "TauCetiProject/TauCeti",
+    "commit": "f6d68999ea925d5e176a965434bfcde852d376f3",
+    "upstream_path": "TauCeti/Analysis/Convex/Exhaustion.lean",
+    "upstream_sha256": "16be43b70ff2ec57bff837d219384311ae97803ae5aa60f2848aa4a654a9b676",
+    "license": "Apache-2.0",
+    "changes": "Retained the required theorem only; adjusted imports, namespace and module header."
+  }
+]

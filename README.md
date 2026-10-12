@@ -34,7 +34,7 @@ h(aU-bV)\ge h(U-V)+\frac m2(\log a+\log b),
 \qquad h(U-V)-h(U)=F(m).
 ```
 
-Compute the density and its level-set volumes, integrate its powers, and differentiate at exponent one. The resulting binomial average of harmonic numbers gives the comparison.
+Compute the density and its level-set volumes. Normalization fixes the coefficients, and integer Beta-log moments give a binomial average of harmonic numbers and the comparison.
 
 ### 3. Lift a concave power to a convex body
 
@@ -66,8 +66,9 @@ An intermediate-results library is being developed in [Lean/](Lean/README.md), w
 fixed Lean and Mathlib versions. It includes simplex geometry, finite binomial and
 harmonic estimates, integer log moments, and entropy convergence tools. The
 simplex overlap formula is now connected to a normalized difference density with
-finite entropy, orthant superlevel volumes, and an integer-moment normalization
-identity obtained by layer cake. The full inequality is not yet formally proved; the remaining
+finite entropy, orthant superlevel volumes, and the exact harmonic entropy formula.
+The simplex comparison at all positive scales is proved, as are the monotone-tilt
+inequality and compact convex approximation tools. The full inequality is not yet formally proved; the remaining
 analytic connections and a work estimate are listed in the Lean project README.
 
 ## Conclusion
