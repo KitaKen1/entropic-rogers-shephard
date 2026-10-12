@@ -47,6 +47,12 @@ in extension modules which reuse the compiled ingredients during development bui
 | `EntropicRogersShephard/ConvexVolume.lean` | Tau Ceti ball-and-point lower bound for the volume of a convex set |
 | `EntropicRogersShephard/ConvexExhaustion.lean` | Tau Ceti exhaustion of an open convex set from inside |
 | `EntropicRogersShephard/ConvexApproximation.lean` | Compact convex exhaustion of a support a.e.; finite-volume convex sets containing a ball are bounded |
+| `EntropicRogersShephard/BodyDensity.lean` | Uniform-body difference density, finite entropy, compact support and normalized overlap root |
+| `EntropicRogersShephard/RadialOverlap.lean` | Real-volume BM, radial overlap inequality and increasing level-volume ratio |
+| `EntropicRogersShephard/WeightedTilt.lean` | Weighted covariance inequality under the original measure, using four L1 hypotheses |
+| `EntropicRogersShephard/BodyLayers.lean` | Measurable finite layer volumes and integrability of the Beta-weighted tilt and log tilt |
+| `EntropicRogersShephard/BodyMoments.lean` | Real layer-cake identity, power normalization and logarithmic entropy moment |
+| `EntropicRogersShephard/BodyEntropyBound.lean` | Actual uniform-convex-body entropy increment bounded by F(n) |
 
 `EntropicRogersShephard/Audit.lean` records axiom dependencies of the proved
 intermediate results.
@@ -104,6 +110,22 @@ h(g_{1,1})-h(U)=F(m).
 The inequality holds for all `a,b > 0`; it is strict for ordered unequal scales.
 These are simplex statements, not the full log-concave-density theorem.
 
+The convex-body step is also proved. For every positive dimension and compact
+convex `B` of positive volume,
+
+```math
+h(g_B)-h(U_B)\le F(n),\qquad
+g_B(z)=\frac{\operatorname{vol}(B\cap(z+B))}{\operatorname{vol}(B)^2}.
+```
+
+Brunn–Minkowski supplies the overlap-root inequality along rays toward zero.
+Consequently `V(t)/(1-t)^n` increases on `(0,1)`. The weighted pair-difference
+inequality bounds its logarithmic mean by the integer Beta-log mean. The real
+layer-cake identity connects that comparison to the actual density entropy.
+Layer volumes are measured inside the compact difference support before taking
+real values, preserving their measurability and finiteness even at nonpositive
+levels. Both body entropies are integrable.
+
 ## Build
 
 From this directory:
@@ -139,8 +161,8 @@ from source. Compilation logs and source hashes are saved in `verification/`.
 ## Validation
 
 The public proof file and its audit compiled successfully against the pinned,
-already built Mathlib checkout. The audit covers all 170 intermediate theorems
-and the imported Brunn–Minkowski theorem. All 171 depend only on `propext`,
+already built Mathlib checkout. The audit covers all 222 intermediate theorems
+and the imported Brunn–Minkowski theorem. All 223 depend only on `propext`,
 `Classical.choice`, and `Quot.sound`; none depends on `sorryAx` or a new axiom.
 All nine dependency commits match the manifest. The source hashes and audit
 results are in `verification/axiom-audit.json`, with build results in
@@ -154,8 +176,8 @@ theorem declaration in this project's proof modules.
    measures, for the final probability-variable statement.
 2. The simplex-difference entropy formula and all-positive-scale comparison are
    proved. Use them in the fiber calculation below.
-3. Prove the convex-body entropy upper bound using Brunn–Minkowski, level sets,
-   the logarithmic primitive and the proved monotone-tilt inequality.
+3. The convex-body entropy upper bound is proved. Use it on the simplex-fiber
+   body in dimension n+m.
 4. Connect the simplex-fiber mixture calculation to the entropy increment.
 5. Normalize the power approximations, control convolution limits and exponential
    tails, and pass to general log-concave densities.
@@ -171,20 +193,19 @@ They are not a prediction of automatic execution time. Updated 2026-10-12.
 | --- | --- | --- | --- |
 | 1 | Density formulas to probability laws | 6–12 | 3 |
 | 2 | Simplex-difference entropy formula and scale comparison — proved | 0 | 5 |
-| 3 | Convex-body entropy upper bound | 12–24 | 4 |
+| 3 | Convex-body entropy upper bound — proved | 0 | 4 |
 | 4 | Simplex-fiber lift and entropy cancellation | 16–32 | 4 |
 | 5 | General log-concave densities and tail limits | 20–44 | 5 |
 | 6 | Sharpness, final theorem and audit | 8–16 | 4 |
 
-The remaining total is 62–128 hours, rounded to 65–130; a contingency allowance
-gives a planning range of 80–170 hours. At 30 working hours per week, this is
-about 3–6 weeks.
+The remaining total is 50–104 hours, rounded to 50–105; a contingency allowance
+gives a planning range of 65–135 hours. At 30 working hours per week, this is
+about 3–5 weeks.
 Milestones 2 and 3 feed into 4, then 5 and 6. The general-density and tail-limit
-connections carry the greatest uncertainty. The next central milestone is 3.
+connections carry the greatest uncertainty. The next central milestone is 4.
 
 ## Conclusion
 
-The actual simplex-difference density is connected to its harmonic entropy formula
-and the comparison at every positive pair of scales. Completion still requires the
-convex-body upper bound, the fiber lift, general-density limits, sharpness and the
-final probability-law connection.
+The simplex comparison and the convex-body upper bound are proved for their actual
+densities. Completion still requires the fiber lift and entropy cancellation,
+general-density limits, sharpness and the final probability-law connection.

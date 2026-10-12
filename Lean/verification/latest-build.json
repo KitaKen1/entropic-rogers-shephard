@@ -30,6 +30,16 @@
     "status": "reused"
   },
   {
+    "module": "EntropicRogersShephard.BodyDensity",
+    "sha256": "9f6d3dffdc1f6434fd4171ad9cf1b9749401d89e9854d54868b245dbed3b0f9e",
+    "status": "reused"
+  },
+  {
+    "module": "EntropicRogersShephard.RadialOverlap",
+    "sha256": "3031eaa917904233c61e9fcb3e8d5f6330dd545b601cbfdb7af7997222e381d7",
+    "status": "reused"
+  },
+  {
     "module": "EntropicRogersShephard.OrthantGeometry",
     "sha256": "0478d85395332994a12b68fe84a339816f9b9b6030c46657aad9e95581b1700b",
     "status": "reused"
@@ -52,6 +62,31 @@
   {
     "module": "EntropicRogersShephard.LayerLogMoments",
     "sha256": "c65b4623ba7a2c72b80e5fe4c420789701b4afb43da09f375c1b986c47bdd239",
+    "status": "reused"
+  },
+  {
+    "module": "EntropicRogersShephard.BodyLayers",
+    "sha256": "ac6ce382d822ace5f575388ea2ffcad22b9fb09019659fa5de8e41bb6ef47436",
+    "status": "reused"
+  },
+  {
+    "module": "EntropicRogersShephard.BodyMoments",
+    "sha256": "0bbe3985bfd7d70b30f4cbdca317610e33526c20aaa34ca3af2859e7e969d828",
+    "status": "reused"
+  },
+  {
+    "module": "EntropicRogersShephard.MonotoneTilt",
+    "sha256": "ff95daf0c9caefb6daf0d39735a0f984b1a1719c1f47696be315f6d2daa31f82",
+    "status": "reused"
+  },
+  {
+    "module": "EntropicRogersShephard.WeightedTilt",
+    "sha256": "f76669efcde0da3b60ad894b3dea577fe3a06c4d7f984c98af41bfccc1f1b540",
+    "status": "reused"
+  },
+  {
+    "module": "EntropicRogersShephard.BodyEntropyBound",
+    "sha256": "8739d46b405ac90e0ba5d571443a46486f49441fb8b54dce916820ebbf86287b",
     "status": "reused"
   },
   {
@@ -80,15 +115,9 @@
     "status": "reused"
   },
   {
-    "module": "EntropicRogersShephard.MonotoneTilt",
-    "sha256": "ff95daf0c9caefb6daf0d39735a0f984b1a1719c1f47696be315f6d2daa31f82",
-    "seconds": 316.37,
-    "exit_code": 0
-  },
-  {
     "module": "EntropicRogersShephard.Audit",
-    "sha256": "c7dfd0da0c18280c7a0eff359556db99a7e298d7fbcf289c1f049ac6c5bb1e3e",
-    "seconds": 129.24,
+    "sha256": "96c494d7b9789a02ec4f00589349b415f045f58a91bcc7fe2d201bd09de5f1c4",
+    "seconds": 87.25,
     "exit_code": 0
   }
 ]

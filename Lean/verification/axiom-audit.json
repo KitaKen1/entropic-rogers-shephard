@@ -1,5 +1,5 @@
 {
-  "audited_theorems": 171,
+  "audited_theorems": 223,
   "allowed_axioms": [
     "Classical.choice",
     "Quot.sound",
@@ -9,7 +9,11 @@
   "new_axioms": false,
   "full_main_theorem_proved": false,
   "source_sha256": {
-    "EntropicRogersShephard/Audit.lean": "c7dfd0da0c18280c7a0eff359556db99a7e298d7fbcf289c1f049ac6c5bb1e3e",
+    "EntropicRogersShephard/Audit.lean": "96c494d7b9789a02ec4f00589349b415f045f58a91bcc7fe2d201bd09de5f1c4",
+    "EntropicRogersShephard/BodyDensity.lean": "9f6d3dffdc1f6434fd4171ad9cf1b9749401d89e9854d54868b245dbed3b0f9e",
+    "EntropicRogersShephard/BodyEntropyBound.lean": "8739d46b405ac90e0ba5d571443a46486f49441fb8b54dce916820ebbf86287b",
+    "EntropicRogersShephard/BodyLayers.lean": "ac6ce382d822ace5f575388ea2ffcad22b9fb09019659fa5de8e41bb6ef47436",
+    "EntropicRogersShephard/BodyMoments.lean": "0bbe3985bfd7d70b30f4cbdca317610e33526c20aaa34ca3af2859e7e969d828",
     "EntropicRogersShephard/ConvexApproximation.lean": "b5d67d19bc055b925f7e7882c46b5a5fc2b10b0061abc1ad6e473509f4be3b15",
     "EntropicRogersShephard/ConvexExhaustion.lean": "39970f2eb66ebea3c9b7acbcedbc88eedfa62cac50f6420ede94e5fc077d2af5",
     "EntropicRogersShephard/ConvexVolume.lean": "a2edbe8dc8de548a37e8f436a27fcb11cc623e11d87bddc870a993ee0b6b8e70",
@@ -20,9 +24,11 @@
     "EntropicRogersShephard/LayerNormalization.lean": "32716df5943dd997d99606663f87fc0fe33f68481fb464f11216fe1e823db3fc",
     "EntropicRogersShephard/MonotoneTilt.lean": "ff95daf0c9caefb6daf0d39735a0f984b1a1719c1f47696be315f6d2daa31f82",
     "EntropicRogersShephard/OrthantGeometry.lean": "0478d85395332994a12b68fe84a339816f9b9b6030c46657aad9e95581b1700b",
+    "EntropicRogersShephard/RadialOverlap.lean": "3031eaa917904233c61e9fcb3e8d5f6330dd545b601cbfdb7af7997222e381d7",
     "EntropicRogersShephard/SimplexDensity.lean": "023dc9698bb5502bb1b2abbe507a10f30150913f2245bf51585cfb47f4b05884",
     "EntropicRogersShephard/SimplexEntropy.lean": "242d5b30e00d1611ed4cb0f72cee5ebf077c1197431159592f06e30fdae69837",
     "EntropicRogersShephard/SimplexScaling.lean": "7015e289ec78893a43c6dd8425fdc29a88a2865e394c7724052072c089a81b7f",
+    "EntropicRogersShephard/WeightedTilt.lean": "f76669efcde0da3b60ad894b3dea577fe3a06c4d7f984c98af41bfccc1f1b540",
     "EntropicRogersShephard.lean": "50b4c004a8cb7bf01203e068b21e31606334c841ffb688829de42dce96450607",
     "LeanPool/Isoperimetric/Basic.lean": "53c395d2a914ed43b03704d4fa8448cff777bfc611662e045ff301f155ca9800",
     "LeanPool/Isoperimetric/BrunnMinkowski.lean": "613777d3f642a0e53c93d7e77c06e1ee7ca73417bbf781709e55b708fcee383d",

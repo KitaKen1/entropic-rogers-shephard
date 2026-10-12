@@ -23,7 +23,7 @@ For independent uniform vectors on the same $`N`$-dimensional convex body,
 h(Z-Z')-h(Z)\le F(N).
 ```
 
-Brunn–Minkowski makes the $`N`$th root of the overlap density concave. A level-set calculation then gives the entropy bound.
+Brunn–Minkowski gives a radial inequality for the $`N`$th root of the overlap density. The increasing level-volume ratio and a weighted logarithmic mean give the entropy bound.
 
 ### 2. Compare differences of scaled simplices
 
@@ -67,8 +67,9 @@ fixed Lean and Mathlib versions. It includes simplex geometry, finite binomial a
 harmonic estimates, integer log moments, and entropy convergence tools. The
 simplex overlap formula is now connected to a normalized difference density with
 finite entropy, orthant superlevel volumes, and the exact harmonic entropy formula.
-The simplex comparison at all positive scales is proved, as are the monotone-tilt
-inequality and compact convex approximation tools. The full inequality is not yet formally proved; the remaining
+The simplex comparison at all positive scales and the uniform-convex-body entropy
+upper bound are proved. Weighted integral comparison and compact convex
+approximation tools are also available. The full inequality is not yet formally proved; the remaining
 analytic connections and a work estimate are listed in the Lean project README.
 
 ## Conclusion
