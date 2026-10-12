@@ -33,6 +33,12 @@ for p in sorted(ROOT.rglob('*.lean')):
         records[str(p.relative_to(ROOT))] = hashlib.sha256(p.read_bytes()).hexdigest()
 result = {'audited_theorems': len(expected), 'allowed_axioms': sorted(allowed),
           'sorryAx': False, 'new_axioms': False, 'full_main_theorem_proved': False,
+          'density_main_theorem_proved':
+              'EntropicRogersShephard.sharp_entropic_rogers_shephard_density' in reported,
+          'probability_law_connection_proved':
+              'EntropicRogersShephard.sharp_entropic_rogers_shephard_random_vectors' in reported,
+          'sharpness_proved': False,
+          'full_main_theorem_scope': 'Density inequality, probability-law connection, and sharpness for exponential products and invertible affine images.',
           'source_sha256': records}
 (ROOT / 'verification/axiom-audit.json').write_text(json.dumps(result, indent=2) + '\n')
 print(json.dumps({k: v for k, v in result.items() if k != 'source_sha256'}, indent=2))

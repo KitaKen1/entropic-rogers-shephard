@@ -1,9 +1,18 @@
 # Lean formalization
 
-This project formalizes intermediate results for the proposed proof in the PDF.
-The full sharp entropic Rogers–Shephard inequality is still in progress.
-`SharpEntropicRogersShephard` states the density-form target, including entropy
-integrability as a conclusion. It is a proposition definition, not a proved theorem.
+The density-form entropic Rogers–Shephard inequality, including both entropy
+integrability conclusions, is proved by
+`EntropicRogersShephard.sharp_entropic_rogers_shephard_density` in
+[GeneralDensityBound.lean](EntropicRogersShephard/GeneralDensityBound.lean).
+It proves the original `SharpEntropicRogersShephard` proposition for every n ≥ 1
+and every log-concave probability density, without extra tail or entropy assumptions.
+
+[ProbabilityLaw.lean](EntropicRogersShephard/ProbabilityLaw.lean) connects the actual
+difference density to the law of independent random vectors and proves
+`sharp_entropic_rogers_shephard_random_vectors`.
+Sharpness for exponential products and their invertible affine images is not
+formally proved yet. The full scope, including optimality and these equality
+families, remains in progress.
 
 The implementation uses Lean `4.35.0-rc3` and Mathlib commit
 `f6090c7095e1e56b3464c1daba5f24631f1290d2`.
@@ -70,6 +79,18 @@ in extension modules which reuse the compiled ingredients during development bui
 | `EntropicRogersShephard/FiberCancellation.lean` | Signed log moments are cross-difference convolutions; actual fiber cancellation |
 | `EntropicRogersShephard/FiberExtension.lean` | Extend the fiber size by one outside K; actual concave-power entropy increment bound |
 | `EntropicRogersShephard/CompactConvergence.lean` | Pointwise difference-density and entropy convergence on a common bounded compact support |
+| `EntropicRogersShephard/FiniteSupportLimit.lean` | Dominated mass limits, a positive mass bound after a finite shift, and scalar normalization invariance |
+| `EntropicRogersShephard/ConcaveApproximation.lean` | Normalized concave-power approximation to a compact exponential density |
+| `EntropicRogersShephard/CompactExponentialBound.lean` | Both finite entropies and the sharp n log 2 bound for compact exponential densities |
+| `EntropicRogersShephard/LocalLogConcave.lean` | The sharp bound for normalized compact convex restrictions inside the positive interior |
+| `EntropicRogersShephard/GlobalDensityBound.lean` | Bounded positive superlevels and a global density bound via compact midpoint images |
+| `EntropicRogersShephard/ExponentialTails.lean` | Ray interpolation and a global exponential envelope derived from log concavity |
+| `EntropicRogersShephard/ExponentialIntegrability.lean` | Multidimensional exponential integrability and an integrable entropy envelope |
+| `EntropicRogersShephard/ExponentialConvergence.lean` | Exponential difference-density bounds, finite entropies, and dominated entropy limits |
+| `EntropicRogersShephard/DominatedConvolution.lean` | Almost-everywhere dominated input convergence implies convolution convergence at every shift |
+| `EntropicRogersShephard/CompactRestrictions.lean` | Growing compact restrictions normalized after a finite mass shift and dominated by 2f |
+| `EntropicRogersShephard/GeneralDensityBound.lean` | Difference domination by 4g, the outer entropy limit, and the full density-form target |
+| `EntropicRogersShephard/ProbabilityLaw.lean` | Independent random-vector difference laws and the general entropy inequality |
 
 `EntropicRogersShephard/Audit.lean` records axiom dependencies of the proved
 intermediate results.
@@ -180,7 +201,7 @@ The native pointwise log-concavity definition also gives a convex positive set,
 concavity of its logarithm, and continuity on its interior. That interior is
 nonempty for a probability density and agrees with the positive set almost
 everywhere. Every nonempty compact subset of the interior has positive lower
-and upper density bounds. The exponential tail estimate remains to be proved.
+and upper density bounds. Global boundedness and an exponential envelope are now derived from the original hypotheses.
 
 For every compact K of positive volume and measurable `rho`, continuous and
 concave on K with `0 < c <= rho <= C` there, the actual normalized-power density
@@ -194,13 +215,20 @@ f_m=\frac{1_K\rho^m}{\int_K\rho^m},\quad m\ge1.
 Here `g_m(s) = integral_x f_m(x) f_m(x-s)` is the actual difference-convolution density.
 The bound also covers fiber sizes with arbitrary values outside K; the extension
 by one is used only internally. Both input and difference entropies are finite.
-This is the concave-power step, not the full log-concave-density theorem.
+This concave-power step is used in the completed general-density limit below.
 
 For probability densities with a common compact support and common pointwise
 bound, pointwise density convergence now gives pointwise difference-convolution
 convergence at every shift and convergence of the difference entropies.
-The normalized-power limit and the outer exponential-tail limit remain to be
-connected to these tools.
+The normalized-power limit gives the sharp bound on each compact convex piece
+inside the positive interior. Increasing compact restrictions have masses tending
+to one. After a finite shift they satisfy f_j ≤ 2f and g_j ≤ 4g. The global
+exponential envelopes dominate both entropy integrands, giving their limits and
+h(g) − h(f) ≤ n log 2. Both integrability conclusions are derived, not assumed.
+
+The density-with-measure convolution formula and `IndepFun.hasLaw_fun_add` connect
+this bound to the actual law of independent random-vector differences. Each real
+convolution slice is first proved integrable before converting to ENNReal.
 
 
 ## Build
@@ -217,7 +245,7 @@ The `LeanPool/Isoperimetric` dependency consists of three unchanged modules from
 Lean Pool. Their source commit, original copyright notices, and Apache 2.0 license
 are recorded in `LeanPool/NOTICE` and `LeanPool/LICENSE`.
 
-Two convex-geometry proofs are adapted from Tau Ceti commit
+Two convex-geometry proofs and the two-sided exponential route are adapted from Tau Ceti commit
 `f6d68999ea925d5e176a965434bfcde852d376f3`, with copyright and Apache-2.0 license
 retained in `EntropicRogersShephard/NOTICE` and `EntropicRogersShephard/LICENSE`.
 The source hashes and changes are in `verification/tauceti-provenance.json`.
@@ -238,8 +266,8 @@ from source. Compilation logs and source hashes are saved in `verification/`.
 ## Validation
 
 The public proof file and its audit compiled successfully against the pinned,
-already built Mathlib checkout. The audit covers all 338 intermediate theorems
-and the imported Brunn–Minkowski theorem. All 339 depend only on `propext`,
+already built Mathlib checkout. The audit covers all 387 local theorems
+and the imported Brunn–Minkowski theorem. All 388 depend only on `propext`,
 `Classical.choice`, and `Quot.sound`; none depends on `sorryAx` or a new axiom.
 All nine dependency commits match the manifest. The source hashes and audit
 results are in `verification/axiom-audit.json`, with build results in
@@ -249,42 +277,36 @@ theorem declaration in this project's proof modules.
 
 ## Remaining work
 
-1. Connect the density formulas to the difference pushforward of product probability
-   measures, for the final probability-variable statement.
-2. The simplex-difference entropy formula and all-positive-scale comparison are
-   proved. Use them in the fiber calculation below.
-3. The convex-body entropy upper bound is proved. Use it on the simplex-fiber
-   body in dimension n+m.
-4. The actual concave-power increment bound F(n+m)-F(m) is proved, including
-   the simplex mixture, row entropy, coordinate transport and fiber cancellation.
-5. Normalize the power approximations, control convolution limits and exponential
-   tails, and pass to general log-concave densities.
-6. Prove sharpness for exponential products and their invertible affine images.
+1. Compute the product-exponential difference density and both entropies, proving
+   equality in every positive dimension.
+2. Prove entropy-increment invariance under invertible affine transformations,
+   and connect the affine images to the equality family.
+3. State optimality together with the proved inequality and probability-law
+   connection, then complete the final pinned build and axiom audit.
 
 ## Remaining-work roadmap
 
 These are estimated working hours for an implementer experienced in Lean measure
-theory with AI assistance, including implementation, repairs and verification.
-They are not a prediction of automatic execution time. Updated 2026-10-13.
+theory with AI assistance. They include implementation, repairs and verification;
+they are not automatic execution times or a completion guarantee. Updated 2026-10-13.
 
-| Order | Milestone | Remaining hours | Difficulty (1–5) |
+| Milestone | State | Remaining hours | Difficulty (1–5) |
 | --- | --- | --- | --- |
-| 1 | Density formulas to probability laws | 6–12 | 3 |
-| 2 | Simplex-difference entropy formula and scale comparison — proved | 0 | 5 |
-| 3 | Convex-body entropy upper bound — proved | 0 | 4 |
-| 4 | Concave-power entropy increment and fiber cancellation — proved | 0 | 4 |
-| 5 | General log-concave densities and tail limits | 20–44 | 5 |
-| 6 | Sharpness, final theorem and audit | 8–16 | 4 |
+| Simplex comparison, convex-body bound and fiber cancellation | Proved | 0 | 4–5 |
+| General-density bound and both finite entropies | Proved | 0 | 5 |
+| Independent random-vector difference law | Proved | 0 | 3 |
+| Equality for exponential products in every dimension | Pending | 6–10 | 4 |
+| Invertible affine images of the equality family | Pending | 6–12 | 4 |
+| Optimality statement, final build and audit | Pending | 2–4 | 3 |
 
-The remaining total is 34–72 hours, rounded to 35–75; a contingency allowance
-gives a planning range of 45–95 hours. At 30 working hours per week, this is
-about 2–4 weeks.
-Milestones 2–4 are connected. The general-density and tail-limit connections
-carry the greatest uncertainty. The next central milestone is 5.
+The remaining estimate is 14–26 working hours, with a planning allowance of
+20–40 hours. At 30 working hours per week, allow about 1–2 weeks.
+The affine change-of-variables API has been located in Mathlib; its entropy
+connection and the product-exponential computations have not yet been implemented.
 
 ## Conclusion
 
-The actual concave-power entropy increment bound is proved through the fiber
-cancellation. Completion still requires the normalized-power and general-density
-limits,
-general-density limits, sharpness and the final probability-law connection.
+The general-density inequality, both entropy integrability conclusions, and the
+independent random-vector law connection are proved. Completion of the full scope
+still requires sharpness for exponential products and invertible affine images,
+and the final optimality statement and verification.

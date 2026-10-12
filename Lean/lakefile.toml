@@ -12,4 +12,4 @@ name = "LeanPool"
 
 [[lean_lib]]
 name = "EntropicRogersShephard"
-roots = ["EntropicRogersShephard", "EntropicRogersShephard.SimplexScaling", "EntropicRogersShephard.BodyEntropyBound", "EntropicRogersShephard.FiberExtension", "EntropicRogersShephard.LogConcavity", "EntropicRogersShephard.ConvexApproximation", "EntropicRogersShephard.MonotoneTilt"]
+roots = ["EntropicRogersShephard", "EntropicRogersShephard.SimplexScaling", "EntropicRogersShephard.BodyEntropyBound", "EntropicRogersShephard.FiberExtension", "EntropicRogersShephard.LogConcavity", "EntropicRogersShephard.ConvexApproximation", "EntropicRogersShephard.MonotoneTilt", "EntropicRogersShephard.ProbabilityLaw"]

@@ -1,4 +1,5 @@
-The files ConvexVolume.lean and ConvexExhaustion.lean contain adapted material
+The files ConvexVolume.lean, ConvexExhaustion.lean and
+ExponentialIntegrability.lean contain adapted material
 from TauCetiProject/TauCeti, commit f6d68999ea925d5e176a965434bfcde852d376f3.
 Copyright (c) 2026 The Tau Ceti contributors.
 Released under Apache License 2.0; see LICENSE in this directory.

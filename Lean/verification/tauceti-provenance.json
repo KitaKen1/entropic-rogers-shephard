@@ -16,5 +16,14 @@
     "upstream_sha256": "16be43b70ff2ec57bff837d219384311ae97803ae5aa60f2848aa4a654a9b676",
     "license": "Apache-2.0",
     "changes": "Retained the required theorem only; adjusted imports, namespace and module header."
+  },
+  {
+    "local_path": "EntropicRogersShephard/ExponentialIntegrability.lean",
+    "repository": "TauCetiProject/TauCeti",
+    "commit": "f6d68999ea925d5e176a965434bfcde852d376f3",
+    "upstream_path": "TauCeti/MeasureTheory/Integral/ExpDecay.lean",
+    "upstream_sha256": "3034b4163e73781d126ac8079cd424c17693306c369640d35d8495719d46bf68",
+    "license": "Apache-2.0",
+    "changes": "Adapted the two-sided exponential route. The upstream integrable_comp_abs helper is absent from the pinned Mathlib; the local proof instead splits the two half-lines and uses their Mathlib exponential integrals. The multidimensional and entropy-envelope results are local additions."
   }
 ]

@@ -62,19 +62,17 @@ the bound follows on that sublevel set. Common exponential bounds for the origin
 
 ## Lean formalization
 
-An intermediate-results library is being developed in [Lean/](Lean/README.md), with
-fixed Lean and Mathlib versions. It includes simplex geometry, finite binomial and
-harmonic estimates, integer log moments, and entropy convergence tools. The
-simplex overlap formula is now connected to a normalized difference density with
-finite entropy, orthant superlevel volumes, and the exact harmonic entropy formula.
-The simplex comparison at all positive scales and the uniform-convex-body entropy
-upper bound are proved. The actual concave-power density increment is bounded
-by F(n+m)-F(m), through the simplex mixture, coordinate transport and fiber
-entropy cancellation. Positive-support interior continuity and compact positive
-bounds are available, as are pointwise difference-density and entropy convergence
-on a common compact support. The normalized-power and global tail limits remain
-to be connected. The full inequality is not yet formally proved; the remaining
-analytic connections and a work estimate are listed in the Lean project README.
+The general-density inequality and the connection to independent random vectors
+are proved in [Lean/](Lean/README.md), with fixed Lean and Mathlib versions.
+[GeneralDensityBound.lean](Lean/EntropicRogersShephard/GeneralDensityBound.lean)
+proves the density-form target, deriving both entropy integrability conclusions
+from log concavity and probability normalization.
+[ProbabilityLaw.lean](Lean/EntropicRogersShephard/ProbabilityLaw.lean) proves that
+the difference of independent random vectors with this density has the actual
+difference-convolution density, and connects it to the entropy bound.
+
+Sharpness for exponential products and their invertible affine images remains
+to be formalized. The remaining work and time estimates are in the Lean README.
 
 ## Conclusion
 

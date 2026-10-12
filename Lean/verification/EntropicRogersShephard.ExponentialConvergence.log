@@ -1,0 +1,3 @@
+EntropicRogersShephard/ExponentialConvergence.lean:46:18: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
