@@ -60,6 +60,16 @@ in extension modules which reuse the compiled ingredients during development bui
 | `EntropicRogersShephard/FiberDifference.lean` | Actual lifted difference density as a simplex-difference mixture, by Fubini |
 | `EntropicRogersShephard/FiberDifferenceBounds.lean` | Compact difference support, pointwise bounds and finite lifted-difference entropy |
 | `EntropicRogersShephard/LogConcavity.lean` | Native log concavity, positive-support interior continuity and compact positive bounds |
+| `EntropicRogersShephard/FiberTransport.lean` | Volume-preserving coordinate concatenation and the actual lifted-body entropy upper bound |
+| `EntropicRogersShephard/DensityMeasure.lean` | Real densities as measures and normalized difference-slice probability measures |
+| `EntropicRogersShephard/BoundedMixture.lean` | Common bounds and finite supports verify entropy-mixture integrability; entropy rescaling |
+| `EntropicRogersShephard/MixtureMass.lean` | Integrability and normalization of common-support mixtures |
+| `EntropicRogersShephard/SimplexKernel.lean` | Jointly measurable actual simplex-difference family, common support and bound |
+| `EntropicRogersShephard/SimplexMixtureEntropy.lean` | Actual simplex-mixture entropy lower bound at every positive scale |
+| `EntropicRogersShephard/FiberMixtureRows.lean` | Entropy lower bound for every lifted-difference row, including zero-mass rows |
+| `EntropicRogersShephard/FiberCancellation.lean` | Signed log moments are cross-difference convolutions; actual fiber cancellation |
+| `EntropicRogersShephard/FiberExtension.lean` | Extend the fiber size by one outside K; actual concave-power entropy increment bound |
+| `EntropicRogersShephard/CompactConvergence.lean` | Pointwise difference-density and entropy convergence on a common bounded compact support |
 
 `EntropicRogersShephard/Audit.lean` records axiom dependencies of the proved
 intermediate results.
@@ -158,15 +168,40 @@ G(s,t)=\int f(x)f(x-s)g_{\rho(x),\rho(x-s)}(t)\,dx.
 
 When `K` is compact and `rho` is continuous on `K`, the lifted body and difference
 support are compact, and both difference entropies are integrable. These facts
-prepare the mixture calculation; the mixture entropy lower bound and the final
-fiber cancellation are still unproved. A general conditional-entropy chain
-rule is not needed for the original lift calculation.
+complete the fiber calculation. The mixture entropy lower bound is proved row
+by row, including zero-mass rows. The two signed logarithmic moments are
+ordinary cross-difference convolutions; their total integrals both equal
+`integral f log rho`. Coordinate concatenation preserves volume and entropy,
+so the body bound applies in dimension n+m. Extending `rho` by one outside `K`
+preserves the normalized power density. A general conditional-entropy chain
+rule is not needed for this calculation.
 
 The native pointwise log-concavity definition also gives a convex positive set,
 concavity of its logarithm, and continuity on its interior. That interior is
 nonempty for a probability density and agrees with the positive set almost
 everywhere. Every nonempty compact subset of the interior has positive lower
 and upper density bounds. The exponential tail estimate remains to be proved.
+
+For every compact K of positive volume and measurable `rho`, continuous and
+concave on K with `0 < c <= rho <= C` there, the actual normalized-power density
+now satisfies
+
+```math
+h(g_m)-h(f_m)\le F(n+m)-F(m),\qquad
+f_m=\frac{1_K\rho^m}{\int_K\rho^m},\quad m\ge1.
+```
+
+Here `g_m(s) = integral_x f_m(x) f_m(x-s)` is the actual difference-convolution density.
+The bound also covers fiber sizes with arbitrary values outside K; the extension
+by one is used only internally. Both input and difference entropies are finite.
+This is the concave-power step, not the full log-concave-density theorem.
+
+For probability densities with a common compact support and common pointwise
+bound, pointwise density convergence now gives pointwise difference-convolution
+convergence at every shift and convergence of the difference entropies.
+The normalized-power limit and the outer exponential-tail limit remain to be
+connected to these tools.
+
 
 ## Build
 
@@ -203,8 +238,8 @@ from source. Compilation logs and source hashes are saved in `verification/`.
 ## Validation
 
 The public proof file and its audit compiled successfully against the pinned,
-already built Mathlib checkout. The audit covers all 275 intermediate theorems
-and the imported Brunn–Minkowski theorem. All 276 depend only on `propext`,
+already built Mathlib checkout. The audit covers all 338 intermediate theorems
+and the imported Brunn–Minkowski theorem. All 339 depend only on `propext`,
 `Classical.choice`, and `Quot.sound`; none depends on `sorryAx` or a new axiom.
 All nine dependency commits match the manifest. The source hashes and audit
 results are in `verification/axiom-audit.json`, with build results in
@@ -220,9 +255,8 @@ theorem declaration in this project's proof modules.
    proved. Use them in the fiber calculation below.
 3. The convex-body entropy upper bound is proved. Use it on the simplex-fiber
    body in dimension n+m.
-4. The original fiber volume, marginal density, entropy identity and actual
-   difference-mixture formula are proved. Apply the simplex entropy comparison
-   to that mixture, transport the body to dimension n+m and cancel the fiber terms.
+4. The actual concave-power increment bound F(n+m)-F(m) is proved, including
+   the simplex mixture, row entropy, coordinate transport and fiber cancellation.
 5. Normalize the power approximations, control convolution limits and exponential
    tails, and pass to general log-concave densities.
 6. Prove sharpness for exponential products and their invertible affine images.
@@ -231,26 +265,26 @@ theorem declaration in this project's proof modules.
 
 These are estimated working hours for an implementer experienced in Lean measure
 theory with AI assistance, including implementation, repairs and verification.
-They are not a prediction of automatic execution time. Updated 2026-10-12.
+They are not a prediction of automatic execution time. Updated 2026-10-13.
 
 | Order | Milestone | Remaining hours | Difficulty (1–5) |
 | --- | --- | --- | --- |
 | 1 | Density formulas to probability laws | 6–12 | 3 |
 | 2 | Simplex-difference entropy formula and scale comparison — proved | 0 | 5 |
 | 3 | Convex-body entropy upper bound — proved | 0 | 4 |
-| 4 | Mixture entropy lower bound, dimension transport and fiber cancellation | 12–24 | 4 |
+| 4 | Concave-power entropy increment and fiber cancellation — proved | 0 | 4 |
 | 5 | General log-concave densities and tail limits | 20–44 | 5 |
 | 6 | Sharpness, final theorem and audit | 8–16 | 4 |
 
-The remaining total is 46–96 hours, rounded to 45–100; a contingency allowance
-gives a planning range of 60–125 hours. At 30 working hours per week, this is
-about 2–5 weeks.
-Milestones 2 and 3 feed into 4, then 5 and 6. The general-density and tail-limit
-connections carry the greatest uncertainty. The next central milestone is 4.
+The remaining total is 34–72 hours, rounded to 35–75; a contingency allowance
+gives a planning range of 45–95 hours. At 30 working hours per week, this is
+about 2–4 weeks.
+Milestones 2–4 are connected. The general-density and tail-limit connections
+carry the greatest uncertainty. The next central milestone is 5.
 
 ## Conclusion
 
-The simplex comparison, convex-body upper bound, original fiber entropy and
-actual difference-mixture formula are proved. Completion still requires the
-mixture entropy lower bound and fiber cancellation,
+The actual concave-power entropy increment bound is proved through the fiber
+cancellation. Completion still requires the normalized-power and general-density
+limits,
 general-density limits, sharpness and the final probability-law connection.

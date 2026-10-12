@@ -81,6 +81,62 @@ EntropicRogersShephard.fiberDifferenceDensity_eq_mixture {n m : ℕ} {K : Set (F
 EntropicRogersShephard.positiveInterior_nonempty {n : ℕ} {f : (Fin n → ℝ) → ℝ}
   (hf : EntropicRogersShephard.IsProbabilityDensity n f) (hl : EntropicRogersShephard.IsLogConcave n f) :
   (interior {x | 0 < f x}).Nonempty
+EntropicRogersShephard.fiber_difference_entropy_upper_bound {n m : ℕ} [NeZero (n + m)] {K : Set (Fin n → ℝ)}
+  {ρ : (Fin n → ℝ) → ℝ} {c C : ℝ} (hK : IsCompact K) (hpos : MeasureTheory.volume K ≠ 0) (hρ : Measurable ρ)
+  (hcont : ContinuousOn ρ K) (hconc : ConcaveOn ℝ K ρ) (hc : 0 < c) (hC : 0 < C) (hb : ∀ x ∈ K, ρ x ∈ Set.Icc c C) :
+  EntropicRogersShephard.differentialEntropy (EntropicRogersShephard.fiberDifferenceDensity K ρ) MeasureTheory.volume ≤
+    (EntropicRogersShephard.differentialEntropy (EntropicRogersShephard.powerDensity m K ρ) MeasureTheory.volume +
+          Real.log (MeasureTheory.volume (EntropicRogersShephard.simplex m 1)).toReal +
+        ↑m * ∫ (x : Fin n → ℝ), EntropicRogersShephard.powerDensity m K ρ x * Real.log (ρ x)) +
+      EntropicRogersShephard.F (n + m)
+EntropicRogersShephard.simplex_mixture_entropy_scale_lower_bound {n m : ℕ} [NeZero m]
+  {μ : MeasureTheory.Measure (Fin n → ℝ)} [MeasureTheory.IsProbabilityMeasure μ] {ρ : (Fin n → ℝ) → ℝ} {c C : ℝ}
+  (hm : Measurable ρ) (hc : 0 < c) (hb : ∀ (x : Fin n → ℝ), ρ x ∈ Set.Icc c C) (s : Fin n → ℝ) :
+  EntropicRogersShephard.differentialEntropy
+        (EntropicRogersShephard.crossDifferenceDensity
+          (EntropicRogersShephard.uniformDensity (EntropicRogersShephard.simplex m 1))
+          (EntropicRogersShephard.uniformDensity (EntropicRogersShephard.simplex m 1)))
+        MeasureTheory.volume +
+      ↑m / 2 * (∫ (x : Fin n → ℝ), Real.log (ρ x) ∂μ + ∫ (x : Fin n → ℝ), Real.log (ρ (x - s)) ∂μ) ≤
+    EntropicRogersShephard.differentialEntropy
+      (fun t => ∫ (x : Fin n → ℝ), EntropicRogersShephard.simplexFiberKernel m ρ s x t ∂μ) MeasureTheory.volume
+EntropicRogersShephard.fiber_row_entropy_lower_bound {n m : ℕ} [NeZero m] {K : Set (Fin n → ℝ)} {ρ : (Fin n → ℝ) → ℝ}
+  {c C : ℝ} (hK : IsCompact K) (hpos : MeasureTheory.volume K ≠ 0) (hρ : Measurable ρ) (hc : 0 < c) (hC : 0 < C)
+  (hb : ∀ (x : Fin n → ℝ), ρ x ∈ Set.Icc c C) (s : Fin n → ℝ) :
+  (EntropicRogersShephard.differenceDensity (EntropicRogersShephard.powerDensity m K ρ) s).negMulLog +
+        EntropicRogersShephard.differenceDensity (EntropicRogersShephard.powerDensity m K ρ) s *
+          EntropicRogersShephard.differentialEntropy
+            (EntropicRogersShephard.crossDifferenceDensity
+              (EntropicRogersShephard.uniformDensity (EntropicRogersShephard.simplex m 1))
+              (EntropicRogersShephard.uniformDensity (EntropicRogersShephard.simplex m 1)))
+            MeasureTheory.volume +
+      ↑m / 2 *
+        ((∫ (x : Fin n → ℝ),
+            EntropicRogersShephard.powerDensity m K ρ x * EntropicRogersShephard.powerDensity m K ρ (x - s) *
+              Real.log (ρ x)) +
+          ∫ (x : Fin n → ℝ),
+            EntropicRogersShephard.powerDensity m K ρ x * EntropicRogersShephard.powerDensity m K ρ (x - s) *
+              Real.log (ρ (x - s))) ≤
+    EntropicRogersShephard.differentialEntropy (fun t => EntropicRogersShephard.fiberDifferenceDensity K ρ (s, t))
+      MeasureTheory.volume
+EntropicRogersShephard.power_density_entropy_increment_bound {n m : ℕ} [NeZero m] [NeZero (n + m)] {K : Set (Fin n → ℝ)}
+  {ρ : (Fin n → ℝ) → ℝ} {c C : ℝ} (hK : IsCompact K) (hpos : MeasureTheory.volume K ≠ 0) (hρ : Measurable ρ)
+  (hcont : ContinuousOn ρ K) (hconc : ConcaveOn ℝ K ρ) (hc : 0 < c) (hC : 0 < C) (hb : ∀ x ∈ K, ρ x ∈ Set.Icc c C) :
+  EntropicRogersShephard.differentialEntropy
+        (EntropicRogersShephard.differenceDensity (EntropicRogersShephard.powerDensity m K ρ)) MeasureTheory.volume -
+      EntropicRogersShephard.differentialEntropy (EntropicRogersShephard.powerDensity m K ρ) MeasureTheory.volume ≤
+    EntropicRogersShephard.F (n + m) - EntropicRogersShephard.F m
+EntropicRogersShephard.difference_entropy_tendsto_of_compact_support {n : ℕ} {K : Set (Fin n → ℝ)}
+  {f : ℕ → (Fin n → ℝ) → ℝ} {g : (Fin n → ℝ) → ℝ} {M : ℝ} (hK : IsCompact K) (hM : 0 ≤ M)
+  (hf : ∀ (j : ℕ), EntropicRogersShephard.IsProbabilityDensity n (f j))
+  (hb : ∀ (j : ℕ) (x : Fin n → ℝ), f j x ∈ Set.Icc 0 M) (hsupp : ∀ (j : ℕ), ∀ x ∉ K, f j x = 0)
+  (hlim : ∀ (x : Fin n → ℝ), Filter.Tendsto (fun j => f j x) Filter.atTop (nhds (g x))) :
+  Filter.Tendsto
+    (fun j =>
+      EntropicRogersShephard.differentialEntropy (EntropicRogersShephard.differenceDensity (f j)) MeasureTheory.volume)
+    Filter.atTop
+    (nhds
+      (EntropicRogersShephard.differentialEntropy (EntropicRogersShephard.differenceDensity g) MeasureTheory.volume))
 'brunn_minkowski' depends on axioms: [propext, Classical.choice, Quot.sound]
 'EntropicRogersShephard.harmonic_term_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
 'EntropicRogersShephard.neg_log_one_sub_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
@@ -210,6 +266,27 @@ EntropicRogersShephard.positiveInterior_nonempty {n : ℕ} {f : (Fin n → ℝ) 
 'EntropicRogersShephard.integrable_negMulLog_differenceDensity_of_bounded_support' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
+'EntropicRogersShephard.integrable_kernel_slice_of_bounded' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.integrable_negMulLog_kernel_slice_of_bounded' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'EntropicRogersShephard.integrable_negMulLog_kernel_prod_of_bounded_support' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'EntropicRogersShephard.integrable_entropy_kernel_of_bounded_support' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'EntropicRogersShephard.average_entropy_le_entropy_bounded_mixture' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'EntropicRogersShephard.integrable_negMulLog_const_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.differentialEntropy_const_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.differenceDensity_tendsto_of_bounded_support' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'EntropicRogersShephard.difference_entropy_tendsto_of_compact_support' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
 'EntropicRogersShephard.compact_convex_exhaustion' depends on axioms: [propext, Classical.choice, Quot.sound]
 'EntropicRogersShephard.convex_isBounded_of_volume_ne_top' depends on axioms: [propext, Classical.choice, Quot.sound]
 'EntropicRogersShephard.exists_seq_isOpen_convex_isCompact_closure_subset_iUnion_eq' depends on axioms: [propext,
@@ -242,6 +319,31 @@ EntropicRogersShephard.positiveInterior_nonempty {n : ℕ} {f : (Fin n → ℝ) 
 'EntropicRogersShephard.volume_simplex_pos_of_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
 'EntropicRogersShephard.isProbabilityDensity_uniformSimplex' depends on axioms: [propext, Classical.choice, Quot.sound]
 'EntropicRogersShephard.differentialEntropy_uniformSimplex' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.realDensityMeasure_univ' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.isProbabilityMeasure_realDensityMeasure' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'EntropicRogersShephard.integral_realDensityMeasure' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.integrable_realDensityMeasure_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.measurable_differenceSliceDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.differenceSliceDensity_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.integrable_differenceSliceDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.integral_differenceSliceDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.isProbabilityMeasure_differenceSliceMeasure' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'EntropicRogersShephard.integral_differenceSliceMeasure' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.differenceLogLeft_eq_crossDifferenceDensity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'EntropicRogersShephard.differenceLogRight_eq_crossDifferenceDensity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'EntropicRogersShephard.power_logDifference_moments' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.fiber_difference_entropy_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.global_power_density_entropy_increment_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
 'EntropicRogersShephard.fiberUniformDensity_le' depends on axioms: [propext, Classical.choice, Quot.sound]
 'EntropicRogersShephard.integrable_fiberDifference_slice' depends on axioms: [propext, Classical.choice, Quot.sound]
 'EntropicRogersShephard.measurable_fiberDifferenceDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
@@ -270,6 +372,43 @@ EntropicRogersShephard.positiveInterior_nonempty {n : ℕ} {f : (Fin n → ℝ) 
 'EntropicRogersShephard.integrable_negMulLog_powerDifferenceDensity' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
+'EntropicRogersShephard.positiveFiberExtension_eq_on' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.measurable_positiveFiberExtension' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.positiveFiberExtension_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.powerWeight_congr_on_support' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.powerDensity_congr_on_support' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.power_density_entropy_increment_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'EntropicRogersShephard.differenceWeight_ae_zero_of_density_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'EntropicRogersShephard.integral_differenceWeight_mul_eq_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'EntropicRogersShephard.fiberDifferenceDensity_eq_slice_mixture' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'EntropicRogersShephard.fiberDifferenceDensity_zero_of_powerDifference_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'EntropicRogersShephard.fiber_row_entropy_lower_bound_of_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.fiber_row_entropy_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.volume_preserving_coordinateJoin' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.volume_coordinateJoin_image' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.isCompact_joinedFiberBody' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.convex_joinedFiberBody' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.volume_joinedFiberBody' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.uniformDensity_joinedFiberBody' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.crossDifferenceDensity_joinedFiberBody' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'EntropicRogersShephard.differentialEntropy_joinedFiberBody' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.differentialEntropy_joinedFiberDifference' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'EntropicRogersShephard.fiber_body_entropy_increment_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.fiber_difference_entropy_upper_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
 'EntropicRogersShephard.measurableSet_fiberBody' depends on axioms: [propext, Classical.choice, Quot.sound]
 'EntropicRogersShephard.fiberBody_subset_product' depends on axioms: [propext, Classical.choice, Quot.sound]
 'EntropicRogersShephard.isCompact_fiberBody' depends on axioms: [propext, Classical.choice, Quot.sound]
@@ -323,6 +462,15 @@ EntropicRogersShephard.positiveInterior_nonempty {n : ℕ} {f : (Fin n → ℝ) 
 'EntropicRogersShephard.positiveInterior_ae_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
 'EntropicRogersShephard.positiveInterior_nonempty' depends on axioms: [propext, Classical.choice, Quot.sound]
 'EntropicRogersShephard.compact_positiveInterior_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.integrable_kernel_prod_of_bounded_support' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'EntropicRogersShephard.integrable_kernel_mixture_of_bounded_support' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'EntropicRogersShephard.integral_kernel_mixture_of_bounded_support' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
 'EntropicRogersShephard.integral_pair_difference' depends on axioms: [propext, Classical.choice, Quot.sound]
 'EntropicRogersShephard.integral_mul_le_product_of_pair_nonpos' depends on axioms: [propext,
  Classical.choice,
@@ -407,6 +555,31 @@ EntropicRogersShephard.positiveInterior_nonempty {n : ℕ} {f : (Fin n → ℝ) 
 'EntropicRogersShephard.integral_overlapRadius_log_primitive' depends on axioms: [propext, Classical.choice, Quot.sound]
 'EntropicRogersShephard.binomialWeight_unit_ratio' depends on axioms: [propext, Classical.choice, Quot.sound]
 'EntropicRogersShephard.differentialEntropy_uniformSimplexDifference_unit' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'EntropicRogersShephard.measurable_simplexFiberKernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.simplexFiberKernel_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.simplexFiberKernel_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.uniformSimplexDensity_zero_outside_larger_simplex' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'EntropicRogersShephard.simplexFiberKernel_zero_outside_common_support' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'EntropicRogersShephard.isProbabilityDensity_simplexFiberKernel' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'EntropicRogersShephard.isProbabilityDensity_simplex_mixture' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.average_entropy_le_simplex_mixture_entropy' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'EntropicRogersShephard.abs_log_le_of_mem_Icc' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.integrable_log_of_bounded_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.integrable_entropy_simplexFiberKernel' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'EntropicRogersShephard.integrable_negMulLog_simplex_mixture' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.simplex_mixture_entropy_scale_lower_bound' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
 'EntropicRogersShephard.positiveMass_smul' depends on axioms: [propext, Classical.choice, Quot.sound]

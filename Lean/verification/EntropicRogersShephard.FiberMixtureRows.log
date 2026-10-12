@@ -1,0 +1,22 @@
+EntropicRogersShephard/FiberMixtureRows.lean:85:2: warning: Try this:
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+EntropicRogersShephard/FiberMixtureRows.lean:107:8: warning: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+EntropicRogersShephard/FiberMixtureRows.lean:107:8: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+EntropicRogersShephard/FiberMixtureRows.lean:146:60: warning: This simp argument is unused:
+  zero_add
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [hs0, ha, hb', Real.negMulLog_zero, zero_mul, add_zero, mul_zero, differentialEntropy,
+    integral_zero, le_refl]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
