@@ -1,0 +1,78 @@
+{
+  "date": "2026-10-13",
+  "status": "proof_scope_verified",
+  "goal_scope": "Original density inequality, entropy finiteness, independent random-vector laws, exponential-product optimality and all invertible affine equality images.",
+  "requirements": [
+    {
+      "requirement": "General density bound and both finite entropies",
+      "theorem": "EntropicRogersShephard.sharp_entropic_rogers_shephard_density",
+      "evidence": "Compiled and included in the complete axiom audit",
+      "verified": true
+    },
+    {
+      "requirement": "Arbitrary measurable probability spaces and actual independent difference law",
+      "theorem": "EntropicRogersShephard.sharp_entropic_rogers_shephard_random_vectors",
+      "evidence": "Compiled and included in the complete axiom audit",
+      "verified": true
+    },
+    {
+      "requirement": "Exponential-product equality in each dimension",
+      "theorem": "EntropicRogersShephard.sharpness_exponential_product",
+      "evidence": "Compiled and included in the complete axiom audit",
+      "verified": true
+    },
+    {
+      "requirement": "Optimal uniform constant in each dimension",
+      "theorem": "EntropicRogersShephard.entropy_increment_constant_optimal",
+      "evidence": "Compiled and included in the complete axiom audit",
+      "verified": true
+    },
+    {
+      "requirement": "Actual affine pushforward law",
+      "theorem": "EntropicRogersShephard.map_affine_realDensityMeasure",
+      "evidence": "Compiled and included in the complete axiom audit",
+      "verified": true
+    },
+    {
+      "requirement": "Actual affine difference-density transport",
+      "theorem": "EntropicRogersShephard.differenceDensity_affineDensity",
+      "evidence": "Compiled and included in the complete axiom audit",
+      "verified": true
+    },
+    {
+      "requirement": "Every invertible linear equivalence and translation in the equality family",
+      "theorem": "EntropicRogersShephard.sharpness_linearEquiv_affine_exponential_product",
+      "evidence": "Compiled and included in the complete axiom audit",
+      "verified": true
+    },
+    {
+      "requirement": "Combined final statement, preserving every required component",
+      "theorem": "EntropicRogersShephard.complete_sharp_entropic_rogers_shephard",
+      "evidence": "Compiled and included in the complete axiom audit",
+      "verified": true
+    }
+  ],
+  "audited_targets": 446,
+  "standard_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "sorryAx": false,
+  "new_axioms": false,
+  "root_status_comments_corrected": true,
+  "verification_method": "Lean compiler against the pinned, read-only Mathlib build cache; all affected local modules rebuilt after root comment corrections.",
+  "pdf_review": {
+    "pages": 8,
+    "all_pages_rendered_and_visually_inspected": true,
+    "text_and_metadata_inspected": true,
+    "author_bibliography_disclosure_omitted": true,
+    "Conclusion_present": true,
+    "sha256": "42b4b272d226ab92665d29d548faad81f9b89d650348a54d5a07bd67a2478086"
+  },
+  "presentation": {
+    "no_tex_folder": true,
+    "root_README_and_PDF_format_preserved": true
+  },
+  "publication": "This record is committed with the verified sources. Actual remote-commit verification is recorded separately after push."
+}

@@ -32,7 +32,9 @@ for p in sorted(ROOT.rglob('*.lean')):
     if '.lake' not in p.parts:
         records[str(p.relative_to(ROOT))] = hashlib.sha256(p.read_bytes()).hexdigest()
 result = {'audited_theorems': len(expected), 'allowed_axioms': sorted(allowed),
-          'sorryAx': False, 'new_axioms': False, 'full_main_theorem_proved': False,
+          'sorryAx': False, 'new_axioms': False,
+          'full_main_theorem_proved':
+              'EntropicRogersShephard.complete_sharp_entropic_rogers_shephard' in reported,
           'density_main_theorem_proved':
               'EntropicRogersShephard.sharp_entropic_rogers_shephard_density' in reported,
           'probability_law_connection_proved':
@@ -43,7 +45,8 @@ result = {'audited_theorems': len(expected), 'allowed_axioms': sorted(allowed),
               'EntropicRogersShephard.entropy_increment_constant_optimal' in reported,
           'exponential_product_equality_proved':
               'EntropicRogersShephard.sharpness_exponential_product' in reported,
-          'affine_image_equality_proved': False,
+          'affine_image_equality_proved':
+              'EntropicRogersShephard.sharpness_linearEquiv_affine_exponential_product' in reported,
           'full_main_theorem_scope': 'Density inequality, probability-law connection, and sharpness for exponential products and invertible affine images.',
           'source_sha256': records}
 (ROOT / 'verification/axiom-audit.json').write_text(json.dumps(result, indent=2) + '\n')

@@ -1,19 +1,16 @@
 # Lean formalization
 
-The density-form entropic Rogers–Shephard inequality, including both entropy
-integrability conclusions, is proved by
-`EntropicRogersShephard.sharp_entropic_rogers_shephard_density` in
-[GeneralDensityBound.lean](EntropicRogersShephard/GeneralDensityBound.lean).
-It proves the original `SharpEntropicRogersShephard` proposition for every n ≥ 1
-and every log-concave probability density, without extra tail or entropy assumptions.
+The full statement is proved by
+[`complete_sharp_entropic_rogers_shephard`](EntropicRogersShephard/Main.lean).
+Import `EntropicRogersShephard.Main` for the final results.
 
-[ProbabilityLaw.lean](EntropicRogersShephard/ProbabilityLaw.lean) connects the actual
-difference density to the law of independent random vectors and proves
-`sharp_entropic_rogers_shephard_random_vectors`.
-[ExponentialSharpness.lean](EntropicRogersShephard/ExponentialSharpness.lean)
-proves equality for exponential products in every dimension and optimality of the
-constant. The invertible affine equality family and final presentation remain
-in progress.
+`CompleteSharpEntropicRogersShephard` preserves the original general-density
+statement and includes the actual law of independent random-vector differences,
+both entropy integrability conclusions, the actual affine pushforward density,
+all invertible affine images of the exponential-product equality example, and
+optimality of the constant in each dimension. The probability-space statement is
+universe polymorphic. The affine statement takes an arbitrary linear equivalence;
+continuity follows automatically in finite dimension.
 
 The implementation uses Lean `4.35.0-rc3` and Mathlib commit
 `f6090c7095e1e56b3464c1daba5f24631f1290d2`.
@@ -95,6 +92,12 @@ in extension modules which reuse the compiled ingredients during development bui
 | `EntropicRogersShephard/ProductDensity.lean` | Product normalization, log concavity, coordinate moments and entropy additivity, including zero factors |
 | `EntropicRogersShephard/ExponentialExample.lean` | The one-sided exponential, its actual Laplace difference density, and both one-dimensional entropies |
 | `EntropicRogersShephard/ExponentialSharpness.lean` | Exponential-product equality in every dimension and optimality of the constant |
+| `EntropicRogersShephard/AffineVolume.lean` | Inverse-determinant volume scaling and real/nonnegative affine change of variables |
+| `EntropicRogersShephard/AffineDensity.lean` | Normalized affine density, log concavity and the actual difference-convolution transport |
+| `EntropicRogersShephard/AffineEntropy.lean` | Both finite entropies acquire the same determinant correction; their increment is invariant |
+| `EntropicRogersShephard/AffineLaw.lean` | Actual affine pushforward measure and HasLaw transport |
+| `EntropicRogersShephard/AffineSharpness.lean` | Every invertible affine image of the exponential-product example attains the bound |
+| `EntropicRogersShephard/Main.lean` | Combined density, arbitrary probability-space, affine law, equality and optimality statement |
 
 `EntropicRogersShephard/Audit.lean` records axiom dependencies of the proved
 intermediate results.
@@ -247,7 +250,18 @@ h(f_n)=n,\qquad h(g_n)=n(1+\log2),\qquad h(g_n)-h(f_n)=n\log2.
 concavity and both entropy integrability conclusions. The theorem
 `entropy_increment_constant_optimal` then proves that every uniform bound for
 log-concave probability densities in dimension n is at least n log 2.
-The affine equality family remains to be connected.
+The affine equality family is proved. For a continuous linear equivalence A and
+translation b, let J be the absolute determinant of its inverse. The actual
+pushforward density and difference density satisfy
+
+```math
+f_{A,b}(x)=J f(A^{-1}(x-b)),\qquad g_{A,b}(s)=J g(A^{-1}s).
+```
+
+Both entropies acquire the same correction `-log J`, so their increment is
+unchanged. Every finite-dimensional linear equivalence automatically defines a
+continuous linear equivalence; no continuity hypothesis is added to the final
+statement.
 
 ## Build
 
@@ -284,8 +298,8 @@ from source. Compilation logs and source hashes are saved in `verification/`.
 ## Validation
 
 The public proof file and its audit compiled successfully against the pinned,
-already built Mathlib checkout. The audit covers all 422 local theorems
-and the imported Brunn–Minkowski theorem. All 423 depend only on `propext`,
+already built Mathlib checkout. The audit covers all 445 local theorems
+and the imported Brunn–Minkowski theorem. All 446 depend only on `propext`,
 `Classical.choice`, and `Quot.sound`; none depends on `sorryAx` or a new axiom.
 All nine dependency commits match the manifest. The source hashes and audit
 results are in `verification/axiom-audit.json`, with build results in
@@ -293,37 +307,33 @@ results are in `verification/axiom-audit.json`, with build results in
 The audit script also checks that its target list covers every intermediate
 theorem declaration in this project's proof modules.
 
-## Remaining work
+## Final scope and completion
 
-1. Prove entropy-increment invariance under invertible affine transformations,
-   and connect the affine images to the equality family.
-2. Complete the final statement and correct the outdated root-file comments
-   about the density target; rebuild all affected local modules and repeat the
-   full axiom audit.
+All requested connections are proved:
 
-## Remaining-work roadmap
+| Requirement | Evidence |
+| --- | --- |
+| General log-concave probability densities in every n ≥ 1 | `sharp_entropic_rogers_shephard_density` |
+| Both entropy integrability conclusions, derived from the original hypotheses | `GeneralDensityBound.lean` |
+| Actual independent random-vector difference law | `sharp_entropic_rogers_shephard_random_vectors` |
+| Exponential-product equality and optimal constant | `ExponentialSharpness.lean` |
+| Actual affine pushforward density and difference transport | `AffineLaw.lean`, `AffineDensity.lean` |
+| Every invertible affine equality example | `sharpness_linearEquiv_affine_exponential_product` |
+| Combined final statement | `complete_sharp_entropic_rogers_shephard` |
+| Complete axiom and source audit | `verification/axiom-audit.json` |
 
-These are estimated working hours for an implementer experienced in Lean measure
-theory with AI assistance. They include implementation, repairs and verification;
-they are not automatic execution times or a completion guarantee. Updated 2026-10-13.
+The outdated root-file status comments were corrected, affected local modules
+were recompiled against the pinned read-only Mathlib cache, and the final statement
+and every local theorem were audited. All 446 audited targets use only `propext`,
+`Classical.choice` and `Quot.sound`. The declaration list and source hashes match
+the actual compiled source. Mathlib itself was not rebuilt from source.
 
-| Milestone | State | Remaining hours | Difficulty (1–5) |
-| --- | --- | --- | --- |
-| General-density bound and both finite entropies | Proved | 0 | 5 |
-| Independent random-vector difference law | Proved | 0 | 3 |
-| Exponential-product equality and optimality in every dimension | Proved | 0 | 4 |
-| Invertible affine images of the equality family | Pending | 6–12 | 4 |
-| Final statement, comments, rebuild and audit | Pending | 2–4 | 3 |
-
-The remaining estimate is 8–16 working hours, with a planning allowance of
-12–24 hours. At 30 working hours per week, allow about one week.
-The affine change-of-variables API has been located in Mathlib. The inverse
-determinant factor can be defined directly; both entropies acquire the same
-logarithmic correction, which cancels from their increment.
+There are no remaining implementation stages. The earlier time estimates were
+working plans during development. The completion evidence and its scope are in
+`verification/completion-audit.json`.
 
 ## Conclusion
 
-The general-density inequality, finite entropies, independent random-vector law,
-exponential-product equality and optimality of n log 2 are proved. The full goal
-still includes the invertible affine equality family and final presentation and
-verification.
+The sharp inequality, finite entropies, independent random-vector law, exponential
+products, every invertible affine equality example, and optimality are connected
+in one final theorem, with the original generality preserved.

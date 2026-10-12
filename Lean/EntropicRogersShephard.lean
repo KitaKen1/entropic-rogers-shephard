@@ -1,8 +1,9 @@
 /-
 # Intermediate results for the entropic Rogers–Shephard inequality
 
-The full target is defined below as `SharpEntropicRogersShephard`;
-it is not yet proved. All theorems in this file are intermediate results.
+The density target below is proved in `EntropicRogersShephard.GeneralDensityBound`.
+The final probability-law, affine equality and optimality statement is proved in
+`EntropicRogersShephard.Main`. Theorems in this file supply the intermediate results.
 -/
 
 import LeanPool.Isoperimetric.BrunnMinkowski
@@ -889,7 +890,8 @@ noncomputable def differenceDensity {n : ℕ} (f : (Fin n → ℝ) → ℝ)
 
 /-- The full density-form target. Entropy integrability is a conclusion,
 and is deliberately not included among the density assumptions.
-This proposition has not yet been proved in this project. -/
+This proposition is proved by `sharp_entropic_rogers_shephard_density` in
+`EntropicRogersShephard.GeneralDensityBound`. -/
 def SharpEntropicRogersShephard : Prop :=
   ∀ n : ℕ, 0 < n → ∀ f : (Fin n → ℝ) → ℝ,
     IsProbabilityDensity n f → IsLogConcave n f →

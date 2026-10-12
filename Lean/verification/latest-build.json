@@ -16,183 +16,219 @@
   },
   {
     "module": "EntropicRogersShephard",
-    "sha256": "50b4c004a8cb7bf01203e068b21e31606334c841ffb688829de42dce96450607",
-    "status": "reused"
+    "sha256": "84581437e94d6d88730b6c92b6d1db01a486099ab89c41f45a29ea7ab59a9dc9",
+    "seconds": 26.47,
+    "exit_code": 0
   },
   {
     "module": "EntropicRogersShephard.Density",
     "sha256": "167e833af0bde9a85be85fe13d57c6dcf07eeea0434baa08ca3af534ee20d3cf",
-    "status": "reused"
+    "seconds": 16.42,
+    "exit_code": 0
   },
   {
     "module": "EntropicRogersShephard.PowerDensity",
     "sha256": "135ef869e48cbb1207bd00a14a7ef1fa0c1ea7bdb63eca61c1137100562202a2",
-    "status": "reused"
+    "seconds": 6.47,
+    "exit_code": 0
   },
   {
     "module": "EntropicRogersShephard.FiniteSupportLimit",
     "sha256": "1b7a141f8e68cb4caab1d4086abbf144e6bbeaea72a9e43636bbbc2215ba1be4",
-    "status": "reused"
+    "seconds": 4.83,
+    "exit_code": 0
   },
   {
     "module": "EntropicRogersShephard.FiberVolume",
     "sha256": "8d09ab85e68cf0dbdea59476c99bd663713b603526bee1d49a55eb15533a359b",
-    "status": "reused"
+    "seconds": 5.05,
+    "exit_code": 0
   },
   {
     "module": "EntropicRogersShephard.SimplexDensity",
     "sha256": "023dc9698bb5502bb1b2abbe507a10f30150913f2245bf51585cfb47f4b05884",
-    "status": "reused"
+    "seconds": 8.18,
+    "exit_code": 0
   },
   {
     "module": "EntropicRogersShephard.BodyDensity",
     "sha256": "9f6d3dffdc1f6434fd4171ad9cf1b9749401d89e9854d54868b245dbed3b0f9e",
-    "status": "reused"
+    "seconds": 8.8,
+    "exit_code": 0
   },
   {
     "module": "EntropicRogersShephard.BoundedDensity",
     "sha256": "72aba381cd03b14a3bfd8978da339caeae350f5dd3185bf6f754c5ed43395a43",
-    "status": "reused"
+    "seconds": 9.17,
+    "exit_code": 0
   },
   {
     "module": "EntropicRogersShephard.FiberEntropy",
     "sha256": "1c640a601c6df429488c96811afcb1120d7a925f8976b2f72056c64a929663aa",
-    "status": "reused"
+    "seconds": 9.42,
+    "exit_code": 0
   },
   {
     "module": "EntropicRogersShephard.FiberDifference",
     "sha256": "3e685b4c2b075c193ac26fbd7bc7451eda1f4bdb2b4b16a7181139b287ca657b",
-    "status": "reused"
+    "seconds": 54.77,
+    "exit_code": 0
   },
   {
     "module": "EntropicRogersShephard.FiberDifferenceBounds",
     "sha256": "ecac7caa6a0aa6ed4269c9fe363c1749131eda224e91944f8039ed2a0f04ef11",
-    "status": "reused"
+    "seconds": 43.32,
+    "exit_code": 0
   },
   {
     "module": "EntropicRogersShephard.RadialOverlap",
     "sha256": "3031eaa917904233c61e9fcb3e8d5f6330dd545b601cbfdb7af7997222e381d7",
-    "status": "reused"
+    "seconds": 47.59,
+    "exit_code": 0
   },
   {
     "module": "EntropicRogersShephard.OrthantGeometry",
     "sha256": "0478d85395332994a12b68fe84a339816f9b9b6030c46657aad9e95581b1700b",
-    "status": "reused"
+    "seconds": 51.72,
+    "exit_code": 0
   },
   {
     "module": "EntropicRogersShephard.LayerMoments",
     "sha256": "4736b9f8a04f5da4a573208486c932d9e17d2f6a5ce39a35edb4c7011124a82e",
-    "status": "reused"
+    "seconds": 39.58,
+    "exit_code": 0
   },
   {
     "module": "EntropicRogersShephard.LayerNormalization",
     "sha256": "32716df5943dd997d99606663f87fc0fe33f68481fb464f11216fe1e823db3fc",
-    "status": "reused"
+    "seconds": 16.45,
+    "exit_code": 0
   },
   {
     "module": "EntropicRogersShephard.LayerCoefficients",
     "sha256": "2c7da5e264de0c99258b535dc42402ced3b97e0b4b24da43cf1abdf1802ee5b2",
-    "status": "reused"
+    "seconds": 13.22,
+    "exit_code": 0
   },
   {
     "module": "EntropicRogersShephard.LayerLogMoments",
     "sha256": "c65b4623ba7a2c72b80e5fe4c420789701b4afb43da09f375c1b986c47bdd239",
-    "status": "reused"
+    "seconds": 23.86,
+    "exit_code": 0
   },
   {
     "module": "EntropicRogersShephard.BodyLayers",
     "sha256": "ac6ce382d822ace5f575388ea2ffcad22b9fb09019659fa5de8e41bb6ef47436",
-    "status": "reused"
+    "seconds": 30.76,
+    "exit_code": 0
   },
   {
     "module": "EntropicRogersShephard.BodyMoments",
     "sha256": "0bbe3985bfd7d70b30f4cbdca317610e33526c20aaa34ca3af2859e7e969d828",
-    "status": "reused"
+    "seconds": 42.24,
+    "exit_code": 0
   },
   {
     "module": "EntropicRogersShephard.MonotoneTilt",
     "sha256": "ff95daf0c9caefb6daf0d39735a0f984b1a1719c1f47696be315f6d2daa31f82",
-    "status": "reused"
+    "seconds": 37.4,
+    "exit_code": 0
   },
   {
     "module": "EntropicRogersShephard.WeightedTilt",
     "sha256": "f76669efcde0da3b60ad894b3dea577fe3a06c4d7f984c98af41bfccc1f1b540",
-    "status": "reused"
+    "seconds": 29.31,
+    "exit_code": 0
   },
   {
     "module": "EntropicRogersShephard.BodyEntropyBound",
     "sha256": "8739d46b405ac90e0ba5d571443a46486f49441fb8b54dce916820ebbf86287b",
-    "status": "reused"
+    "seconds": 30.59,
+    "exit_code": 0
   },
   {
     "module": "EntropicRogersShephard.FiberTransport",
     "sha256": "8f5cdf1bc6df77385f3822da0e1a4b566e2ec4b377f7cfb3dcbbaf755275e207",
-    "status": "reused"
+    "seconds": 19.17,
+    "exit_code": 0
   },
   {
     "module": "EntropicRogersShephard.DensityMeasure",
     "sha256": "02f3025145694fbe757d60446d2151543feb74adfe03eb30f4d33f6a4e5093cb",
-    "status": "reused"
+    "seconds": 14.47,
+    "exit_code": 0
   },
   {
     "module": "EntropicRogersShephard.BoundedMixture",
     "sha256": "e14bd4316d9fb33fd9abe38edb0051abee9efe1b0da40c94ffeab5bb6e39ff46",
-    "status": "reused"
+    "seconds": 17.88,
+    "exit_code": 0
   },
   {
     "module": "EntropicRogersShephard.MixtureMass",
     "sha256": "353b619fc150a3e8fccd9b2accb6c1483008bcb398a9aec14d92d0f51f34a162",
-    "status": "reused"
+    "seconds": 17.59,
+    "exit_code": 0
   },
   {
     "module": "EntropicRogersShephard.SimplexEntropy",
     "sha256": "242d5b30e00d1611ed4cb0f72cee5ebf077c1197431159592f06e30fdae69837",
-    "status": "reused"
+    "seconds": 14.47,
+    "exit_code": 0
   },
   {
     "module": "EntropicRogersShephard.SimplexScaling",
     "sha256": "7015e289ec78893a43c6dd8425fdc29a88a2865e394c7724052072c089a81b7f",
-    "status": "reused"
+    "seconds": 12.09,
+    "exit_code": 0
   },
   {
     "module": "EntropicRogersShephard.SimplexKernel",
     "sha256": "cefd9165f4d0b37154881fa71e0e17a3ecdfe95d801595e1dacd468ec99e5b81",
-    "status": "reused"
+    "seconds": 11.25,
+    "exit_code": 0
   },
   {
     "module": "EntropicRogersShephard.SimplexMixtureEntropy",
     "sha256": "5511bcb5c16b079d64fb078d07b3f127ffdc49d653e3bfce8b03d9e89154ce9f",
-    "status": "reused"
+    "seconds": 7.91,
+    "exit_code": 0
   },
   {
     "module": "EntropicRogersShephard.FiberMixtureRows",
     "sha256": "eccc7ccd4a4b597bd5f47783d2ccfd121e9f51fd7dfd5f4cf4d2ba75baa53e2a",
-    "status": "reused"
+    "seconds": 8.31,
+    "exit_code": 0
   },
   {
     "module": "EntropicRogersShephard.FiberCancellation",
     "sha256": "25f15cb745a5db57f486a20b7c81ebc4d106d33458f1ca2d178db5025dd511db",
-    "status": "reused"
+    "seconds": 8.78,
+    "exit_code": 0
   },
   {
     "module": "EntropicRogersShephard.FiberExtension",
     "sha256": "e453f9b626b81b80891d0a3efe7ea566ccc137aebdcbf8b4a42bfd1a726066a5",
-    "status": "reused"
+    "seconds": 10.67,
+    "exit_code": 0
   },
   {
     "module": "EntropicRogersShephard.CompactConvergence",
     "sha256": "6a5ab3684a8e3a73fa1ba7fc3692ebae27b47e83f182ebbecc33cf48ce4af53a",
-    "status": "reused"
+    "seconds": 6.69,
+    "exit_code": 0
   },
   {
     "module": "EntropicRogersShephard.ConcaveApproximation",
     "sha256": "43bec3b6f7410a66a20091051647684c114641090ab778973987062e5a9f3de4",
-    "status": "reused"
+    "seconds": 10.4,
+    "exit_code": 0
   },
   {
     "module": "EntropicRogersShephard.CompactExponentialBound",
     "sha256": "7897ebea5e00539cca37b5b1dff900c4c4d8cd9e6d3ba955da1c0d6d5a9d2142",
-    "status": "reused"
+    "seconds": 6.96,
+    "exit_code": 0
   },
   {
     "module": "EntropicRogersShephard.ConvexVolume",
@@ -212,72 +248,121 @@
   {
     "module": "EntropicRogersShephard.LogConcavity",
     "sha256": "c93b314fe1332f78c6c3d00ebac933518dc217dff72b58c46684821c25ccdb08",
-    "status": "reused"
+    "seconds": 6.2,
+    "exit_code": 0
   },
   {
     "module": "EntropicRogersShephard.LocalLogConcave",
     "sha256": "7c6ff8cdb50c80d7a45a96d12ef2b58efa06306bb71075fa7c71c82e433f3153",
-    "status": "reused"
+    "seconds": 6.02,
+    "exit_code": 0
   },
   {
     "module": "EntropicRogersShephard.GlobalDensityBound",
     "sha256": "b0c9b0e557b854a0ece156a9126c93089865b34c2b67c4ea20f67bb40d3cf3a7",
-    "status": "reused"
+    "seconds": 5.92,
+    "exit_code": 0
   },
   {
     "module": "EntropicRogersShephard.ExponentialTails",
     "sha256": "80fd00bfb58c6a560249b821265bc7c4bcbb9342605cc8609f40e60bf8341900",
-    "status": "reused"
+    "seconds": 7.29,
+    "exit_code": 0
   },
   {
     "module": "EntropicRogersShephard.ExponentialIntegrability",
     "sha256": "c810299dc11f2c6b5a4a718cf0c18f90ae133a0444272b12229ef989f156307b",
-    "status": "reused"
+    "seconds": 8.22,
+    "exit_code": 0
   },
   {
     "module": "EntropicRogersShephard.ExponentialConvergence",
     "sha256": "6fbdcb968c9037b7df26a6777247849f19b38e9996f09c46cd3d8307cfaea771",
-    "status": "reused"
+    "seconds": 8.09,
+    "exit_code": 0
   },
   {
     "module": "EntropicRogersShephard.DominatedConvolution",
     "sha256": "d90361f526e42a8ae66c047ced477d0d330639ac7a7b255efaf1ad145f5cdad2",
-    "status": "reused"
+    "seconds": 6.41,
+    "exit_code": 0
   },
   {
     "module": "EntropicRogersShephard.CompactRestrictions",
     "sha256": "fb347366784263822dece8e691b1cb559f4e1442061c6b5b57478ee1d7115c06",
-    "status": "reused"
+    "seconds": 6.03,
+    "exit_code": 0
   },
   {
     "module": "EntropicRogersShephard.GeneralDensityBound",
     "sha256": "52d7a4e84b3e4041504c36551dac988c9e3dd054744e4dd0b87a31129c535c22",
-    "status": "reused"
+    "seconds": 8.64,
+    "exit_code": 0
   },
   {
     "module": "EntropicRogersShephard.ProbabilityLaw",
     "sha256": "980172aa50de30bca9521b565845c38c549eea54368b3a63ba51fc75fa65ee2e",
-    "status": "reused"
+    "seconds": 6.85,
+    "exit_code": 0
+  },
+  {
+    "module": "EntropicRogersShephard.AffineVolume",
+    "sha256": "e4458e92c9b4cfa763bf8fc38bc775d22687243885e159cbe57b484520d3d307",
+    "seconds": 9.14,
+    "exit_code": 0
+  },
+  {
+    "module": "EntropicRogersShephard.AffineDensity",
+    "sha256": "42fb957c09c386f4cf13016ee8d91e62aa1c974f1a9a045bad68f370cc949161",
+    "seconds": 12.14,
+    "exit_code": 0
+  },
+  {
+    "module": "EntropicRogersShephard.AffineEntropy",
+    "sha256": "3e845a79ef780209e08eee3ff699dd2035841ed9fe7bb57b57a8ceeb5b1e4e4d",
+    "seconds": 11.22,
+    "exit_code": 0
+  },
+  {
+    "module": "EntropicRogersShephard.AffineLaw",
+    "sha256": "1bb73d0d1ddbf1702e86a9d11c4ebac2a57bb7a5fb672c7d1796d525b3c28dcb",
+    "seconds": 13.38,
+    "exit_code": 0
   },
   {
     "module": "EntropicRogersShephard.ProductDensity",
     "sha256": "6c52800f6d52828d712cd54ad5060ecae63e9b759372c1582a778dd794917d4c",
-    "status": "reused"
+    "seconds": 7.5,
+    "exit_code": 0
   },
   {
     "module": "EntropicRogersShephard.ExponentialExample",
     "sha256": "5d048cb51c59cf92544c2b570ee87ecb5e60cb79ac1e890fb191263a64996bf2",
-    "status": "reused"
+    "seconds": 7.05,
+    "exit_code": 0
   },
   {
     "module": "EntropicRogersShephard.ExponentialSharpness",
     "sha256": "75832716d8bef23b9e3ca2622f536325d06545629a4cf302f30f4c3aa35dbacb",
-    "status": "reused"
+    "seconds": 6.7,
+    "exit_code": 0
+  },
+  {
+    "module": "EntropicRogersShephard.AffineSharpness",
+    "sha256": "91a68610921fdfb1ad9f75f1e8f8bbf6b57a9e36ef09875b01b40f5da2dfa6c1",
+    "seconds": 7.88,
+    "exit_code": 0
+  },
+  {
+    "module": "EntropicRogersShephard.Main",
+    "sha256": "ecda92d8a5f8474820fc2c6ba27dd4009b77d30e760467fc5467a45f604cf1ce",
+    "seconds": 8.5,
+    "exit_code": 0
   },
   {
     "module": "EntropicRogersShephard.Audit",
-    "sha256": "aaaf1bf7713ab49ae4a8509b70f9384a67c787724f08801262296efb46d2ba82",
-    "seconds": 24.2,
+    "sha256": "b6450953aaad2aeed20c661be1150b9ed06e5d6e009cde857e316068bbd567e2",
+    "seconds": 8.53,
     "exit_code": 0
   }
 ]

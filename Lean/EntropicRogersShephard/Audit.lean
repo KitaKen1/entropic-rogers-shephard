@@ -1,3 +1,4 @@
+import EntropicRogersShephard.Main
 import EntropicRogersShephard.ExponentialSharpness
 import EntropicRogersShephard.ProbabilityLaw
 import EntropicRogersShephard.BodyEntropyBound
@@ -36,6 +37,11 @@ import EntropicRogersShephard.MonotoneTilt
 
 #check EntropicRogersShephard.sharpness_exponential_product
 #check EntropicRogersShephard.entropy_increment_constant_optimal
+
+#check EntropicRogersShephard.CompleteSharpEntropicRogersShephard
+#check EntropicRogersShephard.complete_sharp_entropic_rogers_shephard
+#check EntropicRogersShephard.sharpness_linearEquiv_affine_exponential_product
+#check EntropicRogersShephard.map_affine_realDensityMeasure
 
 #print axioms brunn_minkowski
 #print axioms EntropicRogersShephard.harmonic_term_bound
@@ -106,6 +112,28 @@ import EntropicRogersShephard.MonotoneTilt
 #print axioms EntropicRogersShephard.isCompact_bodyOverlap
 #print axioms EntropicRogersShephard.measurableSet_bodyOverlap
 #print axioms EntropicRogersShephard.weighted_mem_bodyOverlap
+#print axioms EntropicRogersShephard.measurable_affineDensity
+#print axioms EntropicRogersShephard.affineDensity_nonneg
+#print axioms EntropicRogersShephard.integrable_affineDensity
+#print axioms EntropicRogersShephard.integral_affineDensity
+#print axioms EntropicRogersShephard.isProbabilityDensity_affineDensity
+#print axioms EntropicRogersShephard.affine_inverse_combo
+#print axioms EntropicRogersShephard.isLogConcave_affineDensity
+#print axioms EntropicRogersShephard.affine_inverse_difference
+#print axioms EntropicRogersShephard.differenceDensity_affineDensity
+#print axioms EntropicRogersShephard.affineDensity_entropy
+#print axioms EntropicRogersShephard.entropy_increment_affineDensity
+#print axioms EntropicRogersShephard.logconcave_affine_entropy_increment
+#print axioms EntropicRogersShephard.map_affine_realDensityMeasure
+#print axioms EntropicRogersShephard.hasLaw_affineDensity
+#print axioms EntropicRogersShephard.sharpness_affine_exponential_product
+#print axioms EntropicRogersShephard.sharpness_linearEquiv_affine_exponential_product
+#print axioms EntropicRogersShephard.hasLaw_affine_exponential_product
+#print axioms EntropicRogersShephard.affineJacobian_pos
+#print axioms EntropicRogersShephard.map_affine_inverse_linear_volume
+#print axioms EntropicRogersShephard.integral_affine_inverse
+#print axioms EntropicRogersShephard.integrable_affine_inverse
+#print axioms EntropicRogersShephard.lintegral_affine_inverse
 #print axioms EntropicRogersShephard.isCompact_bodyDifferenceSupport
 #print axioms EntropicRogersShephard.uniformBodyDifference_eq_zero_of_not_mem
 #print axioms EntropicRogersShephard.uniformBodyDifference_eq_overlap
@@ -352,6 +380,7 @@ import EntropicRogersShephard.MonotoneTilt
 #print axioms EntropicRogersShephard.positiveInterior_ae_eq
 #print axioms EntropicRogersShephard.positiveInterior_nonempty
 #print axioms EntropicRogersShephard.compact_positiveInterior_bounds
+#print axioms EntropicRogersShephard.complete_sharp_entropic_rogers_shephard
 #print axioms EntropicRogersShephard.integrable_kernel_prod_of_bounded_support
 #print axioms EntropicRogersShephard.integrable_kernel_mixture_of_bounded_support
 #print axioms EntropicRogersShephard.integral_kernel_mixture_of_bounded_support

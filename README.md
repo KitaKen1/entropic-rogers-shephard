@@ -9,7 +9,7 @@ The entropic Rogers–Shephard inequality asks for the following assertion.
 >
 > The constant is best possible in every dimension. Products of one-sided exponential distributions, and their invertible affine images, attain equality.
 
-All logarithms are natural, and $`h`$ denotes differential entropy. This repository presents a proposed proof in the [PDF manuscript](PDF/entropic-rogers-shephard.pdf). A proof sketch follows.
+All logarithms are natural, and $`h`$ denotes differential entropy. This repository contains the [PDF proof note](PDF/entropic-rogers-shephard.pdf) and its completed Lean formalization. A proof sketch follows.
 
 ## Proof sketch
 
@@ -62,19 +62,17 @@ the bound follows on that sublevel set. Common exponential bounds for the origin
 
 ## Lean formalization
 
-The general-density inequality and the connection to independent random vectors
-are proved in [Lean/](Lean/README.md), with fixed Lean and Mathlib versions.
-[GeneralDensityBound.lean](Lean/EntropicRogersShephard/GeneralDensityBound.lean)
-proves the density-form target, deriving both entropy integrability conclusions
-from log concavity and probability normalization.
-[ProbabilityLaw.lean](Lean/EntropicRogersShephard/ProbabilityLaw.lean) proves that
-the difference of independent random vectors with this density has the actual
-difference-convolution density, and connects it to the entropy bound.
+The final theorem
+[`complete_sharp_entropic_rogers_shephard`](Lean/EntropicRogersShephard/Main.lean)
+combines the general-density inequality, both finite entropies, the independent
+random-vector difference law, all invertible affine images of the exponential
+equality example, and optimality of the constant. Entropy integrability and tail
+bounds are conclusions, rather than additional hypotheses.
 
-[ExponentialSharpness.lean](Lean/EntropicRogersShephard/ExponentialSharpness.lean)
-computes the exponential-product equality example in every dimension and proves
-that the constant cannot be improved. Its invertible affine images and the final
-presentation remain to be formalized. The work estimates are in the Lean README.
+The project uses fixed Lean and Mathlib versions. All 445 local theorems and the
+imported Brunn–Minkowski theorem passed the 446-target axiom audit, with no
+`sorryAx` or added axioms. Build instructions and the module map are in
+[Lean/README.md](Lean/README.md).
 
 ## Conclusion
 

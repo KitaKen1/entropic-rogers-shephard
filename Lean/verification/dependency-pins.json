@@ -1,0 +1,65 @@
+[
+  {
+    "package": "plausible",
+    "expected": "fb13df72ecefd8ddbf9291021d7f33a8673eb57b",
+    "actual": "fb13df72ecefd8ddbf9291021d7f33a8673eb57b",
+    "tracked_source_clean": true,
+    "build_cache_present": true
+  },
+  {
+    "package": "LeanSearchClient",
+    "expected": "29ff470276c725ae01505d55b17148c18fc7dfd3",
+    "actual": "29ff470276c725ae01505d55b17148c18fc7dfd3",
+    "tracked_source_clean": true,
+    "build_cache_present": true
+  },
+  {
+    "package": "importGraph",
+    "expected": "10a2cfff285e1c7c2ebc49c0ba22cab0f3c58ee5",
+    "actual": "10a2cfff285e1c7c2ebc49c0ba22cab0f3c58ee5",
+    "tracked_source_clean": true,
+    "build_cache_present": true
+  },
+  {
+    "package": "proofwidgets",
+    "expected": "c643bbb3c24f8a25f9c14e3a6b1ceb13d01f3de1",
+    "actual": "c643bbb3c24f8a25f9c14e3a6b1ceb13d01f3de1",
+    "tracked_source_clean": true,
+    "build_cache_present": true
+  },
+  {
+    "package": "aesop",
+    "expected": "a90fbf7b02ff06a0deebf74088dff9e5fe02c9ea",
+    "actual": "a90fbf7b02ff06a0deebf74088dff9e5fe02c9ea",
+    "tracked_source_clean": true,
+    "build_cache_present": true
+  },
+  {
+    "package": "Qq",
+    "expected": "37b0ba0b26109cf9f9c541f0f9557e50cfa1a3b9",
+    "actual": "37b0ba0b26109cf9f9c541f0f9557e50cfa1a3b9",
+    "tracked_source_clean": true,
+    "build_cache_present": true
+  },
+  {
+    "package": "batteries",
+    "expected": "33131f4fb10067cb3009bf4db615d9680c1ccd6b",
+    "actual": "33131f4fb10067cb3009bf4db615d9680c1ccd6b",
+    "tracked_source_clean": true,
+    "build_cache_present": true
+  },
+  {
+    "package": "Cli",
+    "expected": "843844fa601dd56767b1eb22b7ada5b64d5e567a",
+    "actual": "843844fa601dd56767b1eb22b7ada5b64d5e567a",
+    "tracked_source_clean": true,
+    "build_cache_present": false
+  },
+  {
+    "package": "mathlib",
+    "expected": "f6090c7095e1e56b3464c1daba5f24631f1290d2",
+    "actual": "f6090c7095e1e56b3464c1daba5f24631f1290d2",
+    "tracked_source_clean": true,
+    "build_cache_present": true
+  }
+]
