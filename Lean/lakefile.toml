@@ -12,4 +12,4 @@ name = "LeanPool"
 
 [[lean_lib]]
 name = "EntropicRogersShephard"
-roots = ["EntropicRogersShephard", "EntropicRogersShephard.SimplexDensity"]
+roots = ["EntropicRogersShephard", "EntropicRogersShephard.LayerNormalization"]

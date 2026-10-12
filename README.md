@@ -66,7 +66,8 @@ An intermediate-results library is being developed in [Lean/](Lean/README.md), w
 fixed Lean and Mathlib versions. It includes simplex geometry, finite binomial and
 harmonic estimates, integer log moments, and entropy convergence tools. The
 simplex overlap formula is now connected to a normalized difference density with
-finite entropy. The full inequality is not yet formally proved; the remaining
+finite entropy, orthant superlevel volumes, and an integer-moment normalization
+identity obtained by layer cake. The full inequality is not yet formally proved; the remaining
 analytic connections and a work estimate are listed in the Lean project README.
 
 ## Conclusion

@@ -27,13 +27,28 @@
   {
     "module": "EntropicRogersShephard.SimplexDensity",
     "sha256": "023dc9698bb5502bb1b2abbe507a10f30150913f2245bf51585cfb47f4b05884",
-    "seconds": 120.59,
+    "status": "reused"
+  },
+  {
+    "module": "EntropicRogersShephard.OrthantGeometry",
+    "sha256": "0478d85395332994a12b68fe84a339816f9b9b6030c46657aad9e95581b1700b",
+    "status": "reused"
+  },
+  {
+    "module": "EntropicRogersShephard.LayerMoments",
+    "sha256": "4736b9f8a04f5da4a573208486c932d9e17d2f6a5ce39a35edb4c7011124a82e",
+    "status": "reused"
+  },
+  {
+    "module": "EntropicRogersShephard.LayerNormalization",
+    "sha256": "32716df5943dd997d99606663f87fc0fe33f68481fb464f11216fe1e823db3fc",
+    "seconds": 170.01,
     "exit_code": 0
   },
   {
     "module": "EntropicRogersShephard.Audit",
-    "sha256": "12aebddb71ca958d1f70dba91e125bf99253248d65b7c6cd4cbe54df1bd43f30",
-    "seconds": 249.27,
+    "sha256": "4b622e8c1c0f293c096737b80f4091b5a7f987b3b89e6f9878201a07847b8726",
+    "seconds": 147.51,
     "exit_code": 0
   }
 ]

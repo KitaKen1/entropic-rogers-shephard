@@ -1,5 +1,5 @@
 {
-  "audited_theorems": 100,
+  "audited_theorems": 131,
   "allowed_axioms": [
     "Classical.choice",
     "Quot.sound",
@@ -9,8 +9,11 @@
   "new_axioms": false,
   "full_main_theorem_proved": false,
   "source_sha256": {
-    "EntropicRogersShephard/Audit.lean": "12aebddb71ca958d1f70dba91e125bf99253248d65b7c6cd4cbe54df1bd43f30",
+    "EntropicRogersShephard/Audit.lean": "4b622e8c1c0f293c096737b80f4091b5a7f987b3b89e6f9878201a07847b8726",
     "EntropicRogersShephard/Density.lean": "167e833af0bde9a85be85fe13d57c6dcf07eeea0434baa08ca3af534ee20d3cf",
+    "EntropicRogersShephard/LayerMoments.lean": "4736b9f8a04f5da4a573208486c932d9e17d2f6a5ce39a35edb4c7011124a82e",
+    "EntropicRogersShephard/LayerNormalization.lean": "32716df5943dd997d99606663f87fc0fe33f68481fb464f11216fe1e823db3fc",
+    "EntropicRogersShephard/OrthantGeometry.lean": "0478d85395332994a12b68fe84a339816f9b9b6030c46657aad9e95581b1700b",
     "EntropicRogersShephard/SimplexDensity.lean": "023dc9698bb5502bb1b2abbe507a10f30150913f2245bf51585cfb47f4b05884",
     "EntropicRogersShephard.lean": "50b4c004a8cb7bf01203e068b21e31606334c841ffb688829de42dce96450607",
     "LeanPool/Isoperimetric/Basic.lean": "53c395d2a914ed43b03704d4fa8448cff777bfc611662e045ff301f155ca9800",

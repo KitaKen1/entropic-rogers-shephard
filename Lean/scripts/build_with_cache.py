@@ -44,7 +44,7 @@ env = os.environ.copy()
 env['LEAN_PATH'] = os.pathsep.join(map(str, paths))
 sources = {str(p.relative_to(ROOT).with_suffix('')).replace('/', '.'): p
            for p in ROOT.rglob('*.lean') if '.lake' not in p.parts}
-targets = args.modules or ['EntropicRogersShephard.SimplexDensity', 'EntropicRogersShephard.Audit']
+targets = args.modules or ['EntropicRogersShephard.LayerNormalization', 'EntropicRogersShephard.Audit']
 ordered = []
 seen = set()
 
@@ -98,6 +98,8 @@ for module, source in ordered:
     if log:
         print(log, flush=True)
     if process.returncode:
+        # Never allow an interrupted or failed build artifact to be reused.
+        output.unlink(missing_ok=True)
         (log_dir / 'latest-build.json').write_text(json.dumps(results, indent=2) + '\n')
         raise SystemExit(process.returncode)
 (log_dir / 'latest-build.json').write_text(json.dumps(results, indent=2) + '\n')

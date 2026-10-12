@@ -11,8 +11,8 @@ The implementation uses Lean `4.35.0-rc3` and Mathlib commit
 ## Proof sections
 
 The initial geometric and integral ingredients are in `EntropicRogersShephard.lean`,
-divided into the following sections. The density connections are in two extension
-modules which reuse that compiled module during development builds.
+divided into the following sections. The density and level-set connections are
+in extension modules which reuse the compiled ingredients during development builds.
 
 | Section | Content |
 | --- | --- |
@@ -36,6 +36,9 @@ modules which reuse that compiled module during development builds.
 | --- | --- |
 | `EntropicRogersShephard/Density.lean` | Difference-convolution measurability, integrability and normalization; uniform densities; positive simplex volumes; uniform-simplex entropy |
 | `EntropicRogersShephard/SimplexDensity.lean` | Pointwise simplex-difference density, normalization, compact support and finite entropy; coefficient uniqueness from a polynomial normalization identity |
+| `EntropicRogersShephard/OrthantGeometry.lean` | Sign-flip transport, two coordinate-simplex blocks, null intersections between distinct orthants, exact closed-superlevel volumes |
+| `EntropicRogersShephard/LayerMoments.lean` | Bounded weighted layer cake and all positive integer radius moments |
+| `EntropicRogersShephard/LayerNormalization.lean` | Real superlevel-volume polynomial and its moment normalization from the actual difference density |
 
 `EntropicRogersShephard/Audit.lean` records axiom dependencies of the proved
 intermediate results.
@@ -51,11 +54,30 @@ where `V_m` is the unit simplex volume. Its entropy is finite, and the uniform
 simplex has entropy `m log a + log V_m`. The unit volume remains symbolic;
 positivity follows from an included box, without a factorial volume calculation.
 
-The level-volume polynomial still needs to be derived from orthant geometry.
-`layer_coefficients_forced_by_normalization` proves coefficient uniqueness **given**
-the resulting layer-cake identity; that analytic identity is not yet proved.
-The actual simplex-difference entropy has not yet been identified with the
-harmonic formula, so the harmonic-average comparison remains an intermediate result.
+The closed-superlevel volume is now proved by splitting over all coordinate
+orthants. Write `V_S` and `V_{Sᶜ}` for the unit simplex volumes on the two coordinate
+blocks. For `0 < t < min(a,b)`,
+
+```math
+W_m(a,b,t)=\sum_{S\subseteq\{1,\ldots,m\}}
+  V_S V_{S^c}(a-t)^{|S|}(b-t)^{|S^c|}
+  =\operatorname{vol}\{z:R_{a,b}(z)\ge t\}.
+```
+
+Distinct closed orthants overlap only on null coordinate hyperplanes. The
+implementation sums over the coordinate subsets directly, avoiding a permutation
+argument to identify each block volume by dimension. Weighted layer cake then
+gives the actual moment-normalization identity for every `a ≥ b > 0`, `m ≥ 1`:
+
+```math
+\int_0^b W_m(a,b,t)\,m t^{m-1}\,dt = a^m b^m V_m.
+```
+
+Binomial expansion of `W_m(1+s,1,t)` and evaluation with the integer Beta formulas
+still need to turn this integral identity into the polynomial hypothesis of
+`layer_coefficients_forced_by_normalization`. The logarithmic moment and the
+actual simplex-difference entropy have not yet been identified with the harmonic
+formula, so the harmonic-average comparison remains an intermediate result.
 
 ## Build
 
@@ -85,8 +107,8 @@ from source. Compilation logs and source hashes are saved in `verification/`.
 ## Validation
 
 The public proof file and its audit compiled successfully against the pinned,
-already built Mathlib checkout. The audit covers all 99 intermediate theorems
-and the imported Brunn–Minkowski theorem. All 100 depend only on `propext`,
+already built Mathlib checkout. The audit covers all 130 intermediate theorems
+and the imported Brunn–Minkowski theorem. All 131 depend only on `propext`,
 `Classical.choice`, and `Quot.sound`; none depends on `sorryAx` or a new axiom.
 All nine dependency commits match the manifest. The source hashes and audit
 results are in `verification/axiom-audit.json`, with build results in
@@ -98,8 +120,9 @@ theorem declaration in this project's proof modules.
 
 1. Connect the density formulas to the difference pushforward of product probability
    measures, for the final probability-variable statement.
-2. Integrate the simplex overlap superlevels over coordinate orthants and identify
-   the difference entropy with the finite harmonic formula.
+2. Expand the proved orthant-volume polynomial, identify the coefficients with
+   Beta moments, and evaluate the logarithmic moment to obtain the harmonic
+   difference-entropy formula.
 3. Prove the convex-body entropy upper bound using Brunn–Minkowski and level sets.
 4. Connect the simplex-fiber mixture calculation to the entropy increment.
 5. Normalize the power approximations, control convolution limits and exponential
@@ -115,19 +138,20 @@ They are not a prediction of automatic execution time. Updated 2026-10-12.
 | Order | Milestone | Remaining hours | Difficulty (1–5) |
 | --- | --- | --- | --- |
 | 1 | Density formulas to probability laws | 6–12 | 3 |
-| 2 | Orthant superlevels and simplex-difference entropy formula | 18–35 | 5 |
+| 2 | Binomial/Beta coefficient extraction and simplex-difference entropy | 14–28 | 5 |
 | 3 | Convex-body entropy upper bound | 14–28 | 4 |
 | 4 | Simplex-fiber lift and entropy cancellation | 16–32 | 4 |
 | 5 | General log-concave densities and tail limits | 22–48 | 5 |
 | 6 | Sharpness, final theorem and audit | 8–16 | 4 |
 
-The remaining total is 84–171 hours; a contingency allowance gives a planning
-range of 110–220 hours. At 30 working hours per week, this is about 4–8 weeks.
+The remaining total is 80–164 hours; a contingency allowance gives a planning
+range of 100–210 hours. At 30 working hours per week, this is about 4–7 weeks.
 Milestones 2 and 3 feed into 4, then 5 and 6. The general-density and tail-limit
 connections carry the greatest uncertainty. The next central milestone is 2.
 
 ## Conclusion
 
-The geometric overlap formula now gives an actual normalized difference density
-with finite entropy. Completion still requires its harmonic entropy formula, the
-convex-body upper bound, the lift and the general-density limits listed above.
+The actual difference density is connected to the orthant superlevel volumes and
+their normalized integer moment. Completion still requires coefficient extraction,
+the harmonic entropy formula, the convex-body upper bound, the lift and the
+general-density limits listed above.
