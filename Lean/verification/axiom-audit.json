@@ -1,0 +1,19 @@
+{
+  "audited_theorems": 69,
+  "allowed_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "sorryAx": false,
+  "new_axioms": false,
+  "full_main_theorem_proved": false,
+  "source_sha256": {
+    "EntropicRogersShephard/Audit.lean": "7438f830017e31cf7fc61f9f10837c49fec025c782e22741abcfe6f7c94beefc",
+    "EntropicRogersShephard.lean": "50b4c004a8cb7bf01203e068b21e31606334c841ffb688829de42dce96450607",
+    "LeanPool/Isoperimetric/Basic.lean": "53c395d2a914ed43b03704d4fa8448cff777bfc611662e045ff301f155ca9800",
+    "LeanPool/Isoperimetric/BrunnMinkowski.lean": "613777d3f642a0e53c93d7e77c06e1ee7ca73417bbf781709e55b708fcee383d",
+    "LeanPool/Isoperimetric/PrekopaLeindler.lean": "3841617c2611a6cfcafa653e0a7cbe36a17168bbc8601de8ae5145150720b9af",
+    "LeanPool.lean": "506d9e02e48f88595a8ee40fef46c1169d1f7df8898453ca8b4209d04fc8f1c8"
+  }
+}

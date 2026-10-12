@@ -60,6 +60,14 @@ Write $`f\propto e^{-V}`$ with $`V\ge0`$ convex. On each fixed compact sublevel 
 
 the bound follows on that sublevel set. Common exponential bounds for the original and difference densities justify entropy convergence as $`R\to\infty`$.
 
+## Lean formalization
+
+An intermediate-results library is being developed in [Lean/](Lean/README.md), with
+fixed Lean and Mathlib versions. It includes simplex geometry, finite binomial and
+harmonic estimates, integer log moments, and entropy convergence tools. The full
+inequality is not yet formally proved; the remaining analytic connections are
+listed in the Lean project README.
+
 ## Conclusion
 
 The argument gives $`h(X-X')-h(X)\le n\log2`$ for every log-concave probability density on $`\mathbb R^n`$. For a vector of independent unit exponential variables, the difference density is a product of Laplace densities and the entropy increment equals $`n\log2`$. Thus the constant is sharp.

@@ -1,0 +1,14 @@
+name = "entropicRogersShephard"
+version = "0.1.0"
+defaultTargets = ["EntropicRogersShephard"]
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4"
+rev = "f6090c7095e1e56b3464c1daba5f24631f1290d2"
+
+[[lean_lib]]
+name = "LeanPool"
+
+[[lean_lib]]
+name = "EntropicRogersShephard"
