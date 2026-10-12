@@ -64,9 +64,10 @@ the bound follows on that sublevel set. Common exponential bounds for the origin
 
 An intermediate-results library is being developed in [Lean/](Lean/README.md), with
 fixed Lean and Mathlib versions. It includes simplex geometry, finite binomial and
-harmonic estimates, integer log moments, and entropy convergence tools. The full
-inequality is not yet formally proved; the remaining analytic connections are
-listed in the Lean project README.
+harmonic estimates, integer log moments, and entropy convergence tools. The
+simplex overlap formula is now connected to a normalized difference density with
+finite entropy. The full inequality is not yet formally proved; the remaining
+analytic connections and a work estimate are listed in the Lean project README.
 
 ## Conclusion
 

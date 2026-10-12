@@ -1,4 +1,17 @@
 EntropicRogersShephard.SharpEntropicRogersShephard : Prop
+EntropicRogersShephard.crossDifferenceDensity_uniformSimplex (m : ℕ) [NeZero m] {a b : ℝ} (ha : 0 < a) (hb : 0 < b)
+  (z : Fin m → ℝ) :
+  EntropicRogersShephard.crossDifferenceDensity
+      (EntropicRogersShephard.uniformDensity (EntropicRogersShephard.simplex m a))
+      (EntropicRogersShephard.uniformDensity (EntropicRogersShephard.simplex m b)) z =
+    EntropicRogersShephard.overlapRadius a b z ^ m /
+      (a ^ m * b ^ m * (MeasureTheory.volume (EntropicRogersShephard.simplex m 1)).toReal)
+EntropicRogersShephard.layer_coefficients_forced_by_normalization (m : ℕ) (c : ℕ → ℝ)
+  (h :
+    ∀ (s : ℝ),
+      0 ≤ s →
+        ∑ j ∈ Finset.range (m + 1), c j * ↑m * EntropicRogersShephard.integerBeta (m - 1) (m - j) * s ^ j = (1 + s) ^ m)
+  {j : ℕ} (hj : j ≤ m) : c j * ↑m * EntropicRogersShephard.integerBeta (m - 1) (m - j) = ↑(m.choose j)
 'brunn_minkowski' depends on axioms: [propext, Classical.choice, Quot.sound]
 'EntropicRogersShephard.harmonic_term_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
 'EntropicRogersShephard.neg_log_one_sub_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
@@ -72,3 +85,54 @@ EntropicRogersShephard.SharpEntropicRogersShephard : Prop
 'EntropicRogersShephard.isCompact_bodyOverlap' depends on axioms: [propext, Classical.choice, Quot.sound]
 'EntropicRogersShephard.measurableSet_bodyOverlap' depends on axioms: [propext, Classical.choice, Quot.sound]
 'EntropicRogersShephard.weighted_mem_bodyOverlap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.crossDifferenceDensity_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.measurable_crossDifferenceDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.crossDifferenceDensity_eq_convolution' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'EntropicRogersShephard.integrable_crossDifferenceDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.integral_crossDifferenceDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.isProbabilityDensity_crossDifferenceDensity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'EntropicRogersShephard.isProbabilityDensity_differenceDensity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'EntropicRogersShephard.measurable_uniformDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.uniformDensity_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.integrable_uniformDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.integral_uniformDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.isProbabilityDensity_uniformDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.integrable_negMulLog_uniformDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.differentialEntropy_uniformDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.volume_simplex_ne_top' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.small_box_subset_simplex' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.volume_unit_simplex_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.volume_simplex_pos_of_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.isProbabilityDensity_uniformSimplex' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.differentialEntropy_uniformSimplex' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.crossDifferenceDensity_uniformDensity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'EntropicRogersShephard.crossDifferenceDensity_uniformSimplex' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'EntropicRogersShephard.integral_overlapRadius_pow' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.integrable_overlapRadius_pow' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.crossDifferenceDensity_uniformSimplex_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'EntropicRogersShephard.isCompact_simplexDifferenceSupport' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.crossDifferenceDensity_uniformSimplex_eq_zero_of_not_mem' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'EntropicRogersShephard.integrable_negMulLog_uniformSimplexDifference' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'EntropicRogersShephard.polynomial_eq_of_eval_eq_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.coefficients_eq_choose_of_normalization' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'EntropicRogersShephard.layer_coefficients_forced_by_normalization' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

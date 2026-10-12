@@ -8,6 +8,15 @@ ROOT = Path(__file__).resolve().parents[1]
 source = ROOT / 'EntropicRogersShephard/Audit.lean'
 log = ROOT / 'verification/EntropicRogersShephard.Audit.log'
 expected = re.findall(r'^#print axioms ([\w.]+)', source.read_text(), re.M)
+declared = {'brunn_minkowski'}
+for proof_file in sorted(ROOT.glob('EntropicRogersShephard*.lean')) + sorted(
+        (ROOT / 'EntropicRogersShephard').glob('*.lean')):
+    if proof_file == source:
+        continue
+    declared.update('EntropicRogersShephard.' + name for name in re.findall(
+        r'^(?:@\[[^\]]*\][ \t]*)?theorem (\w+)', proof_file.read_text(), re.M))
+if set(expected) != declared or len(expected) != len(set(expected)):
+    raise SystemExit(f'Audit source coverage mismatch: {declared ^ set(expected)}')
 reported = dict(re.findall(r"'([\w.]+)' depends on axioms: \[([^\]]*)\]", log.read_text()))
 for theorem in re.findall(r"'([\w.]+)' does not depend on any axioms", log.read_text()):
     reported[theorem] = ''

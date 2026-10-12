@@ -44,7 +44,7 @@ env = os.environ.copy()
 env['LEAN_PATH'] = os.pathsep.join(map(str, paths))
 sources = {str(p.relative_to(ROOT).with_suffix('')).replace('/', '.'): p
            for p in ROOT.rglob('*.lean') if '.lake' not in p.parts}
-targets = args.modules or ['EntropicRogersShephard', 'EntropicRogersShephard.Audit']
+targets = args.modules or ['EntropicRogersShephard.SimplexDensity', 'EntropicRogersShephard.Audit']
 ordered = []
 seen = set()
 

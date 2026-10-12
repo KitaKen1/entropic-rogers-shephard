@@ -1,5 +1,5 @@
 {
-  "audited_theorems": 69,
+  "audited_theorems": 100,
   "allowed_axioms": [
     "Classical.choice",
     "Quot.sound",
@@ -9,7 +9,9 @@
   "new_axioms": false,
   "full_main_theorem_proved": false,
   "source_sha256": {
-    "EntropicRogersShephard/Audit.lean": "7438f830017e31cf7fc61f9f10837c49fec025c782e22741abcfe6f7c94beefc",
+    "EntropicRogersShephard/Audit.lean": "12aebddb71ca958d1f70dba91e125bf99253248d65b7c6cd4cbe54df1bd43f30",
+    "EntropicRogersShephard/Density.lean": "167e833af0bde9a85be85fe13d57c6dcf07eeea0434baa08ca3af534ee20d3cf",
+    "EntropicRogersShephard/SimplexDensity.lean": "023dc9698bb5502bb1b2abbe507a10f30150913f2245bf51585cfb47f4b05884",
     "EntropicRogersShephard.lean": "50b4c004a8cb7bf01203e068b21e31606334c841ffb688829de42dce96450607",
     "LeanPool/Isoperimetric/Basic.lean": "53c395d2a914ed43b03704d4fa8448cff777bfc611662e045ff301f155ca9800",
     "LeanPool/Isoperimetric/BrunnMinkowski.lean": "613777d3f642a0e53c93d7e77c06e1ee7ca73417bbf781709e55b708fcee383d",

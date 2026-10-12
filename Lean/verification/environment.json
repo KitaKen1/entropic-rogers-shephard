@@ -2,17 +2,5 @@
   "lean": "Lean (version 4.35.0-rc3, arm64-apple-darwin24.6.0, commit 470d5ce1400764999581fd26d5d72b00d990b0f4, Release)",
   "mathlib": "f6090c7095e1e56b3464c1daba5f24631f1290d2",
   "mathlib_rebuilt_from_source": false,
-  "method": "Lean compiler against an existing read-only Mathlib build cache",
-  "dependency_commits": {
-    "plausible": "fb13df72ecefd8ddbf9291021d7f33a8673eb57b",
-    "LeanSearchClient": "29ff470276c725ae01505d55b17148c18fc7dfd3",
-    "importGraph": "10a2cfff285e1c7c2ebc49c0ba22cab0f3c58ee5",
-    "proofwidgets": "c643bbb3c24f8a25f9c14e3a6b1ceb13d01f3de1",
-    "aesop": "a90fbf7b02ff06a0deebf74088dff9e5fe02c9ea",
-    "Qq": "37b0ba0b26109cf9f9c541f0f9557e50cfa1a3b9",
-    "batteries": "33131f4fb10067cb3009bf4db615d9680c1ccd6b",
-    "Cli": "843844fa601dd56767b1eb22b7ada5b64d5e567a",
-    "mathlib": "f6090c7095e1e56b3464c1daba5f24631f1290d2"
-  },
-  "dependency_commits_match_manifest": true
+  "method": "Lean compiler against an existing read-only Mathlib build cache"
 }

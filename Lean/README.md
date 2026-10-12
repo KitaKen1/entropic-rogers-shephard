@@ -10,9 +10,9 @@ The implementation uses Lean `4.35.0-rc3` and Mathlib commit
 
 ## Proof sections
 
-The current implementation is in `EntropicRogersShephard.lean`, divided into the
-following sections. Keeping these intermediate results in one module avoids
-repeated loading of Mathlib during development builds.
+The initial geometric and integral ingredients are in `EntropicRogersShephard.lean`,
+divided into the following sections. The density connections are in two extension
+modules which reuse that compiled module during development builds.
 
 | Section | Content |
 | --- | --- |
@@ -32,12 +32,30 @@ repeated loading of Mathlib during development builds.
 | `BodyOverlap` | Compact overlaps and the geometric inclusion used with Brunn–Minkowski |
 | `Statement` | Full density-form target with the original generality |
 
+| Extension module | Content |
+| --- | --- |
+| `EntropicRogersShephard/Density.lean` | Difference-convolution measurability, integrability and normalization; uniform densities; positive simplex volumes; uniform-simplex entropy |
+| `EntropicRogersShephard/SimplexDensity.lean` | Pointwise simplex-difference density, normalization, compact support and finite entropy; coefficient uniqueness from a polynomial normalization identity |
+
 `EntropicRogersShephard/Audit.lean` records axiom dependencies of the proved
 intermediate results.
 
-The overlap volume keeps the unit simplex volume symbolic. The level-volume
-polynomial and its use to identify the actual simplex-difference entropy remain
-to be connected. The harmonic-average comparison alone is not the entropy theorem.
+For every positive dimension and every positive pair of scales, the actual
+normalized simplex-difference density is now proved to be
+
+```math
+g_{a,b}(z)=\frac{R_{a,b}(z)^m}{a^m b^m V_m},\qquad \int g_{a,b}=1,
+```
+
+where `V_m` is the unit simplex volume. Its entropy is finite, and the uniform
+simplex has entropy `m log a + log V_m`. The unit volume remains symbolic;
+positivity follows from an included box, without a factorial volume calculation.
+
+The level-volume polynomial still needs to be derived from orthant geometry.
+`layer_coefficients_forced_by_normalization` proves coefficient uniqueness **given**
+the resulting layer-cake identity; that analytic identity is not yet proved.
+The actual simplex-difference entropy has not yet been identified with the
+harmonic formula, so the harmonic-average comparison remains an intermediate result.
 
 ## Build
 
@@ -67,25 +85,49 @@ from source. Compilation logs and source hashes are saved in `verification/`.
 ## Validation
 
 The public proof file and its audit compiled successfully against the pinned,
-already built Mathlib checkout. The audit covers all 68 intermediate theorems
-and the imported Brunn–Minkowski theorem. All 69 depend only on `propext`,
+already built Mathlib checkout. The audit covers all 99 intermediate theorems
+and the imported Brunn–Minkowski theorem. All 100 depend only on `propext`,
 `Classical.choice`, and `Quot.sound`; none depends on `sorryAx` or a new axiom.
 All nine dependency commits match the manifest. The source hashes and audit
 results are in `verification/axiom-audit.json`, with build results in
 `verification/latest-build.json`. Mathlib itself was not rebuilt from source.
+The audit script also checks that its target list covers every intermediate
+theorem declaration in this project's proof modules.
 
 ## Remaining work
 
-1. Integrate the simplex overlap superlevels over coordinate orthants and identify
-   the difference density and its entropy with the finite harmonic formula.
-2. Prove the convex-body entropy upper bound using Brunn–Minkowski and level sets.
-3. Connect the simplex-fiber mixture calculation to the entropy increment.
-4. Normalize the power approximations, control convolution limits and exponential
+1. Connect the density formulas to the difference pushforward of product probability
+   measures, for the final probability-variable statement.
+2. Integrate the simplex overlap superlevels over coordinate orthants and identify
+   the difference entropy with the finite harmonic formula.
+3. Prove the convex-body entropy upper bound using Brunn–Minkowski and level sets.
+4. Connect the simplex-fiber mixture calculation to the entropy increment.
+5. Normalize the power approximations, control convolution limits and exponential
    tails, and pass to general log-concave densities.
-5. Prove sharpness for exponential products and their invertible affine images.
+6. Prove sharpness for exponential products and their invertible affine images.
+
+## Remaining-work roadmap
+
+These are estimated working hours for an implementer experienced in Lean measure
+theory with AI assistance, including implementation, repairs and verification.
+They are not a prediction of automatic execution time. Updated 2026-10-12.
+
+| Order | Milestone | Remaining hours | Difficulty (1–5) |
+| --- | --- | --- | --- |
+| 1 | Density formulas to probability laws | 6–12 | 3 |
+| 2 | Orthant superlevels and simplex-difference entropy formula | 18–35 | 5 |
+| 3 | Convex-body entropy upper bound | 14–28 | 4 |
+| 4 | Simplex-fiber lift and entropy cancellation | 16–32 | 4 |
+| 5 | General log-concave densities and tail limits | 22–48 | 5 |
+| 6 | Sharpness, final theorem and audit | 8–16 | 4 |
+
+The remaining total is 84–171 hours; a contingency allowance gives a planning
+range of 110–220 hours. At 30 working hours per week, this is about 4–8 weeks.
+Milestones 2 and 3 feed into 4, then 5 and 6. The general-density and tail-limit
+connections carry the greatest uncertainty. The next central milestone is 2.
 
 ## Conclusion
 
-The library develops the geometric, finite-algebraic, and integral ingredients of
-the proof. Completion requires the analytic connections and general-density limits
-listed above.
+The geometric overlap formula now gives an actual normalized difference density
+with finite entropy. Completion still requires its harmonic entropy formula, the
+convex-body upper bound, the lift and the general-density limits listed above.
