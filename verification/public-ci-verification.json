@@ -9,7 +9,7 @@
   "tested_commit": "c397fa6e591babb5a95d6ba55943baa21c5486c7",
   "proof_commit": "c397fa6e591babb5a95d6ba55943baa21c5486c7",
   "source_origin_commit": "c34631bc744bf626e8225c6c91d5e13c7b8a0b4f",
-  "archive_commit": null,
+  "archive_commit": "56d6798d748cc4249e327a70882048a29580ae73",
   "lean_toolchain": "leanprover/lean4:v4.33.1",
   "mathlib_commit": "0df444a360eaa60ab8c11dca51a86af692955474",
   "fc_base_commit": "72dad3524e0174dea703f267664d3bc9298803a0",

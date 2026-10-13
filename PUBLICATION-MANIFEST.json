@@ -50,5 +50,6 @@
   "public_tested_commit": "c397fa6e591babb5a95d6ba55943baa21c5486c7",
   "public_linux_ci_verification": "PASS",
   "public_ci_verification_record": "verification/public-ci-verification.json",
-  "public_ci_archive": "ComparatorLog20261013"
+  "public_ci_archive": "ComparatorLog20261013",
+  "archive_commit": "56d6798d748cc4249e327a70882048a29580ae73"
 }

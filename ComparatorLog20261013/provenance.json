@@ -4,7 +4,7 @@
   "run_attempt": 1,
   "proof_commit": "c397fa6e591babb5a95d6ba55943baa21c5486c7",
   "tested_commit": "c397fa6e591babb5a95d6ba55943baa21c5486c7",
-  "archive_commit": null,
+  "archive_commit": "56d6798d748cc4249e327a70882048a29580ae73",
   "run_url": "https://github.com/KitaKen1/entropic-rogers-shephard/actions/runs/38391396740",
   "conclusion": "success",
   "artifacts": [
