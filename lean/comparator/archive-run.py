@@ -3,7 +3,7 @@
 from pathlib import Path
 from datetime import datetime, timezone
 from concurrent.futures import ThreadPoolExecutor
-import argparse, hashlib, json, os, subprocess, urllib.request, urllib.error, zipfile
+import argparse, hashlib, json, os, re, subprocess, urllib.request, urllib.error, zipfile
 
 
 def main():
@@ -25,7 +25,7 @@ def main():
             text=True, capture_output=True, check=True)
         token = dict(line.split('=',1) for line in credential.stdout.splitlines() if '=' in line)['password']
     headers = {'Authorization':'Bearer '+token, 'Accept':'application/vnd.github+json',
-        'X-GitHub-Api-Version':'2026-03-10', 'User-Agent':'R4-Comparator-Archive'}
+        'X-GitHub-Api-Version':'2026-03-10', 'User-Agent':'ERS-Comparator-Archive'}
 
     class NoRedirect(urllib.request.HTTPRedirectHandler):
         def redirect_request(self, *a, **kw): return None
@@ -99,10 +99,26 @@ def main():
         if job['conclusion']!='skipped':
             save(f'github/job-{job["id"]}.log',get(f'/actions/jobs/{job["id"]}/logs'))
     if run['conclusion']=='success':
+        for expected_job in ['build','comparator','replay','verification_status']:
+            matching=[job for job in jobs['jobs'] if job['name']==expected_job]
+            if len(matching)!=1 or matching[0]['conclusion']!='success':
+                raise SystemExit('Missing successful verification job: '+expected_job)
         receipt=args.output/'receipt'/f'comparator-{args.run}-{args.attempt}'
         if (receipt/'status.txt').read_text()!='PASS\n': raise SystemExit('Comparator receipt is not PASS')
         check=json.loads((receipt/'input-check.json').read_text())
         if check['tested_commit']!=args.expected_commit: raise SystemExit('Receipt commit differs')
+        environment=json.loads((receipt/'checker-environment.json').read_text())
+        if environment['status']!='PASS' or environment['required_version']!='4.33.1':
+            raise SystemExit('Checker environment does not require Lean 4.33.1')
+        if set(environment['compiler_versions'])!={'proof','comparator','lean4export'}:
+            raise SystemExit('Missing compiler version evidence')
+        for version in environment['compiler_versions'].values():
+            if not re.search(r'Lean \(version 4\.33\.1(?:,|\))',version):
+                raise SystemExit('Compiler version differs from Lean 4.33.1')
+        if check['pins']['lean_toolchain']!='leanprover/lean4:v4.33.1':
+            raise SystemExit('Receipt proof toolchain differs')
+        if check['pins']['mathlib_commit']!='0df444a360eaa60ab8c11dca51a86af692955474':
+            raise SystemExit('Receipt Mathlib differs from the FC base')
         log=(receipt/'comparator.log').read_text()
         for literal in ['Lean default kernel accepts the solution','Your solution is okay!']:
             if literal not in log: raise SystemExit('Missing success evidence: '+literal)
@@ -110,6 +126,12 @@ def main():
         for target in check['pins']['targets']:
             if f"'{target}' depends on axioms: [propext, Classical.choice, Quot.sound]" not in axioms:
                 raise SystemExit('Missing target axiom evidence: '+target)
+        full=json.loads((receipt/'axioms-full.json').read_text())
+        if full['status']!='PASS' or full['audited_targets']!=451 or full['sorryAx'] or full['new_axioms']:
+            raise SystemExit('Incomplete 451-target axiom audit')
+        replay=args.output/'receipt'/f'replay-{args.run}-{args.attempt}'
+        if (replay/'status.txt').read_text()!='PASS\n' or 'Exit status: 0' not in (replay/'time.log').read_text():
+            raise SystemExit('Fresh kernel replay did not pass')
     provenance={'repository':args.repo,'run_id':args.run,'run_attempt':args.attempt,
         'proof_commit':None,'tested_commit':args.expected_commit,'archive_commit':None,
         'run_url':run['html_url'],'conclusion':run['conclusion'],'artifacts':records,

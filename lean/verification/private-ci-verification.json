@@ -1,0 +1,100 @@
+{
+  "status": "PASS",
+  "checked_at_utc": "2026-10-13T11:30:03.193887+00:00",
+  "repository": "KitaKen1/ci-test-sandbox",
+  "visibility": "private",
+  "run_id": 38387993461,
+  "run_attempt": 1,
+  "run_url": "https://github.com/KitaKen1/ci-test-sandbox/actions/runs/38387993461",
+  "tested_commit": "a4afbe96b42e18434167870dcfd0ba8254bb96de",
+  "lean_toolchain": "leanprover/lean4:v4.33.1",
+  "mathlib_commit": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "fc_base_commit": "72dad3524e0174dea703f267664d3bc9298803a0",
+  "jobs": {
+    "build": "success",
+    "comparator": "success",
+    "replay": "success",
+    "verification_status": "success"
+  },
+  "compiler_versions": {
+    "proof": "Lean (version 4.33.1, x86_64-unknown-linux-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+    "comparator": "Lean (version 4.33.1, x86_64-unknown-linux-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+    "lean4export": "Lean (version 4.33.1, x86_64-unknown-linux-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+  },
+  "checker_binary_sha256": {
+    "comparator": "b642ef735d34ea12e4b0d3197c84f69c6eebd34be00726eb5b4bb91da35c4e02",
+    "lean4export": "805ab4cc6a88dcef109644d201c3142261f524aecaf58b04913a9f029e21e9b5"
+  },
+  "comparator_commit": "c0c5a52d2aff92b457c3e5ed4a68c1ebc5795809",
+  "lean4export_commit": "15f6055e299ad5b89345e533cc2192f4cc00f659",
+  "landrun_commit": "811cfff51ceaf3d9843708aa6d22e9b84ccac8b4",
+  "checker_source_changes": {
+    "comparator": {
+      "upstream": "leanprover/lean4:v4.33.0",
+      "build": "leanprover/lean4:v4.33.1",
+      "changed_files": [
+        "lean-toolchain"
+      ]
+    },
+    "lean4export": {
+      "upstream": "leanprover/lean4:v4.33.0",
+      "build": "leanprover/lean4:v4.33.1",
+      "changed_files": [
+        "lean-toolchain"
+      ]
+    }
+  },
+  "comparison_targets": [
+    "EntropicRogersShephardFC.density_bound",
+    "EntropicRogersShephardFC.entropic_rogers_shephard",
+    "EntropicRogersShephardFC.affine_density_law",
+    "EntropicRogersShephardFC.affine_exponential_equality",
+    "EntropicRogersShephardFC.constant_optimal"
+  ],
+  "default_kernel_accepts": true,
+  "linux_sandbox": "real Landrun; unprivileged UID/GID; AF_UNIX disabled; NoNewPrivileges",
+  "axiom_audit": {
+    "status": "PASS",
+    "audited_targets": 451,
+    "sorryAx": false,
+    "new_axioms": false
+  },
+  "fresh_kernel_replay": {
+    "status": "PASS",
+    "exit_code": 0,
+    "command": "lake env leanchecker --fresh FCSolution"
+  },
+  "archive_directory": "/Users/kenta/Dropbox/Intellectual Moonshine/?AI\u6570\u5b66/entropic rogers-shephard/Publication\u8abf\u67fb/private/38387993461-attempt1",
+  "artifacts": [
+    {
+      "id": 11808686106,
+      "name": "comparator-38387993461-1",
+      "file": "artifacts/11808686106-comparator-38387993461-1.zip",
+      "github_digest": "sha256:ab093d366befeea64a4432936b11e44abef5e64efb70d45e7cb369620a67438e",
+      "sha256": "ab093d366befeea64a4432936b11e44abef5e64efb70d45e7cb369620a67438e",
+      "digest_matches": true,
+      "expires_at": "2027-01-11T11:07:00Z"
+    },
+    {
+      "id": 11808012327,
+      "name": "replay-38387993461-1",
+      "file": "artifacts/11808012327-replay-38387993461-1.zip",
+      "github_digest": "sha256:c82643e3df63940674bd4b267298090f72f6d7847daeb71532836c6591987ff4",
+      "sha256": "c82643e3df63940674bd4b267298090f72f6d7847daeb71532836c6591987ff4",
+      "digest_matches": true,
+      "expires_at": "2027-01-11T11:07:00Z"
+    },
+    {
+      "id": 11807159284,
+      "name": "build-38387993461-1",
+      "file": "artifacts/11807159284-build-38387993461-1.zip",
+      "github_digest": "sha256:79db65e40369eccc88f290815703e2dd116ca00f9e8580a42fdbd32ef3750c34",
+      "sha256": "79db65e40369eccc88f290815703e2dd116ca00f9e8580a42fdbd32ef3750c34",
+      "digest_matches": true,
+      "expires_at": "2027-01-11T11:07:00Z"
+    }
+  ],
+  "all_pinned_inputs_match_tested_commit": true,
+  "public_candidate_pushed": false,
+  "accepted_upstream_fc_target": false
+}

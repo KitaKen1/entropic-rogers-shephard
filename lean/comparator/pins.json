@@ -36,7 +36,7 @@
     "leanWithoutComparator/lakefile.toml": "888ce026537fa51ae200e7be592a20d94575b74e30013e690759bbbbb036b8d7",
     "lean/lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
     "lean/lake-manifest.json": "6360f87f22a81ec9e77547663e2ea3bcd23b571aa85eca018c92794b81ca3331",
-    "FClikelean/EntropicRogersShephard.lean": "498665b00b7d16e804b2fc66150110870a7410d86806b45ddf10b11d67abbd10",
+    "FClikelean/EntropicRogersShephard.lean": "00e63207af01c22acee118ae7c0301cd223d08c32a52b6de0d0302f68e0bb421",
     "lean/comparator/check-fc-draft.py": "24fc8ee28b68bca26d364e2e31121594dcfaf103df721317df9729d6c751f481",
     "lean/comparator/check-axioms.py": "6cb247ba692e51691b98fe5740eca98ec1bcc23e51646feff7213a5f9452ec59",
     "lean/comparator/check-inputs.py": "a80cea04f723efebe6051c3a9cd0ec0195f8ebb131c2fa04e7bdec4213798d5b",
@@ -46,7 +46,7 @@
     "lean/comparator/run-check.sh": "99a088d6669f86ee259878de62350e236626efd34b0edc8c5a1d4b33d1f68a15",
     "lean/comparator/add-swap.sh": "560dbc6aa8f8039264fd7bd1715cde5ba338486a3e675ea23f352e9fcf8680ae",
     ".github/workflows/comparator.yml": "ccf7c6ffa4228410542cc04da6f9720ae7515e054b19558ccf3deacff7e886eb",
-    "lean/comparator/archive-run.py": "8cc0748277c84b3a5fc8eb5e2186d7493425a39e5bd7ec33cedc9c1ee9abe928",
+    "lean/comparator/archive-run.py": "c08c8d3a3967311bae980dc47b4b1bdb9949927d368fa4660296d3d0f9c4b9a1",
     "lean/comparator/check-all-axioms.py": "354c70915228f79c68c9a73e97dba0671cd14f2558641a0e01a63bf4824aacfe"
   },
   "primary_fc_target": "EntropicRogersShephardFC.entropic_rogers_shephard",

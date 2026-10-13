@@ -32,7 +32,7 @@ def LogConcave (n : ℕ) (f : (Fin n → ℝ) → ℝ) : Prop :=
 /-- The entropic Rogers–Shephard conjecture [MT20, Conjecture 6.1],
 including finiteness of both entropies. -/
 @[category research solved, AMS 52 60 94,
-    formal_proof using lean4 at "https://github.com/KitaKen1/entropic-rogers-shephard/blob/COMMIT/lean/FCSolution.lean"]
+    formal_proof using lean4 at "https://github.com/KitaKen1/entropic-rogers-shephard/blob/a4afbe96b42e18434167870dcfd0ba8254bb96de/lean/FCSolution.lean"]
 theorem entropic_rogers_shephard {Ω : Type*} [MeasurableSpace Ω] (P : Measure Ω)
     [IsProbabilityMeasure P] (n : ℕ) (hn : 0 < n)
     (X Y : Ω → (Fin n → ℝ)) (f : (Fin n → ℝ) → ℝ)

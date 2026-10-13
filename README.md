@@ -18,7 +18,7 @@ using FC's pinned Mathlib version. All logarithms are natural.
 The two main components are:
 
 1. **A Formal Conjectures style statement.**
-   [FClikelean/](FClikelean/) contains two definitions, the main theorem, and a proof-link placeholder.
+   [FClikelean/](FClikelean/) contains two definitions, the main theorem, and a fixed proof link.
 2. **The full Lean proof.**
    [Main.lean](lean/EntropicRogersShephard/Main.lean) combines the density inequality,
    finite entropies, the independent difference law, affine equality examples and optimality.
@@ -32,7 +32,7 @@ The proposed statement for [FC issue #7196](https://github.com/google-deepmind/f
 is in [EntropicRogersShephard.lean](FClikelean/EntropicRogersShephard.lean).
 Only probability density and log-concavity need new definitions. The difference density
 is a local integral, and entropy is written directly as the integral of $`-f\log f`$.
-The `COMMIT` placeholder will be replaced with the verified public proof commit.
+The proof link is fixed to the Lean 4.33.1 proof commit that passed private CI.
 
 ### Comparator target
 
@@ -103,7 +103,7 @@ The [proof note](PDF/entropic-rogers-shephard.pdf) gives the paper argument.
 | [PDF/](PDF/) | — | Proof note and its existing timestamp evidence. |
 
 The 65 common Lean sources in the canonical and supplementary projects are byte-identical.
-[PUBLICATION-MANIFEST.json](PUBLICATION-MANIFEST.json) records the current local candidate.
+[PUBLICATION-MANIFEST.json](PUBLICATION-MANIFEST.json) records the publication candidate and its verification status.
 
 ## Verification
 
@@ -121,10 +121,12 @@ only their toolchain declarations are changed from 4.33.0 to 4.33.1.
 Their Lean source code is unchanged.
 The local Comparator CLI passed all five comparisons and its builtin kernel
 replay. A separate `leanchecker --fresh FCSolution` replay also passed.
-This macOS development check uses the upstream sandbox shim;
-Linux sandbox verification will be checked in the authorized private CI run.
-Public CI has not been run for this candidate. Local receipts are recorded in
-[local-review-verification.json](lean/verification/local-review-verification.json).
+The macOS development check used the upstream sandbox shim.
+The private Linux CI run passed with real sandboxing, all five comparisons,
+the 451-target axiom audit, and an independent fresh kernel replay.
+Public verification is pending. See the
+[private CI verification record](lean/verification/private-ci-verification.json) and
+[local verification record](lean/verification/local-review-verification.json).
 
 ## Appendix: timeline (AI generated)
 
@@ -133,7 +135,7 @@ Public CI has not been run for this candidate. Local receipts are recorded in
 | 1957 | C. A. Rogers and G. C. Shephard | Established the geometric difference-body inequality underlying the entropy analogue ([geometric background](https://arxiv.org/html/2005.10930v1#S6)). |
 | 2015 | Mokshay Madiman and Ioannis Kontoyiannis | Developed the entropic analogue and conjectured the sharp one-dimensional bound, with one-sided exponential extremizers ([Section VIII, Conjecture 1](https://arxiv.org/pdf/1508.04089#page=23)). |
 | May 2020 | James Melbourne and Tomasz Tkocz | Stated the all-dimensional Shannon conjecture as Conjecture 6.1 and proved its sharp Rényi analogue for orders $`\alpha\ge2`$ ([Section 6](https://arxiv.org/html/2005.10930v1#S6)). |
-| October 2026 | [OpenAI, family 101](https://github.com/openai/math/blob/main/overview.tex) | Presented a proof of the sharp simplex conjecture for isotropic constants and the related entropy lower bound $`h(f)\ge n+\tfrac12\log\det\operatorname{Cov}(f)`$, with affine exponential products as extremizers ([5 October manuscript](https://github.com/openai/math/blob/main/preprints/A-sharp-entropy-bound-and-the-simplex-inequality-for-isotropic-constants-October-5-2026/build/manuscript/introduction.tex)). |
+| October 2026 | [OpenAI, family 101](https://github.com/openai/math/blob/main/overview.tex) | Presented a proof of the sharp simplex conjecture for isotropic constants and the related entropy lower bound $`h(f)\ge n+\frac{1}{2}\log\det\mathrm{Cov}(f)`$, with affine exponential products as extremizers ([5 October manuscript](https://github.com/openai/math/blob/main/preprints/A-sharp-entropy-bound-and-the-simplex-inequality-for-isotropic-constants-October-5-2026/build/manuscript/introduction.tex)). |
 | October 2026 | This repository | Completed a [Lean proof](lean/EntropicRogersShephard/Main.lean) of the sharp Shannon increment bound, including entropy finiteness, the independent difference law, affine exponential equality examples and optimality. |
 
 The OpenAI result bounds entropy from below using covariance. Affine images of exponential
@@ -148,9 +150,10 @@ A separate job performs a fresh replay of the complete proof environment.
 
 ### Certification Within 90 days: CI results
 
-The workflow retains logs and artifacts for 90 days. The 4.33.1 candidate is
-prepared for private CI verification in `KitaKen1/ci-test-sandbox`.
-Public push remains pending, and no Linux CI result certifies this candidate yet.
+The workflow retains logs and artifacts for 90 days.
+[Private Linux CI](https://github.com/KitaKen1/ci-test-sandbox/actions/runs/38387993461) passed on Lean 4.33.1
+for commit `a4afbe96b42e18434167870dcfd0ba8254bb96de`: build, Comparator, axiom audit
+and fresh kernel replay all succeeded. Public CI verification is pending.
 
 ### Certification After 90 days: archive
 
