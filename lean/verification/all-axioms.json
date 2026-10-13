@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "lean_toolchain": "leanprover/lean4:v4.33.1",
+  "original_audit_targets": 446,
+  "additional_fc_targets": 5,
+  "total_audit_targets": 451,
+  "permitted_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "sorryAx": false,
+  "new_axioms": false
+}

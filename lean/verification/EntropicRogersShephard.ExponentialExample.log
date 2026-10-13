@@ -4,9 +4,6 @@ Hint: The binding can be removed (if unused) or named `_` (if used implicitly). 
   [apply] _x
 
 Note: This linter can be disabled with `set_option linter.unusedVariables false`
-EntropicRogersShephard/ExponentialExample.lean:89:41: warning: `simp` already closes the goal
-
-Hint: Use `simp` instead of `simpa`:
-  [apply] simp
+EntropicRogersShephard/ExponentialExample.lean:89:41: warning: try 'simp' instead of 'simpa'
 
 Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`

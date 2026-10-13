@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "exit_code": 0,
+  "seconds": 876.5,
+  "lean_toolchain": "leanprover/lean4:v4.33.1",
+  "command": "lake env leanchecker --fresh FCSolution"
+}

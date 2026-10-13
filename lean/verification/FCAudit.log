@@ -1,0 +1,8 @@
+'EntropicRogersShephardFC.density_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephardFC.entropic_rogers_shephard' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephardFC.affine_density_law' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephardFC.affine_exponential_equality' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephardFC.constant_optimal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EntropicRogersShephard.complete_sharp_entropic_rogers_shephard' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -1,0 +1,6 @@
+{
+  "repository": "google-deepmind/formal-conjectures",
+  "commit": "72dad3524e0174dea703f267664d3bc9298803a0",
+  "lean_toolchain": "leanprover/lean4:v4.33.1",
+  "mathlib_commit": "0df444a360eaa60ab8c11dca51a86af692955474"
+}

@@ -1,65 +1,47 @@
 [
   {
-    "package": "plausible",
-    "expected": "fb13df72ecefd8ddbf9291021d7f33a8673eb57b",
-    "actual": "fb13df72ecefd8ddbf9291021d7f33a8673eb57b",
-    "tracked_source_clean": true,
-    "build_cache_present": true
+    "name": "mathlib",
+    "expected": "0df444a360eaa60ab8c11dca51a86af692955474",
+    "actual": "0df444a360eaa60ab8c11dca51a86af692955474"
   },
   {
-    "package": "LeanSearchClient",
-    "expected": "29ff470276c725ae01505d55b17148c18fc7dfd3",
-    "actual": "29ff470276c725ae01505d55b17148c18fc7dfd3",
-    "tracked_source_clean": true,
-    "build_cache_present": true
+    "name": "plausible",
+    "expected": "b7eb3304aeae834b12dda98993a37f6a41f6f0bb",
+    "actual": "b7eb3304aeae834b12dda98993a37f6a41f6f0bb"
   },
   {
-    "package": "importGraph",
-    "expected": "10a2cfff285e1c7c2ebc49c0ba22cab0f3c58ee5",
-    "actual": "10a2cfff285e1c7c2ebc49c0ba22cab0f3c58ee5",
-    "tracked_source_clean": true,
-    "build_cache_present": true
+    "name": "LeanSearchClient",
+    "expected": "5f4d51b81cbd3f6b32b156bfad9056621a040404",
+    "actual": "5f4d51b81cbd3f6b32b156bfad9056621a040404"
   },
   {
-    "package": "proofwidgets",
-    "expected": "c643bbb3c24f8a25f9c14e3a6b1ceb13d01f3de1",
-    "actual": "c643bbb3c24f8a25f9c14e3a6b1ceb13d01f3de1",
-    "tracked_source_clean": true,
-    "build_cache_present": true
+    "name": "importGraph",
+    "expected": "16f02aa7642864af59f1ff0e384a015994db9118",
+    "actual": "16f02aa7642864af59f1ff0e384a015994db9118"
   },
   {
-    "package": "aesop",
-    "expected": "a90fbf7b02ff06a0deebf74088dff9e5fe02c9ea",
-    "actual": "a90fbf7b02ff06a0deebf74088dff9e5fe02c9ea",
-    "tracked_source_clean": true,
-    "build_cache_present": true
+    "name": "proofwidgets",
+    "expected": "4be2e3d5087eeb272cf5a8853b8f9dd025ef5957",
+    "actual": "4be2e3d5087eeb272cf5a8853b8f9dd025ef5957"
   },
   {
-    "package": "Qq",
-    "expected": "37b0ba0b26109cf9f9c541f0f9557e50cfa1a3b9",
-    "actual": "37b0ba0b26109cf9f9c541f0f9557e50cfa1a3b9",
-    "tracked_source_clean": true,
-    "build_cache_present": true
+    "name": "aesop",
+    "expected": "3448c0bcc5ce01b2d1546e483ec3620e32df3d0e",
+    "actual": "3448c0bcc5ce01b2d1546e483ec3620e32df3d0e"
   },
   {
-    "package": "batteries",
-    "expected": "33131f4fb10067cb3009bf4db615d9680c1ccd6b",
-    "actual": "33131f4fb10067cb3009bf4db615d9680c1ccd6b",
-    "tracked_source_clean": true,
-    "build_cache_present": true
+    "name": "Qq",
+    "expected": "92c15be17b7caf78c2ad767ec40f89052d908d81",
+    "actual": "92c15be17b7caf78c2ad767ec40f89052d908d81"
   },
   {
-    "package": "Cli",
-    "expected": "843844fa601dd56767b1eb22b7ada5b64d5e567a",
-    "actual": "843844fa601dd56767b1eb22b7ada5b64d5e567a",
-    "tracked_source_clean": true,
-    "build_cache_present": false
+    "name": "batteries",
+    "expected": "4488d40d070b9700d4d5a6aa342f0d40c31b2a2d",
+    "actual": "4488d40d070b9700d4d5a6aa342f0d40c31b2a2d"
   },
   {
-    "package": "mathlib",
-    "expected": "f6090c7095e1e56b3464c1daba5f24631f1290d2",
-    "actual": "f6090c7095e1e56b3464c1daba5f24631f1290d2",
-    "tracked_source_clean": true,
-    "build_cache_present": true
+    "name": "Cli",
+    "expected": "6130a47896ce867c6a4a55373441e59e565bad0f",
+    "actual": "6130a47896ce867c6a4a55373441e59e565bad0f"
   }
 ]

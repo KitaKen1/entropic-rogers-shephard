@@ -72,7 +72,7 @@ theorem body_log_layer_mean_bound {n : ℕ} [NeZero n] {B : Set (Fin n → ℝ)}
   dsimp only [w] at h
   rw [integral_beta_Ioo, integral_log_beta_Ioo, hidx] at h
   apply (mul_le_mul_iff_left₀ (integerBeta_pos (n - 1) n)).mp
-  convert h using 1 <;> ring
+  convert h using 1 <;> first | rfl | ring
 
 theorem body_log_primitive_upper_bound {n : ℕ} [NeZero n] {B : Set (Fin n → ℝ)}
     (hB : IsCompact B) (hconv : Convex ℝ B) (hpos : volume B ≠ 0) :

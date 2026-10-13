@@ -1,9 +1,10 @@
 {
   "challenge_module": "Challenge",
   "solution_module": "FCSolution",
+  "enable_nanoda": false,
   "theorem_names": [
     "EntropicRogersShephardFC.density_bound",
-    "EntropicRogersShephardFC.random_vector_bound",
+    "EntropicRogersShephardFC.entropic_rogers_shephard",
     "EntropicRogersShephardFC.affine_density_law",
     "EntropicRogersShephardFC.affine_exponential_equality",
     "EntropicRogersShephardFC.constant_optimal"

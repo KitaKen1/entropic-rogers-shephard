@@ -1,368 +1,631 @@
-[
-  {
-    "module": "LeanPool.Isoperimetric.Basic",
-    "sha256": "53c395d2a914ed43b03704d4fa8448cff777bfc611662e045ff301f155ca9800",
-    "status": "reused"
+{
+  "lean": "v4.33.1",
+  "mathlib_commit": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "elapsed_seconds": 427.69,
+  "modules": {
+    "EntropicRogersShephard.ConvexVolume": {
+      "status": "PASS",
+      "cached": true,
+      "source_sha256": "a2edbe8dc8de548a37e8f436a27fcb11cc623e11d87bddc870a993ee0b6b8e70",
+      "dependency_sha256": {},
+      "seconds": 0
+    },
+    "EntropicRogersShephard.ConvexExhaustion": {
+      "status": "PASS",
+      "cached": true,
+      "source_sha256": "39970f2eb66ebea3c9b7acbcedbc88eedfa62cac50f6420ede94e5fc077d2af5",
+      "dependency_sha256": {},
+      "seconds": 0
+    },
+    "FCTargetDefinitions": {
+      "status": "PASS",
+      "cached": true,
+      "source_sha256": "126257c80f9d480e55086292a4f6d73632484637afe19e20a9df75875ec1398f",
+      "dependency_sha256": {},
+      "seconds": 0
+    },
+    "Challenge": {
+      "status": "PASS",
+      "cached": true,
+      "source_sha256": "c49dec0bc4dd2f685f613f32110dd06bec0f677c7aa00c54540cfdbd9067bff2",
+      "dependency_sha256": {
+        "FCTargetDefinitions": "330720b83222adb4bda2c7721f7254aa868a1c2b9233741eacbda0476d2fbe1c"
+      },
+      "seconds": 0
+    },
+    "EntropicRogersShephard.ConvexApproximation": {
+      "status": "PASS",
+      "cached": true,
+      "source_sha256": "b5d67d19bc055b925f7e7882c46b5a5fc2b10b0061abc1ad6e473509f4be3b15",
+      "dependency_sha256": {
+        "EntropicRogersShephard.ConvexExhaustion": "ec274f11476b00a1dfa1e957a5a805e3d294db64bfeadb77fb4a933e0a54f791",
+        "EntropicRogersShephard.ConvexVolume": "b52bc12db34ea913f95505fc567f207b5d375dac46d2ad2292550dda19043c2e"
+      },
+      "seconds": 0
+    },
+    "LeanPool.Isoperimetric.Basic": {
+      "status": "PASS",
+      "cached": true,
+      "source_sha256": "53c395d2a914ed43b03704d4fa8448cff777bfc611662e045ff301f155ca9800",
+      "dependency_sha256": {},
+      "seconds": 0
+    },
+    "LeanPool.Isoperimetric.PrekopaLeindler": {
+      "status": "PASS",
+      "cached": true,
+      "source_sha256": "440eab3b5e58175101881d127e058c4ff279b21c22ff2536cd1ac4ae6eccfc6f",
+      "dependency_sha256": {
+        "LeanPool.Isoperimetric.Basic": "d633810b3fe9b608eebfc24481b4baaf4ff784302dbde65d881b09bf03624396"
+      },
+      "seconds": 0
+    },
+    "LeanPool.Isoperimetric.BrunnMinkowski": {
+      "status": "PASS",
+      "cached": true,
+      "source_sha256": "613777d3f642a0e53c93d7e77c06e1ee7ca73417bbf781709e55b708fcee383d",
+      "dependency_sha256": {
+        "LeanPool.Isoperimetric.PrekopaLeindler": "e667c59d13e03c817b3acb15d1848816667d4d43ca20062826ded5e5ad088983"
+      },
+      "seconds": 0
+    },
+    "EntropicRogersShephard": {
+      "status": "PASS",
+      "cached": true,
+      "source_sha256": "f9ecaa777b393a47a011805d5222de3dcb537c119f91ee71b89a4d68e041681e",
+      "dependency_sha256": {
+        "LeanPool.Isoperimetric.BrunnMinkowski": "216255cd466d9f26793f082be23d2b18b94d8a7c6142b19e99ded690c97a5e6b"
+      },
+      "seconds": 0
+    },
+    "LeanPool": {
+      "status": "PASS",
+      "cached": true,
+      "source_sha256": "506d9e02e48f88595a8ee40fef46c1169d1f7df8898453ca8b4209d04fc8f1c8",
+      "dependency_sha256": {
+        "LeanPool.Isoperimetric.BrunnMinkowski": "216255cd466d9f26793f082be23d2b18b94d8a7c6142b19e99ded690c97a5e6b"
+      },
+      "seconds": 0
+    },
+    "EntropicRogersShephard.Density": {
+      "status": "PASS",
+      "cached": true,
+      "source_sha256": "167e833af0bde9a85be85fe13d57c6dcf07eeea0434baa08ca3af534ee20d3cf",
+      "dependency_sha256": {
+        "EntropicRogersShephard": "97f12c9babea4ae825923c9d836f715a8cefc4ed283cd0cee09c83cc7173d267"
+      },
+      "seconds": 0
+    },
+    "EntropicRogersShephard.LogConcavity": {
+      "status": "PASS",
+      "cached": true,
+      "source_sha256": "ef13e1f892816c6761d6afee019df6dc6472f9b481d790bbf1df113f501c896c",
+      "dependency_sha256": {
+        "EntropicRogersShephard": "97f12c9babea4ae825923c9d836f715a8cefc4ed283cd0cee09c83cc7173d267",
+        "EntropicRogersShephard.ConvexApproximation": "3875fce861bdba5ea0709b04715fe8d0b873c58173f3f85af33bd34b4cb8b951"
+      },
+      "seconds": 0
+    },
+    "EntropicRogersShephard.MonotoneTilt": {
+      "status": "PASS",
+      "cached": true,
+      "source_sha256": "ff95daf0c9caefb6daf0d39735a0f984b1a1719c1f47696be315f6d2daa31f82",
+      "dependency_sha256": {
+        "EntropicRogersShephard.Density": "4566039e8e98e007ae79fd38d45fddb51ca06267773dfb61d2e6ff39de80be0d"
+      },
+      "seconds": 0
+    },
+    "EntropicRogersShephard.GlobalDensityBound": {
+      "status": "PASS",
+      "cached": true,
+      "source_sha256": "b0c9b0e557b854a0ece156a9126c93089865b34c2b67c4ea20f67bb40d3cf3a7",
+      "dependency_sha256": {
+        "EntropicRogersShephard.LogConcavity": "cdd46a42bca48da18c47bc8f8f790fad28e60fe83b8db11cd0f1cdaf037327c4",
+        "EntropicRogersShephard.Density": "4566039e8e98e007ae79fd38d45fddb51ca06267773dfb61d2e6ff39de80be0d"
+      },
+      "seconds": 0
+    },
+    "EntropicRogersShephard.PowerDensity": {
+      "status": "PASS",
+      "cached": true,
+      "source_sha256": "135ef869e48cbb1207bd00a14a7ef1fa0c1ea7bdb63eca61c1137100562202a2",
+      "dependency_sha256": {
+        "EntropicRogersShephard.Density": "4566039e8e98e007ae79fd38d45fddb51ca06267773dfb61d2e6ff39de80be0d"
+      },
+      "seconds": 0
+    },
+    "EntropicRogersShephard.ExponentialTails": {
+      "status": "PASS",
+      "cached": true,
+      "source_sha256": "80fd00bfb58c6a560249b821265bc7c4bcbb9342605cc8609f40e60bf8341900",
+      "dependency_sha256": {
+        "EntropicRogersShephard.GlobalDensityBound": "c124b926eea83a62ba71ee25f5032e68849b695e168e5584610b36737299ed5d"
+      },
+      "seconds": 0
+    },
+    "EntropicRogersShephard.FiberVolume": {
+      "status": "PASS",
+      "cached": true,
+      "source_sha256": "8d09ab85e68cf0dbdea59476c99bd663713b603526bee1d49a55eb15533a359b",
+      "dependency_sha256": {
+        "EntropicRogersShephard.PowerDensity": "4a43e92f44d1ecf51208e576a0a75177921e5f58a5a3884fbff1e0daebe3c05a"
+      },
+      "seconds": 0
+    },
+    "EntropicRogersShephard.ExponentialIntegrability": {
+      "status": "PASS",
+      "cached": true,
+      "source_sha256": "c810299dc11f2c6b5a4a718cf0c18f90ae133a0444272b12229ef989f156307b",
+      "dependency_sha256": {
+        "EntropicRogersShephard.ExponentialTails": "0ac5806ea14d756e82b5a9878c2d48c18f35775e67d928a532b78acc3f1152d7"
+      },
+      "seconds": 0
+    },
+    "EntropicRogersShephard.FiniteSupportLimit": {
+      "status": "PASS",
+      "cached": true,
+      "source_sha256": "1b7a141f8e68cb4caab1d4086abbf144e6bbeaea72a9e43636bbbc2215ba1be4",
+      "dependency_sha256": {
+        "EntropicRogersShephard.PowerDensity": "4a43e92f44d1ecf51208e576a0a75177921e5f58a5a3884fbff1e0daebe3c05a"
+      },
+      "seconds": 0
+    },
+    "EntropicRogersShephard.SimplexDensity": {
+      "status": "PASS",
+      "cached": true,
+      "source_sha256": "2394e5dd18dfa04ded5dbe1b688c32c228c5537395eacffec30752ad9ef8498b",
+      "dependency_sha256": {
+        "EntropicRogersShephard.Density": "4566039e8e98e007ae79fd38d45fddb51ca06267773dfb61d2e6ff39de80be0d"
+      },
+      "seconds": 0
+    },
+    "EntropicRogersShephard.WeightedTilt": {
+      "status": "PASS",
+      "cached": true,
+      "source_sha256": "f76669efcde0da3b60ad894b3dea577fe3a06c4d7f984c98af41bfccc1f1b540",
+      "dependency_sha256": {
+        "EntropicRogersShephard.MonotoneTilt": "9c50e8e1edfada4b1af7d66ec4f02791ba4c34bf42e97b7522c91aa6ccbbb55f"
+      },
+      "seconds": 0
+    },
+    "EntropicRogersShephard.BodyDensity": {
+      "status": "PASS",
+      "cached": true,
+      "source_sha256": "9f6d3dffdc1f6434fd4171ad9cf1b9749401d89e9854d54868b245dbed3b0f9e",
+      "dependency_sha256": {
+        "EntropicRogersShephard.SimplexDensity": "c3a33b1a102c63b2fcb86744845430f7f960206c10febbec52eaf7c0d9ba0737"
+      },
+      "seconds": 0
+    },
+    "EntropicRogersShephard.OrthantGeometry": {
+      "status": "PASS",
+      "cached": true,
+      "source_sha256": "0478d85395332994a12b68fe84a339816f9b9b6030c46657aad9e95581b1700b",
+      "dependency_sha256": {
+        "EntropicRogersShephard.SimplexDensity": "c3a33b1a102c63b2fcb86744845430f7f960206c10febbec52eaf7c0d9ba0737"
+      },
+      "seconds": 0
+    },
+    "EntropicRogersShephard.BoundedDensity": {
+      "status": "PASS",
+      "cached": true,
+      "source_sha256": "72aba381cd03b14a3bfd8978da339caeae350f5dd3185bf6f754c5ed43395a43",
+      "dependency_sha256": {
+        "EntropicRogersShephard.BodyDensity": "05eeb6e8f0099f48e2483ac6bb3baae4a82246f5b03bd161884cb437cf504540"
+      },
+      "seconds": 0
+    },
+    "EntropicRogersShephard.LayerMoments": {
+      "status": "PASS",
+      "cached": true,
+      "source_sha256": "4736b9f8a04f5da4a573208486c932d9e17d2f6a5ce39a35edb4c7011124a82e",
+      "dependency_sha256": {
+        "EntropicRogersShephard.OrthantGeometry": "bbc75dec28b11846c340e16539267d245370fadb1884d23dcfb55ed6bc773548"
+      },
+      "seconds": 0
+    },
+    "EntropicRogersShephard.DensityMeasure": {
+      "status": "PASS",
+      "cached": true,
+      "source_sha256": "02f3025145694fbe757d60446d2151543feb74adfe03eb30f4d33f6a4e5093cb",
+      "dependency_sha256": {
+        "EntropicRogersShephard.BoundedDensity": "77d9b31f5414fc8adf9d97960752e7b0edeefb34e3e451b98f0d057fa5310def"
+      },
+      "seconds": 0
+    },
+    "EntropicRogersShephard.CompactConvergence": {
+      "status": "PASS",
+      "cached": true,
+      "source_sha256": "6a5ab3684a8e3a73fa1ba7fc3692ebae27b47e83f182ebbecc33cf48ce4af53a",
+      "dependency_sha256": {
+        "EntropicRogersShephard.BoundedDensity": "77d9b31f5414fc8adf9d97960752e7b0edeefb34e3e451b98f0d057fa5310def"
+      },
+      "seconds": 0
+    },
+    "EntropicRogersShephard.BoundedMixture": {
+      "status": "PASS",
+      "cached": true,
+      "source_sha256": "e14bd4316d9fb33fd9abe38edb0051abee9efe1b0da40c94ffeab5bb6e39ff46",
+      "dependency_sha256": {
+        "EntropicRogersShephard.DensityMeasure": "b2ecdc756d3bb251f6826f9cec94e7fd4d4ab04deb5c313f265e3a88b2eb89ce"
+      },
+      "seconds": 0
+    },
+    "EntropicRogersShephard.ExponentialConvergence": {
+      "status": "PASS",
+      "cached": true,
+      "source_sha256": "6fbdcb968c9037b7df26a6777247849f19b38e9996f09c46cd3d8307cfaea771",
+      "dependency_sha256": {
+        "EntropicRogersShephard.ExponentialIntegrability": "3c601649476a5e0419d84c19a0c766065384f5e46dd2c309075528cfa818092d",
+        "EntropicRogersShephard.BoundedDensity": "77d9b31f5414fc8adf9d97960752e7b0edeefb34e3e451b98f0d057fa5310def"
+      },
+      "seconds": 0
+    },
+    "EntropicRogersShephard.DominatedConvolution": {
+      "status": "PASS",
+      "cached": true,
+      "source_sha256": "d90361f526e42a8ae66c047ced477d0d330639ac7a7b255efaf1ad145f5cdad2",
+      "dependency_sha256": {
+        "EntropicRogersShephard.ExponentialConvergence": "b1993024cb2a738e9ed320eef23c5ce1f89528442cf698a8785d7fe3025db3e7"
+      },
+      "seconds": 0
+    },
+    "EntropicRogersShephard.FiberEntropy": {
+      "status": "PASS",
+      "cached": true,
+      "source_sha256": "1c640a601c6df429488c96811afcb1120d7a925f8976b2f72056c64a929663aa",
+      "dependency_sha256": {
+        "EntropicRogersShephard.FiberVolume": "cd62d21cc3accc84f1eb7965220eff18b293fc18d43b788ad95a66b34bb86b05",
+        "EntropicRogersShephard.BoundedDensity": "77d9b31f5414fc8adf9d97960752e7b0edeefb34e3e451b98f0d057fa5310def"
+      },
+      "seconds": 0
+    },
+    "EntropicRogersShephard.LayerNormalization": {
+      "status": "PASS",
+      "cached": true,
+      "source_sha256": "32716df5943dd997d99606663f87fc0fe33f68481fb464f11216fe1e823db3fc",
+      "dependency_sha256": {
+        "EntropicRogersShephard.LayerMoments": "ff6e485490732f09aae9841b8663c02e087d03bfcd6cdf1860732e7eb2606b56"
+      },
+      "seconds": 0
+    },
+    "EntropicRogersShephard.FiberDifference": {
+      "status": "PASS",
+      "cached": true,
+      "source_sha256": "3e685b4c2b075c193ac26fbd7bc7451eda1f4bdb2b4b16a7181139b287ca657b",
+      "dependency_sha256": {
+        "EntropicRogersShephard.FiberEntropy": "500a30b619abf5e54ae31e3bbcae0bdc0f0e9b759e96d120e31eb3748b02e904"
+      },
+      "seconds": 0
+    },
+    "EntropicRogersShephard.LayerCoefficients": {
+      "status": "PASS",
+      "cached": true,
+      "source_sha256": "2c7da5e264de0c99258b535dc42402ced3b97e0b4b24da43cf1abdf1802ee5b2",
+      "dependency_sha256": {
+        "EntropicRogersShephard.LayerNormalization": "33df78adbe1afa59a1266ff0b5d4f957168abb7025841aefed32145d3d5c61bc"
+      },
+      "seconds": 0
+    },
+    "EntropicRogersShephard.FiberDifferenceBounds": {
+      "status": "PASS",
+      "cached": true,
+      "source_sha256": "ecac7caa6a0aa6ed4269c9fe363c1749131eda224e91944f8039ed2a0f04ef11",
+      "dependency_sha256": {
+        "EntropicRogersShephard.FiberDifference": "5a74e412540328098a7561149895cd4c886b6fe63435afa51146510f538f3fa9"
+      },
+      "seconds": 0
+    },
+    "EntropicRogersShephard.LayerLogMoments": {
+      "status": "PASS",
+      "cached": true,
+      "source_sha256": "43501b14223644712cfb288dfe0884c3fd26aff005a47fbc0c5f3c1b8c4f26a2",
+      "dependency_sha256": {
+        "EntropicRogersShephard.LayerCoefficients": "de262ac45acdf2f3d313a103f7a2ba0069e854cd2b2e9ff0334d508ebe303e59"
+      },
+      "seconds": 0
+    },
+    "EntropicRogersShephard.MixtureMass": {
+      "status": "PASS",
+      "cached": true,
+      "source_sha256": "353b619fc150a3e8fccd9b2accb6c1483008bcb398a9aec14d92d0f51f34a162",
+      "dependency_sha256": {
+        "EntropicRogersShephard.BoundedMixture": "83eb8873e69a31d58797541ef4dff5f91e0154b76be209bc14d41d7e7b7f74a8"
+      },
+      "seconds": 0
+    },
+    "EntropicRogersShephard.RadialOverlap": {
+      "status": "PASS",
+      "cached": true,
+      "source_sha256": "3031eaa917904233c61e9fcb3e8d5f6330dd545b601cbfdb7af7997222e381d7",
+      "dependency_sha256": {
+        "EntropicRogersShephard.BodyDensity": "05eeb6e8f0099f48e2483ac6bb3baae4a82246f5b03bd161884cb437cf504540"
+      },
+      "seconds": 0
+    },
+    "EntropicRogersShephard.SimplexEntropy": {
+      "status": "PASS",
+      "cached": true,
+      "source_sha256": "242d5b30e00d1611ed4cb0f72cee5ebf077c1197431159592f06e30fdae69837",
+      "dependency_sha256": {
+        "EntropicRogersShephard.LayerLogMoments": "7f5ee6c5c54b0fe5dd35551b1fce876427f99c50cd27bb2e6b251ee026a4964b"
+      },
+      "seconds": 0
+    },
+    "EntropicRogersShephard.BodyLayers": {
+      "status": "PASS",
+      "cached": true,
+      "source_sha256": "ac6ce382d822ace5f575388ea2ffcad22b9fb09019659fa5de8e41bb6ef47436",
+      "dependency_sha256": {
+        "EntropicRogersShephard.LayerLogMoments": "7f5ee6c5c54b0fe5dd35551b1fce876427f99c50cd27bb2e6b251ee026a4964b",
+        "EntropicRogersShephard.RadialOverlap": "e52e1c78fea79d56748584335657fcc4baf109ff731f27ba41b777e522b47f49"
+      },
+      "seconds": 0
+    },
+    "EntropicRogersShephard.SimplexScaling": {
+      "status": "PASS",
+      "cached": true,
+      "source_sha256": "7015e289ec78893a43c6dd8425fdc29a88a2865e394c7724052072c089a81b7f",
+      "dependency_sha256": {
+        "EntropicRogersShephard.SimplexEntropy": "92290fc7966d0e50dc61d3a646dbc2c1afddd1aa2b6a17a47bb6bbdecc1dbce6"
+      },
+      "seconds": 0
+    },
+    "EntropicRogersShephard.BodyMoments": {
+      "status": "PASS",
+      "cached": true,
+      "source_sha256": "0bbe3985bfd7d70b30f4cbdca317610e33526c20aaa34ca3af2859e7e969d828",
+      "dependency_sha256": {
+        "EntropicRogersShephard.BodyLayers": "8adacb291438c23a7a6d40ee61d84025f849f73a1978dccab0108bdb84e7473a"
+      },
+      "seconds": 0
+    },
+    "EntropicRogersShephard.SimplexKernel": {
+      "status": "PASS",
+      "cached": true,
+      "source_sha256": "cefd9165f4d0b37154881fa71e0e17a3ecdfe95d801595e1dacd468ec99e5b81",
+      "dependency_sha256": {
+        "EntropicRogersShephard.MixtureMass": "21aa270bcad4b2614dced63885be8d96f30e8a0b991951b395ead5aeed0f0577",
+        "EntropicRogersShephard.SimplexScaling": "b31d7691d7b4cf558fa4602ea36772693efd25f888758ff55d6590812aad3fb9"
+      },
+      "seconds": 0
+    },
+    "EntropicRogersShephard.SimplexMixtureEntropy": {
+      "status": "PASS",
+      "cached": true,
+      "source_sha256": "5511bcb5c16b079d64fb078d07b3f127ffdc49d653e3bfce8b03d9e89154ce9f",
+      "dependency_sha256": {
+        "EntropicRogersShephard.SimplexKernel": "109fe10b66a39c23516512fb4896c2517d365e4a0e010a757309e7902b975ef4"
+      },
+      "seconds": 0
+    },
+    "EntropicRogersShephard.BodyEntropyBound": {
+      "status": "PASS",
+      "cached": true,
+      "source_sha256": "f510b7710f857eb0942899d08199b51cdb92e2f3c5fb760aac032e9d527b8ba1",
+      "dependency_sha256": {
+        "EntropicRogersShephard.BodyMoments": "f25bea6ed8bdde3891846e31e4c5773938cd01e5526f62ce410408f58eae4381",
+        "EntropicRogersShephard.WeightedTilt": "d199209b5aafec29c576941abb1341e66dc7cb563cafc4503cc8437bfbddce32"
+      },
+      "seconds": 0
+    },
+    "EntropicRogersShephard.FiberTransport": {
+      "status": "PASS",
+      "cached": true,
+      "source_sha256": "8f5cdf1bc6df77385f3822da0e1a4b566e2ec4b377f7cfb3dcbbaf755275e207",
+      "dependency_sha256": {
+        "EntropicRogersShephard.BodyEntropyBound": "357f056d4878dc386372475f3084bb6823b6462f54bd3021b9098c09a72120c1",
+        "EntropicRogersShephard.FiberDifferenceBounds": "39f6e0bddd7fd1defc517524abc435b3a16a9fd6b2813b7bb9ae808d35972a31"
+      },
+      "seconds": 0
+    },
+    "EntropicRogersShephard.FiberMixtureRows": {
+      "status": "PASS",
+      "cached": true,
+      "source_sha256": "eccc7ccd4a4b597bd5f47783d2ccfd121e9f51fd7dfd5f4cf4d2ba75baa53e2a",
+      "dependency_sha256": {
+        "EntropicRogersShephard.FiberTransport": "be906e70c12899f599d2a8d1f5d1af1610b359fbd06889af8d6dab95be2d1fba",
+        "EntropicRogersShephard.SimplexMixtureEntropy": "41fab6d4deb25ac2ca13a891e8a3283995eb65b71b3ab982b024953821d390c8"
+      },
+      "seconds": 0
+    },
+    "EntropicRogersShephard.FiberCancellation": {
+      "status": "PASS",
+      "cached": true,
+      "source_sha256": "25f15cb745a5db57f486a20b7c81ebc4d106d33458f1ca2d178db5025dd511db",
+      "dependency_sha256": {
+        "EntropicRogersShephard.FiberMixtureRows": "591b93fac477076f379ae71c6091ed3e8d1bcbdbf2a1963fa26fe55fab3bf639"
+      },
+      "seconds": 0
+    },
+    "EntropicRogersShephard.FiberExtension": {
+      "status": "PASS",
+      "cached": true,
+      "source_sha256": "e453f9b626b81b80891d0a3efe7ea566ccc137aebdcbf8b4a42bfd1a726066a5",
+      "dependency_sha256": {
+        "EntropicRogersShephard.FiberCancellation": "6a4d99df29cbf1697faafd0d7a7f225382560df5deddb59fdd1b4010dbc33975"
+      },
+      "seconds": 0
+    },
+    "EntropicRogersShephard.ConcaveApproximation": {
+      "status": "PASS",
+      "cached": true,
+      "source_sha256": "43bec3b6f7410a66a20091051647684c114641090ab778973987062e5a9f3de4",
+      "dependency_sha256": {
+        "EntropicRogersShephard.CompactConvergence": "8fd7603e77d333912a03049b0770158093afa9289dea2d1c16d4af083b797700",
+        "EntropicRogersShephard.FiberExtension": "a9735fc54a2e4498bae9fc96fc0948d3d33253a75862d90f682b458860b3bb4a",
+        "EntropicRogersShephard.FiniteSupportLimit": "650347b529c948372f191f0ed019bed3320a2f28501d8de8c3f6d60f7806e84f"
+      },
+      "seconds": 0
+    },
+    "EntropicRogersShephard.CompactExponentialBound": {
+      "status": "PASS",
+      "cached": true,
+      "source_sha256": "7897ebea5e00539cca37b5b1dff900c4c4d8cd9e6d3ba955da1c0d6d5a9d2142",
+      "dependency_sha256": {
+        "EntropicRogersShephard.ConcaveApproximation": "eaff72b199efa0f5d7dc9f19491cb7baf6e4b085929cd5653acbd8d06e0ceb9a"
+      },
+      "seconds": 0
+    },
+    "EntropicRogersShephard.LocalLogConcave": {
+      "status": "PASS",
+      "cached": true,
+      "source_sha256": "7c6ff8cdb50c80d7a45a96d12ef2b58efa06306bb71075fa7c71c82e433f3153",
+      "dependency_sha256": {
+        "EntropicRogersShephard.CompactExponentialBound": "9724cb7880694a1b9042dbfa89815281eb8a939bfdff90b7baa1a38920b081fd",
+        "EntropicRogersShephard.LogConcavity": "cdd46a42bca48da18c47bc8f8f790fad28e60fe83b8db11cd0f1cdaf037327c4"
+      },
+      "seconds": 0
+    },
+    "EntropicRogersShephard.CompactRestrictions": {
+      "status": "PASS",
+      "cached": true,
+      "source_sha256": "fb347366784263822dece8e691b1cb559f4e1442061c6b5b57478ee1d7115c06",
+      "dependency_sha256": {
+        "EntropicRogersShephard.LocalLogConcave": "4f978c1c34b2086e8e112fb5b3a53e4e91c77b889839961b767f7e515c20d7bd",
+        "EntropicRogersShephard.DominatedConvolution": "74f828b240788f1cdb2fa9b79fe634538f6c827cb68c1a1477b33551aac18641"
+      },
+      "seconds": 0
+    },
+    "EntropicRogersShephard.GeneralDensityBound": {
+      "status": "PASS",
+      "cached": true,
+      "source_sha256": "52d7a4e84b3e4041504c36551dac988c9e3dd054744e4dd0b87a31129c535c22",
+      "dependency_sha256": {
+        "EntropicRogersShephard.CompactRestrictions": "ea8973066b9fdd8d58d55cbb0aaccb4ec4b616aba456eeab6dbac91c05d63bcf"
+      },
+      "seconds": 0
+    },
+    "EntropicRogersShephard.ProbabilityLaw": {
+      "status": "PASS",
+      "cached": true,
+      "source_sha256": "980172aa50de30bca9521b565845c38c549eea54368b3a63ba51fc75fa65ee2e",
+      "dependency_sha256": {
+        "EntropicRogersShephard.GeneralDensityBound": "f4c138f59b7b18579796d27c51f9b614cd188a0b21f9d717c2d89661223f5eeb",
+        "EntropicRogersShephard.DensityMeasure": "b2ecdc756d3bb251f6826f9cec94e7fd4d4ab04deb5c313f265e3a88b2eb89ce"
+      },
+      "seconds": 0
+    },
+    "EntropicRogersShephard.AffineVolume": {
+      "status": "PASS",
+      "cached": true,
+      "source_sha256": "e4458e92c9b4cfa763bf8fc38bc775d22687243885e159cbe57b484520d3d307",
+      "dependency_sha256": {
+        "EntropicRogersShephard.ProbabilityLaw": "aa501e2c9dcf4e9db6c28e2760ea93010d767799468815ca6e89d778fb55be45"
+      },
+      "seconds": 0
+    },
+    "EntropicRogersShephard.AffineDensity": {
+      "status": "PASS",
+      "cached": true,
+      "source_sha256": "42fb957c09c386f4cf13016ee8d91e62aa1c974f1a9a045bad68f370cc949161",
+      "dependency_sha256": {
+        "EntropicRogersShephard.AffineVolume": "c26f885b5c52514e25a49da62c0ec6da528621dafa1e9b3cdb5c435ef3754902"
+      },
+      "seconds": 0
+    },
+    "EntropicRogersShephard.AffineEntropy": {
+      "status": "PASS",
+      "cached": true,
+      "source_sha256": "3e845a79ef780209e08eee3ff699dd2035841ed9fe7bb57b57a8ceeb5b1e4e4d",
+      "dependency_sha256": {
+        "EntropicRogersShephard.AffineDensity": "faa774108ac67a2561ee27d3ecb3586375fc353714684856ce694e975bcefb76"
+      },
+      "seconds": 0
+    },
+    "EntropicRogersShephard.AffineLaw": {
+      "status": "PASS",
+      "cached": true,
+      "source_sha256": "1bb73d0d1ddbf1702e86a9d11c4ebac2a57bb7a5fb672c7d1796d525b3c28dcb",
+      "dependency_sha256": {
+        "EntropicRogersShephard.AffineDensity": "faa774108ac67a2561ee27d3ecb3586375fc353714684856ce694e975bcefb76"
+      },
+      "seconds": 0
+    },
+    "EntropicRogersShephard.ProductDensity": {
+      "status": "PASS",
+      "exit_code": 0,
+      "seconds": 34.63,
+      "source_sha256": "4a86b8a5c1f4dc132295c4dc72aadc045a994ee15017b86bd83545b0c3b71190",
+      "dependency_sha256": {
+        "EntropicRogersShephard.ProbabilityLaw": "aa501e2c9dcf4e9db6c28e2760ea93010d767799468815ca6e89d778fb55be45"
+      }
+    },
+    "EntropicRogersShephard.ExponentialExample": {
+      "status": "PASS",
+      "exit_code": 0,
+      "seconds": 25.98,
+      "source_sha256": "5d048cb51c59cf92544c2b570ee87ecb5e60cb79ac1e890fb191263a64996bf2",
+      "dependency_sha256": {
+        "EntropicRogersShephard.ProductDensity": "921bb67ff32a3136b9b645278973fe23c68b1876b6e45af2b0d0b1e9c7f4e78e"
+      }
+    },
+    "EntropicRogersShephard.ExponentialSharpness": {
+      "status": "PASS",
+      "exit_code": 0,
+      "seconds": 65.41,
+      "source_sha256": "75832716d8bef23b9e3ca2622f536325d06545629a4cf302f30f4c3aa35dbacb",
+      "dependency_sha256": {
+        "EntropicRogersShephard.ExponentialExample": "d6f4dd5d02deb09170053c89f7bf7462c7b406d4adbcd3b9eed89bef31ced954"
+      }
+    },
+    "EntropicRogersShephard.AffineSharpness": {
+      "status": "PASS",
+      "exit_code": 0,
+      "seconds": 78.88,
+      "source_sha256": "91a68610921fdfb1ad9f75f1e8f8bbf6b57a9e36ef09875b01b40f5da2dfa6c1",
+      "dependency_sha256": {
+        "EntropicRogersShephard.AffineEntropy": "0ee09ee391a6ae9f7c2759fb16d3852f4ffa618a250dea2d88e9877f32b452f7",
+        "EntropicRogersShephard.ExponentialSharpness": "05f0dcad4af4e3f800a9e8f1969f7c7a6880961c11898310d67078f3d432e8e2",
+        "EntropicRogersShephard.AffineLaw": "10c44357c17f28adab5765990712720530c2e15f3c07216f44a7f1671d6edc57"
+      }
+    },
+    "EntropicRogersShephard.Main": {
+      "status": "PASS",
+      "exit_code": 0,
+      "seconds": 132.0,
+      "source_sha256": "ecda92d8a5f8474820fc2c6ba27dd4009b77d30e760467fc5467a45f604cf1ce",
+      "dependency_sha256": {
+        "EntropicRogersShephard.MonotoneTilt": "9c50e8e1edfada4b1af7d66ec4f02791ba4c34bf42e97b7522c91aa6ccbbb55f",
+        "EntropicRogersShephard.AffineSharpness": "34190cd83eccf64f1815be8e740cd263b4dc45854b10b42464c3fe28a42708f3"
+      }
+    },
+    "EntropicRogersShephard.Audit": {
+      "status": "PASS",
+      "exit_code": 0,
+      "seconds": 75.21,
+      "source_sha256": "b6450953aaad2aeed20c661be1150b9ed06e5d6e009cde857e316068bbd567e2",
+      "dependency_sha256": {
+        "EntropicRogersShephard.MonotoneTilt": "9c50e8e1edfada4b1af7d66ec4f02791ba4c34bf42e97b7522c91aa6ccbbb55f",
+        "EntropicRogersShephard.CompactConvergence": "8fd7603e77d333912a03049b0770158093afa9289dea2d1c16d4af083b797700",
+        "EntropicRogersShephard.FiberExtension": "a9735fc54a2e4498bae9fc96fc0948d3d33253a75862d90f682b458860b3bb4a",
+        "EntropicRogersShephard.SimplexScaling": "b31d7691d7b4cf558fa4602ea36772693efd25f888758ff55d6590812aad3fb9",
+        "EntropicRogersShephard.ConvexApproximation": "3875fce861bdba5ea0709b04715fe8d0b873c58173f3f85af33bd34b4cb8b951",
+        "EntropicRogersShephard.ExponentialSharpness": "05f0dcad4af4e3f800a9e8f1969f7c7a6880961c11898310d67078f3d432e8e2",
+        "EntropicRogersShephard.BodyEntropyBound": "357f056d4878dc386372475f3084bb6823b6462f54bd3021b9098c09a72120c1",
+        "EntropicRogersShephard.LogConcavity": "cdd46a42bca48da18c47bc8f8f790fad28e60fe83b8db11cd0f1cdaf037327c4",
+        "EntropicRogersShephard.Main": "e8a78fed8b745f3e2c9c3936e937f109935e7b9503420988acfa9ad374fe41bf",
+        "EntropicRogersShephard.ProbabilityLaw": "aa501e2c9dcf4e9db6c28e2760ea93010d767799468815ca6e89d778fb55be45"
+      }
+    },
+    "FCSolution": {
+      "status": "PASS",
+      "exit_code": 0,
+      "seconds": 76.02,
+      "source_sha256": "716b822cd3bc96c5789d41960839ddc916fd02d7fa744add286f52dd5e1a95cd",
+      "dependency_sha256": {
+        "EntropicRogersShephard.Main": "e8a78fed8b745f3e2c9c3936e937f109935e7b9503420988acfa9ad374fe41bf",
+        "FCTargetDefinitions": "330720b83222adb4bda2c7721f7254aa868a1c2b9233741eacbda0476d2fbe1c"
+      }
+    },
+    "FCAudit": {
+      "status": "PASS",
+      "exit_code": 0,
+      "seconds": 14.66,
+      "source_sha256": "1d0ddf39122e3912a40b87a2ef07361d1f8c59dd5bdcafaf99a6e311340966be",
+      "dependency_sha256": {
+        "FCSolution": "e96936d47454a3f7be3877832eb8a80c516e7493780e6d63fa5c2616795d8c6e"
+      }
+    }
   },
-  {
-    "module": "LeanPool.Isoperimetric.PrekopaLeindler",
-    "sha256": "3841617c2611a6cfcafa653e0a7cbe36a17168bbc8601de8ae5145150720b9af",
-    "status": "reused"
-  },
-  {
-    "module": "LeanPool.Isoperimetric.BrunnMinkowski",
-    "sha256": "613777d3f642a0e53c93d7e77c06e1ee7ca73417bbf781709e55b708fcee383d",
-    "status": "reused"
-  },
-  {
-    "module": "EntropicRogersShephard",
-    "sha256": "84581437e94d6d88730b6c92b6d1db01a486099ab89c41f45a29ea7ab59a9dc9",
-    "seconds": 26.47,
-    "exit_code": 0
-  },
-  {
-    "module": "EntropicRogersShephard.Density",
-    "sha256": "167e833af0bde9a85be85fe13d57c6dcf07eeea0434baa08ca3af534ee20d3cf",
-    "seconds": 16.42,
-    "exit_code": 0
-  },
-  {
-    "module": "EntropicRogersShephard.PowerDensity",
-    "sha256": "135ef869e48cbb1207bd00a14a7ef1fa0c1ea7bdb63eca61c1137100562202a2",
-    "seconds": 6.47,
-    "exit_code": 0
-  },
-  {
-    "module": "EntropicRogersShephard.FiniteSupportLimit",
-    "sha256": "1b7a141f8e68cb4caab1d4086abbf144e6bbeaea72a9e43636bbbc2215ba1be4",
-    "seconds": 4.83,
-    "exit_code": 0
-  },
-  {
-    "module": "EntropicRogersShephard.FiberVolume",
-    "sha256": "8d09ab85e68cf0dbdea59476c99bd663713b603526bee1d49a55eb15533a359b",
-    "seconds": 5.05,
-    "exit_code": 0
-  },
-  {
-    "module": "EntropicRogersShephard.SimplexDensity",
-    "sha256": "023dc9698bb5502bb1b2abbe507a10f30150913f2245bf51585cfb47f4b05884",
-    "seconds": 8.18,
-    "exit_code": 0
-  },
-  {
-    "module": "EntropicRogersShephard.BodyDensity",
-    "sha256": "9f6d3dffdc1f6434fd4171ad9cf1b9749401d89e9854d54868b245dbed3b0f9e",
-    "seconds": 8.8,
-    "exit_code": 0
-  },
-  {
-    "module": "EntropicRogersShephard.BoundedDensity",
-    "sha256": "72aba381cd03b14a3bfd8978da339caeae350f5dd3185bf6f754c5ed43395a43",
-    "seconds": 9.17,
-    "exit_code": 0
-  },
-  {
-    "module": "EntropicRogersShephard.FiberEntropy",
-    "sha256": "1c640a601c6df429488c96811afcb1120d7a925f8976b2f72056c64a929663aa",
-    "seconds": 9.42,
-    "exit_code": 0
-  },
-  {
-    "module": "EntropicRogersShephard.FiberDifference",
-    "sha256": "3e685b4c2b075c193ac26fbd7bc7451eda1f4bdb2b4b16a7181139b287ca657b",
-    "seconds": 54.77,
-    "exit_code": 0
-  },
-  {
-    "module": "EntropicRogersShephard.FiberDifferenceBounds",
-    "sha256": "ecac7caa6a0aa6ed4269c9fe363c1749131eda224e91944f8039ed2a0f04ef11",
-    "seconds": 43.32,
-    "exit_code": 0
-  },
-  {
-    "module": "EntropicRogersShephard.RadialOverlap",
-    "sha256": "3031eaa917904233c61e9fcb3e8d5f6330dd545b601cbfdb7af7997222e381d7",
-    "seconds": 47.59,
-    "exit_code": 0
-  },
-  {
-    "module": "EntropicRogersShephard.OrthantGeometry",
-    "sha256": "0478d85395332994a12b68fe84a339816f9b9b6030c46657aad9e95581b1700b",
-    "seconds": 51.72,
-    "exit_code": 0
-  },
-  {
-    "module": "EntropicRogersShephard.LayerMoments",
-    "sha256": "4736b9f8a04f5da4a573208486c932d9e17d2f6a5ce39a35edb4c7011124a82e",
-    "seconds": 39.58,
-    "exit_code": 0
-  },
-  {
-    "module": "EntropicRogersShephard.LayerNormalization",
-    "sha256": "32716df5943dd997d99606663f87fc0fe33f68481fb464f11216fe1e823db3fc",
-    "seconds": 16.45,
-    "exit_code": 0
-  },
-  {
-    "module": "EntropicRogersShephard.LayerCoefficients",
-    "sha256": "2c7da5e264de0c99258b535dc42402ced3b97e0b4b24da43cf1abdf1802ee5b2",
-    "seconds": 13.22,
-    "exit_code": 0
-  },
-  {
-    "module": "EntropicRogersShephard.LayerLogMoments",
-    "sha256": "c65b4623ba7a2c72b80e5fe4c420789701b4afb43da09f375c1b986c47bdd239",
-    "seconds": 23.86,
-    "exit_code": 0
-  },
-  {
-    "module": "EntropicRogersShephard.BodyLayers",
-    "sha256": "ac6ce382d822ace5f575388ea2ffcad22b9fb09019659fa5de8e41bb6ef47436",
-    "seconds": 30.76,
-    "exit_code": 0
-  },
-  {
-    "module": "EntropicRogersShephard.BodyMoments",
-    "sha256": "0bbe3985bfd7d70b30f4cbdca317610e33526c20aaa34ca3af2859e7e969d828",
-    "seconds": 42.24,
-    "exit_code": 0
-  },
-  {
-    "module": "EntropicRogersShephard.MonotoneTilt",
-    "sha256": "ff95daf0c9caefb6daf0d39735a0f984b1a1719c1f47696be315f6d2daa31f82",
-    "seconds": 37.4,
-    "exit_code": 0
-  },
-  {
-    "module": "EntropicRogersShephard.WeightedTilt",
-    "sha256": "f76669efcde0da3b60ad894b3dea577fe3a06c4d7f984c98af41bfccc1f1b540",
-    "seconds": 29.31,
-    "exit_code": 0
-  },
-  {
-    "module": "EntropicRogersShephard.BodyEntropyBound",
-    "sha256": "8739d46b405ac90e0ba5d571443a46486f49441fb8b54dce916820ebbf86287b",
-    "seconds": 30.59,
-    "exit_code": 0
-  },
-  {
-    "module": "EntropicRogersShephard.FiberTransport",
-    "sha256": "8f5cdf1bc6df77385f3822da0e1a4b566e2ec4b377f7cfb3dcbbaf755275e207",
-    "seconds": 19.17,
-    "exit_code": 0
-  },
-  {
-    "module": "EntropicRogersShephard.DensityMeasure",
-    "sha256": "02f3025145694fbe757d60446d2151543feb74adfe03eb30f4d33f6a4e5093cb",
-    "seconds": 14.47,
-    "exit_code": 0
-  },
-  {
-    "module": "EntropicRogersShephard.BoundedMixture",
-    "sha256": "e14bd4316d9fb33fd9abe38edb0051abee9efe1b0da40c94ffeab5bb6e39ff46",
-    "seconds": 17.88,
-    "exit_code": 0
-  },
-  {
-    "module": "EntropicRogersShephard.MixtureMass",
-    "sha256": "353b619fc150a3e8fccd9b2accb6c1483008bcb398a9aec14d92d0f51f34a162",
-    "seconds": 17.59,
-    "exit_code": 0
-  },
-  {
-    "module": "EntropicRogersShephard.SimplexEntropy",
-    "sha256": "242d5b30e00d1611ed4cb0f72cee5ebf077c1197431159592f06e30fdae69837",
-    "seconds": 14.47,
-    "exit_code": 0
-  },
-  {
-    "module": "EntropicRogersShephard.SimplexScaling",
-    "sha256": "7015e289ec78893a43c6dd8425fdc29a88a2865e394c7724052072c089a81b7f",
-    "seconds": 12.09,
-    "exit_code": 0
-  },
-  {
-    "module": "EntropicRogersShephard.SimplexKernel",
-    "sha256": "cefd9165f4d0b37154881fa71e0e17a3ecdfe95d801595e1dacd468ec99e5b81",
-    "seconds": 11.25,
-    "exit_code": 0
-  },
-  {
-    "module": "EntropicRogersShephard.SimplexMixtureEntropy",
-    "sha256": "5511bcb5c16b079d64fb078d07b3f127ffdc49d653e3bfce8b03d9e89154ce9f",
-    "seconds": 7.91,
-    "exit_code": 0
-  },
-  {
-    "module": "EntropicRogersShephard.FiberMixtureRows",
-    "sha256": "eccc7ccd4a4b597bd5f47783d2ccfd121e9f51fd7dfd5f4cf4d2ba75baa53e2a",
-    "seconds": 8.31,
-    "exit_code": 0
-  },
-  {
-    "module": "EntropicRogersShephard.FiberCancellation",
-    "sha256": "25f15cb745a5db57f486a20b7c81ebc4d106d33458f1ca2d178db5025dd511db",
-    "seconds": 8.78,
-    "exit_code": 0
-  },
-  {
-    "module": "EntropicRogersShephard.FiberExtension",
-    "sha256": "e453f9b626b81b80891d0a3efe7ea566ccc137aebdcbf8b4a42bfd1a726066a5",
-    "seconds": 10.67,
-    "exit_code": 0
-  },
-  {
-    "module": "EntropicRogersShephard.CompactConvergence",
-    "sha256": "6a5ab3684a8e3a73fa1ba7fc3692ebae27b47e83f182ebbecc33cf48ce4af53a",
-    "seconds": 6.69,
-    "exit_code": 0
-  },
-  {
-    "module": "EntropicRogersShephard.ConcaveApproximation",
-    "sha256": "43bec3b6f7410a66a20091051647684c114641090ab778973987062e5a9f3de4",
-    "seconds": 10.4,
-    "exit_code": 0
-  },
-  {
-    "module": "EntropicRogersShephard.CompactExponentialBound",
-    "sha256": "7897ebea5e00539cca37b5b1dff900c4c4d8cd9e6d3ba955da1c0d6d5a9d2142",
-    "seconds": 6.96,
-    "exit_code": 0
-  },
-  {
-    "module": "EntropicRogersShephard.ConvexVolume",
-    "sha256": "a2edbe8dc8de548a37e8f436a27fcb11cc623e11d87bddc870a993ee0b6b8e70",
-    "status": "reused"
-  },
-  {
-    "module": "EntropicRogersShephard.ConvexExhaustion",
-    "sha256": "39970f2eb66ebea3c9b7acbcedbc88eedfa62cac50f6420ede94e5fc077d2af5",
-    "status": "reused"
-  },
-  {
-    "module": "EntropicRogersShephard.ConvexApproximation",
-    "sha256": "b5d67d19bc055b925f7e7882c46b5a5fc2b10b0061abc1ad6e473509f4be3b15",
-    "status": "reused"
-  },
-  {
-    "module": "EntropicRogersShephard.LogConcavity",
-    "sha256": "c93b314fe1332f78c6c3d00ebac933518dc217dff72b58c46684821c25ccdb08",
-    "seconds": 6.2,
-    "exit_code": 0
-  },
-  {
-    "module": "EntropicRogersShephard.LocalLogConcave",
-    "sha256": "7c6ff8cdb50c80d7a45a96d12ef2b58efa06306bb71075fa7c71c82e433f3153",
-    "seconds": 6.02,
-    "exit_code": 0
-  },
-  {
-    "module": "EntropicRogersShephard.GlobalDensityBound",
-    "sha256": "b0c9b0e557b854a0ece156a9126c93089865b34c2b67c4ea20f67bb40d3cf3a7",
-    "seconds": 5.92,
-    "exit_code": 0
-  },
-  {
-    "module": "EntropicRogersShephard.ExponentialTails",
-    "sha256": "80fd00bfb58c6a560249b821265bc7c4bcbb9342605cc8609f40e60bf8341900",
-    "seconds": 7.29,
-    "exit_code": 0
-  },
-  {
-    "module": "EntropicRogersShephard.ExponentialIntegrability",
-    "sha256": "c810299dc11f2c6b5a4a718cf0c18f90ae133a0444272b12229ef989f156307b",
-    "seconds": 8.22,
-    "exit_code": 0
-  },
-  {
-    "module": "EntropicRogersShephard.ExponentialConvergence",
-    "sha256": "6fbdcb968c9037b7df26a6777247849f19b38e9996f09c46cd3d8307cfaea771",
-    "seconds": 8.09,
-    "exit_code": 0
-  },
-  {
-    "module": "EntropicRogersShephard.DominatedConvolution",
-    "sha256": "d90361f526e42a8ae66c047ced477d0d330639ac7a7b255efaf1ad145f5cdad2",
-    "seconds": 6.41,
-    "exit_code": 0
-  },
-  {
-    "module": "EntropicRogersShephard.CompactRestrictions",
-    "sha256": "fb347366784263822dece8e691b1cb559f4e1442061c6b5b57478ee1d7115c06",
-    "seconds": 6.03,
-    "exit_code": 0
-  },
-  {
-    "module": "EntropicRogersShephard.GeneralDensityBound",
-    "sha256": "52d7a4e84b3e4041504c36551dac988c9e3dd054744e4dd0b87a31129c535c22",
-    "seconds": 8.64,
-    "exit_code": 0
-  },
-  {
-    "module": "EntropicRogersShephard.ProbabilityLaw",
-    "sha256": "980172aa50de30bca9521b565845c38c549eea54368b3a63ba51fc75fa65ee2e",
-    "seconds": 6.85,
-    "exit_code": 0
-  },
-  {
-    "module": "EntropicRogersShephard.AffineVolume",
-    "sha256": "e4458e92c9b4cfa763bf8fc38bc775d22687243885e159cbe57b484520d3d307",
-    "seconds": 9.14,
-    "exit_code": 0
-  },
-  {
-    "module": "EntropicRogersShephard.AffineDensity",
-    "sha256": "42fb957c09c386f4cf13016ee8d91e62aa1c974f1a9a045bad68f370cc949161",
-    "seconds": 12.14,
-    "exit_code": 0
-  },
-  {
-    "module": "EntropicRogersShephard.AffineEntropy",
-    "sha256": "3e845a79ef780209e08eee3ff699dd2035841ed9fe7bb57b57a8ceeb5b1e4e4d",
-    "seconds": 11.22,
-    "exit_code": 0
-  },
-  {
-    "module": "EntropicRogersShephard.AffineLaw",
-    "sha256": "1bb73d0d1ddbf1702e86a9d11c4ebac2a57bb7a5fb672c7d1796d525b3c28dcb",
-    "seconds": 13.38,
-    "exit_code": 0
-  },
-  {
-    "module": "EntropicRogersShephard.ProductDensity",
-    "sha256": "6c52800f6d52828d712cd54ad5060ecae63e9b759372c1582a778dd794917d4c",
-    "seconds": 7.5,
-    "exit_code": 0
-  },
-  {
-    "module": "EntropicRogersShephard.ExponentialExample",
-    "sha256": "5d048cb51c59cf92544c2b570ee87ecb5e60cb79ac1e890fb191263a64996bf2",
-    "seconds": 7.05,
-    "exit_code": 0
-  },
-  {
-    "module": "EntropicRogersShephard.ExponentialSharpness",
-    "sha256": "75832716d8bef23b9e3ca2622f536325d06545629a4cf302f30f4c3aa35dbacb",
-    "seconds": 6.7,
-    "exit_code": 0
-  },
-  {
-    "module": "EntropicRogersShephard.AffineSharpness",
-    "sha256": "91a68610921fdfb1ad9f75f1e8f8bbf6b57a9e36ef09875b01b40f5da2dfa6c1",
-    "seconds": 7.88,
-    "exit_code": 0
-  },
-  {
-    "module": "EntropicRogersShephard.Main",
-    "sha256": "ecda92d8a5f8474820fc2c6ba27dd4009b77d30e760467fc5467a45f604cf1ce",
-    "seconds": 8.5,
-    "exit_code": 0
-  },
-  {
-    "module": "EntropicRogersShephard.Audit",
-    "sha256": "b6450953aaad2aeed20c661be1150b9ed06e5d6e009cde857e316068bbd567e2",
-    "seconds": 8.53,
-    "exit_code": 0
-  }
-]
+  "status": "PASS"
+}

@@ -1,0 +1,16 @@
+{
+  "comparator": {
+    "commit": "c0c5a52d2aff92b457c3e5ed4a68c1ebc5795809",
+    "upstream_toolchain": "leanprover/lean4:v4.33.0",
+    "build_toolchain": "leanprover/lean4:v4.33.1",
+    "toolchain_only_patch": true,
+    "patched_toolchain_sha256": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71"
+  },
+  "lean4export": {
+    "commit": "15f6055e299ad5b89345e533cc2192f4cc00f659",
+    "upstream_toolchain": "leanprover/lean4:v4.33.0",
+    "build_toolchain": "leanprover/lean4:v4.33.1",
+    "toolchain_only_patch": true,
+    "patched_toolchain_sha256": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71"
+  }
+}

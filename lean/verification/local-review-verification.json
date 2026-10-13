@@ -1,0 +1,69 @@
+{
+  "status": "PASS",
+  "checked_at_utc": "2026-10-13T10:45:15.610600+00:00",
+  "lean_toolchain": "leanprover/lean4:v4.33.1",
+  "mathlib_commit": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "fc_base_commit": "72dad3524e0174dea703f267664d3bc9298803a0",
+  "compiled_modules": 67,
+  "standard_lake_build": {
+    "exit_code": 0,
+    "jobs": 3111
+  },
+  "independent_minimal_fc_proof": {
+    "status": "PASS",
+    "exit_code": 0,
+    "lean_toolchain": "leanprover/lean4:v4.33.1",
+    "definitions": 2,
+    "theorems": 1,
+    "source_sha256": "498665b00b7d16e804b2fc66150110870a7410d86806b45ddf10b11d67abbd10",
+    "imports_fctargetdefinitions": false,
+    "imports_native_main": true
+  },
+  "comparator": {
+    "status": "PASS",
+    "exit_code": 0,
+    "seconds": 243.45,
+    "lean_toolchain": "leanprover/lean4:v4.33.1",
+    "comparator_commit": "c0c5a52d2aff92b457c3e5ed4a68c1ebc5795809",
+    "exporter_commit": "15f6055e299ad5b89345e533cc2192f4cc00f659",
+    "configuration_sha256": "8eeb955e7be0eafe4735f2ae26714b6aaee16010ac997bc33a5ed6d5d5f0c5f5",
+    "mode": "Local macOS functional check; upstream fake-landrun development shim; no Linux sandbox certification",
+    "linux_sandbox": false,
+    "default_kernel_accepts": true
+  },
+  "axiom_audit": {
+    "status": "PASS",
+    "lean_toolchain": "leanprover/lean4:v4.33.1",
+    "original_audit_targets": 446,
+    "additional_fc_targets": 5,
+    "total_audit_targets": 451,
+    "permitted_axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "sorryAx": false,
+    "new_axioms": false
+  },
+  "fresh_kernel_replay": {
+    "status": "PASS",
+    "exit_code": 0,
+    "seconds": 876.5,
+    "lean_toolchain": "leanprover/lean4:v4.33.1",
+    "command": "lake env leanchecker --fresh FCSolution"
+  },
+  "private_ci_run": false,
+  "public_ci_run": false,
+  "accepted_upstream_fc_target": false,
+  "source_sha256": {
+    "lean/FCSolution.lean": "716b822cd3bc96c5789d41960839ddc916fd02d7fa744add286f52dd5e1a95cd",
+    "lean/Challenge.lean": "c49dec0bc4dd2f685f613f32110dd06bec0f677c7aa00c54540cfdbd9067bff2",
+    "lean/FCTargetDefinitions.lean": "126257c80f9d480e55086292a4f6d73632484637afe19e20a9df75875ec1398f",
+    "FClikelean/EntropicRogersShephard.lean": "498665b00b7d16e804b2fc66150110870a7410d86806b45ddf10b11d67abbd10",
+    "lean/lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+    "lean/lakefile.toml": "fdcd30327ffa840448f9aa2df387821911e63d6b0638fc94c9bd003a252eb8dd",
+    "lean/lake-manifest.json": "6360f87f22a81ec9e77547663e2ea3bcd23b571aa85eca018c92794b81ca3331",
+    "lean/comparator.json": "8eeb955e7be0eafe4735f2ae26714b6aaee16010ac997bc33a5ed6d5d5f0c5f5"
+  },
+  "verification_complete_for_local_candidate": true
+}

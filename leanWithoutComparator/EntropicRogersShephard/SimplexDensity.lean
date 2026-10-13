@@ -75,8 +75,7 @@ theorem crossDifferenceDensity_uniformSimplex_le (m : ℕ) [NeZero m] {a b : ℝ
     pow_le_pow_left₀ (overlapRadius_nonneg a b z) (overlapRadius_le_right a b z hb.le) m
   have hden : 0 < a ^ m * b ^ m * (volume (simplex m 1)).toReal := by positivity
   apply (div_le_iff₀ hden).mpr
-  convert hpow using 1
-  field_simp
+  convert hpow using 1 <;> first | rfl | field_simp
 
 /-- A compact set containing the support of the simplex difference density. -/
 def simplexDifferenceSupport (m : ℕ) (a b : ℝ) : Set (Fin m → ℝ) :=

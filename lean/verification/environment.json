@@ -1,6 +1,8 @@
 {
-  "lean": "Lean (version 4.35.0-rc3, arm64-apple-darwin24.6.0, commit 470d5ce1400764999581fd26d5d72b00d990b0f4, Release)",
-  "mathlib": "f6090c7095e1e56b3464c1daba5f24631f1290d2",
+  "lean": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
   "mathlib_rebuilt_from_source": false,
-  "method": "Lean compiler against an existing read-only Mathlib build cache"
+  "method": "67 modules compiled with Lean 4.33.1; standard lake build FCSolution Challenge EntropicRogersShephard.Audit also passed",
+  "standard_lake_build_exit_code": 0,
+  "standard_lake_build_jobs": 3111
 }

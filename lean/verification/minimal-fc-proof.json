@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "exit_code": 0,
+  "lean_toolchain": "leanprover/lean4:v4.33.1",
+  "definitions": 2,
+  "theorems": 1,
+  "source_sha256": "498665b00b7d16e804b2fc66150110870a7410d86806b45ddf10b11d67abbd10",
+  "imports_fctargetdefinitions": false,
+  "imports_native_main": true
+}

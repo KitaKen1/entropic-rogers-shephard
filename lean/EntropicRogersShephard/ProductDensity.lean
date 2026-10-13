@@ -46,7 +46,7 @@ theorem isLogConcave_productDensity (n : ℕ) {f : ℝ → ℝ}
   rw [← Real.finsetProd_rpow univ (fun i => f (x i)) (fun i _ => hn (x i)) a,
     ← Real.finsetProd_rpow univ (fun i => f (y i)) (fun i _ => hn (y i)) b,
     ← Finset.prod_mul_distrib]
-  apply Finset.prod_le_prod₀
+  apply Finset.prod_le_prod
   · intro i _
     exact mul_nonneg (Real.rpow_nonneg (hn _) _) (Real.rpow_nonneg (hn _) _)
   · intro i _
@@ -64,7 +64,7 @@ theorem productDensity_coordinate_moment {n : ℕ} {f k : ℝ → ℝ}
     by_cases hj : j = i
     · subst j
       simpa [u, mul_comm] using hk
-    · simpa only [u, ite_eq_right hj, one_mul] using hf
+    · simpa only [u, if_neg hj, one_mul] using hf
   have he (x : Fin n → ℝ) : (∏ j, u j (x j)) = productDensity n f x * k (x i) := by
     simp only [u, productDensity]
     rw [Finset.prod_mul_distrib]
@@ -81,7 +81,7 @@ theorem productDensity_coordinate_moment {n : ℕ} {f k : ℝ → ℝ}
     by_cases hj : j = i
     · subst j
       simp [u, mul_comm]
-    · simp only [u, ite_eq_right hj, one_mul, h1]
+    · simp only [u, if_neg hj, one_mul, h1]
   simp_rw [hqi]
   simp
 

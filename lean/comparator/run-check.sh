@@ -8,15 +8,30 @@ printf 'NOT_RUN\n' > "$ERS_RECEIPT/status.txt"
 trap 'code=$?; if [[ $code -ne 0 ]]; then printf "FAIL: exit=%s\n" "$code" > "$ERS_RECEIPT/status.txt"; fi' EXIT
 python3 "$ERS_ROOT/lean/comparator/check-inputs.py" --receipt-dir "$ERS_RECEIPT"
 test "$(uname -s)" = Linux
-python3 - "$ERS_ROOT/lean/comparator/pins.json" "$COMPARATOR_TOOLS" "$ERS_ROOT/lean/lean-toolchain" <<'PY'
+python3 - "$ERS_ROOT/lean/comparator/pins.json" "$COMPARATOR_TOOLS" "$ERS_ROOT/lean/lean-toolchain" "$ERS_RECEIPT/checker-environment.json" <<'PY'
 from pathlib import Path
-import json, subprocess, sys
+import hashlib, json, re, subprocess, sys
 pins=json.load(open(sys.argv[1])); tools=Path(sys.argv[2])
 for tool,key in [('comparator','comparator_commit'),('landrun','landrun_commit'),('lean4export','lean4export_commit')]:
     actual=subprocess.check_output(['git','-C',str(tools/tool),'rev-parse','HEAD'],text=True).strip()
     if actual!=pins[key]: raise SystemExit('Tool commit differs: '+tool)
-if (tools/'lean4export/lean-toolchain').read_bytes()!=Path(sys.argv[3]).read_bytes():
-    raise SystemExit('Exporter toolchain differs from proof')
+for name in ['comparator','lean4export']:
+    if (tools/name/'lean-toolchain').read_bytes()!=Path(sys.argv[3]).read_bytes():
+        raise SystemExit('Toolchain differs from proof: '+name)
+    changed=subprocess.check_output(['git','-C',str(tools/name),'diff','--name-only'],text=True).splitlines()
+    if changed!=['lean-toolchain']:
+        raise SystemExit('Unexpected checker source changes: '+name)
+versions={}
+for name,directory in [('proof',Path(sys.argv[3]).parent),('comparator',tools/'comparator'),('lean4export',tools/'lean4export')]:
+    version=subprocess.check_output(['lake','env','lean','--version'],cwd=directory,text=True).strip()
+    if not re.search(r'Lean \(version 4\.33\.1(?:,|\))',version):
+        raise SystemExit('Compiler must be exactly Lean 4.33.1: '+name+': '+version)
+    versions[name]=version
+binaries={name:hashlib.sha256((tools/name/'.lake/build/bin'/name).read_bytes()).hexdigest()
+          for name in ['comparator','lean4export']}
+Path(sys.argv[4]).write_text(json.dumps({'status':'PASS','required_version':'4.33.1',
+    'compiler_versions':versions,'binary_sha256':binaries,
+    'source_changes':['lean-toolchain']},indent=2)+'\n')
 PY
 for ERS_FILE in lean/comparator.json lean/comparator/pins.json .github/workflows/comparator.yml lean/FCSolution.lean lean/FCTargetDefinitions.lean; do
   cp "$ERS_ROOT/$ERS_FILE" "$ERS_RECEIPT/$(basename "$ERS_FILE")"
@@ -30,6 +45,9 @@ done
   for ERS_TOOL in comparator landrun lean4export; do
     printf '%s_commit=%s\n' "$ERS_TOOL" "$(git -C "$COMPARATOR_TOOLS/$ERS_TOOL" rev-parse HEAD)"
   done
+  (cd "$COMPARATOR_TOOLS/comparator" && lake env lean --version)
+  (cd "$COMPARATOR_TOOLS/lean4export" && lake env lean --version)
+  git -C "$COMPARATOR_TOOLS/comparator" diff -- lean-toolchain
   git -C "$COMPARATOR_TOOLS/lean4export" diff -- lean-toolchain
   printf 'sandbox: unprivileged uid/gid, RestrictAddressFamilies=~AF_UNIX, NoNewPrivileges=yes\n'
 } > "$ERS_RECEIPT/environment.txt"

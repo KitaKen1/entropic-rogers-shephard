@@ -4,7 +4,7 @@ Hint: The binding can be removed (if unused) or named `_` (if used implicitly). 
   [apply] _hM
 
 Note: This linter can be disabled with `set_option linter.unusedVariables false`
-EntropicRogersShephard/GeneralDensityBound.lean:72:2: warning: Try this:
+EntropicRogersShephard/GeneralDensityBound.lean:72:2: warning: Try this: 
   letI̵
 
 The goal is a proposition, so `let` is preferred over `letI`.

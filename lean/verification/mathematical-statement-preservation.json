@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "source_origin_commit": "c34631bc744bf626e8225c6c91d5e13c7b8a0b4f",
+  "unchanged_by_proof_theorem_headers": 405,
+  "compatibility_edited_files": [
+    "EntropicRogersShephard/BodyEntropyBound.lean",
+    "EntropicRogersShephard/LayerLogMoments.lean",
+    "EntropicRogersShephard/LogConcavity.lean",
+    "EntropicRogersShephard/ProductDensity.lean",
+    "EntropicRogersShephard/SimplexDensity.lean",
+    "EntropicRogersShephard.lean",
+    "LeanPool/Isoperimetric/PrekopaLeindler.lean"
+  ],
+  "mathematical_statement_changes": false,
+  "scope": "Theorem/lemma declarations with := by, in the original 63 proof sources"
+}

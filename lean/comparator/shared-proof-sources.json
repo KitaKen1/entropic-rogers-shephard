@@ -31,7 +31,7 @@
     },
     {
       "path": "EntropicRogersShephard/BodyEntropyBound.lean",
-      "sha256": "8739d46b405ac90e0ba5d571443a46486f49441fb8b54dce916820ebbf86287b"
+      "sha256": "f510b7710f857eb0942899d08199b51cdb92e2f3c5fb760aac032e9d527b8ba1"
     },
     {
       "path": "EntropicRogersShephard/BodyLayers.lean",
@@ -159,7 +159,7 @@
     },
     {
       "path": "EntropicRogersShephard/LayerLogMoments.lean",
-      "sha256": "c65b4623ba7a2c72b80e5fe4c420789701b4afb43da09f375c1b986c47bdd239"
+      "sha256": "43501b14223644712cfb288dfe0884c3fd26aff005a47fbc0c5f3c1b8c4f26a2"
     },
     {
       "path": "EntropicRogersShephard/LayerMoments.lean",
@@ -175,7 +175,7 @@
     },
     {
       "path": "EntropicRogersShephard/LogConcavity.lean",
-      "sha256": "c93b314fe1332f78c6c3d00ebac933518dc217dff72b58c46684821c25ccdb08"
+      "sha256": "ef13e1f892816c6761d6afee019df6dc6472f9b481d790bbf1df113f501c896c"
     },
     {
       "path": "EntropicRogersShephard/Main.lean",
@@ -203,7 +203,7 @@
     },
     {
       "path": "EntropicRogersShephard/ProductDensity.lean",
-      "sha256": "6c52800f6d52828d712cd54ad5060ecae63e9b759372c1582a778dd794917d4c"
+      "sha256": "4a86b8a5c1f4dc132295c4dc72aadc045a994ee15017b86bd83545b0c3b71190"
     },
     {
       "path": "EntropicRogersShephard/RadialOverlap.lean",
@@ -211,7 +211,7 @@
     },
     {
       "path": "EntropicRogersShephard/SimplexDensity.lean",
-      "sha256": "023dc9698bb5502bb1b2abbe507a10f30150913f2245bf51585cfb47f4b05884"
+      "sha256": "2394e5dd18dfa04ded5dbe1b688c32c228c5537395eacffec30752ad9ef8498b"
     },
     {
       "path": "EntropicRogersShephard/SimplexEntropy.lean",
@@ -235,11 +235,11 @@
     },
     {
       "path": "EntropicRogersShephard.lean",
-      "sha256": "84581437e94d6d88730b6c92b6d1db01a486099ab89c41f45a29ea7ab59a9dc9"
+      "sha256": "f9ecaa777b393a47a011805d5222de3dcb537c119f91ee71b89a4d68e041681e"
     },
     {
       "path": "FCSolution.lean",
-      "sha256": "d6ad2945b867f2a7f021598daeeab8af3d7f3e0c9ceafbcadeab89bc5e774e7b"
+      "sha256": "716b822cd3bc96c5789d41960839ddc916fd02d7fa744add286f52dd5e1a95cd"
     },
     {
       "path": "FCTargetDefinitions.lean",
@@ -255,7 +255,7 @@
     },
     {
       "path": "LeanPool/Isoperimetric/PrekopaLeindler.lean",
-      "sha256": "3841617c2611a6cfcafa653e0a7cbe36a17168bbc8601de8ae5145150720b9af"
+      "sha256": "440eab3b5e58175101881d127e058c4ff279b21c22ff2536cd1ac4ae6eccfc6f"
     },
     {
       "path": "LeanPool.lean",

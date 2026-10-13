@@ -49,8 +49,7 @@ theorem positiveInterior_nonempty {n : ℕ} {f : (Fin n → ℝ) → ℝ}
     filter_upwards [positiveInterior_ae_eq hl] with x hx
     have hn : ¬ 0 < f x := by
       intro hp
-      have := hx.mpr hp
-      simpa [he] using this
+      exact Set.notMem_empty x (he ▸ hx.mpr hp)
     exact le_antisymm (not_lt.mp hn) (hf.2.1 x)
   have hi : (∫ x, f x) = 0 := by rw [integral_congr_ae hz, integral_zero]
   linarith [hf.2.2.2]

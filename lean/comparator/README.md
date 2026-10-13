@@ -7,7 +7,10 @@ audits the permitted axioms and replays the exported solution in the builtin Lea
 The independent fresh replay job checks the entire FCSolution environment.
 
 The version pins include the original proof commit, FC reference base, Mathlib,
-Lean Comparator, Landrun and a Lean4export release matching Lean 4.35.0-rc3 exactly.
+Lean Comparator, Landrun and Lean4export. The proof, reference, Comparator and
+Lean4export all build with Lean 4.33.1. The two checker tools are pinned to their
+last 4.33 source revisions, with a recorded toolchain-only change from 4.33.0 to
+4.33.1. Their Lean source code is unchanged.
 The trusted target depends only on Mathlib, uses fixed definitions without holes,
 and is compiled before proof build products are restored in the checking job.
 

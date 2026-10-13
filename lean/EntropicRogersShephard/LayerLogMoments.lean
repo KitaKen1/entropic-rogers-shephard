@@ -45,7 +45,7 @@ theorem integral_radiusLogKernel (m : ℕ) [NeZero m] {r : ℝ} (hr : 0 ≤ r) (
       HasDerivAt (radiusLogPrimitive m) ((m : ℝ) * t ^ (m - 1) * (-Real.log t)) t := by
     have h := (((hasDerivAt_id t).pow m).mul (Real.hasDerivAt_log ht.1.ne')).neg.add
       (((hasDerivAt_id t).pow m).div_const (m : ℝ))
-    convert h using 1
+    convert h using 1 <;> try rfl
     · funext u
       dsimp [radiusLogPrimitive]
       ring

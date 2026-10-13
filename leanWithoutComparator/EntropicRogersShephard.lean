@@ -661,11 +661,12 @@ theorem integral_pow_mul_log (k : ℕ) :
       ((k : ℝ) + 1)
     have h' := h.sub (((hasDerivAt_id t).pow (k + 1)).div_const (((k : ℝ) + 1) ^ 2))
     convert h' using 1
+    <;> (try rfl)
     <;> (try (funext x; rfl))
-    <;> dsimp [F]
+    <;> (try dsimp [F])
     <;> (try simp only [Nat.add_sub_cancel, Nat.cast_add, Nat.cast_one, mul_one])
-    <;> field_simp
-    <;> simp only [pow_succ]
+    <;> (try field_simp)
+    <;> (try simp only [pow_succ])
     <;> ring
   have hi := intervalIntegral.integral_eq_sub_of_hasDerivAt_of_le
     (show (0 : ℝ) ≤ 1 by norm_num) hc.continuousOn hd (intervalIntegrable_pow_mul_log k)
