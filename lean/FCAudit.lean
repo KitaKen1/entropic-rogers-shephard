@@ -1,0 +1,8 @@
+import FCSolution
+
+#print axioms EntropicRogersShephardFC.density_bound
+#print axioms EntropicRogersShephardFC.random_vector_bound
+#print axioms EntropicRogersShephardFC.affine_density_law
+#print axioms EntropicRogersShephardFC.affine_exponential_equality
+#print axioms EntropicRogersShephardFC.constant_optimal
+#print axioms EntropicRogersShephard.complete_sharp_entropic_rogers_shephard

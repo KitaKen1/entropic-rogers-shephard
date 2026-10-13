@@ -1,79 +1,60 @@
-# A Sharp Entropic Rogers–Shephard Inequality via Simplex Fibers
+# A sharp entropic Rogers–Shephard inequality
 
-The entropic Rogers–Shephard inequality asks for the following assertion.
-
-> [!NOTE]
-> **Theorem.** Let $`X,X'`$ be independent random vectors with the same log-concave probability density on $`\mathbb R^n`$, where $`n\ge1`$. Both differential entropies are finite, and
+> **Theorem.** Let X and X' be independent random vectors with the same log-concave
+> probability density on real n-space, n ≥ 1. Both differential entropies are finite, and
 >
-> $$h(X-X')-h(X)\le n\log2.$$
+> $$h(X-X')-h(X)\le n\log 2.$$
 >
-> The constant is best possible in every dimension. Products of one-sided exponential distributions, and their invertible affine images, attain equality.
+> The constant is best possible. Products of one-sided exponential distributions and
+> all their invertible affine images attain equality. Logarithms are natural.
 
-All logarithms are natural, and $`h`$ denotes differential entropy. This repository contains the [PDF proof note](PDF/entropic-rogers-shephard.pdf) and its completed Lean formalization. A proof sketch follows.
+The canonical Lean proof is [lean/FCSolution.lean](lean/FCSolution.lean), connected to
+the [complete main theorem](lean/EntropicRogersShephard/Main.lean). The
+[PDF proof note](PDF/entropic-rogers-shephard.pdf) gives the paper argument.
 
-## Proof sketch
+## Files
 
-Write $`H_k=\sum_{j=1}^k1/j`$ and $`F(k)=k(H_{2k}-H_k)`$.
+| Path | Purpose |
+|---|---|
+| [lean/](lean/) | Canonical proof, fixed dependencies, proposed target and Comparator configuration. |
+| [leanWithoutComparator/](leanWithoutComparator/) | The same proof for browsing and building, with Comparator-only files removed. All 65 common Lean sources are byte-identical. |
+| [FClikelean/](FClikelean/) | Proposed FC-style target for [issue #7196](https://github.com/google-deepmind/formal-conjectures/issues/7196). |
+| [Target correspondence](lean/comparator/TARGET-CORRESPONDENCE.md) | Clause-by-clause match between the natural language and the formal statements. |
+| [.github/workflows/](.github/workflows/) | Fresh Linux build, Comparator, axiom audit and fresh kernel replay. |
+| [PDF/](PDF/) | Proof note and its existing timestamp evidence. |
 
-### 1. Bound the entropy increment for uniform convex bodies
+## Proof
 
-For independent uniform vectors on the same $`N`$-dimensional convex body,
+For uniform convex bodies, Brunn–Minkowski and an overlap-density logarithmic moment
+give the entropy increment bound F(N)=N(H₂N−H_N).
+Explicit scaled-simplex difference densities give the corresponding fiber comparison.
+A convex simplex-fiber lift bounds a concave-power density by F(n+m)−F(m).
+Compact approximation and exponential tail bounds pass to every log-concave probability
+density; the difference of harmonic expressions tends to n log 2.
+The explicit exponential-product difference is a product of Laplace densities.
+Both entropies shift by the same log determinant under an invertible affine map.
 
-```math
-h(Z-Z')-h(Z)\le F(N).
-```
+## Verification
 
-Brunn–Minkowski gives a radial inequality for the $`N`$th root of the overlap density. The increasing level-volume ratio and a weighted logarithmic mean give the entropy bound.
+The original proof has 445 local theorems and a 446-target axiom audit, including the
+imported Brunn–Minkowski theorem. Its mathematical sources are unchanged from
+`c34631bc744bf626e8225c6c91d5e13c7b8a0b4f`.
+The publication layer adds five target statements and direct proof connections.
+Only `propext`, `Classical.choice`, and `Quot.sound` are permitted.
 
-### 2. Compare differences of scaled simplices
-
-For independent uniform vectors $`U,V`$ on the standard $`m`$-simplex and all $`a,b>0`$,
-
-```math
-h(aU-bV)\ge h(U-V)+\frac m2(\log a+\log b),
-\qquad h(U-V)-h(U)=F(m).
-```
-
-Compute the density and its level-set volumes. Normalization fixes the coefficients, and integer Beta-log moments give a binomial average of harmonic numbers and the comparison.
-
-### 3. Lift a concave power to a convex body
-
-Let $`\rho`$ be an upper semicontinuous concave function on a convex body $`K\subset\mathbb R^n`$, with $`0<c\le\rho\le C`$. A density proportional to $`\rho^m`$ is the marginal of the uniform distribution on
-
-```math
-B_\rho=\{(x,y):x\in K,\ y_i\ge0,\ \textstyle\sum_i y_i\le\rho(x)\}.
-```
-
-Entropy concavity for the explicit mixture of simplex-difference densities, combined with the first two steps, yields
-
-```math
-h(X-X')-h(X)\le F(n+m)-F(m).
-```
-
-### 4. Pass to a log-concave density
-
-Write $`f\propto e^{-V}`$ with $`V\ge0`$ convex. On each fixed compact sublevel set $`\{V\le R\}`$, approximate $`e^{-V}`$ uniformly by $`(1-V/m)^m`$. Since
-
-```math
-\lim_{m\to\infty}\bigl(F(n+m)-F(m)\bigr)=n\log2,
-```
-
-the bound follows on that sublevel set. Common exponential bounds for the original and difference densities justify entropy convergence as $`R\to\infty`$.
-
-## Lean formalization
-
-The final theorem
-[`complete_sharp_entropic_rogers_shephard`](Lean/EntropicRogersShephard/Main.lean)
-combines the general-density inequality, both finite entropies, the independent
-random-vector difference law, all invertible affine images of the exponential
-equality example, and optimality of the constant. Entropy integrability and tail
-bounds are conclusions, rather than additional hypotheses.
-
-The project uses fixed Lean and Mathlib versions. All 445 local theorems and the
-imported Brunn–Minkowski theorem passed the 446-target axiom audit, with no
-`sorryAx` or added axioms. Build instructions and the module map are in
-[Lean/README.md](Lean/README.md).
+The target is a local proposal for the natural-language issue, not an accepted upstream
+FC Lean file. The proof uses Lean 4.35.0-rc3 and pinned Mathlib; FC's current Lean 4.33.1
+metadata compilation is a separate check and is not claimed here.
+Build with `cd lean && lake exe cache get && lake build`.
+The supplementary directory has the same default proof entry point and dependencies.
 
 ## Conclusion
 
-The argument gives $`h(X-X')-h(X)\le n\log2`$ for every log-concave probability density on $`\mathbb R^n`$. For a vector of independent unit exponential variables, the difference density is a product of Laplace densities and the entropy increment equals $`n\log2`$. Thus the constant is sharp.
+The formal proof establishes the sharp inequality with entropy finiteness, the actual
+independent difference law, the affine exponential equality family and optimality.
+
+## Appendix: verification records
+
+Private and public CI evidence will be linked here after successful verification.
+The workflow retains Actions artifacts for 90 days; original artifact ZIPs, full logs,
+GitHub run metadata and checksums will also be preserved in the repository.

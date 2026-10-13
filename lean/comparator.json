@@ -1,0 +1,16 @@
+{
+  "challenge_module": "Challenge",
+  "solution_module": "FCSolution",
+  "theorem_names": [
+    "EntropicRogersShephardFC.density_bound",
+    "EntropicRogersShephardFC.random_vector_bound",
+    "EntropicRogersShephardFC.affine_density_law",
+    "EntropicRogersShephardFC.affine_exponential_equality",
+    "EntropicRogersShephardFC.constant_optimal"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ]
+}

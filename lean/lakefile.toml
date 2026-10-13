@@ -1,0 +1,28 @@
+name = "entropicRogersShephard"
+version = "0.1.0"
+defaultTargets = ["FCSolution"]
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4"
+rev = "f6090c7095e1e56b3464c1daba5f24631f1290d2"
+
+[[lean_lib]]
+name = "LeanPool"
+
+[[lean_lib]]
+name = "EntropicRogersShephard"
+roots = ["EntropicRogersShephard", "EntropicRogersShephard.SimplexScaling", "EntropicRogersShephard.BodyEntropyBound", "EntropicRogersShephard.FiberExtension", "EntropicRogersShephard.LogConcavity", "EntropicRogersShephard.ConvexApproximation", "EntropicRogersShephard.MonotoneTilt", "EntropicRogersShephard.ProbabilityLaw", "EntropicRogersShephard.ExponentialSharpness", "EntropicRogersShephard.Main"]
+
+[[lean_lib]]
+name = "FCTargetDefinitions"
+
+[[lean_lib]]
+name = "FCSolution"
+
+# Comparator-only reference and audit modules.
+[[lean_lib]]
+name = "Challenge"
+
+[[lean_lib]]
+name = "FCAudit"
