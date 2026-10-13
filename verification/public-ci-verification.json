@@ -1,0 +1,103 @@
+{
+  "status": "PASS",
+  "checked_at_utc": "2026-10-13T11:57:52.230470+00:00",
+  "repository": "KitaKen1/entropic-rogers-shephard",
+  "visibility": "public",
+  "run_id": 38391396740,
+  "run_attempt": 1,
+  "run_url": "https://github.com/KitaKen1/entropic-rogers-shephard/actions/runs/38391396740",
+  "tested_commit": "c397fa6e591babb5a95d6ba55943baa21c5486c7",
+  "proof_commit": "c397fa6e591babb5a95d6ba55943baa21c5486c7",
+  "source_origin_commit": "c34631bc744bf626e8225c6c91d5e13c7b8a0b4f",
+  "archive_commit": null,
+  "lean_toolchain": "leanprover/lean4:v4.33.1",
+  "mathlib_commit": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "fc_base_commit": "72dad3524e0174dea703f267664d3bc9298803a0",
+  "jobs": {
+    "build": "success",
+    "comparator": "success",
+    "replay": "success",
+    "verification_status": "success"
+  },
+  "compiler_versions": {
+    "proof": "Lean (version 4.33.1, x86_64-unknown-linux-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+    "comparator": "Lean (version 4.33.1, x86_64-unknown-linux-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+    "lean4export": "Lean (version 4.33.1, x86_64-unknown-linux-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+  },
+  "checker_binary_sha256": {
+    "comparator": "b642ef735d34ea12e4b0d3197c84f69c6eebd34be00726eb5b4bb91da35c4e02",
+    "lean4export": "805ab4cc6a88dcef109644d201c3142261f524aecaf58b04913a9f029e21e9b5"
+  },
+  "comparator_commit": "c0c5a52d2aff92b457c3e5ed4a68c1ebc5795809",
+  "lean4export_commit": "15f6055e299ad5b89345e533cc2192f4cc00f659",
+  "landrun_commit": "811cfff51ceaf3d9843708aa6d22e9b84ccac8b4",
+  "checker_source_changes": {
+    "comparator": {
+      "upstream": "leanprover/lean4:v4.33.0",
+      "build": "leanprover/lean4:v4.33.1",
+      "changed_files": [
+        "lean-toolchain"
+      ]
+    },
+    "lean4export": {
+      "upstream": "leanprover/lean4:v4.33.0",
+      "build": "leanprover/lean4:v4.33.1",
+      "changed_files": [
+        "lean-toolchain"
+      ]
+    }
+  },
+  "comparison_targets": [
+    "EntropicRogersShephardFC.density_bound",
+    "EntropicRogersShephardFC.entropic_rogers_shephard",
+    "EntropicRogersShephardFC.affine_density_law",
+    "EntropicRogersShephardFC.affine_exponential_equality",
+    "EntropicRogersShephardFC.constant_optimal"
+  ],
+  "default_kernel_accepts": true,
+  "linux_sandbox": "real Landrun; unprivileged UID/GID; AF_UNIX disabled; NoNewPrivileges",
+  "axiom_audit": {
+    "status": "PASS",
+    "audited_targets": 451,
+    "sorryAx": false,
+    "new_axioms": false
+  },
+  "fresh_kernel_replay": {
+    "status": "PASS",
+    "exit_code": 0,
+    "command": "lake env leanchecker --fresh FCSolution"
+  },
+  "archive_directory": "ComparatorLog20261013",
+  "artifacts": [
+    {
+      "id": 11810597555,
+      "name": "replay-38391396740-1",
+      "file": "artifacts/11810597555-replay-38391396740-1.zip",
+      "github_digest": "sha256:bafdff76ace81fa5bb1d6a64c766ea168c042d3c00c83fbdc736be75a04c8eee",
+      "sha256": "bafdff76ace81fa5bb1d6a64c766ea168c042d3c00c83fbdc736be75a04c8eee",
+      "digest_matches": true,
+      "expires_at": "2027-01-11T11:36:34Z"
+    },
+    {
+      "id": 11810486596,
+      "name": "comparator-38391396740-1",
+      "file": "artifacts/11810486596-comparator-38391396740-1.zip",
+      "github_digest": "sha256:d0142325310f40a209f09b2eee496b7391130a05758bc77ec060b23c3deb3748",
+      "sha256": "d0142325310f40a209f09b2eee496b7391130a05758bc77ec060b23c3deb3748",
+      "digest_matches": true,
+      "expires_at": "2027-01-11T11:36:34Z"
+    },
+    {
+      "id": 11809915101,
+      "name": "build-38391396740-1",
+      "file": "artifacts/11809915101-build-38391396740-1.zip",
+      "github_digest": "sha256:1206765ac28e33dd64d8a348943cd5df270629643512ee3150495820622d5532",
+      "sha256": "1206765ac28e33dd64d8a348943cd5df270629643512ee3150495820622d5532",
+      "digest_matches": true,
+      "expires_at": "2027-01-11T11:36:34Z"
+    }
+  ],
+  "all_pinned_inputs_match_tested_commit": true,
+  "canonical_proof_matches_private_test": true,
+  "accepted_upstream_fc_target": false
+}

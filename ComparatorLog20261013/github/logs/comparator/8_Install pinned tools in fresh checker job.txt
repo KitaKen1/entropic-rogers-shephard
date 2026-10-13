@@ -1,0 +1,32 @@
+﻿2026-10-13T11:47:44.7463759Z ##[group]Run bash lean/comparator/install-tools.sh
+2026-10-13T11:47:44.7464092Z [36;1mbash lean/comparator/install-tools.sh[0m
+2026-10-13T11:47:44.7516786Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-10-13T11:47:44.7517112Z env:
+2026-10-13T11:47:44.7517453Z   COMPARATOR_TOOLS: /home/runner/work/_temp/comparator-tools
+2026-10-13T11:47:44.7517820Z ##[endgroup]
+2026-10-13T11:47:46.0162038Z go: downloading github.com/urfave/cli/v3 v3.6.2
+2026-10-13T11:47:46.0862422Z go: downloading github.com/landlock-lsm/go-landlock v0.9.0
+2026-10-13T11:47:46.8262159Z go: downloading golang.org/x/sys v0.40.0
+2026-10-13T11:47:47.1096756Z go: downloading kernel.org/pub/linux/libs/security/libcap/psx v1.2.77
+2026-10-13T11:47:57.0718562Z info: lean4export: cloning https://github.com/leanprover/lean4export
+2026-10-13T11:47:58.3422958Z info: lean4export: checking out revision '15f6055e299ad5b89345e533cc2192f4cc00f659'
+2026-10-13T11:47:58.6473052Z ✔ [2/16] Built Comparator.Util (217ms)
+2026-10-13T11:47:58.7474942Z ✔ [5/16] Built Comparator.Util:c.o (101ms)
+2026-10-13T11:47:59.6483044Z ✔ [6/16] Built Export.Parse (1.0s)
+2026-10-13T11:48:00.0487652Z ✔ [7/16] Built Comparator.Axioms (390ms)
+2026-10-13T11:48:00.4503216Z ✔ [8/16] Built Comparator.Axioms:c.o (368ms)
+2026-10-13T11:48:00.5504674Z ✔ [9/16] Built Comparator.Compare (458ms)
+2026-10-13T11:48:00.8507444Z ✔ [10/16] Built Comparator (338ms)
+2026-10-13T11:48:00.8508853Z ✔ [11/16] Built Comparator.Compare:c.o (322ms)
+2026-10-13T11:48:00.9511119Z ✔ [12/16] Built Comparator:c.o (68ms)
+2026-10-13T11:48:02.5525209Z ✔ [13/16] Built Export.Parse:c.o (2.9s)
+2026-10-13T11:48:03.3532842Z ✔ [14/16] Built Main (2.5s)
+2026-10-13T11:48:03.8537441Z ✔ [15/16] Built Main:c.o (501ms)
+2026-10-13T11:48:04.8555531Z ✔ [16/16] Built comparator:exe (994ms)
+2026-10-13T11:48:04.8561004Z Build completed successfully (16 jobs).
+2026-10-13T11:48:07.7943153Z ✔ [2/6] Built Export (2.8s)
+2026-10-13T11:48:08.5951009Z ✔ [3/6] Built Main (811ms)
+2026-10-13T11:48:08.6952222Z ✔ [4/6] Built Main:c.o (147ms)
+2026-10-13T11:48:09.5960827Z ✔ [5/6] Built Export:c.o (1.8s)
+2026-10-13T11:48:10.4993735Z ✔ [6/6] Built lean4export:exe (903ms)
+2026-10-13T11:48:10.4998065Z Build completed successfully (6 jobs).

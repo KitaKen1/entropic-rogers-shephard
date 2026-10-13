@@ -1,0 +1,19 @@
+﻿2026-10-13T11:42:49.9243401Z ##[group]Run bash lean/comparator/prepare-runner.sh && bash lean/comparator/add-swap.sh 16 3
+2026-10-13T11:42:49.9246389Z [36;1mbash lean/comparator/prepare-runner.sh && bash lean/comparator/add-swap.sh 16 3[0m
+2026-10-13T11:42:49.9544119Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-10-13T11:42:49.9545771Z ##[endgroup]
+2026-10-13T11:45:32.4298192Z info: downloading installer
+2026-10-13T11:45:32.6982153Z 4
+2026-10-13T11:45:32.6998883Z                total        used        free      shared  buff/cache   available
+2026-10-13T11:45:32.6999852Z Mem:            15Gi       1.1Gi        10Gi        43Mi       4.3Gi        14Gi
+2026-10-13T11:45:32.7000401Z Swap:          3.0Gi          0B       3.0Gi
+2026-10-13T11:45:32.7114448Z Filesystem      Size  Used Avail Use% Mounted on
+2026-10-13T11:45:32.7115090Z /dev/root       145G   24G  122G  17% /
+2026-10-13T11:45:32.7115721Z /dev/root       145G   24G  122G  17% /
+2026-10-13T11:45:32.7649898Z added 16 GB of swap on /
+2026-10-13T11:45:32.7668033Z                total        used        free      shared  buff/cache   available
+2026-10-13T11:45:32.7668929Z Mem:              15           1          10           0           4          14
+2026-10-13T11:45:32.7669576Z Swap:             18           0          18
+2026-10-13T11:45:32.7683823Z NAME              TYPE SIZE USED PRIO
+2026-10-13T11:45:32.7684607Z /swapfile         file   3G   0B   -2
+2026-10-13T11:45:32.7685339Z /swap-extra-25613 file  16G   0B   -3

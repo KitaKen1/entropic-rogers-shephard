@@ -1,0 +1,83 @@
+﻿2026-10-13T11:42:49.1060356Z ##[group]Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+2026-10-13T11:42:49.1061469Z with:
+2026-10-13T11:42:49.1061946Z   persist-credentials: false
+2026-10-13T11:42:49.1062531Z   repository: KitaKen1/entropic-rogers-shephard
+2026-10-13T11:42:49.1066445Z   token: ***
+2026-10-13T11:42:49.1066890Z   ssh-strict: true
+2026-10-13T11:42:49.1067333Z   ssh-user: git
+2026-10-13T11:42:49.1068004Z   clean: true
+2026-10-13T11:42:49.1068461Z   sparse-checkout-cone-mode: true
+2026-10-13T11:42:49.1068993Z   fetch-depth: 1
+2026-10-13T11:42:49.1069429Z   fetch-tags: false
+2026-10-13T11:42:49.1069877Z   show-progress: true
+2026-10-13T11:42:49.1070330Z   lfs: false
+2026-10-13T11:42:49.1070757Z   submodules: false
+2026-10-13T11:42:49.1071203Z   set-safe-directory: true
+2026-10-13T11:42:49.1071712Z   allow-unsafe-pr-checkout: false
+2026-10-13T11:42:49.1072537Z ##[endgroup]
+2026-10-13T11:42:49.2080251Z Syncing repository: KitaKen1/entropic-rogers-shephard
+2026-10-13T11:42:49.2082392Z ##[group]Getting Git version info
+2026-10-13T11:42:49.2083624Z Working directory is '/home/runner/work/entropic-rogers-shephard/entropic-rogers-shephard'
+2026-10-13T11:42:49.2084856Z [command]/usr/bin/git version
+2026-10-13T11:42:49.2241381Z git version 2.55.0
+2026-10-13T11:42:49.2273463Z ##[endgroup]
+2026-10-13T11:42:49.2293342Z Temporarily overriding HOME='/home/runner/work/_temp/290bc82d-677e-47a7-84f3-591b895e6d67' before making global git config changes
+2026-10-13T11:42:49.2295022Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-13T11:42:49.2301397Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/entropic-rogers-shephard/entropic-rogers-shephard
+2026-10-13T11:42:49.2366041Z Deleting the contents of '/home/runner/work/entropic-rogers-shephard/entropic-rogers-shephard'
+2026-10-13T11:42:49.2371816Z ##[group]Initializing the repository
+2026-10-13T11:42:49.2378474Z [command]/usr/bin/git init /home/runner/work/entropic-rogers-shephard/entropic-rogers-shephard
+2026-10-13T11:42:49.2511992Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-10-13T11:42:49.2513541Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-10-13T11:42:49.2515305Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-10-13T11:42:49.2517152Z hint: call:
+2026-10-13T11:42:49.2518200Z hint:
+2026-10-13T11:42:49.2519198Z hint: 	git config --global init.defaultBranch <name>
+2026-10-13T11:42:49.2520353Z hint:
+2026-10-13T11:42:49.2521378Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-10-13T11:42:49.2523041Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-10-13T11:42:49.2524380Z hint:
+2026-10-13T11:42:49.2525102Z hint: 	git branch -m <name>
+2026-10-13T11:42:49.2525929Z hint:
+2026-10-13T11:42:49.2527031Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-10-13T11:42:49.2530185Z Initialized empty Git repository in /home/runner/work/entropic-rogers-shephard/entropic-rogers-shephard/.git/
+2026-10-13T11:42:49.2533699Z [command]/usr/bin/git remote add origin https://github.com/KitaKen1/entropic-rogers-shephard
+2026-10-13T11:42:49.2590115Z ##[endgroup]
+2026-10-13T11:42:49.2590936Z ##[group]Disabling automatic garbage collection
+2026-10-13T11:42:49.2594950Z [command]/usr/bin/git config --local gc.auto 0
+2026-10-13T11:42:49.2629111Z ##[endgroup]
+2026-10-13T11:42:49.2629923Z ##[group]Setting up auth
+2026-10-13T11:42:49.2636593Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-13T11:42:49.2670259Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-13T11:42:49.3089247Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-13T11:42:49.3127310Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-13T11:42:49.3387548Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-13T11:42:49.3421738Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-13T11:42:49.3660425Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-10-13T11:42:49.3699989Z ##[endgroup]
+2026-10-13T11:42:49.3701512Z ##[group]Fetching the repository
+2026-10-13T11:42:49.3711217Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +c397fa6e591babb5a95d6ba55943baa21c5486c7:refs/remotes/origin/main
+2026-10-13T11:42:49.7717557Z From https://github.com/KitaKen1/entropic-rogers-shephard
+2026-10-13T11:42:49.7719845Z  * [new ref]         c397fa6e591babb5a95d6ba55943baa21c5486c7 -> origin/main
+2026-10-13T11:42:49.7744145Z ##[endgroup]
+2026-10-13T11:42:49.7745412Z ##[group]Determining the checkout info
+2026-10-13T11:42:49.7746888Z ##[endgroup]
+2026-10-13T11:42:49.7748014Z [command]/usr/bin/git sparse-checkout disable
+2026-10-13T11:42:49.7797270Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-10-13T11:42:49.7845689Z ##[group]Checking out the ref
+2026-10-13T11:42:49.7850824Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2026-10-13T11:42:49.8056181Z Switched to a new branch 'main'
+2026-10-13T11:42:49.8062053Z branch 'main' set up to track 'origin/main'.
+2026-10-13T11:42:49.8071649Z ##[endgroup]
+2026-10-13T11:42:49.8117388Z [command]/usr/bin/git log -1 --format=%H
+2026-10-13T11:42:49.8143763Z c397fa6e591babb5a95d6ba55943baa21c5486c7
+2026-10-13T11:42:49.8154139Z ##[group]Removing auth
+2026-10-13T11:42:49.8158147Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-13T11:42:49.8191247Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-13T11:42:49.8424110Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-13T11:42:49.8452611Z http.https://github.com/.extraheader
+2026-10-13T11:42:49.8462138Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-10-13T11:42:49.8499290Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-13T11:42:49.8726699Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-13T11:42:49.8758420Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-13T11:42:49.8984454Z ##[endgroup]

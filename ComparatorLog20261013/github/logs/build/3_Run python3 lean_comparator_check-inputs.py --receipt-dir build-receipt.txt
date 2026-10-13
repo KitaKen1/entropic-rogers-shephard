@@ -1,0 +1,6 @@
+﻿2026-10-13T11:36:39.1709106Z ##[group]Run python3 lean/comparator/check-inputs.py --receipt-dir build-receipt
+2026-10-13T11:36:39.1710607Z [36;1mpython3 lean/comparator/check-inputs.py --receipt-dir build-receipt[0m
+2026-10-13T11:36:39.1905479Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-10-13T11:36:39.1906361Z ##[endgroup]
+2026-10-13T11:36:39.2519801Z PASS: two definitions and the primary FC theorem match the canonical target.
+2026-10-13T11:36:39.2563496Z PASS: 5 targets, 65 identical shared sources, pinned 4.33.1 proof sources.

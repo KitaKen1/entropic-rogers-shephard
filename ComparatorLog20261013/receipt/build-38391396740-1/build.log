@@ -1,0 +1,1138 @@
+✔ [3030/3073] Built LeanPool.Isoperimetric.Basic (3.3s)
+✔ [3031/3108] Built FCTargetDefinitions (7.1s)
+✔ [3047/3109] Built EntropicRogersShephard.ConvexExhaustion (7.7s)
+✔ [3048/3109] Built EntropicRogersShephard.ConvexVolume (8.4s)
+✔ [3049/3109] Built LeanPool.Isoperimetric.PrekopaLeindler (6.5s)
+⚠ [3050/3109] Built EntropicRogersShephard.ConvexApproximation (1.6s)
+warning: EntropicRogersShephard/ConvexApproximation.lean:53:21: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [3051/3109] Built LeanPool.Isoperimetric.BrunnMinkowski (3.0s)
+⚠ [3052/3109] Built EntropicRogersShephard (3.0s)
+warning: EntropicRogersShephard.lean:498:8: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: EntropicRogersShephard.lean:498:8: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: EntropicRogersShephard.lean:587:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: EntropicRogersShephard.lean:619:12: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+info: EntropicRogersShephard.lean:628:6: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+warning: EntropicRogersShephard.lean:667:24: This simp argument is unused:
+  Nat.add_sub_cancel
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Nat.cast_add, Nat.cast_one, mul_one]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: EntropicRogersShephard.lean:665:24: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: EntropicRogersShephard.lean:665:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: EntropicRogersShephard.lean:666:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: EntropicRogersShephard.lean:667:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: EntropicRogersShephard.lean:668:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: EntropicRogersShephard.lean:669:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: EntropicRogersShephard.lean:670:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: EntropicRogersShephard.lean:665:8: Unused tactic linter: `(try (funext x; rfl))` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: EntropicRogersShephard.lean:705:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: EntropicRogersShephard.lean:714:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: EntropicRogersShephard.lean:743:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: EntropicRogersShephard.lean:777:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: EntropicRogersShephard.lean:786:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [3053/3109] Built EntropicRogersShephard.LogConcavity (1.6s)
+✔ [3054/3109] Built EntropicRogersShephard.Density (1.7s)
+✔ [3055/3109] Built EntropicRogersShephard.MonotoneTilt (2.6s)
+✔ [3056/3109] Built EntropicRogersShephard.GlobalDensityBound (2.6s)
+✔ [3057/3109] Built EntropicRogersShephard.PowerDensity (2.8s)
+✔ [3058/3109] Built EntropicRogersShephard.SimplexDensity (2.8s)
+✔ [3059/3109] Built EntropicRogersShephard.WeightedTilt (2.8s)
+✔ [3060/3109] Built EntropicRogersShephard.BodyDensity (2.8s)
+⚠ [3061/3109] Built EntropicRogersShephard.OrthantGeometry (2.9s)
+warning: EntropicRogersShephard/OrthantGeometry.lean:188:12: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+ℹ [3062/3109] Built EntropicRogersShephard.ExponentialTails (3.5s)
+info: EntropicRogersShephard/ExponentialTails.lean:85:4: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+✔ [3063/3109] Built EntropicRogersShephard.FiniteSupportLimit (2.3s)
+✔ [3064/3109] Built EntropicRogersShephard.FiberVolume (2.4s)
+✔ [3065/3109] Built EntropicRogersShephard.BoundedDensity (2.4s)
+⚠ [3066/3109] Built EntropicRogersShephard.RadialOverlap (2.9s)
+warning: EntropicRogersShephard/RadialOverlap.lean:119:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [3067/3109] Built EntropicRogersShephard.LayerMoments (2.8s)
+✔ [3068/3109] Built EntropicRogersShephard.ExponentialIntegrability (3.2s)
+✔ [3069/3109] Built EntropicRogersShephard.FiberEntropy (2.8s)
+✔ [3070/3109] Built EntropicRogersShephard.CompactConvergence (2.5s)
+✔ [3071/3109] Built EntropicRogersShephard.DensityMeasure (2.4s)
+✔ [3072/3109] Built EntropicRogersShephard.FiberDifference (2.6s)
+✔ [3073/3109] Built EntropicRogersShephard.LayerNormalization (2.8s)
+⚠ [3074/3109] Built EntropicRogersShephard.ExponentialConvergence (3.3s)
+warning: EntropicRogersShephard/ExponentialConvergence.lean:46:18: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [3075/3109] Built EntropicRogersShephard.BoundedMixture (2.7s)
+✔ [3076/3109] Built EntropicRogersShephard.FiberDifferenceBounds (2.4s)
+✔ [3077/3109] Built EntropicRogersShephard.LayerCoefficients (2.7s)
+⚠ [3078/3109] Built EntropicRogersShephard.DominatedConvolution (2.4s)
+warning: EntropicRogersShephard/DominatedConvolution.lean:12:18: Variable name `hM` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hM
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [3079/3109] Built EntropicRogersShephard.MixtureMass (1.9s)
+✔ [3080/3109] Built EntropicRogersShephard.LayerLogMoments (1.0s)
+✔ [3081/3109] Built EntropicRogersShephard.BodyLayers (1.9s)
+⚠ [3082/3109] Built EntropicRogersShephard.SimplexEntropy (2.6s)
+warning: EntropicRogersShephard/SimplexEntropy.lean:33:8: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: EntropicRogersShephard/SimplexEntropy.lean:33:8: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: EntropicRogersShephard/SimplexEntropy.lean:95:66: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: EntropicRogersShephard/SimplexEntropy.lean:98:63: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: EntropicRogersShephard/SimplexEntropy.lean:95:66: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: EntropicRogersShephard/SimplexEntropy.lean:138:12: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: EntropicRogersShephard/SimplexEntropy.lean:166:8: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: EntropicRogersShephard/SimplexEntropy.lean:142:8: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: EntropicRogersShephard/SimplexEntropy.lean:138:12: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: EntropicRogersShephard/SimplexEntropy.lean:166:8: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [3083/3109] Built EntropicRogersShephard.BodyMoments (1.8s)
+⚠ [3084/3109] Built EntropicRogersShephard.SimplexScaling (1.9s)
+warning: EntropicRogersShephard/SimplexScaling.lean:45:6: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: EntropicRogersShephard/SimplexScaling.lean:45:6: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: EntropicRogersShephard/SimplexScaling.lean:99:78: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: EntropicRogersShephard/SimplexScaling.lean:99:78: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [3085/3109] Built EntropicRogersShephard.BodyEntropyBound (2.4s)
+warning: EntropicRogersShephard/BodyEntropyBound.lean:115:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [3086/3109] Built EntropicRogersShephard.SimplexKernel (1.7s)
+✔ [3087/3109] Built EntropicRogersShephard.FiberTransport (1.8s)
+✔ [3088/3109] Built EntropicRogersShephard.SimplexMixtureEntropy (1.7s)
+⚠ [3089/3109] Built EntropicRogersShephard.FiberMixtureRows (1.8s)
+warning: EntropicRogersShephard/FiberMixtureRows.lean:85:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: EntropicRogersShephard/FiberMixtureRows.lean:107:8: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: EntropicRogersShephard/FiberMixtureRows.lean:107:8: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: EntropicRogersShephard/FiberMixtureRows.lean:146:60: This simp argument is unused:
+  zero_add
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [hs0, ha, hb', Real.negMulLog_zero, zero_mul, add_zero, mul_zero, differentialEntropy,
+    integral_zero, le_refl]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [3090/3109] Built EntropicRogersShephard.FiberCancellation (1.8s)
+⚠ [3091/3109] Built EntropicRogersShephard.FiberExtension (1.5s)
+warning: EntropicRogersShephard/FiberExtension.lean:59:18: Variable name `hC` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hC
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [3092/3109] Built EntropicRogersShephard.ConcaveApproximation (1.9s)
+warning: EntropicRogersShephard/ConcaveApproximation.lean:143:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: EntropicRogersShephard/ConcaveApproximation.lean:144:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+✔ [3093/3109] Built EntropicRogersShephard.CompactExponentialBound (1.6s)
+✔ [3094/3109] Built EntropicRogersShephard.LocalLogConcave (1.5s)
+✔ [3095/3109] Built EntropicRogersShephard.CompactRestrictions (1.7s)
+⚠ [3096/3109] Built EntropicRogersShephard.GeneralDensityBound (1.6s)
+warning: EntropicRogersShephard/GeneralDensityBound.lean:11:52: Variable name `hM` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hM
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: EntropicRogersShephard/GeneralDensityBound.lean:72:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [3097/3109] Built EntropicRogersShephard.ProbabilityLaw (1.6s)
+warning: EntropicRogersShephard/ProbabilityLaw.lean:58:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: EntropicRogersShephard/ProbabilityLaw.lean:60:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: EntropicRogersShephard/ProbabilityLaw.lean:85:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+✔ [3098/3109] Built EntropicRogersShephard.AffineVolume (1.7s)
+✔ [3099/3109] Built EntropicRogersShephard.ProductDensity (1.8s)
+✔ [3100/3109] Built EntropicRogersShephard.AffineDensity (1.9s)
+⚠ [3101/3109] Built EntropicRogersShephard.ExponentialExample (1.0s)
+warning: EntropicRogersShephard/ExponentialExample.lean:20:28: Variable name `x` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _x
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: EntropicRogersShephard/ExponentialExample.lean:89:41: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+✔ [3102/3109] Built EntropicRogersShephard.ExponentialSharpness (1.7s)
+✔ [3103/3109] Built EntropicRogersShephard.AffineEntropy (2.1s)
+⚠ [3104/3109] Built EntropicRogersShephard.AffineLaw (2.1s)
+warning: EntropicRogersShephard/AffineLaw.lean:11:63: Variable name `hn` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hn
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [3105/3109] Built EntropicRogersShephard.AffineSharpness (1.5s)
+✔ [3106/3109] Built EntropicRogersShephard.Main (1.5s)
+✔ [3107/3109] Built FCSolution (1.6s)
+ℹ [3109/3109] Built EntropicRogersShephard.Audit (1.7s)
+info: EntropicRogersShephard/Audit.lean:12:0: EntropicRogersShephard.SharpEntropicRogersShephard : Prop
+info: EntropicRogersShephard/Audit.lean:13:0: EntropicRogersShephard.volume_overlap_superlevel (m : ℕ) {a b t : ℝ} (ht : 0 < t) (hta : t < a) (htb : t < b) :
+  MeasureTheory.volume {z | t ≤ EntropicRogersShephard.overlapRadius a b z} =
+    ∑ s,
+      ENNReal.ofReal ((a - t) ^ Fintype.card ↥s) * MeasureTheory.volume (EntropicRogersShephard.simplexOn (↥s) 1) *
+        (ENNReal.ofReal ((b - t) ^ Fintype.card { i // i ∉ s }) *
+          MeasureTheory.volume (EntropicRogersShephard.simplexOn { i // i ∉ s } 1))
+info: EntropicRogersShephard/Audit.lean:14:0: EntropicRogersShephard.orthant_polynomial_moment_normalization (m : ℕ) [NeZero m] {a b : ℝ} (ha : 0 < a) (hb : 0 < b)
+  (hba : b ≤ a) :
+  ∫ (t : ℝ) in 0..b, EntropicRogersShephard.orthantVolumePolynomial m a b t * (↑m * t ^ (m - 1)) =
+    a ^ m * b ^ m * (MeasureTheory.volume (EntropicRogersShephard.simplex m 1)).toReal
+info: EntropicRogersShephard/Audit.lean:15:0: EntropicRogersShephard.differentialEntropy_uniformSimplexDifference (m : ℕ) [NeZero m] {a b : ℝ} (ha : 0 < a)
+  (hb : 0 < b) (hba : b ≤ a) :
+  EntropicRogersShephard.differentialEntropy
+      (EntropicRogersShephard.crossDifferenceDensity
+        (EntropicRogersShephard.uniformDensity (EntropicRogersShephard.simplex m a))
+        (EntropicRogersShephard.uniformDensity (EntropicRogersShephard.simplex m b)))
+      MeasureTheory.volume =
+    ↑m * Real.log a + Real.log (MeasureTheory.volume (EntropicRogersShephard.simplex m 1)).toReal +
+      ↑m *
+        (∑ j ∈ Finset.range (m + 1),
+            EntropicRogersShephard.binomialWeight m (1 - b / a) j * EntropicRogersShephard.H (2 * m - j) -
+          EntropicRogersShephard.H m)
+info: EntropicRogersShephard/Audit.lean:16:0: EntropicRogersShephard.simplex_difference_entropy_scale_bound_all (m : ℕ) [NeZero m] {a b : ℝ} (ha : 0 < a)
+  (hb : 0 < b) :
+  EntropicRogersShephard.differentialEntropy
+        (EntropicRogersShephard.crossDifferenceDensity
+          (EntropicRogersShephard.uniformDensity (EntropicRogersShephard.simplex m 1))
+          (EntropicRogersShephard.uniformDensity (EntropicRogersShephard.simplex m 1)))
+        MeasureTheory.volume +
+      ↑m / 2 * (Real.log a + Real.log b) ≤
+    EntropicRogersShephard.differentialEntropy
+      (EntropicRogersShephard.crossDifferenceDensity
+        (EntropicRogersShephard.uniformDensity (EntropicRogersShephard.simplex m a))
+        (EntropicRogersShephard.uniformDensity (EntropicRogersShephard.simplex m b)))
+      MeasureTheory.volume
+info: EntropicRogersShephard/Audit.lean:17:0: EntropicRogersShephard.compact_convex_exhaustion {n : ℕ} {C : Set (Fin n → ℝ)} (hC : Convex ℝ C) :
+  ∃ K,
+    Monotone K ∧
+      (∀ (j : ℕ), IsCompact (K j)) ∧
+        (∀ (j : ℕ), Convex ℝ (K j)) ∧
+          (∀ (j : ℕ), K j ⊆ interior C) ∧ ⋃ j, K j = interior C ∧ ⋃ j, K j =ᵐ[MeasureTheory.volume] C
+info: EntropicRogersShephard/Audit.lean:18:0: EntropicRogersShephard.convex_isBounded_of_volume_ne_top {n : ℕ} [NeZero n] {C : Set (Fin n → ℝ)} (hC : Convex ℝ C)
+  (hfin : MeasureTheory.volume C ≠ ⊤) {x : Fin n → ℝ} {r : ℝ} (hr : 0 < r) (hball : Metric.ball x r ⊆ C) :
+  Bornology.IsBounded C
+info: EntropicRogersShephard/Audit.lean:19:0: EntropicRogersShephard.integral_mul_le_product_of_monotone_antitone.{u_1} {α : Type u_1} [LinearOrder α]
+  [MeasurableSpace α] {μ : MeasureTheory.Measure α} [MeasureTheory.IsProbabilityMeasure μ] {S : Set α} {r l : α → ℝ}
+  (hS : ∀ᵐ (x : α) ∂μ, x ∈ S) (hr : MeasureTheory.Integrable r μ) (hl : MeasureTheory.Integrable l μ)
+  (hrl : MeasureTheory.Integrable (fun x => r x * l x) μ) (hrmono : MonotoneOn r S) (hlanti : AntitoneOn l S) :
+  ∫ (x : α), r x * l x ∂μ ≤ (∫ (x : α), r x ∂μ) * ∫ (x : α), l x ∂μ
+info: EntropicRogersShephard/Audit.lean:21:0: EntropicRogersShephard.uniform_convex_body_entropy_bound {n : ℕ} [NeZero n] {B : Set (Fin n → ℝ)} (hB : IsCompact B)
+  (hconv : Convex ℝ B) (hpos : MeasureTheory.volume B ≠ 0) :
+  EntropicRogersShephard.differentialEntropy
+        (EntropicRogersShephard.crossDifferenceDensity (EntropicRogersShephard.uniformDensity B)
+          (EntropicRogersShephard.uniformDensity B))
+        MeasureTheory.volume -
+      EntropicRogersShephard.differentialEntropy (EntropicRogersShephard.uniformDensity B) MeasureTheory.volume ≤
+    EntropicRogersShephard.F n
+info: EntropicRogersShephard/Audit.lean:23:0: EntropicRogersShephard.differentialEntropy_powerDensity {n m : ℕ} {K : Set (Fin n → ℝ)} {ρ : (Fin n → ℝ) → ℝ} {c C : ℝ}
+  (hK : MeasurableSet K) (hfin : MeasureTheory.volume K ≠ ⊤) (hpos : MeasureTheory.volume K ≠ 0) (hρ : Measurable ρ)
+  (hc : 0 < c) (hC : 0 < C) (hb : ∀ x ∈ K, ρ x ∈ Set.Icc c C) :
+  EntropicRogersShephard.differentialEntropy (EntropicRogersShephard.powerDensity m K ρ) MeasureTheory.volume =
+    Real.log (EntropicRogersShephard.powerMass m K ρ) -
+      ↑m * ∫ (x : Fin n → ℝ), EntropicRogersShephard.powerDensity m K ρ x * Real.log (ρ x)
+info: EntropicRogersShephard/Audit.lean:24:0: EntropicRogersShephard.differentialEntropy_fiberUniformDensity {n m : ℕ} {K : Set (Fin n → ℝ)} {ρ : (Fin n → ℝ) → ℝ}
+  {c C : ℝ} (hK : MeasurableSet K) (hfin : MeasureTheory.volume K ≠ ⊤) (hpos : MeasureTheory.volume K ≠ 0)
+  (hρ : Measurable ρ) (hc : 0 < c) (hC : 0 < C) (hb : ∀ x ∈ K, ρ x ∈ Set.Icc c C) :
+  EntropicRogersShephard.differentialEntropy (EntropicRogersShephard.fiberUniformDensity K ρ) MeasureTheory.volume =
+    EntropicRogersShephard.differentialEntropy (EntropicRogersShephard.powerDensity m K ρ) MeasureTheory.volume +
+        Real.log (MeasureTheory.volume (EntropicRogersShephard.simplex m 1)).toReal +
+      ↑m * ∫ (x : Fin n → ℝ), EntropicRogersShephard.powerDensity m K ρ x * Real.log (ρ x)
+info: EntropicRogersShephard/Audit.lean:25:0: EntropicRogersShephard.fiberDifferenceDensity_eq_mixture {n m : ℕ} {K : Set (Fin n → ℝ)} {ρ : (Fin n → ℝ) → ℝ} {c C : ℝ}
+  (hK : MeasurableSet K) (hfin : MeasureTheory.volume K ≠ ⊤) (hpos : MeasureTheory.volume K ≠ 0) (hρ : Measurable ρ)
+  (hc : 0 < c) (hC : 0 ≤ C) (hb : ∀ x ∈ K, ρ x ∈ Set.Icc c C) (s : Fin n → ℝ) (t : Fin m → ℝ) :
+  EntropicRogersShephard.fiberDifferenceDensity K ρ (s, t) =
+    ∫ (x : Fin n → ℝ),
+      EntropicRogersShephard.powerDensity m K ρ x * EntropicRogersShephard.powerDensity m K ρ (x - s) *
+        EntropicRogersShephard.crossDifferenceDensity
+          (EntropicRogersShephard.uniformDensity (EntropicRogersShephard.simplex m (ρ x)))
+          (EntropicRogersShephard.uniformDensity (EntropicRogersShephard.simplex m (ρ (x - s)))) t
+info: EntropicRogersShephard/Audit.lean:26:0: EntropicRogersShephard.positiveInterior_nonempty {n : ℕ} {f : (Fin n → ℝ) → ℝ}
+  (hf : EntropicRogersShephard.IsProbabilityDensity n f) (hl : EntropicRogersShephard.IsLogConcave n f) :
+  (interior {x | 0 < f x}).Nonempty
+info: EntropicRogersShephard/Audit.lean:28:0: EntropicRogersShephard.fiber_difference_entropy_upper_bound {n m : ℕ} [NeZero (n + m)] {K : Set (Fin n → ℝ)}
+  {ρ : (Fin n → ℝ) → ℝ} {c C : ℝ} (hK : IsCompact K) (hpos : MeasureTheory.volume K ≠ 0) (hρ : Measurable ρ)
+  (hcont : ContinuousOn ρ K) (hconc : ConcaveOn ℝ K ρ) (hc : 0 < c) (hC : 0 < C) (hb : ∀ x ∈ K, ρ x ∈ Set.Icc c C) :
+  EntropicRogersShephard.differentialEntropy (EntropicRogersShephard.fiberDifferenceDensity K ρ) MeasureTheory.volume ≤
+    (EntropicRogersShephard.differentialEntropy (EntropicRogersShephard.powerDensity m K ρ) MeasureTheory.volume +
+          Real.log (MeasureTheory.volume (EntropicRogersShephard.simplex m 1)).toReal +
+        ↑m * ∫ (x : Fin n → ℝ), EntropicRogersShephard.powerDensity m K ρ x * Real.log (ρ x)) +
+      EntropicRogersShephard.F (n + m)
+info: EntropicRogersShephard/Audit.lean:29:0: EntropicRogersShephard.simplex_mixture_entropy_scale_lower_bound {n m : ℕ} [NeZero m]
+  {μ : MeasureTheory.Measure (Fin n → ℝ)} [MeasureTheory.IsProbabilityMeasure μ] {ρ : (Fin n → ℝ) → ℝ} {c C : ℝ}
+  (hm : Measurable ρ) (hc : 0 < c) (hb : ∀ (x : Fin n → ℝ), ρ x ∈ Set.Icc c C) (s : Fin n → ℝ) :
+  EntropicRogersShephard.differentialEntropy
+        (EntropicRogersShephard.crossDifferenceDensity
+          (EntropicRogersShephard.uniformDensity (EntropicRogersShephard.simplex m 1))
+          (EntropicRogersShephard.uniformDensity (EntropicRogersShephard.simplex m 1)))
+        MeasureTheory.volume +
+      ↑m / 2 * (∫ (x : Fin n → ℝ), Real.log (ρ x) ∂μ + ∫ (x : Fin n → ℝ), Real.log (ρ (x - s)) ∂μ) ≤
+    EntropicRogersShephard.differentialEntropy
+      (fun t => ∫ (x : Fin n → ℝ), EntropicRogersShephard.simplexFiberKernel m ρ s x t ∂μ) MeasureTheory.volume
+info: EntropicRogersShephard/Audit.lean:30:0: EntropicRogersShephard.fiber_row_entropy_lower_bound {n m : ℕ} [NeZero m] {K : Set (Fin n → ℝ)} {ρ : (Fin n → ℝ) → ℝ}
+  {c C : ℝ} (hK : IsCompact K) (hpos : MeasureTheory.volume K ≠ 0) (hρ : Measurable ρ) (hc : 0 < c) (hC : 0 < C)
+  (hb : ∀ (x : Fin n → ℝ), ρ x ∈ Set.Icc c C) (s : Fin n → ℝ) :
+  (EntropicRogersShephard.differenceDensity (EntropicRogersShephard.powerDensity m K ρ) s).negMulLog +
+        EntropicRogersShephard.differenceDensity (EntropicRogersShephard.powerDensity m K ρ) s *
+          EntropicRogersShephard.differentialEntropy
+            (EntropicRogersShephard.crossDifferenceDensity
+              (EntropicRogersShephard.uniformDensity (EntropicRogersShephard.simplex m 1))
+              (EntropicRogersShephard.uniformDensity (EntropicRogersShephard.simplex m 1)))
+            MeasureTheory.volume +
+      ↑m / 2 *
+        ((∫ (x : Fin n → ℝ),
+            EntropicRogersShephard.powerDensity m K ρ x * EntropicRogersShephard.powerDensity m K ρ (x - s) *
+              Real.log (ρ x)) +
+          ∫ (x : Fin n → ℝ),
+            EntropicRogersShephard.powerDensity m K ρ x * EntropicRogersShephard.powerDensity m K ρ (x - s) *
+              Real.log (ρ (x - s))) ≤
+    EntropicRogersShephard.differentialEntropy (fun t => EntropicRogersShephard.fiberDifferenceDensity K ρ (s, t))
+      MeasureTheory.volume
+info: EntropicRogersShephard/Audit.lean:31:0: EntropicRogersShephard.power_density_entropy_increment_bound {n m : ℕ} [NeZero m] [NeZero (n + m)] {K : Set (Fin n → ℝ)}
+  {ρ : (Fin n → ℝ) → ℝ} {c C : ℝ} (hK : IsCompact K) (hpos : MeasureTheory.volume K ≠ 0) (hρ : Measurable ρ)
+  (hcont : ContinuousOn ρ K) (hconc : ConcaveOn ℝ K ρ) (hc : 0 < c) (hC : 0 < C) (hb : ∀ x ∈ K, ρ x ∈ Set.Icc c C) :
+  EntropicRogersShephard.differentialEntropy
+        (EntropicRogersShephard.differenceDensity (EntropicRogersShephard.powerDensity m K ρ)) MeasureTheory.volume -
+      EntropicRogersShephard.differentialEntropy (EntropicRogersShephard.powerDensity m K ρ) MeasureTheory.volume ≤
+    EntropicRogersShephard.F (n + m) - EntropicRogersShephard.F m
+info: EntropicRogersShephard/Audit.lean:33:0: EntropicRogersShephard.difference_entropy_tendsto_of_compact_support {n : ℕ} {K : Set (Fin n → ℝ)}
+  {f : ℕ → (Fin n → ℝ) → ℝ} {g : (Fin n → ℝ) → ℝ} {M : ℝ} (hK : IsCompact K) (hM : 0 ≤ M)
+  (hf : ∀ (j : ℕ), EntropicRogersShephard.IsProbabilityDensity n (f j))
+  (hb : ∀ (j : ℕ) (x : Fin n → ℝ), f j x ∈ Set.Icc 0 M) (hsupp : ∀ (j : ℕ), ∀ x ∉ K, f j x = 0)
+  (hlim : ∀ (x : Fin n → ℝ), Filter.Tendsto (fun j => f j x) Filter.atTop (nhds (g x))) :
+  Filter.Tendsto
+    (fun j =>
+      EntropicRogersShephard.differentialEntropy (EntropicRogersShephard.differenceDensity (f j)) MeasureTheory.volume)
+    Filter.atTop
+    (nhds
+      (EntropicRogersShephard.differentialEntropy (EntropicRogersShephard.differenceDensity g) MeasureTheory.volume))
+info: EntropicRogersShephard/Audit.lean:35:0: EntropicRogersShephard.sharp_entropic_rogers_shephard_density : EntropicRogersShephard.SharpEntropicRogersShephard
+info: EntropicRogersShephard/Audit.lean:36:0: EntropicRogersShephard.sharp_entropic_rogers_shephard_random_vectors.{u_1} {Ω : Type u_1} [MeasurableSpace Ω]
+  {P : MeasureTheory.Measure Ω} [MeasureTheory.IsProbabilityMeasure P] {n : ℕ} (hn : 0 < n) {X Y : Ω → Fin n → ℝ}
+  {f : (Fin n → ℝ) → ℝ} (hf : EntropicRogersShephard.IsProbabilityDensity n f)
+  (hl : EntropicRogersShephard.IsLogConcave n f)
+  (hX : ProbabilityTheory.HasLaw X (EntropicRogersShephard.realDensityMeasure MeasureTheory.volume f) P)
+  (hY : ProbabilityTheory.HasLaw Y (EntropicRogersShephard.realDensityMeasure MeasureTheory.volume f) P)
+  (hXY : ProbabilityTheory.IndepFun X Y P) :
+  ProbabilityTheory.HasLaw (fun ω => X ω - Y ω)
+      (EntropicRogersShephard.realDensityMeasure MeasureTheory.volume (EntropicRogersShephard.differenceDensity f)) P ∧
+    MeasureTheory.Integrable (fun x => (f x).negMulLog) MeasureTheory.volume ∧
+      MeasureTheory.Integrable (fun s => (EntropicRogersShephard.differenceDensity f s).negMulLog)
+          MeasureTheory.volume ∧
+        EntropicRogersShephard.differentialEntropy (EntropicRogersShephard.differenceDensity f) MeasureTheory.volume -
+            EntropicRogersShephard.differentialEntropy f MeasureTheory.volume ≤
+          ↑n * Real.log 2
+info: EntropicRogersShephard/Audit.lean:38:0: EntropicRogersShephard.sharpness_exponential_product (n : ℕ) :
+  EntropicRogersShephard.IsProbabilityDensity n
+      (EntropicRogersShephard.productDensity n EntropicRogersShephard.oneSidedExponential) ∧
+    EntropicRogersShephard.IsLogConcave n
+        (EntropicRogersShephard.productDensity n EntropicRogersShephard.oneSidedExponential) ∧
+      MeasureTheory.Integrable
+          (fun x => (EntropicRogersShephard.productDensity n EntropicRogersShephard.oneSidedExponential x).negMulLog)
+          MeasureTheory.volume ∧
+        MeasureTheory.Integrable
+            (fun s =>
+              (EntropicRogersShephard.differenceDensity
+                  (EntropicRogersShephard.productDensity n EntropicRogersShephard.oneSidedExponential) s).negMulLog)
+            MeasureTheory.volume ∧
+          EntropicRogersShephard.differentialEntropy
+                (EntropicRogersShephard.differenceDensity
+                  (EntropicRogersShephard.productDensity n EntropicRogersShephard.oneSidedExponential))
+                MeasureTheory.volume -
+              EntropicRogersShephard.differentialEntropy
+                (EntropicRogersShephard.productDensity n EntropicRogersShephard.oneSidedExponential)
+                MeasureTheory.volume =
+            ↑n * Real.log 2
+info: EntropicRogersShephard/Audit.lean:39:0: EntropicRogersShephard.entropy_increment_constant_optimal (n : ℕ) {C : ℝ}
+  (hC :
+    ∀ (f : (Fin n → ℝ) → ℝ),
+      EntropicRogersShephard.IsProbabilityDensity n f →
+        EntropicRogersShephard.IsLogConcave n f →
+          EntropicRogersShephard.differentialEntropy (EntropicRogersShephard.differenceDensity f) MeasureTheory.volume -
+              EntropicRogersShephard.differentialEntropy f MeasureTheory.volume ≤
+            C) :
+  ↑n * Real.log 2 ≤ C
+info: EntropicRogersShephard/Audit.lean:41:0: EntropicRogersShephard.CompleteSharpEntropicRogersShephard.{u} : Prop
+info: EntropicRogersShephard/Audit.lean:42:0: EntropicRogersShephard.complete_sharp_entropic_rogers_shephard.{u} :
+  EntropicRogersShephard.CompleteSharpEntropicRogersShephard
+info: EntropicRogersShephard/Audit.lean:43:0: EntropicRogersShephard.sharpness_linearEquiv_affine_exponential_product (n : ℕ) (A : (Fin n → ℝ) ≃ₗ[ℝ] Fin n → ℝ)
+  (b : Fin n → ℝ) :
+  EntropicRogersShephard.AttainsSharpEntropicBound n
+    (EntropicRogersShephard.affineDensity A.toContinuousLinearEquiv b
+      (EntropicRogersShephard.productDensity n EntropicRogersShephard.oneSidedExponential))
+info: EntropicRogersShephard/Audit.lean:44:0: EntropicRogersShephard.map_affine_realDensityMeasure {n : ℕ} (A : (Fin n → ℝ) ≃L[ℝ] Fin n → ℝ) (b : Fin n → ℝ)
+  {f : (Fin n → ℝ) → ℝ} (hf : Measurable f) (hn : ∀ (x : Fin n → ℝ), 0 ≤ f x) :
+  MeasureTheory.Measure.map (fun x => A x + b) (EntropicRogersShephard.realDensityMeasure MeasureTheory.volume f) =
+    EntropicRogersShephard.realDensityMeasure MeasureTheory.volume (EntropicRogersShephard.affineDensity A b f)
+info: EntropicRogersShephard/Audit.lean:46:0: 'brunn_minkowski' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:47:0: 'EntropicRogersShephard.harmonic_term_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:48:0: 'EntropicRogersShephard.neg_log_one_sub_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:49:0: 'EntropicRogersShephard.scale_gap_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:50:0: 'EntropicRogersShephard.positiveMass_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:51:0: 'EntropicRogersShephard.negativeMass_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:52:0: 'EntropicRogersShephard.sum_eq_positiveMass_sub_negativeMass' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:53:0: 'EntropicRogersShephard.mem_simplex_coordinate_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:54:0: 'EntropicRogersShephard.simplex_empty_of_neg' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:55:0: 'EntropicRogersShephard.simplex_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:56:0: 'EntropicRogersShephard.convex_simplex' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:57:0: 'EntropicRogersShephard.isClosed_simplex' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:58:0: 'EntropicRogersShephard.isCompact_simplex' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:59:0: 'EntropicRogersShephard.mem_overlap_iff_shifted_simplex' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:60:0: 'EntropicRogersShephard.overlap_eq_translated_simplex' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:61:0: 'EntropicRogersShephard.overlapRadius_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:62:0: 'EntropicRogersShephard.overlapRadius_le_right' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:63:0: 'EntropicRogersShephard.overlapRadius_gt_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:64:0: 'EntropicRogersShephard.simplex_pos_eq_smul' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:65:0: 'EntropicRogersShephard.volume_simplex_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:66:0: 'EntropicRogersShephard.volume_simplex_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:67:0: 'EntropicRogersShephard.volume_simplex_eq_clamped' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:68:0: 'EntropicRogersShephard.volume_simplex_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:69:0: 'EntropicRogersShephard.volume_simplex_overlap' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:70:0: 'EntropicRogersShephard.binomialWeight_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:71:0: 'EntropicRogersShephard.sum_binomialWeight' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:72:0: 'EntropicRogersShephard.sum_binomialWeight_succ' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:73:0: 'EntropicRogersShephard.sum_binomialWeight_mul_index' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:74:0: 'EntropicRogersShephard.sum_binomialWeight_mul_factorialMoment' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EntropicRogersShephard/Audit.lean:75:0: 'EntropicRogersShephard.sum_choose_sq_mul_choose' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:76:0: 'EntropicRogersShephard.H_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:77:0: 'EntropicRogersShephard.H_succ' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:78:0: 'EntropicRogersShephard.harmonic_drop_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:79:0: 'EntropicRogersShephard.binomial_harmonic_drop_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:80:0: 'EntropicRogersShephard.binomial_scale_gap_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:81:0: 'EntropicRogersShephard.sum_binomialWeight_harmonic_drop' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:82:0: 'EntropicRogersShephard.harmonic_average_scale_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:83:0: 'EntropicRogersShephard.harmonic_average_scale_strict' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:84:0: 'EntropicRogersShephard.F_succ_sub' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:85:0: 'EntropicRogersShephard.tendsto_harmonic_double_sub' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:86:0: 'EntropicRogersShephard.tendsto_F_succ_sub' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:87:0: 'EntropicRogersShephard.tendsto_F_shift_sub' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:88:0: 'EntropicRogersShephard.intervalIntegrable_pow_mul_log' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:89:0: 'EntropicRogersShephard.continuous_pow_succ_mul_log' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:90:0: 'EntropicRogersShephard.integral_pow_mul_log' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:91:0: 'EntropicRogersShephard.integral_pow_mul_neg_log' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:92:0: 'EntropicRogersShephard.integerBeta_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:93:0: 'EntropicRogersShephard.integerBeta_succ_right' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:94:0: 'EntropicRogersShephard.integerBeta_succ_left' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:95:0: 'EntropicRogersShephard.intervalIntegrable_betaMoment' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:96:0: 'EntropicRogersShephard.betaMoment_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:97:0: 'EntropicRogersShephard.betaMoment_succ' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:98:0: 'EntropicRogersShephard.betaMoment_eq_integerBeta' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:99:0: 'EntropicRogersShephard.intervalIntegrable_betaLogMoment' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:100:0: 'EntropicRogersShephard.betaLogMoment_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:101:0: 'EntropicRogersShephard.betaLogMoment_succ' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:102:0: 'EntropicRogersShephard.betaLogMoment_eq_harmonic' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:103:0: 'EntropicRogersShephard.exists_negMulLog_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:104:0: 'EntropicRogersShephard.integrable_negMulLog_of_bounded_support' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EntropicRogersShephard/Audit.lean:105:0: 'EntropicRogersShephard.entropy_tendsto_of_bounded_support' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:106:0: 'EntropicRogersShephard.average_entropy_le_entropy_mixture' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:107:0: 'EntropicRogersShephard.powerApproximation_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:108:0: 'EntropicRogersShephard.powerApproximation_mem_Icc' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:109:0: 'EntropicRogersShephard.powerApproximation_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:110:0: 'EntropicRogersShephard.convex_fiberBody' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:111:0: 'EntropicRogersShephard.bodyOverlap_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:112:0: 'EntropicRogersShephard.isCompact_bodyOverlap' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:113:0: 'EntropicRogersShephard.measurableSet_bodyOverlap' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:114:0: 'EntropicRogersShephard.weighted_mem_bodyOverlap' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:115:0: 'EntropicRogersShephard.measurable_affineDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:116:0: 'EntropicRogersShephard.affineDensity_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:117:0: 'EntropicRogersShephard.integrable_affineDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:118:0: 'EntropicRogersShephard.integral_affineDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:119:0: 'EntropicRogersShephard.isProbabilityDensity_affineDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:120:0: 'EntropicRogersShephard.affine_inverse_combo' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:121:0: 'EntropicRogersShephard.isLogConcave_affineDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:122:0: 'EntropicRogersShephard.affine_inverse_difference' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:123:0: 'EntropicRogersShephard.differenceDensity_affineDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:124:0: 'EntropicRogersShephard.affineDensity_entropy' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:125:0: 'EntropicRogersShephard.entropy_increment_affineDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:126:0: 'EntropicRogersShephard.logconcave_affine_entropy_increment' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:127:0: 'EntropicRogersShephard.map_affine_realDensityMeasure' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:128:0: 'EntropicRogersShephard.hasLaw_affineDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:129:0: 'EntropicRogersShephard.sharpness_affine_exponential_product' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:130:0: 'EntropicRogersShephard.sharpness_linearEquiv_affine_exponential_product' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EntropicRogersShephard/Audit.lean:131:0: 'EntropicRogersShephard.hasLaw_affine_exponential_product' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:132:0: 'EntropicRogersShephard.affineJacobian_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:133:0: 'EntropicRogersShephard.map_affine_inverse_linear_volume' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:134:0: 'EntropicRogersShephard.integral_affine_inverse' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:135:0: 'EntropicRogersShephard.integrable_affine_inverse' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:136:0: 'EntropicRogersShephard.lintegral_affine_inverse' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:137:0: 'EntropicRogersShephard.isCompact_bodyDifferenceSupport' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:138:0: 'EntropicRogersShephard.uniformBodyDifference_eq_zero_of_not_mem' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EntropicRogersShephard/Audit.lean:139:0: 'EntropicRogersShephard.uniformBodyDifference_eq_overlap' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:140:0: 'EntropicRogersShephard.uniformBodyDifference_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:141:0: 'EntropicRogersShephard.integrable_negMulLog_uniformBodyDifference' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EntropicRogersShephard/Audit.lean:142:0: 'EntropicRogersShephard.bodyOverlapRoot_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:143:0: 'EntropicRogersShephard.bodyOverlapRoot_pow' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:144:0: 'EntropicRogersShephard.bodyOverlapRoot_pow_eq_density' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:145:0: 'EntropicRogersShephard.bodyOverlapRoot_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:146:0: 'EntropicRogersShephard.bodyOverlapRoot_le_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:147:0: 'EntropicRogersShephard.bodyOverlapRoot_eq_zero_of_not_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:148:0: 'EntropicRogersShephard.bodyOverlap_nonempty_of_root_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:149:0: 'EntropicRogersShephard.measurable_bodyOverlapRoot' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:150:0: 'EntropicRogersShephard.integerBeta_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:151:0: 'EntropicRogersShephard.integral_beta_Ioo' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:152:0: 'EntropicRogersShephard.integral_log_beta_Ioo' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:153:0: 'EntropicRogersShephard.body_log_layer_mean_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:154:0: 'EntropicRogersShephard.body_log_primitive_upper_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:155:0: 'EntropicRogersShephard.uniform_convex_body_entropy_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:156:0: 'EntropicRogersShephard.bodyLevelVolume_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:157:0: 'EntropicRogersShephard.bodyLevelVolume_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:158:0: 'EntropicRogersShephard.antitone_bodyLevelVolume' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:159:0: 'EntropicRogersShephard.measurable_bodyLevelVolume' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:160:0: 'EntropicRogersShephard.bodyLevelVolume_le_support' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:161:0: 'EntropicRogersShephard.measurable_bodyLevelTilt' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:162:0: 'EntropicRogersShephard.monotoneOn_bodyLevelTilt' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:163:0: 'EntropicRogersShephard.bodyPowerLayer_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:164:0: 'EntropicRogersShephard.bodyPowerLayer_le_support' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:165:0: 'EntropicRogersShephard.integrableOn_bodyPowerLayer' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:166:0: 'EntropicRogersShephard.integrableOn_bodyLogLayer' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:167:0: 'EntropicRogersShephard.integrable_bodyTilt_beta' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:168:0: 'EntropicRogersShephard.integrable_bodyTilt_log_beta' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:169:0: 'EntropicRogersShephard.logPrimitive_eq_scaled_entropy' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:170:0: 'EntropicRogersShephard.integrable_bodyRoot_power' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:171:0: 'EntropicRogersShephard.integral_bodyRoot_power' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:172:0: 'EntropicRogersShephard.integrable_bodyRoot_logPrimitive' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:173:0: 'EntropicRogersShephard.integral_bodyRoot_logPrimitive_eq_entropy' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EntropicRogersShephard/Audit.lean:174:0: 'EntropicRogersShephard.integral_bodyRoot_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:175:0: 'EntropicRogersShephard.bodyPowerLayer_normalization' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:176:0: 'EntropicRogersShephard.bodyLogLayer_moment' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:177:0: 'EntropicRogersShephard.integrable_difference_slice_of_bounded' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EntropicRogersShephard/Audit.lean:178:0: 'EntropicRogersShephard.crossDifferenceDensity_le_of_bounded' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:179:0: 'EntropicRogersShephard.crossDifferenceDensity_eq_zero_of_not_mem_support' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EntropicRogersShephard/Audit.lean:180:0: 'EntropicRogersShephard.integrable_negMulLog_differenceDensity_of_bounded_support' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EntropicRogersShephard/Audit.lean:181:0: 'EntropicRogersShephard.integrable_kernel_slice_of_bounded' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:182:0: 'EntropicRogersShephard.integrable_negMulLog_kernel_slice_of_bounded' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EntropicRogersShephard/Audit.lean:183:0: 'EntropicRogersShephard.integrable_negMulLog_kernel_prod_of_bounded_support' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EntropicRogersShephard/Audit.lean:184:0: 'EntropicRogersShephard.integrable_entropy_kernel_of_bounded_support' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EntropicRogersShephard/Audit.lean:185:0: 'EntropicRogersShephard.average_entropy_le_entropy_bounded_mixture' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EntropicRogersShephard/Audit.lean:186:0: 'EntropicRogersShephard.integrable_negMulLog_const_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:187:0: 'EntropicRogersShephard.differentialEntropy_const_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:188:0: 'EntropicRogersShephard.differenceDensity_tendsto_of_bounded_support' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EntropicRogersShephard/Audit.lean:189:0: 'EntropicRogersShephard.difference_entropy_tendsto_of_compact_support' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EntropicRogersShephard/Audit.lean:190:0: 'EntropicRogersShephard.shifted_normalizedPowerApproximation_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EntropicRogersShephard/Audit.lean:191:0: 'EntropicRogersShephard.compact_exponential_entropy_increment_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EntropicRogersShephard/Audit.lean:192:0: 'EntropicRogersShephard.compact_exponential_entropy_finite_and_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EntropicRogersShephard/Audit.lean:193:0: 'EntropicRogersShephard.compact_restrictions_approximation' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:194:0: 'EntropicRogersShephard.measurable_concavePowerSize' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:195:0: 'EntropicRogersShephard.continuousOn_concavePowerSize' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:196:0: 'EntropicRogersShephard.concaveOn_concavePowerSize' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:197:0: 'EntropicRogersShephard.concavePowerSize_mem_Icc' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:198:0: 'EntropicRogersShephard.exponential_size_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:199:0: 'EntropicRogersShephard.compact_exponential_mass_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:200:0: 'EntropicRogersShephard.isProbabilityDensity_compactExponentialDensity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EntropicRogersShephard/Audit.lean:201:0: 'EntropicRogersShephard.concave_power_weight_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:202:0: 'EntropicRogersShephard.concave_power_mass_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:203:0: 'EntropicRogersShephard.concave_power_mass_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:204:0: 'EntropicRogersShephard.isProbabilityDensity_normalizedPowerApproximation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EntropicRogersShephard/Audit.lean:205:0: 'EntropicRogersShephard.normalizedPowerApproximation_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:206:0: 'EntropicRogersShephard.normalizedPowerApproximation_entropy_increment_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EntropicRogersShephard/Audit.lean:207:0: 'EntropicRogersShephard.compact_convex_exhaustion' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:208:0: 'EntropicRogersShephard.convex_isBounded_of_volume_ne_top' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:209:0: 'EntropicRogersShephard.exists_seq_isOpen_convex_isCompact_closure_subset_iUnion_eq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EntropicRogersShephard/Audit.lean:210:0: 'EntropicRogersShephard.convex_ball_point_volume_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:211:0: 'EntropicRogersShephard.crossDifferenceDensity_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:212:0: 'EntropicRogersShephard.measurable_crossDifferenceDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:213:0: 'EntropicRogersShephard.crossDifferenceDensity_eq_convolution' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EntropicRogersShephard/Audit.lean:214:0: 'EntropicRogersShephard.integrable_crossDifferenceDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:215:0: 'EntropicRogersShephard.integral_crossDifferenceDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:216:0: 'EntropicRogersShephard.isProbabilityDensity_crossDifferenceDensity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EntropicRogersShephard/Audit.lean:217:0: 'EntropicRogersShephard.isProbabilityDensity_differenceDensity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EntropicRogersShephard/Audit.lean:218:0: 'EntropicRogersShephard.measurable_uniformDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:219:0: 'EntropicRogersShephard.uniformDensity_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:220:0: 'EntropicRogersShephard.integrable_uniformDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:221:0: 'EntropicRogersShephard.integral_uniformDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:222:0: 'EntropicRogersShephard.isProbabilityDensity_uniformDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:223:0: 'EntropicRogersShephard.integrable_negMulLog_uniformDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:224:0: 'EntropicRogersShephard.differentialEntropy_uniformDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:225:0: 'EntropicRogersShephard.volume_simplex_ne_top' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:226:0: 'EntropicRogersShephard.small_box_subset_simplex' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:227:0: 'EntropicRogersShephard.volume_unit_simplex_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:228:0: 'EntropicRogersShephard.volume_simplex_pos_of_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:229:0: 'EntropicRogersShephard.isProbabilityDensity_uniformSimplex' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:230:0: 'EntropicRogersShephard.differentialEntropy_uniformSimplex' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:231:0: 'EntropicRogersShephard.realDensityMeasure_univ' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:232:0: 'EntropicRogersShephard.isProbabilityMeasure_realDensityMeasure' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EntropicRogersShephard/Audit.lean:233:0: 'EntropicRogersShephard.integral_realDensityMeasure' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:234:0: 'EntropicRogersShephard.integrable_realDensityMeasure_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:235:0: 'EntropicRogersShephard.measurable_differenceSliceDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:236:0: 'EntropicRogersShephard.differenceSliceDensity_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:237:0: 'EntropicRogersShephard.integrable_differenceSliceDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:238:0: 'EntropicRogersShephard.integral_differenceSliceDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:239:0: 'EntropicRogersShephard.isProbabilityMeasure_differenceSliceMeasure' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EntropicRogersShephard/Audit.lean:240:0: 'EntropicRogersShephard.integral_differenceSliceMeasure' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:241:0: 'EntropicRogersShephard.differenceDensity_tendsto_of_dominated' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EntropicRogersShephard/Audit.lean:242:0: 'EntropicRogersShephard.differenceDensity_exponential_envelope' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EntropicRogersShephard/Audit.lean:243:0: 'EntropicRogersShephard.logconcave_probability_density_entropies_integrable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EntropicRogersShephard/Audit.lean:244:0: 'EntropicRogersShephard.entropy_tendsto_of_exponential_envelope' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EntropicRogersShephard/Audit.lean:245:0: 'EntropicRogersShephard.measurable_oneSidedExponential' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:246:0: 'EntropicRogersShephard.oneSidedExponential_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:247:0: 'EntropicRogersShephard.oneSidedExponential_of_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:248:0: 'EntropicRogersShephard.oneSidedExponential_of_neg' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:249:0: 'EntropicRogersShephard.integrable_oneSidedExponential' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:250:0: 'EntropicRogersShephard.integral_oneSidedExponential' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:251:0: 'EntropicRogersShephard.scalarLogConcave_oneSidedExponential' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:252:0: 'EntropicRogersShephard.integrable_comp_abs_of_integrableOn' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:253:0: 'EntropicRogersShephard.integrableOn_exponential_first_moment' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EntropicRogersShephard/Audit.lean:254:0: 'EntropicRogersShephard.integral_exponential_first_moment' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:255:0: 'EntropicRogersShephard.oneSidedExponential_entropy' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:256:0: 'EntropicRogersShephard.integrable_unitLaplace' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:257:0: 'EntropicRogersShephard.integral_unitLaplace' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:258:0: 'EntropicRogersShephard.unitLaplace_first_moment' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:259:0: 'EntropicRogersShephard.unitLaplace_entropy' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:260:0: 'EntropicRogersShephard.oneSidedExponential_difference_kernel' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EntropicRogersShephard/Audit.lean:261:0: 'EntropicRogersShephard.integral_oneSidedExponential_difference' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EntropicRogersShephard/Audit.lean:262:0: 'EntropicRogersShephard.integrable_exp_neg_mul_abs' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:263:0: 'EntropicRogersShephard.integrable_exp_neg_mul_norm' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:264:0: 'EntropicRogersShephard.abs_negMulLog_le_square_add_sqrt' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:265:0: 'EntropicRogersShephard.sqrt_exp_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:266:0: 'EntropicRogersShephard.entropy_exponential_envelope' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:267:0: 'EntropicRogersShephard.integrable_negMulLog_of_exponential_envelope' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EntropicRogersShephard/Audit.lean:268:0: 'EntropicRogersShephard.integrable_negMulLog_logconcave_probability_density' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EntropicRogersShephard/Audit.lean:269:0: 'EntropicRogersShephard.differenceDensity_productDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:270:0: 'EntropicRogersShephard.isProbabilityDensity_exponential_product' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EntropicRogersShephard/Audit.lean:271:0: 'EntropicRogersShephard.isLogConcave_exponential_product' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:272:0: 'EntropicRogersShephard.differenceDensity_exponential_product' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EntropicRogersShephard/Audit.lean:273:0: 'EntropicRogersShephard.exponential_product_entropy' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:274:0: 'EntropicRogersShephard.exponential_product_difference_entropy' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EntropicRogersShephard/Audit.lean:275:0: 'EntropicRogersShephard.sharpness_exponential_product' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:276:0: 'EntropicRogersShephard.entropy_increment_constant_optimal' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:277:0: 'EntropicRogersShephard.logconcave_ray_log_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:278:0: 'EntropicRogersShephard.logconcave_probability_density_exponential_envelope' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EntropicRogersShephard/Audit.lean:279:0: 'EntropicRogersShephard.differenceLogLeft_eq_crossDifferenceDensity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EntropicRogersShephard/Audit.lean:280:0: 'EntropicRogersShephard.differenceLogRight_eq_crossDifferenceDensity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EntropicRogersShephard/Audit.lean:281:0: 'EntropicRogersShephard.power_logDifference_moments' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:282:0: 'EntropicRogersShephard.fiber_difference_entropy_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:283:0: 'EntropicRogersShephard.global_power_density_entropy_increment_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EntropicRogersShephard/Audit.lean:284:0: 'EntropicRogersShephard.fiberUniformDensity_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:285:0: 'EntropicRogersShephard.integrable_fiberDifference_slice' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:286:0: 'EntropicRogersShephard.measurable_fiberDifferenceDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:287:0: 'EntropicRogersShephard.fiberDifferenceDensity_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:288:0: 'EntropicRogersShephard.fiberDifferenceDensity_eq_mixture' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:289:0: 'EntropicRogersShephard.isCompact_fiberDifferenceSupport' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:290:0: 'EntropicRogersShephard.fiberDifferenceDensity_eq_zero_of_not_mem' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EntropicRogersShephard/Audit.lean:291:0: 'EntropicRogersShephard.fiberDifferenceDensity_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:292:0: 'EntropicRogersShephard.integrable_negMulLog_fiberDifferenceDensity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EntropicRogersShephard/Audit.lean:293:0: 'EntropicRogersShephard.measurable_fiberUniformDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:294:0: 'EntropicRogersShephard.fiberUniformDensity_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:295:0: 'EntropicRogersShephard.integrable_fiberUniformDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:296:0: 'EntropicRogersShephard.integral_fiberUniformDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:297:0: 'EntropicRogersShephard.fiberUniformDensity_factorization' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:298:0: 'EntropicRogersShephard.fiberUniformDensity_marginal' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:299:0: 'EntropicRogersShephard.integrable_negMulLog_fiberUniformDensity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EntropicRogersShephard/Audit.lean:300:0: 'EntropicRogersShephard.differentialEntropy_fiberUniformDensity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EntropicRogersShephard/Audit.lean:301:0: 'EntropicRogersShephard.integrable_negMulLog_powerDifferenceDensity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EntropicRogersShephard/Audit.lean:302:0: 'EntropicRogersShephard.positiveFiberExtension_eq_on' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:303:0: 'EntropicRogersShephard.measurable_positiveFiberExtension' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:304:0: 'EntropicRogersShephard.positiveFiberExtension_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:305:0: 'EntropicRogersShephard.powerWeight_congr_on_support' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:306:0: 'EntropicRogersShephard.powerDensity_congr_on_support' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:307:0: 'EntropicRogersShephard.power_density_entropy_increment_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EntropicRogersShephard/Audit.lean:308:0: 'EntropicRogersShephard.differenceWeight_ae_zero_of_density_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EntropicRogersShephard/Audit.lean:309:0: 'EntropicRogersShephard.integral_differenceWeight_mul_eq_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EntropicRogersShephard/Audit.lean:310:0: 'EntropicRogersShephard.fiberDifferenceDensity_eq_slice_mixture' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EntropicRogersShephard/Audit.lean:311:0: 'EntropicRogersShephard.fiberDifferenceDensity_zero_of_powerDifference_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EntropicRogersShephard/Audit.lean:312:0: 'EntropicRogersShephard.fiber_row_entropy_lower_bound_of_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:313:0: 'EntropicRogersShephard.fiber_row_entropy_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:314:0: 'EntropicRogersShephard.volume_preserving_coordinateJoin' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:315:0: 'EntropicRogersShephard.volume_coordinateJoin_image' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:316:0: 'EntropicRogersShephard.isCompact_joinedFiberBody' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:317:0: 'EntropicRogersShephard.convex_joinedFiberBody' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:318:0: 'EntropicRogersShephard.volume_joinedFiberBody' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:319:0: 'EntropicRogersShephard.uniformDensity_joinedFiberBody' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:320:0: 'EntropicRogersShephard.crossDifferenceDensity_joinedFiberBody' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EntropicRogersShephard/Audit.lean:321:0: 'EntropicRogersShephard.differentialEntropy_joinedFiberBody' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:322:0: 'EntropicRogersShephard.differentialEntropy_joinedFiberDifference' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EntropicRogersShephard/Audit.lean:323:0: 'EntropicRogersShephard.fiber_body_entropy_increment_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:324:0: 'EntropicRogersShephard.fiber_difference_entropy_upper_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:325:0: 'EntropicRogersShephard.measurableSet_fiberBody' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:326:0: 'EntropicRogersShephard.fiberBody_subset_product' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:327:0: 'EntropicRogersShephard.isCompact_fiberBody' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:328:0: 'EntropicRogersShephard.fiberBody_slice' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:329:0: 'EntropicRogersShephard.volume_fiberBody' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:330:0: 'EntropicRogersShephard.volume_fiberBody_real' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:331:0: 'EntropicRogersShephard.volume_fiberBody_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:332:0: 'EntropicRogersShephard.integral_tendsto_of_bounded_support' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:333:0: 'EntropicRogersShephard.positive_mass_lower_after_shift' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:334:0: 'EntropicRogersShephard.powerDensity_one_const_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:335:0: 'EntropicRogersShephard.differenceDensity_le_of_domination' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:336:0: 'EntropicRogersShephard.logconcave_probability_density_entropy_increment_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EntropicRogersShephard/Audit.lean:337:0: 'EntropicRogersShephard.sharp_entropic_rogers_shephard_density' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EntropicRogersShephard/Audit.lean:338:0: 'EntropicRogersShephard.convex_positive_superlevel' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:339:0: 'EntropicRogersShephard.exists_density_anchor_ball' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:340:0: 'EntropicRogersShephard.logconcave_superlevel_isBounded' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:341:0: 'EntropicRogersShephard.logconcave_probability_density_bounded' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EntropicRogersShephard/Audit.lean:342:0: 'EntropicRogersShephard.add_pow_mul_pow_common_degree' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:343:0: 'EntropicRogersShephard.orthantCoefficient_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:344:0: 'EntropicRogersShephard.orthantVolumePolynomial_binomial' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:345:0: 'EntropicRogersShephard.orthantCoefficient_moment' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:346:0: 'EntropicRogersShephard.orthantCoefficient_polynomial_normalization' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EntropicRogersShephard/Audit.lean:347:0: 'EntropicRogersShephard.orthantCoefficient_beta' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:348:0: 'EntropicRogersShephard.intervalIntegrable_radiusLogKernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:349:0: 'EntropicRogersShephard.radiusLogKernel_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:350:0: 'EntropicRogersShephard.integral_radiusLogKernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:351:0: 'EntropicRogersShephard.orthant_polynomial_log_moment' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:352:0: 'EntropicRogersShephard.radiusLogPrimitive_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:353:0: 'EntropicRogersShephard.lintegral_overlapRadius_log_primitive' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EntropicRogersShephard/Audit.lean:354:0: 'EntropicRogersShephard.continuous_positiveMass' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:355:0: 'EntropicRogersShephard.continuous_negativeMass' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:356:0: 'EntropicRogersShephard.continuous_overlapRadius' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:357:0: 'EntropicRogersShephard.overlapRadius_layercake' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:358:0: 'EntropicRogersShephard.overlapRadius_layer_integral_bounded' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:359:0: 'EntropicRogersShephard.overlapRadius_layercake_bounded' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:360:0: 'EntropicRogersShephard.overlapRadius_layercake_orthants' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:361:0: 'EntropicRogersShephard.integral_pow_derivative' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:362:0: 'EntropicRogersShephard.lintegral_overlapRadius_pow_orthants' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:363:0: 'EntropicRogersShephard.isCompact_simplexOn' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:364:0: 'EntropicRogersShephard.volume_simplexOn_ne_top' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:365:0: 'EntropicRogersShephard.orthantVolumePolynomial_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:366:0: 'EntropicRogersShephard.continuous_orthantVolumePolynomial' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:367:0: 'EntropicRogersShephard.volume_overlap_superlevel_eq_ofReal_polynomial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EntropicRogersShephard/Audit.lean:368:0: 'EntropicRogersShephard.volume_overlap_superlevel_real' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:369:0: 'EntropicRogersShephard.lintegral_overlapRadius_pow_normalization' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EntropicRogersShephard/Audit.lean:370:0: 'EntropicRogersShephard.orthant_polynomial_moment_normalization' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EntropicRogersShephard/Audit.lean:371:0: 'EntropicRogersShephard.measurable_logPotential' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:372:0: 'EntropicRogersShephard.convexOn_logPotential' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:373:0: 'EntropicRogersShephard.logPotential_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:374:0: 'EntropicRogersShephard.exponential_logPotential_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:375:0: 'EntropicRogersShephard.compact_restriction_entropy_finite_and_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EntropicRogersShephard/Audit.lean:376:0: 'EntropicRogersShephard.convex_positiveSet_of_isLogConcave' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:377:0: 'EntropicRogersShephard.concaveOn_log_of_isLogConcave' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:378:0: 'EntropicRogersShephard.continuousOn_log_positiveInterior' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:379:0: 'EntropicRogersShephard.continuousOn_positiveInterior' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:380:0: 'EntropicRogersShephard.positiveInterior_ae_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:381:0: 'EntropicRogersShephard.positiveInterior_nonempty' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:382:0: 'EntropicRogersShephard.compact_positiveInterior_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:383:0: 'EntropicRogersShephard.complete_sharp_entropic_rogers_shephard' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EntropicRogersShephard/Audit.lean:384:0: 'EntropicRogersShephard.integrable_kernel_prod_of_bounded_support' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EntropicRogersShephard/Audit.lean:385:0: 'EntropicRogersShephard.integrable_kernel_mixture_of_bounded_support' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EntropicRogersShephard/Audit.lean:386:0: 'EntropicRogersShephard.integral_kernel_mixture_of_bounded_support' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EntropicRogersShephard/Audit.lean:387:0: 'EntropicRogersShephard.integral_pair_difference' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:388:0: 'EntropicRogersShephard.integral_mul_le_product_of_pair_nonpos' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EntropicRogersShephard/Audit.lean:389:0: 'EntropicRogersShephard.integral_mul_le_product_of_monotone_antitone' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EntropicRogersShephard/Audit.lean:390:0: 'EntropicRogersShephard.isClosed_simplexOn' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:391:0: 'EntropicRogersShephard.simplexOn_pos_eq_smul' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:392:0: 'EntropicRogersShephard.volume_simplexOn_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:393:0: 'EntropicRogersShephard.measurePreserving_signFlip' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:394:0: 'EntropicRogersShephard.positiveMass_on_orthant' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:395:0: 'EntropicRogersShephard.negativeMass_on_orthant' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:396:0: 'EntropicRogersShephard.orthantSector_eq_preimage' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:397:0: 'EntropicRogersShephard.measurableSet_orthantSector' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:398:0: 'EntropicRogersShephard.volume_orthantSector' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:399:0: 'EntropicRogersShephard.coordinateOrthant_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:400:0: 'EntropicRogersShephard.aedisjoint_coordinateOrthants' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:401:0: 'EntropicRogersShephard.overlapRadius_ge_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:402:0: 'EntropicRogersShephard.overlap_superlevel_eq_union_sectors' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:403:0: 'EntropicRogersShephard.volume_overlap_superlevel' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:404:0: 'EntropicRogersShephard.measurable_powerWeight' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:405:0: 'EntropicRogersShephard.powerWeight_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:406:0: 'EntropicRogersShephard.powerWeight_eq_zero_of_not_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:407:0: 'EntropicRogersShephard.powerWeight_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:408:0: 'EntropicRogersShephard.integrable_powerWeight' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:409:0: 'EntropicRogersShephard.powerMass_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:410:0: 'EntropicRogersShephard.measurable_powerDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:411:0: 'EntropicRogersShephard.powerDensity_eq_zero_of_not_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:412:0: 'EntropicRogersShephard.powerDensity_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:413:0: 'EntropicRogersShephard.powerDensity_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:414:0: 'EntropicRogersShephard.integrable_powerDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:415:0: 'EntropicRogersShephard.integral_powerDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:416:0: 'EntropicRogersShephard.isProbabilityDensity_powerDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:417:0: 'EntropicRogersShephard.integrable_negMulLog_powerDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:418:0: 'EntropicRogersShephard.negMulLog_powerDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:419:0: 'EntropicRogersShephard.integrable_powerDensity_mul_log' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:420:0: 'EntropicRogersShephard.differentialEntropy_powerDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:421:0: 'EntropicRogersShephard.map_neg_realDensityMeasure' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:422:0: 'EntropicRogersShephard.conv_realDensityMeasure_reflection' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:423:0: 'EntropicRogersShephard.hasLaw_difference_of_logconcave_density' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EntropicRogersShephard/Audit.lean:424:0: 'EntropicRogersShephard.sharp_entropic_rogers_shephard_random_vectors' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EntropicRogersShephard/Audit.lean:425:0: 'EntropicRogersShephard.measurable_productDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:426:0: 'EntropicRogersShephard.productDensity_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:427:0: 'EntropicRogersShephard.integrable_productDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:428:0: 'EntropicRogersShephard.integral_productDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:429:0: 'EntropicRogersShephard.isProbabilityDensity_productDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:430:0: 'EntropicRogersShephard.isLogConcave_productDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:431:0: 'EntropicRogersShephard.productDensity_coordinate_moment' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:432:0: 'EntropicRogersShephard.productDensity_sum_moment' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:433:0: 'EntropicRogersShephard.negMulLog_productDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:434:0: 'EntropicRogersShephard.productDensity_entropy' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:435:0: 'EntropicRogersShephard.volume_smul_real' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:436:0: 'EntropicRogersShephard.volume_root_smul' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:437:0: 'EntropicRogersShephard.brunn_minkowski_volume_roots' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:438:0: 'EntropicRogersShephard.bodyOverlapRoot_radial' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:439:0: 'EntropicRogersShephard.measurableSet_bodyRootLevel' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:440:0: 'EntropicRogersShephard.bodyRootLevel_subset_support' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:441:0: 'EntropicRogersShephard.volume_bodyRootLevel_ne_top' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:442:0: 'EntropicRogersShephard.bodyRootLevel_homothety_subset' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:443:0: 'EntropicRogersShephard.monotoneOn_bodyLevelVolumeRatio' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:444:0: 'EntropicRogersShephard.crossDifferenceDensity_uniformDensity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EntropicRogersShephard/Audit.lean:445:0: 'EntropicRogersShephard.crossDifferenceDensity_uniformSimplex' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EntropicRogersShephard/Audit.lean:446:0: 'EntropicRogersShephard.integral_overlapRadius_pow' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:447:0: 'EntropicRogersShephard.integrable_overlapRadius_pow' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:448:0: 'EntropicRogersShephard.crossDifferenceDensity_uniformSimplex_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EntropicRogersShephard/Audit.lean:449:0: 'EntropicRogersShephard.isCompact_simplexDifferenceSupport' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:450:0: 'EntropicRogersShephard.crossDifferenceDensity_uniformSimplex_eq_zero_of_not_mem' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EntropicRogersShephard/Audit.lean:451:0: 'EntropicRogersShephard.integrable_negMulLog_uniformSimplexDifference' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EntropicRogersShephard/Audit.lean:452:0: 'EntropicRogersShephard.polynomial_eq_of_eval_eq_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:453:0: 'EntropicRogersShephard.coefficients_eq_choose_of_normalization' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EntropicRogersShephard/Audit.lean:454:0: 'EntropicRogersShephard.layer_coefficients_forced_by_normalization' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EntropicRogersShephard/Audit.lean:455:0: 'EntropicRogersShephard.radiusLogPrimitive_eq_density_entropy' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EntropicRogersShephard/Audit.lean:456:0: 'EntropicRogersShephard.integrable_radiusLogPrimitive_overlap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EntropicRogersShephard/Audit.lean:457:0: 'EntropicRogersShephard.integral_radiusLogPrimitive_eq_entropy' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EntropicRogersShephard/Audit.lean:458:0: 'EntropicRogersShephard.integral_overlapRadius_log_primitive' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:459:0: 'EntropicRogersShephard.binomialWeight_unit_ratio' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:460:0: 'EntropicRogersShephard.differentialEntropy_uniformSimplexDifference_unit' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EntropicRogersShephard/Audit.lean:461:0: 'EntropicRogersShephard.measurable_simplexFiberKernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:462:0: 'EntropicRogersShephard.simplexFiberKernel_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:463:0: 'EntropicRogersShephard.simplexFiberKernel_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:464:0: 'EntropicRogersShephard.uniformSimplexDensity_zero_outside_larger_simplex' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EntropicRogersShephard/Audit.lean:465:0: 'EntropicRogersShephard.simplexFiberKernel_zero_outside_common_support' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EntropicRogersShephard/Audit.lean:466:0: 'EntropicRogersShephard.isProbabilityDensity_simplexFiberKernel' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EntropicRogersShephard/Audit.lean:467:0: 'EntropicRogersShephard.isProbabilityDensity_simplex_mixture' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:468:0: 'EntropicRogersShephard.average_entropy_le_simplex_mixture_entropy' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EntropicRogersShephard/Audit.lean:469:0: 'EntropicRogersShephard.abs_log_le_of_mem_Icc' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:470:0: 'EntropicRogersShephard.integrable_log_of_bounded_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:471:0: 'EntropicRogersShephard.integrable_entropy_simplexFiberKernel' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EntropicRogersShephard/Audit.lean:472:0: 'EntropicRogersShephard.integrable_negMulLog_simplex_mixture' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:473:0: 'EntropicRogersShephard.simplex_mixture_entropy_scale_lower_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EntropicRogersShephard/Audit.lean:474:0: 'EntropicRogersShephard.positiveMass_smul' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:475:0: 'EntropicRogersShephard.negativeMass_smul' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:476:0: 'EntropicRogersShephard.overlapRadius_smul' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:477:0: 'EntropicRogersShephard.crossDifferenceDensity_uniformSimplex_scaling' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EntropicRogersShephard/Audit.lean:478:0: 'EntropicRogersShephard.differentialEntropy_scaling' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:479:0: 'EntropicRogersShephard.differentialEntropy_uniformSimplexDifference_scaling' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EntropicRogersShephard/Audit.lean:480:0: 'EntropicRogersShephard.differentialEntropy_uniformSimplexDifference' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EntropicRogersShephard/Audit.lean:481:0: 'EntropicRogersShephard.sum_binomialWeight_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:482:0: 'EntropicRogersShephard.differentialEntropy_uniformSimplexDifference_equal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EntropicRogersShephard/Audit.lean:483:0: 'EntropicRogersShephard.simplex_difference_entropy_scale_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EntropicRogersShephard/Audit.lean:484:0: 'EntropicRogersShephard.simplex_difference_entropy_scale_strict' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EntropicRogersShephard/Audit.lean:485:0: 'EntropicRogersShephard.overlapRadius_swap_neg' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:486:0: 'EntropicRogersShephard.crossDifferenceDensity_uniformSimplex_swap_neg' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EntropicRogersShephard/Audit.lean:487:0: 'EntropicRogersShephard.differentialEntropy_uniformSimplexDifference_swap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EntropicRogersShephard/Audit.lean:488:0: 'EntropicRogersShephard.simplex_difference_entropy_scale_bound_all' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EntropicRogersShephard/Audit.lean:489:0: 'EntropicRogersShephard.weighted_integral_pair_difference' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EntropicRogersShephard/Audit.lean:490:0: 'EntropicRogersShephard.weighted_integral_mul_le_product_of_pair_nonpos' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EntropicRogersShephard/Audit.lean:491:0: 'EntropicRogersShephard.weighted_integral_mul_le_product_of_monotone_antitone' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Build completed successfully (3109 jobs).

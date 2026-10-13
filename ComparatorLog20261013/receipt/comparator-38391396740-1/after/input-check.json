@@ -1,0 +1,373 @@
+{
+  "input_check": "passed",
+  "tested_commit": "c397fa6e591babb5a95d6ba55943baa21c5486c7",
+  "pins": {
+    "proof_repository": "KitaKen1/entropic-rogers-shephard",
+    "proof_commit": "c34631bc744bf626e8225c6c91d5e13c7b8a0b4f",
+    "publication_repository": "KitaKen1/entropic-rogers-shephard",
+    "private_repository": "KitaKen1/ci-test-sandbox",
+    "fc_repository": "google-deepmind/formal-conjectures",
+    "fc_issue": 7196,
+    "fc_base_commit": "72dad3524e0174dea703f267664d3bc9298803a0",
+    "fc_target_commit": null,
+    "fc_pr": null,
+    "fc_target_status": "Proposed local target for the natural-language issue; not an accepted upstream Lean target.",
+    "challenge_kind": "One primary FC theorem for issue #7196 and four supporting targets; fixed definitions with no holes.",
+    "fc_upstream_toolchain": "leanprover/lean4:v4.33.1",
+    "lean_toolchain": "leanprover/lean4:v4.33.1",
+    "mathlib_commit": "0df444a360eaa60ab8c11dca51a86af692955474",
+    "comparator_commit": "c0c5a52d2aff92b457c3e5ed4a68c1ebc5795809",
+    "landrun_commit": "811cfff51ceaf3d9843708aa6d22e9b84ccac8b4",
+    "lean4export_commit": "15f6055e299ad5b89345e533cc2192f4cc00f659",
+    "targets": [
+      "EntropicRogersShephardFC.density_bound",
+      "EntropicRogersShephardFC.entropic_rogers_shephard",
+      "EntropicRogersShephardFC.affine_density_law",
+      "EntropicRogersShephardFC.affine_exponential_equality",
+      "EntropicRogersShephardFC.constant_optimal"
+    ],
+    "fc_checkout_compatibility": "FC statement, proof, reference, Comparator and exporter use Lean 4.33.1 with FC Mathlib v4.33.1; local compilation, comparison, axiom audit and both kernel replays passed.",
+    "files_sha256": {
+      "lean/FCTargetDefinitions.lean": "126257c80f9d480e55086292a4f6d73632484637afe19e20a9df75875ec1398f",
+      "lean/Challenge.lean": "c49dec0bc4dd2f685f613f32110dd06bec0f677c7aa00c54540cfdbd9067bff2",
+      "lean/FCSolution.lean": "716b822cd3bc96c5789d41960839ddc916fd02d7fa744add286f52dd5e1a95cd",
+      "lean/FCAudit.lean": "1d0ddf39122e3912a40b87a2ef07361d1f8c59dd5bdcafaf99a6e311340966be",
+      "lean/comparator.json": "8eeb955e7be0eafe4735f2ae26714b6aaee16010ac997bc33a5ed6d5d5f0c5f5",
+      "lean/comparator/shared-proof-sources.json": "e5f02bfc79dd3a9b46f362cb3aa343eb6c1c6bd371da3e0d72b5c78e31a06fde",
+      "lean/comparator/proof-source-manifest.json": "635e0185406d38ff970367a352f276906ebfe52a5ee4698d81ba75b75fe125fb",
+      "lean/lakefile.toml": "fdcd30327ffa840448f9aa2df387821911e63d6b0638fc94c9bd003a252eb8dd",
+      "leanWithoutComparator/lakefile.toml": "888ce026537fa51ae200e7be592a20d94575b74e30013e690759bbbbb036b8d7",
+      "lean/lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+      "lean/lake-manifest.json": "6360f87f22a81ec9e77547663e2ea3bcd23b571aa85eca018c92794b81ca3331",
+      "FClikelean/EntropicRogersShephard.lean": "00e63207af01c22acee118ae7c0301cd223d08c32a52b6de0d0302f68e0bb421",
+      "lean/comparator/check-fc-draft.py": "24fc8ee28b68bca26d364e2e31121594dcfaf103df721317df9729d6c751f481",
+      "lean/comparator/check-axioms.py": "6cb247ba692e51691b98fe5740eca98ec1bcc23e51646feff7213a5f9452ec59",
+      "lean/comparator/check-inputs.py": "a80cea04f723efebe6051c3a9cd0ec0195f8ebb131c2fa04e7bdec4213798d5b",
+      "lean/comparator/prepare-runner.sh": "5d12f8901bf6f289f828ffc28dc6c91739e08feabfb0026a37d257990eb99506",
+      "lean/comparator/install-tools.sh": "f6bd71497f69d2ccc352f0bc23c3e91cddcf360d6335a11a8bcca1b12bb1a094",
+      "lean/comparator/build-proof.sh": "8a5bf7c149b45b2168b13b1ecccb76ec82eddde84c884e50e8868855eb3c7206",
+      "lean/comparator/run-check.sh": "99a088d6669f86ee259878de62350e236626efd34b0edc8c5a1d4b33d1f68a15",
+      "lean/comparator/add-swap.sh": "560dbc6aa8f8039264fd7bd1715cde5ba338486a3e675ea23f352e9fcf8680ae",
+      ".github/workflows/comparator.yml": "ccf7c6ffa4228410542cc04da6f9720ae7515e054b19558ccf3deacff7e886eb",
+      "lean/comparator/archive-run.py": "c08c8d3a3967311bae980dc47b4b1bdb9949927d368fa4660296d3d0f9c4b9a1",
+      "lean/comparator/check-all-axioms.py": "354c70915228f79c68c9a73e97dba0671cd14f2558641a0e01a63bf4824aacfe"
+    },
+    "primary_fc_target": "EntropicRogersShephardFC.entropic_rogers_shephard",
+    "fc_draft_definition_count": 2,
+    "fc_draft_theorem_count": 1,
+    "toolchain_patches": {
+      "comparator": {
+        "upstream": "leanprover/lean4:v4.33.0",
+        "build": "leanprover/lean4:v4.33.1",
+        "changed_files": [
+          "lean-toolchain"
+        ]
+      },
+      "lean4export": {
+        "upstream": "leanprover/lean4:v4.33.0",
+        "build": "leanprover/lean4:v4.33.1",
+        "changed_files": [
+          "lean-toolchain"
+        ]
+      }
+    }
+  },
+  "config": {
+    "challenge_module": "Challenge",
+    "solution_module": "FCSolution",
+    "enable_nanoda": false,
+    "theorem_names": [
+      "EntropicRogersShephardFC.density_bound",
+      "EntropicRogersShephardFC.entropic_rogers_shephard",
+      "EntropicRogersShephardFC.affine_density_law",
+      "EntropicRogersShephardFC.affine_exponential_equality",
+      "EntropicRogersShephardFC.constant_optimal"
+    ],
+    "permitted_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "pinned_proof_sources": 63,
+  "identical_common_sources": 65,
+  "common_sources": {
+    "generated_from": "lean/",
+    "shared_files": [
+      {
+        "path": "EntropicRogersShephard/AffineDensity.lean",
+        "sha256": "42fb957c09c386f4cf13016ee8d91e62aa1c974f1a9a045bad68f370cc949161"
+      },
+      {
+        "path": "EntropicRogersShephard/AffineEntropy.lean",
+        "sha256": "3e845a79ef780209e08eee3ff699dd2035841ed9fe7bb57b57a8ceeb5b1e4e4d"
+      },
+      {
+        "path": "EntropicRogersShephard/AffineLaw.lean",
+        "sha256": "1bb73d0d1ddbf1702e86a9d11c4ebac2a57bb7a5fb672c7d1796d525b3c28dcb"
+      },
+      {
+        "path": "EntropicRogersShephard/AffineSharpness.lean",
+        "sha256": "91a68610921fdfb1ad9f75f1e8f8bbf6b57a9e36ef09875b01b40f5da2dfa6c1"
+      },
+      {
+        "path": "EntropicRogersShephard/AffineVolume.lean",
+        "sha256": "e4458e92c9b4cfa763bf8fc38bc775d22687243885e159cbe57b484520d3d307"
+      },
+      {
+        "path": "EntropicRogersShephard/Audit.lean",
+        "sha256": "b6450953aaad2aeed20c661be1150b9ed06e5d6e009cde857e316068bbd567e2"
+      },
+      {
+        "path": "EntropicRogersShephard/BodyDensity.lean",
+        "sha256": "9f6d3dffdc1f6434fd4171ad9cf1b9749401d89e9854d54868b245dbed3b0f9e"
+      },
+      {
+        "path": "EntropicRogersShephard/BodyEntropyBound.lean",
+        "sha256": "f510b7710f857eb0942899d08199b51cdb92e2f3c5fb760aac032e9d527b8ba1"
+      },
+      {
+        "path": "EntropicRogersShephard/BodyLayers.lean",
+        "sha256": "ac6ce382d822ace5f575388ea2ffcad22b9fb09019659fa5de8e41bb6ef47436"
+      },
+      {
+        "path": "EntropicRogersShephard/BodyMoments.lean",
+        "sha256": "0bbe3985bfd7d70b30f4cbdca317610e33526c20aaa34ca3af2859e7e969d828"
+      },
+      {
+        "path": "EntropicRogersShephard/BoundedDensity.lean",
+        "sha256": "72aba381cd03b14a3bfd8978da339caeae350f5dd3185bf6f754c5ed43395a43"
+      },
+      {
+        "path": "EntropicRogersShephard/BoundedMixture.lean",
+        "sha256": "e14bd4316d9fb33fd9abe38edb0051abee9efe1b0da40c94ffeab5bb6e39ff46"
+      },
+      {
+        "path": "EntropicRogersShephard/CompactConvergence.lean",
+        "sha256": "6a5ab3684a8e3a73fa1ba7fc3692ebae27b47e83f182ebbecc33cf48ce4af53a"
+      },
+      {
+        "path": "EntropicRogersShephard/CompactExponentialBound.lean",
+        "sha256": "7897ebea5e00539cca37b5b1dff900c4c4d8cd9e6d3ba955da1c0d6d5a9d2142"
+      },
+      {
+        "path": "EntropicRogersShephard/CompactRestrictions.lean",
+        "sha256": "fb347366784263822dece8e691b1cb559f4e1442061c6b5b57478ee1d7115c06"
+      },
+      {
+        "path": "EntropicRogersShephard/ConcaveApproximation.lean",
+        "sha256": "43bec3b6f7410a66a20091051647684c114641090ab778973987062e5a9f3de4"
+      },
+      {
+        "path": "EntropicRogersShephard/ConvexApproximation.lean",
+        "sha256": "b5d67d19bc055b925f7e7882c46b5a5fc2b10b0061abc1ad6e473509f4be3b15"
+      },
+      {
+        "path": "EntropicRogersShephard/ConvexExhaustion.lean",
+        "sha256": "39970f2eb66ebea3c9b7acbcedbc88eedfa62cac50f6420ede94e5fc077d2af5"
+      },
+      {
+        "path": "EntropicRogersShephard/ConvexVolume.lean",
+        "sha256": "a2edbe8dc8de548a37e8f436a27fcb11cc623e11d87bddc870a993ee0b6b8e70"
+      },
+      {
+        "path": "EntropicRogersShephard/Density.lean",
+        "sha256": "167e833af0bde9a85be85fe13d57c6dcf07eeea0434baa08ca3af534ee20d3cf"
+      },
+      {
+        "path": "EntropicRogersShephard/DensityMeasure.lean",
+        "sha256": "02f3025145694fbe757d60446d2151543feb74adfe03eb30f4d33f6a4e5093cb"
+      },
+      {
+        "path": "EntropicRogersShephard/DominatedConvolution.lean",
+        "sha256": "d90361f526e42a8ae66c047ced477d0d330639ac7a7b255efaf1ad145f5cdad2"
+      },
+      {
+        "path": "EntropicRogersShephard/ExponentialConvergence.lean",
+        "sha256": "6fbdcb968c9037b7df26a6777247849f19b38e9996f09c46cd3d8307cfaea771"
+      },
+      {
+        "path": "EntropicRogersShephard/ExponentialExample.lean",
+        "sha256": "5d048cb51c59cf92544c2b570ee87ecb5e60cb79ac1e890fb191263a64996bf2"
+      },
+      {
+        "path": "EntropicRogersShephard/ExponentialIntegrability.lean",
+        "sha256": "c810299dc11f2c6b5a4a718cf0c18f90ae133a0444272b12229ef989f156307b"
+      },
+      {
+        "path": "EntropicRogersShephard/ExponentialSharpness.lean",
+        "sha256": "75832716d8bef23b9e3ca2622f536325d06545629a4cf302f30f4c3aa35dbacb"
+      },
+      {
+        "path": "EntropicRogersShephard/ExponentialTails.lean",
+        "sha256": "80fd00bfb58c6a560249b821265bc7c4bcbb9342605cc8609f40e60bf8341900"
+      },
+      {
+        "path": "EntropicRogersShephard/FiberCancellation.lean",
+        "sha256": "25f15cb745a5db57f486a20b7c81ebc4d106d33458f1ca2d178db5025dd511db"
+      },
+      {
+        "path": "EntropicRogersShephard/FiberDifference.lean",
+        "sha256": "3e685b4c2b075c193ac26fbd7bc7451eda1f4bdb2b4b16a7181139b287ca657b"
+      },
+      {
+        "path": "EntropicRogersShephard/FiberDifferenceBounds.lean",
+        "sha256": "ecac7caa6a0aa6ed4269c9fe363c1749131eda224e91944f8039ed2a0f04ef11"
+      },
+      {
+        "path": "EntropicRogersShephard/FiberEntropy.lean",
+        "sha256": "1c640a601c6df429488c96811afcb1120d7a925f8976b2f72056c64a929663aa"
+      },
+      {
+        "path": "EntropicRogersShephard/FiberExtension.lean",
+        "sha256": "e453f9b626b81b80891d0a3efe7ea566ccc137aebdcbf8b4a42bfd1a726066a5"
+      },
+      {
+        "path": "EntropicRogersShephard/FiberMixtureRows.lean",
+        "sha256": "eccc7ccd4a4b597bd5f47783d2ccfd121e9f51fd7dfd5f4cf4d2ba75baa53e2a"
+      },
+      {
+        "path": "EntropicRogersShephard/FiberTransport.lean",
+        "sha256": "8f5cdf1bc6df77385f3822da0e1a4b566e2ec4b377f7cfb3dcbbaf755275e207"
+      },
+      {
+        "path": "EntropicRogersShephard/FiberVolume.lean",
+        "sha256": "8d09ab85e68cf0dbdea59476c99bd663713b603526bee1d49a55eb15533a359b"
+      },
+      {
+        "path": "EntropicRogersShephard/FiniteSupportLimit.lean",
+        "sha256": "1b7a141f8e68cb4caab1d4086abbf144e6bbeaea72a9e43636bbbc2215ba1be4"
+      },
+      {
+        "path": "EntropicRogersShephard/GeneralDensityBound.lean",
+        "sha256": "52d7a4e84b3e4041504c36551dac988c9e3dd054744e4dd0b87a31129c535c22"
+      },
+      {
+        "path": "EntropicRogersShephard/GlobalDensityBound.lean",
+        "sha256": "b0c9b0e557b854a0ece156a9126c93089865b34c2b67c4ea20f67bb40d3cf3a7"
+      },
+      {
+        "path": "EntropicRogersShephard/LayerCoefficients.lean",
+        "sha256": "2c7da5e264de0c99258b535dc42402ced3b97e0b4b24da43cf1abdf1802ee5b2"
+      },
+      {
+        "path": "EntropicRogersShephard/LayerLogMoments.lean",
+        "sha256": "43501b14223644712cfb288dfe0884c3fd26aff005a47fbc0c5f3c1b8c4f26a2"
+      },
+      {
+        "path": "EntropicRogersShephard/LayerMoments.lean",
+        "sha256": "4736b9f8a04f5da4a573208486c932d9e17d2f6a5ce39a35edb4c7011124a82e"
+      },
+      {
+        "path": "EntropicRogersShephard/LayerNormalization.lean",
+        "sha256": "32716df5943dd997d99606663f87fc0fe33f68481fb464f11216fe1e823db3fc"
+      },
+      {
+        "path": "EntropicRogersShephard/LocalLogConcave.lean",
+        "sha256": "7c6ff8cdb50c80d7a45a96d12ef2b58efa06306bb71075fa7c71c82e433f3153"
+      },
+      {
+        "path": "EntropicRogersShephard/LogConcavity.lean",
+        "sha256": "ef13e1f892816c6761d6afee019df6dc6472f9b481d790bbf1df113f501c896c"
+      },
+      {
+        "path": "EntropicRogersShephard/Main.lean",
+        "sha256": "ecda92d8a5f8474820fc2c6ba27dd4009b77d30e760467fc5467a45f604cf1ce"
+      },
+      {
+        "path": "EntropicRogersShephard/MixtureMass.lean",
+        "sha256": "353b619fc150a3e8fccd9b2accb6c1483008bcb398a9aec14d92d0f51f34a162"
+      },
+      {
+        "path": "EntropicRogersShephard/MonotoneTilt.lean",
+        "sha256": "ff95daf0c9caefb6daf0d39735a0f984b1a1719c1f47696be315f6d2daa31f82"
+      },
+      {
+        "path": "EntropicRogersShephard/OrthantGeometry.lean",
+        "sha256": "0478d85395332994a12b68fe84a339816f9b9b6030c46657aad9e95581b1700b"
+      },
+      {
+        "path": "EntropicRogersShephard/PowerDensity.lean",
+        "sha256": "135ef869e48cbb1207bd00a14a7ef1fa0c1ea7bdb63eca61c1137100562202a2"
+      },
+      {
+        "path": "EntropicRogersShephard/ProbabilityLaw.lean",
+        "sha256": "980172aa50de30bca9521b565845c38c549eea54368b3a63ba51fc75fa65ee2e"
+      },
+      {
+        "path": "EntropicRogersShephard/ProductDensity.lean",
+        "sha256": "4a86b8a5c1f4dc132295c4dc72aadc045a994ee15017b86bd83545b0c3b71190"
+      },
+      {
+        "path": "EntropicRogersShephard/RadialOverlap.lean",
+        "sha256": "3031eaa917904233c61e9fcb3e8d5f6330dd545b601cbfdb7af7997222e381d7"
+      },
+      {
+        "path": "EntropicRogersShephard/SimplexDensity.lean",
+        "sha256": "2394e5dd18dfa04ded5dbe1b688c32c228c5537395eacffec30752ad9ef8498b"
+      },
+      {
+        "path": "EntropicRogersShephard/SimplexEntropy.lean",
+        "sha256": "242d5b30e00d1611ed4cb0f72cee5ebf077c1197431159592f06e30fdae69837"
+      },
+      {
+        "path": "EntropicRogersShephard/SimplexKernel.lean",
+        "sha256": "cefd9165f4d0b37154881fa71e0e17a3ecdfe95d801595e1dacd468ec99e5b81"
+      },
+      {
+        "path": "EntropicRogersShephard/SimplexMixtureEntropy.lean",
+        "sha256": "5511bcb5c16b079d64fb078d07b3f127ffdc49d653e3bfce8b03d9e89154ce9f"
+      },
+      {
+        "path": "EntropicRogersShephard/SimplexScaling.lean",
+        "sha256": "7015e289ec78893a43c6dd8425fdc29a88a2865e394c7724052072c089a81b7f"
+      },
+      {
+        "path": "EntropicRogersShephard/WeightedTilt.lean",
+        "sha256": "f76669efcde0da3b60ad894b3dea577fe3a06c4d7f984c98af41bfccc1f1b540"
+      },
+      {
+        "path": "EntropicRogersShephard.lean",
+        "sha256": "f9ecaa777b393a47a011805d5222de3dcb537c119f91ee71b89a4d68e041681e"
+      },
+      {
+        "path": "FCSolution.lean",
+        "sha256": "716b822cd3bc96c5789d41960839ddc916fd02d7fa744add286f52dd5e1a95cd"
+      },
+      {
+        "path": "FCTargetDefinitions.lean",
+        "sha256": "126257c80f9d480e55086292a4f6d73632484637afe19e20a9df75875ec1398f"
+      },
+      {
+        "path": "LeanPool/Isoperimetric/Basic.lean",
+        "sha256": "53c395d2a914ed43b03704d4fa8448cff777bfc611662e045ff301f155ca9800"
+      },
+      {
+        "path": "LeanPool/Isoperimetric/BrunnMinkowski.lean",
+        "sha256": "613777d3f642a0e53c93d7e77c06e1ee7ca73417bbf781709e55b708fcee383d"
+      },
+      {
+        "path": "LeanPool/Isoperimetric/PrekopaLeindler.lean",
+        "sha256": "440eab3b5e58175101881d127e058c4ff279b21c22ff2536cd1ac4ae6eccfc6f"
+      },
+      {
+        "path": "LeanPool.lean",
+        "sha256": "506d9e02e48f88595a8ee40fef46c1169d1f7df8898453ca8b4209d04fc8f1c8"
+      }
+    ],
+    "excluded_comparator_files": [
+      "Challenge.lean",
+      "FCAudit.lean",
+      "comparator.json",
+      "comparator/"
+    ],
+    "configuration_difference": "Only the Challenge and FCAudit library registrations are omitted."
+  },
+  "targets": [
+    "EntropicRogersShephardFC.density_bound",
+    "EntropicRogersShephardFC.entropic_rogers_shephard",
+    "EntropicRogersShephardFC.affine_density_law",
+    "EntropicRogersShephardFC.affine_exponential_equality",
+    "EntropicRogersShephardFC.constant_optimal"
+  ]
+}

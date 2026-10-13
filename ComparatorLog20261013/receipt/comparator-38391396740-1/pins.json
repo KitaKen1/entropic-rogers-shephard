@@ -1,0 +1,71 @@
+{
+  "proof_repository": "KitaKen1/entropic-rogers-shephard",
+  "proof_commit": "c34631bc744bf626e8225c6c91d5e13c7b8a0b4f",
+  "publication_repository": "KitaKen1/entropic-rogers-shephard",
+  "private_repository": "KitaKen1/ci-test-sandbox",
+  "fc_repository": "google-deepmind/formal-conjectures",
+  "fc_issue": 7196,
+  "fc_base_commit": "72dad3524e0174dea703f267664d3bc9298803a0",
+  "fc_target_commit": null,
+  "fc_pr": null,
+  "fc_target_status": "Proposed local target for the natural-language issue; not an accepted upstream Lean target.",
+  "challenge_kind": "One primary FC theorem for issue #7196 and four supporting targets; fixed definitions with no holes.",
+  "fc_upstream_toolchain": "leanprover/lean4:v4.33.1",
+  "lean_toolchain": "leanprover/lean4:v4.33.1",
+  "mathlib_commit": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "comparator_commit": "c0c5a52d2aff92b457c3e5ed4a68c1ebc5795809",
+  "landrun_commit": "811cfff51ceaf3d9843708aa6d22e9b84ccac8b4",
+  "lean4export_commit": "15f6055e299ad5b89345e533cc2192f4cc00f659",
+  "targets": [
+    "EntropicRogersShephardFC.density_bound",
+    "EntropicRogersShephardFC.entropic_rogers_shephard",
+    "EntropicRogersShephardFC.affine_density_law",
+    "EntropicRogersShephardFC.affine_exponential_equality",
+    "EntropicRogersShephardFC.constant_optimal"
+  ],
+  "fc_checkout_compatibility": "FC statement, proof, reference, Comparator and exporter use Lean 4.33.1 with FC Mathlib v4.33.1; local compilation, comparison, axiom audit and both kernel replays passed.",
+  "files_sha256": {
+    "lean/FCTargetDefinitions.lean": "126257c80f9d480e55086292a4f6d73632484637afe19e20a9df75875ec1398f",
+    "lean/Challenge.lean": "c49dec0bc4dd2f685f613f32110dd06bec0f677c7aa00c54540cfdbd9067bff2",
+    "lean/FCSolution.lean": "716b822cd3bc96c5789d41960839ddc916fd02d7fa744add286f52dd5e1a95cd",
+    "lean/FCAudit.lean": "1d0ddf39122e3912a40b87a2ef07361d1f8c59dd5bdcafaf99a6e311340966be",
+    "lean/comparator.json": "8eeb955e7be0eafe4735f2ae26714b6aaee16010ac997bc33a5ed6d5d5f0c5f5",
+    "lean/comparator/shared-proof-sources.json": "e5f02bfc79dd3a9b46f362cb3aa343eb6c1c6bd371da3e0d72b5c78e31a06fde",
+    "lean/comparator/proof-source-manifest.json": "635e0185406d38ff970367a352f276906ebfe52a5ee4698d81ba75b75fe125fb",
+    "lean/lakefile.toml": "fdcd30327ffa840448f9aa2df387821911e63d6b0638fc94c9bd003a252eb8dd",
+    "leanWithoutComparator/lakefile.toml": "888ce026537fa51ae200e7be592a20d94575b74e30013e690759bbbbb036b8d7",
+    "lean/lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+    "lean/lake-manifest.json": "6360f87f22a81ec9e77547663e2ea3bcd23b571aa85eca018c92794b81ca3331",
+    "FClikelean/EntropicRogersShephard.lean": "00e63207af01c22acee118ae7c0301cd223d08c32a52b6de0d0302f68e0bb421",
+    "lean/comparator/check-fc-draft.py": "24fc8ee28b68bca26d364e2e31121594dcfaf103df721317df9729d6c751f481",
+    "lean/comparator/check-axioms.py": "6cb247ba692e51691b98fe5740eca98ec1bcc23e51646feff7213a5f9452ec59",
+    "lean/comparator/check-inputs.py": "a80cea04f723efebe6051c3a9cd0ec0195f8ebb131c2fa04e7bdec4213798d5b",
+    "lean/comparator/prepare-runner.sh": "5d12f8901bf6f289f828ffc28dc6c91739e08feabfb0026a37d257990eb99506",
+    "lean/comparator/install-tools.sh": "f6bd71497f69d2ccc352f0bc23c3e91cddcf360d6335a11a8bcca1b12bb1a094",
+    "lean/comparator/build-proof.sh": "8a5bf7c149b45b2168b13b1ecccb76ec82eddde84c884e50e8868855eb3c7206",
+    "lean/comparator/run-check.sh": "99a088d6669f86ee259878de62350e236626efd34b0edc8c5a1d4b33d1f68a15",
+    "lean/comparator/add-swap.sh": "560dbc6aa8f8039264fd7bd1715cde5ba338486a3e675ea23f352e9fcf8680ae",
+    ".github/workflows/comparator.yml": "ccf7c6ffa4228410542cc04da6f9720ae7515e054b19558ccf3deacff7e886eb",
+    "lean/comparator/archive-run.py": "c08c8d3a3967311bae980dc47b4b1bdb9949927d368fa4660296d3d0f9c4b9a1",
+    "lean/comparator/check-all-axioms.py": "354c70915228f79c68c9a73e97dba0671cd14f2558641a0e01a63bf4824aacfe"
+  },
+  "primary_fc_target": "EntropicRogersShephardFC.entropic_rogers_shephard",
+  "fc_draft_definition_count": 2,
+  "fc_draft_theorem_count": 1,
+  "toolchain_patches": {
+    "comparator": {
+      "upstream": "leanprover/lean4:v4.33.0",
+      "build": "leanprover/lean4:v4.33.1",
+      "changed_files": [
+        "lean-toolchain"
+      ]
+    },
+    "lean4export": {
+      "upstream": "leanprover/lean4:v4.33.0",
+      "build": "leanprover/lean4:v4.33.1",
+      "changed_files": [
+        "lean-toolchain"
+      ]
+    }
+  }
+}

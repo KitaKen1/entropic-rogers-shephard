@@ -1,10 +1,10 @@
 {
-  "status": "Private Lean 4.33.1 CI PASS; public publication authorized and public CI pending",
+  "status": "Lean 4.33.1 public and private Linux CI PASS; published",
   "publication_authorized_now": true,
   "publication_repository": "KitaKen1/entropic-rogers-shephard",
   "private_repository": "KitaKen1/ci-test-sandbox",
   "current_candidate_has_been_pushed": true,
-  "public_candidate_pushed": false,
+  "public_candidate_pushed": true,
   "private_ci_run": {
     "run_id": 38387993461,
     "attempt": 1,
@@ -13,7 +13,14 @@
     "status": "completed",
     "conclusion": "success"
   },
-  "public_ci_run": null,
+  "public_ci_run": {
+    "run_id": 38391396740,
+    "attempt": 1,
+    "url": "https://github.com/KitaKen1/entropic-rogers-shephard/actions/runs/38391396740",
+    "tested_commit": "c397fa6e591babb5a95d6ba55943baa21c5486c7",
+    "status": "completed",
+    "conclusion": "success"
+  },
   "lean_toolchain": "leanprover/lean4:v4.33.1",
   "mathlib_commit": "0df444a360eaa60ab8c11dca51a86af692955474",
   "fc_base_commit": "72dad3524e0174dea703f267664d3bc9298803a0",
@@ -27,7 +34,7 @@
   "identical_shared_proof_sources": 65,
   "local_comparator": "PASS; macOS development shim, no Linux sandbox certification",
   "local_axiom_audit": "PASS: 451 targets; permitted axioms only",
-  "next_action": "Push public main and verify public Linux CI with Lean 4.33.1",
+  "next_action": "None; public verification and archive complete",
   "local_fresh_kernel_replay": "PASS: exit 0",
   "current_candidate_local_verification": "PASS",
   "private_ci_authorized_now": true,
@@ -39,5 +46,9 @@
   "private_ci_verification_record": "lean/verification/private-ci-verification.json",
   "public_main_after_private_test": "c34631bc744bf626e8225c6c91d5e13c7b8a0b4f",
   "formal_proof_commit": "a4afbe96b42e18434167870dcfd0ba8254bb96de",
-  "public_main_unchanged_during_private_test": true
+  "public_main_unchanged_during_private_test": true,
+  "public_tested_commit": "c397fa6e591babb5a95d6ba55943baa21c5486c7",
+  "public_linux_ci_verification": "PASS",
+  "public_ci_verification_record": "verification/public-ci-verification.json",
+  "public_ci_archive": "ComparatorLog20261013"
 }

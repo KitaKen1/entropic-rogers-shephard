@@ -124,7 +124,8 @@ replay. A separate `leanchecker --fresh FCSolution` replay also passed.
 The macOS development check used the upstream sandbox shim.
 The private Linux CI run passed with real sandboxing, all five comparisons,
 the 451-target axiom audit, and an independent fresh kernel replay.
-Public verification is pending. See the
+The public Linux CI run also passed. See the
+[public CI verification record](verification/public-ci-verification.json), the
 [private CI verification record](lean/verification/private-ci-verification.json) and
 [local verification record](lean/verification/local-review-verification.json).
 
@@ -153,12 +154,16 @@ A separate job performs a fresh replay of the complete proof environment.
 The workflow retains logs and artifacts for 90 days.
 [Private Linux CI](https://github.com/KitaKen1/ci-test-sandbox/actions/runs/38387993461) passed on Lean 4.33.1
 for commit `a4afbe96b42e18434167870dcfd0ba8254bb96de`: build, Comparator, axiom audit
-and fresh kernel replay all succeeded. Public CI verification is pending.
+and fresh kernel replay all succeeded.
+[Public Linux CI](https://github.com/KitaKen1/entropic-rogers-shephard/actions/runs/38391396740) also passed
+for commit `c397fa6e591babb5a95d6ba55943baa21c5486c7` with the same Lean 4.33.1 proof and checker configuration.
 
 ### Certification After 90 days: archive
 
-After successful public verification, the original artifact ZIPs, job logs, run
-metadata and checksums will be preserved under `ComparatorLogYYYYMMDD/`.
+The public run is archived under [ComparatorLog20261013/](ComparatorLog20261013/):
+all three original artifact ZIPs, complete job logs, run metadata, extracted receipts
+and SHA-256 checksums. [Provenance](ComparatorLog20261013/provenance.json) fixes the
+tested commit, run and attempt. Artifact ZIP hashes match the GitHub API digests.
 
 ### Reproduce the verification
 

@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "targets": {
+    "EntropicRogersShephardFC.density_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephardFC.entropic_rogers_shephard": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephardFC.affine_density_law": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephardFC.affine_exponential_equality": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephardFC.constant_optimal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.complete_sharp_entropic_rogers_shephard": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "sorryAx": false,
+  "new_axioms": false
+}

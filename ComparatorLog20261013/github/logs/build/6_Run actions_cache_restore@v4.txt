@@ -1,0 +1,12 @@
+﻿2026-10-13T11:41:27.8345713Z ##[group]Run actions/cache/restore@v4
+2026-10-13T11:41:27.8345889Z with:
+2026-10-13T11:41:27.8346006Z   path: lean/.lake/build
+2026-10-13T11:41:27.8346190Z   key: ers-fc-c397fa6e591babb5a95d6ba55943baa21c5486c7-38391396740-1
+2026-10-13T11:41:27.8346439Z   restore-keys: ers-fc-c397fa6e591babb5a95d6ba55943baa21c5486c7-
+2026-10-13T11:41:27.8346635Z   enableCrossOsArchive: false
+2026-10-13T11:41:27.8346773Z   fail-on-cache-miss: false
+2026-10-13T11:41:27.8346903Z   lookup-only: false
+2026-10-13T11:41:27.8347038Z ##[endgroup]
+2026-10-13T11:41:27.9385619Z (node:3130) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-13T11:41:27.9386154Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-13T11:41:28.1019337Z Cache not found for input keys: ers-fc-c397fa6e591babb5a95d6ba55943baa21c5486c7-38391396740-1, ers-fc-c397fa6e591babb5a95d6ba55943baa21c5486c7-

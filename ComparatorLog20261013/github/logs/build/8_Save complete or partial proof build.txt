@@ -1,0 +1,12 @@
+﻿2026-10-13T11:42:40.4319064Z ##[group]Run actions/cache/save@v4
+2026-10-13T11:42:40.4319240Z with:
+2026-10-13T11:42:40.4319353Z   path: lean/.lake/build
+2026-10-13T11:42:40.4319535Z   key: ers-fc-c397fa6e591babb5a95d6ba55943baa21c5486c7-38391396740-1
+2026-10-13T11:42:40.4319740Z   enableCrossOsArchive: false
+2026-10-13T11:42:40.4319875Z ##[endgroup]
+2026-10-13T11:42:40.6130664Z (node:3806) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-13T11:42:40.6131513Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-13T11:42:40.6250681Z [command]/usr/bin/tar --posix -cf cache.tzst --exclude cache.tzst -P -C /home/runner/work/entropic-rogers-shephard/entropic-rogers-shephard --files-from manifest.txt --use-compress-program zstdmt
+2026-10-13T11:42:40.9281218Z (node:3806) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+2026-10-13T11:42:41.9220729Z Sent 11230536 of 11230536 (100.0%), 10.7 MBs/sec
+2026-10-13T11:42:42.4133156Z Cache saved with key: ers-fc-c397fa6e591babb5a95d6ba55943baa21c5486c7-38391396740-1

@@ -1,0 +1,1610 @@
+﻿2026-10-13T11:42:48.4188778Z Current runner version: '2.337.0'
+2026-10-13T11:42:48.4210209Z ##[group]Runner Image Provisioner
+2026-10-13T11:42:48.4211209Z Hosted Compute Agent
+2026-10-13T11:42:48.4211873Z Version: 20261002.596
+2026-10-13T11:42:48.4212702Z Commit: c3d12f3313a95f25162a1503be624f3b0617f8c0
+2026-10-13T11:42:48.4213532Z Build Date: 2026-10-02T22:28:27Z
+2026-10-13T11:42:48.4214349Z Worker ID: {e215b28a-9a91-43de-bea5-e8d3525da936}
+2026-10-13T11:42:48.4215218Z Region: westus3
+2026-10-13T11:42:48.4215837Z Cloud: Azure
+2026-10-13T11:42:48.4216530Z ##[endgroup]
+2026-10-13T11:42:48.4217929Z ##[group]Operating System
+2026-10-13T11:42:48.4218532Z Ubuntu
+2026-10-13T11:42:48.4219164Z 24.04.5
+2026-10-13T11:42:48.4219595Z LTS
+2026-10-13T11:42:48.4220095Z ##[endgroup]
+2026-10-13T11:42:48.4220551Z ##[group]Runner Image
+2026-10-13T11:42:48.4221031Z Image: ubuntu-24.04
+2026-10-13T11:42:48.4221553Z Version: 20261004.327.1
+2026-10-13T11:42:48.4222607Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261004.327/images/ubuntu/Ubuntu2404-Readme.md
+2026-10-13T11:42:48.4223931Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261004.327
+2026-10-13T11:42:48.4224688Z ##[endgroup]
+2026-10-13T11:42:48.4225637Z ##[group]GITHUB_TOKEN Permissions
+2026-10-13T11:42:48.4227157Z Contents: read
+2026-10-13T11:42:48.4227731Z Metadata: read
+2026-10-13T11:42:48.4228201Z ##[endgroup]
+2026-10-13T11:42:48.4230199Z Secret source: Actions
+2026-10-13T11:42:48.4230954Z Cache mode: write
+2026-10-13T11:42:48.4231572Z Prepare workflow directory
+2026-10-13T11:42:48.4699050Z Prepare all required actions
+2026-10-13T11:42:48.4737965Z Getting action download info
+2026-10-13T11:42:48.7860936Z Download action repository 'actions/checkout@11d5960a326750d5838078e36cf38b85af677262' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+2026-10-13T11:42:49.6999875Z Download action repository 'actions/setup-go@v5' (SHA:40f1582b2485089dde7abd97c1529aa768e1baff)
+2026-10-13T11:42:50.4767362Z Download action repository 'actions/cache@v4' (SHA:0057852bfaa89a56745cba8c7296529d2fc39830)
+2026-10-13T11:42:50.6263391Z Download action repository 'actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+2026-10-13T11:42:50.8558397Z Complete job name: comparator
+2026-10-13T11:42:50.9131129Z ##[group]Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+2026-10-13T11:42:50.9131694Z with:
+2026-10-13T11:42:50.9131921Z   persist-credentials: false
+2026-10-13T11:42:50.9132218Z   repository: KitaKen1/entropic-rogers-shephard
+2026-10-13T11:42:50.9134613Z   token: ***
+2026-10-13T11:42:50.9134837Z   ssh-strict: true
+2026-10-13T11:42:50.9135054Z   ssh-user: git
+2026-10-13T11:42:50.9135256Z   clean: true
+2026-10-13T11:42:50.9135476Z   sparse-checkout-cone-mode: true
+2026-10-13T11:42:50.9135737Z   fetch-depth: 1
+2026-10-13T11:42:50.9135959Z   fetch-tags: false
+2026-10-13T11:42:50.9136195Z   show-progress: true
+2026-10-13T11:42:50.9136418Z   lfs: false
+2026-10-13T11:42:50.9136621Z   submodules: false
+2026-10-13T11:42:50.9136856Z   set-safe-directory: true
+2026-10-13T11:42:50.9137105Z   allow-unsafe-pr-checkout: false
+2026-10-13T11:42:50.9137494Z ##[endgroup]
+2026-10-13T11:42:50.9941540Z Syncing repository: KitaKen1/entropic-rogers-shephard
+2026-10-13T11:42:50.9942807Z ##[group]Getting Git version info
+2026-10-13T11:42:50.9943277Z Working directory is '/home/runner/work/entropic-rogers-shephard/entropic-rogers-shephard'
+2026-10-13T11:42:50.9943911Z [command]/usr/bin/git version
+2026-10-13T11:42:50.9982926Z git version 2.55.0
+2026-10-13T11:42:50.9997551Z ##[endgroup]
+2026-10-13T11:42:51.0007478Z Temporarily overriding HOME='/home/runner/work/_temp/c7b3d433-d36c-40f9-a432-c23e34aedcea' before making global git config changes
+2026-10-13T11:42:51.0008473Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-13T11:42:51.0012576Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/entropic-rogers-shephard/entropic-rogers-shephard
+2026-10-13T11:42:51.4316483Z Deleting the contents of '/home/runner/work/entropic-rogers-shephard/entropic-rogers-shephard'
+2026-10-13T11:42:51.4320488Z ##[group]Initializing the repository
+2026-10-13T11:42:51.4324384Z [command]/usr/bin/git init /home/runner/work/entropic-rogers-shephard/entropic-rogers-shephard
+2026-10-13T11:42:51.4498721Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-10-13T11:42:51.4499741Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-10-13T11:42:51.4500407Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-10-13T11:42:51.4501015Z hint: call:
+2026-10-13T11:42:51.4501351Z hint:
+2026-10-13T11:42:51.4501973Z hint: 	git config --global init.defaultBranch <name>
+2026-10-13T11:42:51.4502431Z hint:
+2026-10-13T11:42:51.4502867Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-10-13T11:42:51.4503556Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-10-13T11:42:51.4504142Z hint:
+2026-10-13T11:42:51.4504460Z hint: 	git branch -m <name>
+2026-10-13T11:42:51.4504812Z hint:
+2026-10-13T11:42:51.4505293Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-10-13T11:42:51.4506200Z Initialized empty Git repository in /home/runner/work/entropic-rogers-shephard/entropic-rogers-shephard/.git/
+2026-10-13T11:42:51.4510782Z [command]/usr/bin/git remote add origin https://github.com/KitaKen1/entropic-rogers-shephard
+2026-10-13T11:42:51.4546675Z ##[endgroup]
+2026-10-13T11:42:51.4547253Z ##[group]Disabling automatic garbage collection
+2026-10-13T11:42:51.4549698Z [command]/usr/bin/git config --local gc.auto 0
+2026-10-13T11:42:51.4573325Z ##[endgroup]
+2026-10-13T11:42:51.4573872Z ##[group]Setting up auth
+2026-10-13T11:42:51.4577983Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-13T11:42:51.4601921Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-13T11:42:51.5009570Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-13T11:42:51.5035707Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-13T11:42:51.5228597Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-13T11:42:51.5254008Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-13T11:42:51.5434403Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-10-13T11:42:51.5464241Z ##[endgroup]
+2026-10-13T11:42:51.5464829Z ##[group]Fetching the repository
+2026-10-13T11:42:51.5471037Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +c397fa6e591babb5a95d6ba55943baa21c5486c7:refs/remotes/origin/main
+2026-10-13T11:42:52.2106698Z From https://github.com/KitaKen1/entropic-rogers-shephard
+2026-10-13T11:42:52.2107841Z  * [new ref]         c397fa6e591babb5a95d6ba55943baa21c5486c7 -> origin/main
+2026-10-13T11:42:52.2111571Z ##[endgroup]
+2026-10-13T11:42:52.2112123Z ##[group]Determining the checkout info
+2026-10-13T11:42:52.2114089Z ##[endgroup]
+2026-10-13T11:42:52.2120805Z [command]/usr/bin/git sparse-checkout disable
+2026-10-13T11:42:52.2159629Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-10-13T11:42:52.2184071Z ##[group]Checking out the ref
+2026-10-13T11:42:52.2196587Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2026-10-13T11:42:52.2343851Z Switched to a new branch 'main'
+2026-10-13T11:42:52.2349643Z branch 'main' set up to track 'origin/main'.
+2026-10-13T11:42:52.2351949Z ##[endgroup]
+2026-10-13T11:42:52.2382601Z [command]/usr/bin/git log -1 --format=%H
+2026-10-13T11:42:52.2401954Z c397fa6e591babb5a95d6ba55943baa21c5486c7
+2026-10-13T11:42:52.2412821Z ##[group]Removing auth
+2026-10-13T11:42:52.2419153Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-13T11:42:52.2438487Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-13T11:42:52.2632402Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-13T11:42:52.2653909Z http.https://github.com/.extraheader
+2026-10-13T11:42:52.2659568Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-10-13T11:42:52.2686377Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-13T11:42:52.2875702Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-13T11:42:52.2898391Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-13T11:42:52.3099303Z ##[endgroup]
+2026-10-13T11:42:52.3262336Z ##[group]Run python3 lean/comparator/check-inputs.py --receipt-dir comparator-receipt
+2026-10-13T11:42:52.3262899Z [36;1mpython3 lean/comparator/check-inputs.py --receipt-dir comparator-receipt[0m
+2026-10-13T11:42:52.3788277Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-10-13T11:42:52.3788609Z ##[endgroup]
+2026-10-13T11:42:52.4543630Z PASS: two definitions and the primary FC theorem match the canonical target.
+2026-10-13T11:42:52.4595333Z PASS: 5 targets, 65 identical shared sources, pinned 4.33.1 proof sources.
+2026-10-13T11:42:52.4675301Z ##[group]Run bash lean/comparator/prepare-runner.sh && bash lean/comparator/add-swap.sh 8 4
+2026-10-13T11:42:52.4675852Z [36;1mbash lean/comparator/prepare-runner.sh && bash lean/comparator/add-swap.sh 8 4[0m
+2026-10-13T11:42:52.4728838Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-10-13T11:42:52.4729291Z ##[endgroup]
+2026-10-13T11:45:38.8446232Z info: downloading installer
+2026-10-13T11:45:39.2692914Z 4
+2026-10-13T11:45:39.2706338Z                total        used        free      shared  buff/cache   available
+2026-10-13T11:45:39.2706802Z Mem:            15Gi       1.0Gi        10Gi        46Mi       4.3Gi        14Gi
+2026-10-13T11:45:39.2707175Z Swap:          3.0Gi          0B       3.0Gi
+2026-10-13T11:45:39.2832242Z Filesystem      Size  Used Avail Use% Mounted on
+2026-10-13T11:45:39.2832740Z /dev/root       145G   24G  122G  17% /
+2026-10-13T11:45:39.2832973Z /dev/root       145G   24G  122G  17% /
+2026-10-13T11:45:39.3190215Z added 8 GB of swap on /
+2026-10-13T11:45:39.3208789Z                total        used        free      shared  buff/cache   available
+2026-10-13T11:45:39.3209288Z Mem:              15           1          10           0           4          14
+2026-10-13T11:45:39.3209570Z Swap:             10           0          10
+2026-10-13T11:45:39.3222374Z NAME              TYPE SIZE USED PRIO
+2026-10-13T11:45:39.3222784Z /swapfile         file   3G   0B   -2
+2026-10-13T11:45:39.3223160Z /swap-extra-23511 file   8G   0B   -3
+2026-10-13T11:45:39.3304179Z ##[group]Run actions/setup-go@v5
+2026-10-13T11:45:39.3304525Z with:
+2026-10-13T11:45:39.3304789Z   go-version: stable
+2026-10-13T11:45:39.3305133Z   check-latest: false
+2026-10-13T11:45:39.3307483Z   token: ***
+2026-10-13T11:45:39.3307761Z   cache: true
+2026-10-13T11:45:39.3308035Z ##[endgroup]
+2026-10-13T11:45:39.4344023Z Setup go version spec stable
+2026-10-13T11:45:39.4430422Z (node:2623) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-13T11:45:39.4431242Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-13T11:45:40.4963387Z stable version resolved as 1.27.2
+2026-10-13T11:45:40.4970950Z Attempting to download 1.27.2...
+2026-10-13T11:45:40.4971628Z matching 1.27.2...
+2026-10-13T11:45:40.4987424Z Acquiring 1.27.2 from https://github.com/actions/go-versions/releases/download/1.27.2-37875086547/go-1.27.2-linux-x64.tar.gz
+2026-10-13T11:45:41.0973531Z Extracting Go...
+2026-10-13T11:45:41.1150438Z [command]/usr/bin/tar xz --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/267160a2-71cc-4b53-a0e4-ebefb50bb301 -f /home/runner/work/_temp/e6897080-bad8-43c8-8825-71ee9bd134f8
+2026-10-13T11:45:42.5250543Z Successfully extracted go to /home/runner/work/_temp/267160a2-71cc-4b53-a0e4-ebefb50bb301
+2026-10-13T11:45:42.5251490Z Adding to the cache ...
+2026-10-13T11:45:47.4649811Z Successfully cached go to /opt/hostedtoolcache/go/1.27.2/x64
+2026-10-13T11:45:47.4651886Z Added go to the path
+2026-10-13T11:45:47.4653884Z Successfully set up Go version stable
+2026-10-13T11:45:47.4827353Z [command]/opt/hostedtoolcache/go/1.27.2/x64/bin/go env GOMODCACHE
+2026-10-13T11:45:47.4857844Z [command]/opt/hostedtoolcache/go/1.27.2/x64/bin/go env GOCACHE
+2026-10-13T11:45:47.4888385Z /home/runner/go/pkg/mod
+2026-10-13T11:45:47.4902293Z /home/runner/.cache/go-build
+2026-10-13T11:45:47.4929182Z ##[warning]Restore cache failed: Dependencies file is not found in /home/runner/work/entropic-rogers-shephard/entropic-rogers-shephard. Supported file pattern: go.sum
+2026-10-13T11:45:47.4953252Z go version go1.27.2 linux/amd64
+2026-10-13T11:45:47.4953483Z 
+2026-10-13T11:45:47.4953925Z ##[group]go env
+2026-10-13T11:45:47.5879567Z AR='ar'
+2026-10-13T11:45:47.5880060Z CC='gcc'
+2026-10-13T11:45:47.5880412Z CGO_CFLAGS='-O2 -g'
+2026-10-13T11:45:47.5880775Z CGO_CPPFLAGS=''
+2026-10-13T11:45:47.5881258Z CGO_CXXFLAGS='-O2 -g'
+2026-10-13T11:45:47.5881672Z CGO_ENABLED='1'
+2026-10-13T11:45:47.5882046Z CGO_FFLAGS='-O2 -g'
+2026-10-13T11:45:47.5882409Z CGO_LDFLAGS='-O2 -g'
+2026-10-13T11:45:47.5882734Z CXX='g++'
+2026-10-13T11:45:47.5883149Z GCCGO='gccgo'
+2026-10-13T11:45:47.5883523Z GO111MODULE=''
+2026-10-13T11:45:47.5883877Z GOAMD64='v1'
+2026-10-13T11:45:47.5884218Z GOARCH='amd64'
+2026-10-13T11:45:47.5884585Z GOAUTH='netrc'
+2026-10-13T11:45:47.5884983Z GOBIN='/home/runner/go/bin'
+2026-10-13T11:45:47.5885520Z GOCACHE='/home/runner/.cache/go-build'
+2026-10-13T11:45:47.5885980Z GOCACHEPROG=''
+2026-10-13T11:45:47.5886330Z GODEBUG=''
+2026-10-13T11:45:47.5886693Z GOENV='/home/runner/.config/go/env'
+2026-10-13T11:45:47.5887129Z GOEXE=''
+2026-10-13T11:45:47.5887478Z GOEXPERIMENT=''
+2026-10-13T11:45:47.5887800Z GOFIPS140='off'
+2026-10-13T11:45:47.5888184Z GOFLAGS=''
+2026-10-13T11:45:47.5889187Z GOGCCFLAGS='-fPIC -m64 -pthread -Wl,--no-gc-sections -fmessage-length=0 -ffile-prefix-map=/tmp/go-build546524137=/tmp/go-build -gno-record-gcc-switches'
+2026-10-13T11:45:47.5890139Z GOHOSTARCH='amd64'
+2026-10-13T11:45:47.5890514Z GOHOSTOS='linux'
+2026-10-13T11:45:47.5890823Z GOINSECURE=''
+2026-10-13T11:45:47.5891206Z GOMOD='/dev/null'
+2026-10-13T11:45:47.5891577Z GOMODCACHE='/home/runner/go/pkg/mod'
+2026-10-13T11:45:47.5892016Z GONOPROXY=''
+2026-10-13T11:45:47.5892385Z GONOSUMDB=''
+2026-10-13T11:45:47.5892702Z GOOS='linux'
+2026-10-13T11:45:47.5893077Z GOPACKAGESDRIVER=''
+2026-10-13T11:45:47.5893441Z GOPATH='/home/runner/go'
+2026-10-13T11:45:47.5893890Z GOPRIVATE=''
+2026-10-13T11:45:47.5894351Z GOPROXY='https://proxy.golang.org,direct'
+2026-10-13T11:45:47.5895077Z GOROOT='/opt/hostedtoolcache/go/1.27.2/x64'
+2026-10-13T11:45:47.5895576Z GOSUMDB='sum.golang.org'
+2026-10-13T11:45:47.5895958Z GOTELEMETRY='local'
+2026-10-13T11:45:47.5896357Z GOTELEMETRYDIR='/home/runner/.config/go/telemetry'
+2026-10-13T11:45:47.5896911Z GOTMPDIR=''
+2026-10-13T11:45:47.5897248Z GOTOOLCHAIN='auto'
+2026-10-13T11:45:47.5897753Z GOTOOLDIR='/opt/hostedtoolcache/go/1.27.2/x64/pkg/tool/linux_amd64'
+2026-10-13T11:45:47.5898344Z GOVCS=''
+2026-10-13T11:45:47.5898642Z GOVERSION='go1.27.2'
+2026-10-13T11:45:47.5899031Z GOWORK=''
+2026-10-13T11:45:47.5899275Z PKG_CONFIG='pkg-config'
+2026-10-13T11:45:47.5899647Z 
+2026-10-13T11:45:47.5900082Z ##[endgroup]
+2026-10-13T11:45:47.6057976Z ##[group]Run lake exe cache get
+2026-10-13T11:45:47.6058225Z [36;1mlake exe cache get[0m
+2026-10-13T11:45:47.6110325Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-10-13T11:45:47.6110603Z ##[endgroup]
+2026-10-13T11:45:48.7605792Z info: downloading https://releases.lean-lang.org/lean4/v4.33.1/lean-4.33.1-linux.tar.zst
+2026-10-13T11:45:53.5986366Z info: installing /home/runner/.elan/toolchains/leanprover--lean4---v4.33.1
+2026-10-13T11:46:02.0608278Z info: mathlib: cloning https://github.com/leanprover-community/mathlib4
+2026-10-13T11:46:32.5894115Z info: mathlib: checking out revision '0df444a360eaa60ab8c11dca51a86af692955474'
+2026-10-13T11:46:34.3835752Z info: plausible: cloning https://github.com/leanprover-community/plausible
+2026-10-13T11:46:34.9692915Z info: plausible: checking out revision 'b7eb3304aeae834b12dda98993a37f6a41f6f0bb'
+2026-10-13T11:46:34.9802791Z info: LeanSearchClient: cloning https://github.com/leanprover-community/LeanSearchClient
+2026-10-13T11:46:35.6036968Z info: LeanSearchClient: checking out revision '5f4d51b81cbd3f6b32b156bfad9056621a040404'
+2026-10-13T11:46:35.6143647Z info: importGraph: cloning https://github.com/leanprover-community/import-graph
+2026-10-13T11:46:36.3371010Z info: importGraph: checking out revision '16f02aa7642864af59f1ff0e384a015994db9118'
+2026-10-13T11:46:36.3520785Z info: proofwidgets: cloning https://github.com/leanprover-community/ProofWidgets4
+2026-10-13T11:46:37.5286532Z info: proofwidgets: checking out revision '4be2e3d5087eeb272cf5a8853b8f9dd025ef5957'
+2026-10-13T11:46:38.0015747Z info: aesop: cloning https://github.com/leanprover-community/aesop
+2026-10-13T11:46:39.2920103Z info: aesop: checking out revision '3448c0bcc5ce01b2d1546e483ec3620e32df3d0e'
+2026-10-13T11:46:39.3070796Z info: Qq: cloning https://github.com/leanprover-community/quote4
+2026-10-13T11:46:39.9832159Z info: Qq: checking out revision '92c15be17b7caf78c2ad767ec40f89052d908d81'
+2026-10-13T11:46:39.9943305Z info: batteries: cloning https://github.com/leanprover-community/batteries
+2026-10-13T11:46:43.2013937Z info: batteries: checking out revision '4488d40d070b9700d4d5a6aa342f0d40c31b2a2d'
+2026-10-13T11:46:43.2311285Z info: Cli: cloning https://github.com/leanprover/lean4-cli
+2026-10-13T11:46:43.8001201Z info: Cli: checking out revision '6130a47896ce867c6a4a55373441e59e565bad0f'
+2026-10-13T11:46:44.1115789Z ✔ [1/5] Built Cache.Cli (254ms)
+2026-10-13T11:46:44.2140408Z ✔ [3/26] Built Cache.Lean (314ms)
+2026-10-13T11:46:44.3118996Z ✔ [6/26] Built Cache.Cli:c.o (146ms)
+2026-10-13T11:46:44.3119453Z ✔ [7/26] Built Cache.Lean:c.o (154ms)
+2026-10-13T11:46:44.5142454Z ✔ [8/26] Built Cache.Infra (343ms)
+2026-10-13T11:46:44.7135376Z ✔ [9/26] Built Cache.Infra:c.o (173ms)
+2026-10-13T11:46:44.9138486Z ✔ [10/26] Built Batteries.Tactic.OpenPrivate (722ms)
+2026-10-13T11:46:45.8149211Z ✔ [11/26] Built Batteries.Tactic.OpenPrivate:c.o (949ms)
+2026-10-13T11:46:46.0151675Z ✔ [12/26] Built Cache.IO (1.1s)
+2026-10-13T11:46:46.6158674Z ✔ [13/26] Built Cache.Hashing (629ms)
+2026-10-13T11:46:46.9161424Z ✔ [14/26] Built Cache.Hashing:c.o (333ms)
+2026-10-13T11:46:47.3165777Z ✔ [15/26] Built Cache.IO:c.o (1.3s)
+2026-10-13T11:46:48.2174156Z ✔ [16/26] Built Cache.Requests (1.6s)
+2026-10-13T11:46:48.6178566Z ✔ [17/26] Built Cache.Marker (470ms)
+2026-10-13T11:46:48.8180943Z ✔ [18/26] Built Cache.Marker:c.o (142ms)
+2026-10-13T11:46:49.2200392Z ✔ [19/26] Built Cache.Query (550ms)
+2026-10-13T11:46:49.5179074Z ✔ [20/26] Built Cache.Query:c.o (315ms)
+2026-10-13T11:46:49.8181440Z ✔ [21/26] Built Cache.Warning (646ms)
+2026-10-13T11:46:50.1184827Z ✔ [22/26] Built Cache.Warning:c.o (278ms)
+2026-10-13T11:46:50.3186577Z ✔ [23/26] Built Cache.Requests:c.o (2.2s)
+2026-10-13T11:46:50.8182340Z ✔ [24/26] Built Cache.Main (963ms)
+2026-10-13T11:46:51.5189864Z ✔ [25/26] Built Cache.Main:c.o (696ms)
+2026-10-13T11:46:52.1228021Z ✔ [26/26] Built cache:exe (626ms)
+2026-10-13T11:46:54.4026571Z Current branch: HEAD
+2026-10-13T11:46:54.4026903Z Using cache from origin: (some leanprover-community/mathlib4)
+2026-10-13T11:46:54.4027918Z Attempting to download 8690 file(s) from leanprover-community/mathlib4 cache at https://lakecache.blob.core.windows.net/mathlib4-master
+2026-10-13T11:46:55.4069660Z 
+2026-10-13T11:46:55.5075661Z Downloaded: 1 file(s) [attempted 1/8690 = 0%, 18 KB/s], Decompressed: 0
+2026-10-13T11:46:55.6329983Z Downloaded: 73 file(s) [attempted 73/8690 = 0%, 718 KB/s], Decompressed: 31
+2026-10-13T11:46:55.8501405Z Downloaded: 155 file(s) [attempted 155/8690 = 1%, 766 KB/s], Decompressed: 52
+2026-10-13T11:46:55.9511858Z Downloaded: 201 file(s) [attempted 201/8690 = 2%, 227 KB/s], Decompressed: 87
+2026-10-13T11:46:56.0521544Z Downloaded: 299 file(s) [attempted 299/8690 = 3%, 380 KB/s], Decompressed: 87
+2026-10-13T11:46:56.1530154Z Downloaded: 400 file(s) [attempted 400/8690 = 4%, 3134 KB/s], Decompressed: 162
+2026-10-13T11:46:56.2525910Z Downloaded: 503 file(s) [attempted 503/8690 = 5%, 1200 KB/s], Decompressed: 162
+2026-10-13T11:46:56.3530415Z Downloaded: 605 file(s) [attempted 605/8690 = 6%, 789 KB/s], Decompressed: 162
+2026-10-13T11:46:56.4553605Z Downloaded: 712 file(s) [attempted 712/8690 = 8%, 211 KB/s], Decompressed: 162
+2026-10-13T11:46:56.5593032Z Downloaded: 812 file(s) [attempted 812/8690 = 9%, 320 KB/s], Decompressed: 337
+2026-10-13T11:46:56.6571888Z Downloaded: 919 file(s) [attempted 919/8690 = 10%, 252 KB/s], Decompressed: 337
+2026-10-13T11:46:56.7587681Z Downloaded: 1027 file(s) [attempted 1027/8690 = 11%, 777 KB/s], Decompressed: 337
+2026-10-13T11:46:56.8594699Z Downloaded: 1131 file(s) [attempted 1131/8690 = 13%, 444 KB/s], Decompressed: 337
+2026-10-13T11:46:56.9593963Z Downloaded: 1234 file(s) [attempted 1234/8690 = 14%, 3319 KB/s], Decompressed: 337
+2026-10-13T11:46:57.0617953Z Downloaded: 1341 file(s) [attempted 1341/8690 = 15%, 2360 KB/s], Decompressed: 337
+2026-10-13T11:46:57.1620480Z Downloaded: 1450 file(s) [attempted 1450/8690 = 16%, 2859 KB/s], Decompressed: 337
+2026-10-13T11:46:57.2639445Z Downloaded: 1554 file(s) [attempted 1554/8690 = 17%, 2905 KB/s], Decompressed: 337
+2026-10-13T11:46:57.3632108Z Downloaded: 1662 file(s) [attempted 1662/8690 = 19%, 4227 KB/s], Decompressed: 337
+2026-10-13T11:46:57.4670248Z Downloaded: 1770 file(s) [attempted 1770/8690 = 20%, 225 KB/s], Decompressed: 337
+2026-10-13T11:46:57.5670209Z Downloaded: 1881 file(s) [attempted 1881/8690 = 21%, 376 KB/s], Decompressed: 766
+2026-10-13T11:46:57.6676724Z Downloaded: 1982 file(s) [attempted 1982/8690 = 22%, 215 KB/s], Decompressed: 766
+2026-10-13T11:46:57.7680082Z Downloaded: 2081 file(s) [attempted 2081/8690 = 23%, 1502 KB/s], Decompressed: 766
+2026-10-13T11:46:57.8690552Z Downloaded: 2191 file(s) [attempted 2191/8690 = 25%, 2694 KB/s], Decompressed: 766
+2026-10-13T11:46:57.9681311Z Downloaded: 2305 file(s) [attempted 2305/8690 = 26%, 548 KB/s], Decompressed: 766
+2026-10-13T11:46:58.0724505Z Downloaded: 2409 file(s) [attempted 2409/8690 = 27%, 1076 KB/s], Decompressed: 766
+2026-10-13T11:46:58.1732391Z Downloaded: 2517 file(s) [attempted 2517/8690 = 28%, 273 KB/s], Decompressed: 766
+2026-10-13T11:46:58.2738317Z Downloaded: 2619 file(s) [attempted 2619/8690 = 30%, 359 KB/s], Decompressed: 766
+2026-10-13T11:46:58.3730547Z Downloaded: 2726 file(s) [attempted 2726/8690 = 31%, 416 KB/s], Decompressed: 766
+2026-10-13T11:46:58.4752537Z Downloaded: 2831 file(s) [attempted 2831/8690 = 32%, 348 KB/s], Decompressed: 766
+2026-10-13T11:46:58.5783376Z Downloaded: 2938 file(s) [attempted 2938/8690 = 33%, 881 KB/s], Decompressed: 766
+2026-10-13T11:46:58.6815862Z Downloaded: 3050 file(s) [attempted 3050/8690 = 35%, 115 KB/s], Decompressed: 766
+2026-10-13T11:46:58.7873235Z Downloaded: 3157 file(s) [attempted 3157/8690 = 36%, 2254 KB/s], Decompressed: 766
+2026-10-13T11:46:58.8903638Z Downloaded: 3222 file(s) [attempted 3222/8690 = 37%, 3007 KB/s], Decompressed: 766
+2026-10-13T11:46:58.9971444Z Downloaded: 3325 file(s) [attempted 3325/8690 = 38%, 696 KB/s], Decompressed: 766
+2026-10-13T11:46:59.0973980Z Downloaded: 3413 file(s) [attempted 3413/8690 = 39%, 535 KB/s], Decompressed: 766
+2026-10-13T11:46:59.2016462Z Downloaded: 3518 file(s) [attempted 3518/8690 = 40%, 1015 KB/s], Decompressed: 766
+2026-10-13T11:46:59.3182436Z Downloaded: 3623 file(s) [attempted 3623/8690 = 41%, 731 KB/s], Decompressed: 766
+2026-10-13T11:46:59.4172999Z Downloaded: 3725 file(s) [attempted 3725/8690 = 42%, 168 KB/s], Decompressed: 766
+2026-10-13T11:46:59.5246386Z Downloaded: 3823 file(s) [attempted 3823/8690 = 43%, 1104 KB/s], Decompressed: 766
+2026-10-13T11:46:59.6221101Z Downloaded: 3923 file(s) [attempted 3923/8690 = 45%, 954 KB/s], Decompressed: 766
+2026-10-13T11:46:59.7253200Z Downloaded: 4003 file(s) [attempted 4003/8690 = 46%, 891 KB/s], Decompressed: 766
+2026-10-13T11:46:59.8276630Z Downloaded: 4086 file(s) [attempted 4086/8690 = 47%, 568 KB/s], Decompressed: 766
+2026-10-13T11:46:59.9259920Z Downloaded: 4186 file(s) [attempted 4186/8690 = 48%, 2471 KB/s], Decompressed: 766
+2026-10-13T11:47:00.0390264Z Downloaded: 4289 file(s) [attempted 4289/8690 = 49%, 872 KB/s], Decompressed: 766
+2026-10-13T11:47:00.1493714Z Downloaded: 4398 file(s) [attempted 4398/8690 = 50%, 945 KB/s], Decompressed: 766
+2026-10-13T11:47:00.2513132Z Downloaded: 4447 file(s) [attempted 4447/8690 = 51%, 567 KB/s], Decompressed: 766
+2026-10-13T11:47:00.3622991Z Downloaded: 4552 file(s) [attempted 4552/8690 = 52%, 315 KB/s], Decompressed: 766
+2026-10-13T11:47:00.4622248Z Downloaded: 4654 file(s) [attempted 4654/8690 = 53%, 1279 KB/s], Decompressed: 1846
+2026-10-13T11:47:00.5756165Z Downloaded: 4719 file(s) [attempted 4719/8690 = 54%, 1085 KB/s], Decompressed: 1846
+2026-10-13T11:47:00.6920138Z Downloaded: 4817 file(s) [attempted 4817/8690 = 55%, 478 KB/s], Decompressed: 1846
+2026-10-13T11:47:00.7933630Z Downloaded: 4918 file(s) [attempted 4918/8690 = 56%, 1892 KB/s], Decompressed: 1846
+2026-10-13T11:47:00.9310353Z Downloaded: 5020 file(s) [attempted 5020/8690 = 57%, 744 KB/s], Decompressed: 1846
+2026-10-13T11:47:01.0313062Z Downloaded: 5122 file(s) [attempted 5122/8690 = 58%, 140 KB/s], Decompressed: 1846
+2026-10-13T11:47:01.1419869Z Downloaded: 5220 file(s) [attempted 5220/8690 = 60%, 833 KB/s], Decompressed: 1846
+2026-10-13T11:47:01.2764385Z Downloaded: 5323 file(s) [attempted 5323/8690 = 61%, 1131 KB/s], Decompressed: 1846
+2026-10-13T11:47:01.3736181Z Downloaded: 5423 file(s) [attempted 5423/8690 = 62%, 1335 KB/s], Decompressed: 1846
+2026-10-13T11:47:01.4742388Z Downloaded: 5523 file(s) [attempted 5523/8690 = 63%, 435 KB/s], Decompressed: 1846
+2026-10-13T11:47:01.5759639Z Downloaded: 5632 file(s) [attempted 5632/8690 = 64%, 67 KB/s], Decompressed: 1846
+2026-10-13T11:47:01.6759922Z Downloaded: 5737 file(s) [attempted 5737/8690 = 66%, 497 KB/s], Decompressed: 1846
+2026-10-13T11:47:01.7750655Z Downloaded: 5824 file(s) [attempted 5824/8690 = 67%, 617 KB/s], Decompressed: 1846
+2026-10-13T11:47:01.8750909Z Downloaded: 5884 file(s) [attempted 5884/8690 = 67%, 5027 KB/s], Decompressed: 1846
+2026-10-13T11:47:01.9788407Z Downloaded: 5979 file(s) [attempted 5979/8690 = 68%, 359 KB/s], Decompressed: 1846
+2026-10-13T11:47:02.0785767Z Downloaded: 6082 file(s) [attempted 6082/8690 = 69%, 335 KB/s], Decompressed: 1846
+2026-10-13T11:47:02.1799781Z Downloaded: 6191 file(s) [attempted 6191/8690 = 71%, 1087 KB/s], Decompressed: 1846
+2026-10-13T11:47:02.2972529Z Downloaded: 6291 file(s) [attempted 6291/8690 = 72%, 920 KB/s], Decompressed: 1846
+2026-10-13T11:47:02.3986216Z Downloaded: 6391 file(s) [attempted 6391/8690 = 73%, 1406 KB/s], Decompressed: 1846
+2026-10-13T11:47:02.5009603Z Downloaded: 6485 file(s) [attempted 6485/8690 = 74%, 3140 KB/s], Decompressed: 1846
+2026-10-13T11:47:02.6277073Z Downloaded: 6594 file(s) [attempted 6594/8690 = 75%, 204 KB/s], Decompressed: 1846
+2026-10-13T11:47:02.7570646Z Downloaded: 6645 file(s) [attempted 6645/8690 = 76%, 325 KB/s], Decompressed: 1846
+2026-10-13T11:47:02.8619816Z Downloaded: 6748 file(s) [attempted 6748/8690 = 77%, 2179 KB/s], Decompressed: 1846
+2026-10-13T11:47:02.9696637Z Downloaded: 6855 file(s) [attempted 6855/8690 = 78%, 74 KB/s], Decompressed: 1846
+2026-10-13T11:47:03.0726931Z Downloaded: 6960 file(s) [attempted 6960/8690 = 80%, 1320 KB/s], Decompressed: 1846
+2026-10-13T11:47:03.1789213Z Downloaded: 7060 file(s) [attempted 7060/8690 = 81%, 576 KB/s], Decompressed: 1846
+2026-10-13T11:47:03.3186991Z Downloaded: 7162 file(s) [attempted 7162/8690 = 82%, 873 KB/s], Decompressed: 1846
+2026-10-13T11:47:03.4205222Z Downloaded: 7269 file(s) [attempted 7269/8690 = 83%, 706 KB/s], Decompressed: 1846
+2026-10-13T11:47:03.5550235Z Downloaded: 7369 file(s) [attempted 7369/8690 = 84%, 3799 KB/s], Decompressed: 1846
+2026-10-13T11:47:03.6523667Z Downloaded: 7474 file(s) [attempted 7474/8690 = 86%, 376 KB/s], Decompressed: 1846
+2026-10-13T11:47:03.7618474Z Downloaded: 7565 file(s) [attempted 7565/8690 = 87%, 109 KB/s], Decompressed: 1846
+2026-10-13T11:47:03.8638244Z Downloaded: 7623 file(s) [attempted 7623/8690 = 87%, 684 KB/s], Decompressed: 1846
+2026-10-13T11:47:03.9652955Z Downloaded: 7728 file(s) [attempted 7728/8690 = 88%, 1579 KB/s], Decompressed: 1846
+2026-10-13T11:47:04.0801957Z Downloaded: 7831 file(s) [attempted 7831/8690 = 90%, 275 KB/s], Decompressed: 1846
+2026-10-13T11:47:04.1790301Z Downloaded: 7935 file(s) [attempted 7935/8690 = 91%, 102 KB/s], Decompressed: 1846
+2026-10-13T11:47:04.2865518Z Downloaded: 8056 file(s) [attempted 8056/8690 = 92%, 4067 KB/s], Decompressed: 1846
+2026-10-13T11:47:04.4050122Z Downloaded: 8156 file(s) [attempted 8156/8690 = 93%, 301 KB/s], Decompressed: 1846
+2026-10-13T11:47:04.5035213Z Downloaded: 8250 file(s) [attempted 8250/8690 = 94%, 4824 KB/s], Decompressed: 1846
+2026-10-13T11:47:04.6042088Z Downloaded: 8352 file(s) [attempted 8352/8690 = 96%, 66 KB/s], Decompressed: 1846
+2026-10-13T11:47:04.7060097Z Downloaded: 8434 file(s) [attempted 8434/8690 = 97%, 633 KB/s], Decompressed: 1846
+2026-10-13T11:47:04.8853605Z Downloaded: 8536 file(s) [attempted 8536/8690 = 98%, 1579 KB/s], Decompressed: 1846
+2026-10-13T11:47:04.9961341Z Downloaded: 8573 file(s) [attempted 8573/8690 = 98%, 235 KB/s], Decompressed: 1846
+2026-10-13T11:47:05.0524010Z Downloaded: 8678 file(s) [attempted 8678/8690 = 99%, 2259 KB/s], Decompressed: 1846
+2026-10-13T11:47:05.0525551Z Downloaded: 8690 file(s) [attempted 8690/8690 = 100%, 2259 KB/s], Decompressed: 1846
+2026-10-13T11:47:31.4628760Z Decompressed 8690 file(s)
+2026-10-13T11:47:31.4629211Z Already decompressed 8690 file(s)
+2026-10-13T11:47:31.6955749Z ##[group]Run lake build Challenge
+2026-10-13T11:47:31.6956018Z [36;1mlake build Challenge[0m
+2026-10-13T11:47:31.6956262Z [36;1mmkdir -p "$RUNNER_TEMP/trusted-challenge"[0m
+2026-10-13T11:47:31.6956815Z [36;1mfind .lake/build -type f \( -name 'Challenge.*' -o -name 'FCTargetDefinitions.*' \) -print0 | tar --null -T - -cf "$RUNNER_TEMP/trusted-challenge/files.tar"[0m
+2026-10-13T11:47:31.9224580Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-10-13T11:47:31.9224896Z ##[endgroup]
+2026-10-13T11:47:42.7220850Z ✔ [2964/2966] Built FCTargetDefinitions (8.3s)
+2026-10-13T11:47:44.5226842Z ⚠ [2965/2966] Built Challenge (1.8s)
+2026-10-13T11:47:44.5227299Z warning: Challenge.lean:7:8: declaration uses `sorry`
+2026-10-13T11:47:44.5227836Z warning: Challenge.lean:14:8: declaration uses `sorry`
+2026-10-13T11:47:44.5228514Z warning: Challenge.lean:28:8: declaration uses `sorry`
+2026-10-13T11:47:44.5229049Z warning: Challenge.lean:33:8: declaration uses `sorry`
+2026-10-13T11:47:44.5229546Z warning: Challenge.lean:44:8: declaration uses `sorry`
+2026-10-13T11:47:44.5320832Z Build completed successfully (2966 jobs).
+2026-10-13T11:47:44.7463772Z ##[group]Run bash lean/comparator/install-tools.sh
+2026-10-13T11:47:44.7464094Z [36;1mbash lean/comparator/install-tools.sh[0m
+2026-10-13T11:47:44.7516793Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-10-13T11:47:44.7517114Z env:
+2026-10-13T11:47:44.7517456Z   COMPARATOR_TOOLS: /home/runner/work/_temp/comparator-tools
+2026-10-13T11:47:44.7517822Z ##[endgroup]
+2026-10-13T11:47:46.0162084Z go: downloading github.com/urfave/cli/v3 v3.6.2
+2026-10-13T11:47:46.0862455Z go: downloading github.com/landlock-lsm/go-landlock v0.9.0
+2026-10-13T11:47:46.8262197Z go: downloading golang.org/x/sys v0.40.0
+2026-10-13T11:47:47.1096809Z go: downloading kernel.org/pub/linux/libs/security/libcap/psx v1.2.77
+2026-10-13T11:47:57.0718604Z info: lean4export: cloning https://github.com/leanprover/lean4export
+2026-10-13T11:47:58.3423002Z info: lean4export: checking out revision '15f6055e299ad5b89345e533cc2192f4cc00f659'
+2026-10-13T11:47:58.6473149Z ✔ [2/16] Built Comparator.Util (217ms)
+2026-10-13T11:47:58.7474988Z ✔ [5/16] Built Comparator.Util:c.o (101ms)
+2026-10-13T11:47:59.6483085Z ✔ [6/16] Built Export.Parse (1.0s)
+2026-10-13T11:48:00.0487695Z ✔ [7/16] Built Comparator.Axioms (390ms)
+2026-10-13T11:48:00.4503265Z ✔ [8/16] Built Comparator.Axioms:c.o (368ms)
+2026-10-13T11:48:00.5504725Z ✔ [9/16] Built Comparator.Compare (458ms)
+2026-10-13T11:48:00.8507484Z ✔ [10/16] Built Comparator (338ms)
+2026-10-13T11:48:00.8508861Z ✔ [11/16] Built Comparator.Compare:c.o (322ms)
+2026-10-13T11:48:00.9511170Z ✔ [12/16] Built Comparator:c.o (68ms)
+2026-10-13T11:48:02.5525249Z ✔ [13/16] Built Export.Parse:c.o (2.9s)
+2026-10-13T11:48:03.3532887Z ✔ [14/16] Built Main (2.5s)
+2026-10-13T11:48:03.8537481Z ✔ [15/16] Built Main:c.o (501ms)
+2026-10-13T11:48:04.8555613Z ✔ [16/16] Built comparator:exe (994ms)
+2026-10-13T11:48:04.8561017Z Build completed successfully (16 jobs).
+2026-10-13T11:48:07.7943199Z ✔ [2/6] Built Export (2.8s)
+2026-10-13T11:48:08.5951056Z ✔ [3/6] Built Main (811ms)
+2026-10-13T11:48:08.6952289Z ✔ [4/6] Built Main:c.o (147ms)
+2026-10-13T11:48:09.5960868Z ✔ [5/6] Built Export:c.o (1.8s)
+2026-10-13T11:48:10.4993776Z ✔ [6/6] Built lean4export:exe (903ms)
+2026-10-13T11:48:10.4998075Z Build completed successfully (6 jobs).
+2026-10-13T11:48:10.5094248Z ##[group]Run actions/cache/restore@v4
+2026-10-13T11:48:10.5094473Z with:
+2026-10-13T11:48:10.5094637Z   path: lean/.lake/build
+2026-10-13T11:48:10.5094911Z   key: ers-fc-c397fa6e591babb5a95d6ba55943baa21c5486c7-38391396740-1
+2026-10-13T11:48:10.5095206Z   fail-on-cache-miss: true
+2026-10-13T11:48:10.5095402Z   enableCrossOsArchive: false
+2026-10-13T11:48:10.5095597Z   lookup-only: false
+2026-10-13T11:48:10.5095790Z ##[endgroup]
+2026-10-13T11:48:10.5932803Z (node:4473) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-13T11:48:10.5933381Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-13T11:48:10.8002909Z Cache hit for: ers-fc-c397fa6e591babb5a95d6ba55943baa21c5486c7-38391396740-1
+2026-10-13T11:48:10.8099382Z (node:4473) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+2026-10-13T11:48:11.9305295Z Received 11230536 of 11230536 (100.0%), 11.5 MBs/sec
+2026-10-13T11:48:11.9305769Z Cache Size: ~11 MB (11230536 B)
+2026-10-13T11:48:11.9325897Z [command]/usr/bin/tar -xf /home/runner/work/_temp/1376392e-1d2e-4bdb-b3b6-63d8578417bb/cache.tzst -P -C /home/runner/work/entropic-rogers-shephard/entropic-rogers-shephard --use-compress-program unzstd
+2026-10-13T11:48:12.1102545Z Cache restored successfully
+2026-10-13T11:48:12.1166589Z Cache restored from key: ers-fc-c397fa6e591babb5a95d6ba55943baa21c5486c7-38391396740-1
+2026-10-13T11:48:12.1254922Z ##[group]Run tar -xf "$RUNNER_TEMP/trusted-challenge/files.tar"
+2026-10-13T11:48:12.1255291Z [36;1mtar -xf "$RUNNER_TEMP/trusted-challenge/files.tar"[0m
+2026-10-13T11:48:12.1307519Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-10-13T11:48:12.1307802Z ##[endgroup]
+2026-10-13T11:48:12.1462577Z ##[group]Run bash lean/comparator/run-check.sh
+2026-10-13T11:48:12.1462876Z [36;1mbash lean/comparator/run-check.sh[0m
+2026-10-13T11:48:12.1508040Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-10-13T11:48:12.1508320Z env:
+2026-10-13T11:48:12.1508553Z   COMPARATOR_TOOLS: /home/runner/work/_temp/comparator-tools
+2026-10-13T11:48:12.1508825Z ##[endgroup]
+2026-10-13T11:48:12.5501434Z PASS: two definitions and the primary FC theorem match the canonical target.
+2026-10-13T11:48:12.5560230Z PASS: 5 targets, 65 identical shared sources, pinned 4.33.1 proof sources.
+2026-10-13T11:48:14.6851944Z Running as unit: run-u20.service
+2026-10-13T11:48:15.4060260Z Building Challenge
+2026-10-13T11:48:16.8996699Z ⚠ [2965/2966] Replayed Challenge
+2026-10-13T11:48:16.8997144Z warning: Challenge.lean:7:8: declaration uses `sorry`
+2026-10-13T11:48:16.8997598Z warning: Challenge.lean:14:8: declaration uses `sorry`
+2026-10-13T11:48:16.8998086Z warning: Challenge.lean:28:8: declaration uses `sorry`
+2026-10-13T11:48:16.8998469Z warning: Challenge.lean:33:8: declaration uses `sorry`
+2026-10-13T11:48:16.8998860Z warning: Challenge.lean:44:8: declaration uses `sorry`
+2026-10-13T11:48:16.9109734Z Build completed successfully (2966 jobs).
+2026-10-13T11:48:26.4834628Z Exporting #[EntropicRogersShephardFC.density_bound, EntropicRogersShephardFC.entropic_rogers_shephard, EntropicRogersShephardFC.affine_density_law, EntropicRogersShephardFC.affine_exponential_equality, EntropicRogersShephardFC.constant_optimal, propext, Classical.choice, Quot.sound, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce] from Challenge
+2026-10-13T11:48:26.4836247Z Building FCSolution
+2026-10-13T11:48:30.7965910Z ⚠ [3035/3108] Replayed EntropicRogersShephard
+2026-10-13T11:48:30.7966354Z warning: EntropicRogersShephard.lean:498:8: this tactic is never executed
+2026-10-13T11:48:30.7966697Z 
+2026-10-13T11:48:30.7967078Z Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+2026-10-13T11:48:30.7967814Z warning: EntropicRogersShephard.lean:498:8: Unused tactic linter: `ring` does nothing
+2026-10-13T11:48:30.7968236Z 
+2026-10-13T11:48:30.7968497Z Note: This linter can be disabled with `set_option linter.unusedTactic false`
+2026-10-13T11:48:30.7969194Z warning: EntropicRogersShephard.lean:587:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+2026-10-13T11:48:30.7969553Z 
+2026-10-13T11:48:30.7969761Z Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+2026-10-13T11:48:30.7970189Z warning: EntropicRogersShephard.lean:619:12: try 'simp' instead of 'simpa'
+2026-10-13T11:48:30.7970424Z 
+2026-10-13T11:48:30.7970604Z Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+2026-10-13T11:48:30.7970957Z info: EntropicRogersShephard.lean:628:6: Try this:
+2026-10-13T11:48:30.7971217Z   [apply] ring_nf
+2026-10-13T11:48:30.7971395Z   
+2026-10-13T11:48:30.7971696Z   The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+2026-10-13T11:48:30.7972003Z     
+2026-10-13T11:48:30.7972590Z   Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+2026-10-13T11:48:30.7973232Z warning: EntropicRogersShephard.lean:667:24: This simp argument is unused:
+2026-10-13T11:48:30.7973550Z   Nat.add_sub_cancel
+2026-10-13T11:48:30.7973668Z 
+2026-10-13T11:48:30.7973774Z Hint: Omit it from the simp argument list.
+2026-10-13T11:48:30.7974098Z   [apply] simp only [Nat.cast_add, Nat.cast_one, mul_one]
+2026-10-13T11:48:30.7974279Z 
+2026-10-13T11:48:30.7974459Z Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+2026-10-13T11:48:30.7974866Z warning: EntropicRogersShephard.lean:665:24: this tactic is never executed
+2026-10-13T11:48:30.7975097Z 
+2026-10-13T11:48:30.7975518Z Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+2026-10-13T11:48:30.7975996Z warning: EntropicRogersShephard.lean:665:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+2026-10-13T11:48:30.7976282Z 
+2026-10-13T11:48:30.7976467Z Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+2026-10-13T11:48:30.7976935Z warning: EntropicRogersShephard.lean:666:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+2026-10-13T11:48:30.7977210Z 
+2026-10-13T11:48:30.7977532Z Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+2026-10-13T11:48:30.7977992Z warning: EntropicRogersShephard.lean:667:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+2026-10-13T11:48:30.7978269Z 
+2026-10-13T11:48:30.7978457Z Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+2026-10-13T11:48:30.7979021Z warning: EntropicRogersShephard.lean:668:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+2026-10-13T11:48:30.7979317Z 
+2026-10-13T11:48:30.7979504Z Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+2026-10-13T11:48:30.7979964Z warning: EntropicRogersShephard.lean:669:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+2026-10-13T11:48:30.7980231Z 
+2026-10-13T11:48:30.7980411Z Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+2026-10-13T11:48:30.7980857Z warning: EntropicRogersShephard.lean:670:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+2026-10-13T11:48:30.7981135Z 
+2026-10-13T11:48:30.7981309Z Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+2026-10-13T11:48:30.7981791Z warning: EntropicRogersShephard.lean:665:8: Unused tactic linter: `(try (funext x; rfl))` does nothing
+2026-10-13T11:48:30.7982076Z 
+2026-10-13T11:48:30.7982251Z Note: This linter can be disabled with `set_option linter.unusedTactic false`
+2026-10-13T11:48:30.7982692Z warning: EntropicRogersShephard.lean:705:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+2026-10-13T11:48:30.7982964Z 
+2026-10-13T11:48:30.7983145Z Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+2026-10-13T11:48:30.7983592Z warning: EntropicRogersShephard.lean:714:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+2026-10-13T11:48:30.7983869Z 
+2026-10-13T11:48:30.7984046Z Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+2026-10-13T11:48:30.7984493Z warning: EntropicRogersShephard.lean:743:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+2026-10-13T11:48:30.7984764Z 
+2026-10-13T11:48:30.7984945Z Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+2026-10-13T11:48:30.7985387Z warning: EntropicRogersShephard.lean:777:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+2026-10-13T11:48:30.7985660Z 
+2026-10-13T11:48:30.7985844Z Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+2026-10-13T11:48:30.7986287Z warning: EntropicRogersShephard.lean:786:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+2026-10-13T11:48:30.7986552Z 
+2026-10-13T11:48:30.7986734Z Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+2026-10-13T11:48:30.7987195Z ⚠ [3046/3108] Replayed EntropicRogersShephard.RadialOverlap
+2026-10-13T11:48:30.7987684Z warning: EntropicRogersShephard/RadialOverlap.lean:119:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+2026-10-13T11:48:30.7988018Z 
+2026-10-13T11:48:30.7988209Z Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+2026-10-13T11:48:30.7988642Z ⚠ [3047/3108] Replayed EntropicRogersShephard.OrthantGeometry
+2026-10-13T11:48:30.7989233Z warning: EntropicRogersShephard/OrthantGeometry.lean:188:12: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+2026-10-13T11:48:30.7989558Z 
+2026-10-13T11:48:30.7989970Z Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+2026-10-13T11:48:30.7990419Z ⚠ [3055/3108] Replayed EntropicRogersShephard.ConvexApproximation
+2026-10-13T11:48:30.7990912Z warning: EntropicRogersShephard/ConvexApproximation.lean:53:21: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+2026-10-13T11:48:30.7991270Z 
+2026-10-13T11:48:30.7991473Z Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+2026-10-13T11:48:30.7991927Z ℹ [3061/3108] Replayed EntropicRogersShephard.ExponentialTails
+2026-10-13T11:48:30.7992537Z info: EntropicRogersShephard/ExponentialTails.lean:85:4: Try this:
+2026-10-13T11:48:30.7992837Z   [apply] ring_nf
+2026-10-13T11:48:30.7993001Z   
+2026-10-13T11:48:30.7993294Z   The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+2026-10-13T11:48:30.7993588Z     
+2026-10-13T11:48:30.7994170Z   Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+2026-10-13T11:48:30.8968160Z ⚠ [3076/3108] Replayed EntropicRogersShephard.BodyEntropyBound
+2026-10-13T11:48:30.8969147Z warning: EntropicRogersShephard/BodyEntropyBound.lean:115:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+2026-10-13T11:48:30.8969626Z 
+2026-10-13T11:48:30.8969930Z Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+2026-10-13T11:48:30.8970723Z ⚠ [3078/3108] Replayed EntropicRogersShephard.SimplexEntropy
+2026-10-13T11:48:30.8971396Z warning: EntropicRogersShephard/SimplexEntropy.lean:33:8: this tactic is never executed
+2026-10-13T11:48:30.8971834Z 
+2026-10-13T11:48:30.8972103Z Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+2026-10-13T11:48:30.8972797Z warning: EntropicRogersShephard/SimplexEntropy.lean:33:8: Unused tactic linter: `ring` does nothing
+2026-10-13T11:48:30.8973233Z 
+2026-10-13T11:48:30.8973491Z Note: This linter can be disabled with `set_option linter.unusedTactic false`
+2026-10-13T11:48:30.8974233Z warning: EntropicRogersShephard/SimplexEntropy.lean:95:66: this tactic is never executed
+2026-10-13T11:48:30.8974651Z 
+2026-10-13T11:48:30.8974912Z Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+2026-10-13T11:48:30.8975674Z warning: EntropicRogersShephard/SimplexEntropy.lean:98:63: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+2026-10-13T11:48:30.8976157Z 
+2026-10-13T11:48:30.8976380Z Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+2026-10-13T11:48:30.8977169Z warning: EntropicRogersShephard/SimplexEntropy.lean:95:66: Unused tactic linter: `ring` does nothing
+2026-10-13T11:48:30.8977634Z 
+2026-10-13T11:48:30.8977864Z Note: This linter can be disabled with `set_option linter.unusedTactic false`
+2026-10-13T11:48:30.8978438Z warning: EntropicRogersShephard/SimplexEntropy.lean:138:12: this tactic is never executed
+2026-10-13T11:48:30.8978799Z 
+2026-10-13T11:48:30.8979175Z Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+2026-10-13T11:48:30.8979818Z warning: EntropicRogersShephard/SimplexEntropy.lean:166:8: this tactic is never executed
+2026-10-13T11:48:30.8980196Z 
+2026-10-13T11:48:30.8980438Z Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+2026-10-13T11:48:30.8981305Z warning: EntropicRogersShephard/SimplexEntropy.lean:142:8: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+2026-10-13T11:48:30.8981766Z 
+2026-10-13T11:48:30.8982008Z Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+2026-10-13T11:48:30.8982666Z warning: EntropicRogersShephard/SimplexEntropy.lean:138:12: Unused tactic linter: `ring` does nothing
+2026-10-13T11:48:30.8983060Z 
+2026-10-13T11:48:30.8983277Z Note: This linter can be disabled with `set_option linter.unusedTactic false`
+2026-10-13T11:48:30.8983883Z warning: EntropicRogersShephard/SimplexEntropy.lean:166:8: Unused tactic linter: `ring` does nothing
+2026-10-13T11:48:30.8984287Z 
+2026-10-13T11:48:30.8984689Z Note: This linter can be disabled with `set_option linter.unusedTactic false`
+2026-10-13T11:48:30.8985247Z ⚠ [3079/3108] Replayed EntropicRogersShephard.SimplexScaling
+2026-10-13T11:48:30.8985774Z warning: EntropicRogersShephard/SimplexScaling.lean:45:6: this tactic is never executed
+2026-10-13T11:48:30.8986134Z 
+2026-10-13T11:48:30.8986368Z Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+2026-10-13T11:48:30.8986991Z warning: EntropicRogersShephard/SimplexScaling.lean:45:6: Unused tactic linter: `ring` does nothing
+2026-10-13T11:48:30.8987533Z 
+2026-10-13T11:48:30.8987753Z Note: This linter can be disabled with `set_option linter.unusedTactic false`
+2026-10-13T11:48:30.8988322Z warning: EntropicRogersShephard/SimplexScaling.lean:99:78: this tactic is never executed
+2026-10-13T11:48:30.8988679Z 
+2026-10-13T11:48:30.9009089Z Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+2026-10-13T11:48:30.9009804Z warning: EntropicRogersShephard/SimplexScaling.lean:99:78: Unused tactic linter: `ring` does nothing
+2026-10-13T11:48:30.9010207Z 
+2026-10-13T11:48:30.9010424Z Note: This linter can be disabled with `set_option linter.unusedTactic false`
+2026-10-13T11:48:30.9011004Z ⚠ [3082/3108] Replayed EntropicRogersShephard.FiberMixtureRows
+2026-10-13T11:48:30.9011476Z warning: EntropicRogersShephard/FiberMixtureRows.lean:85:2: Try this: 
+2026-10-13T11:48:30.9011908Z   letI̵
+2026-10-13T11:48:30.9012017Z 
+2026-10-13T11:48:30.9012190Z The goal is a proposition, so `let` is preferred over `letI`.
+2026-10-13T11:48:30.9012679Z The difference between `let` and `letI` is that `letI` inlines the value.
+2026-10-13T11:48:30.9013147Z But this is not relevant for proofs because of proof irrelevance.
+2026-10-13T11:48:30.9013405Z 
+2026-10-13T11:48:30.9013637Z Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+2026-10-13T11:48:30.9014236Z warning: EntropicRogersShephard/FiberMixtureRows.lean:107:8: this tactic is never executed
+2026-10-13T11:48:30.9014607Z 
+2026-10-13T11:48:30.9014852Z Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+2026-10-13T11:48:30.9015506Z warning: EntropicRogersShephard/FiberMixtureRows.lean:107:8: Unused tactic linter: `ring` does nothing
+2026-10-13T11:48:30.9016002Z 
+2026-10-13T11:48:30.9016191Z Note: This linter can be disabled with `set_option linter.unusedTactic false`
+2026-10-13T11:48:30.9016646Z warning: EntropicRogersShephard/FiberMixtureRows.lean:146:60: This simp argument is unused:
+2026-10-13T11:48:30.9017010Z   zero_add
+2026-10-13T11:48:30.9017107Z 
+2026-10-13T11:48:30.9017202Z Hint: Omit it from the simp argument list.
+2026-10-13T11:48:30.9017626Z   [apply] simp only [hs0, ha, hb', Real.negMulLog_zero, zero_mul, add_zero, mul_zero, differentialEntropy,
+2026-10-13T11:48:30.9018027Z     integral_zero, le_refl]
+2026-10-13T11:48:30.9018153Z 
+2026-10-13T11:48:30.9018343Z Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+2026-10-13T11:48:30.9018800Z ⚠ [3084/3108] Replayed EntropicRogersShephard.FiberExtension
+2026-10-13T11:48:30.9019461Z warning: EntropicRogersShephard/FiberExtension.lean:59:18: Variable name `hC` is not explicitly referenced.
+2026-10-13T11:48:30.9019781Z 
+2026-10-13T11:48:30.9020132Z Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+2026-10-13T11:48:30.9020590Z   [apply] _hC
+2026-10-13T11:48:30.9020692Z 
+2026-10-13T11:48:30.9020876Z Note: This linter can be disabled with `set_option linter.unusedVariables false`
+2026-10-13T11:48:30.9021343Z ⚠ [3085/3108] Replayed EntropicRogersShephard.ConcaveApproximation
+2026-10-13T11:48:30.9021747Z warning: EntropicRogersShephard/ConcaveApproximation.lean:143:2: Try this: 
+2026-10-13T11:48:30.9022078Z   letI̵
+2026-10-13T11:48:30.9022173Z 
+2026-10-13T11:48:30.9022325Z The goal is a proposition, so `let` is preferred over `letI`.
+2026-10-13T11:48:30.9022847Z The difference between `let` and `letI` is that `letI` inlines the value.
+2026-10-13T11:48:30.9023221Z But this is not relevant for proofs because of proof irrelevance.
+2026-10-13T11:48:30.9023426Z 
+2026-10-13T11:48:30.9023608Z Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+2026-10-13T11:48:30.9024027Z warning: EntropicRogersShephard/ConcaveApproximation.lean:144:2: Try this: 
+2026-10-13T11:48:30.9024380Z   letI̵
+2026-10-13T11:48:30.9024463Z 
+2026-10-13T11:48:30.9024604Z The goal is a proposition, so `let` is preferred over `letI`.
+2026-10-13T11:48:30.9025053Z The difference between `let` and `letI` is that `letI` inlines the value.
+2026-10-13T11:48:30.9025419Z But this is not relevant for proofs because of proof irrelevance.
+2026-10-13T11:48:30.9025615Z 
+2026-10-13T11:48:30.9025795Z Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+2026-10-13T11:48:30.9026251Z ⚠ [3091/3108] Replayed EntropicRogersShephard.ExponentialConvergence
+2026-10-13T11:48:30.9026785Z warning: EntropicRogersShephard/ExponentialConvergence.lean:46:18: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+2026-10-13T11:48:30.9027141Z 
+2026-10-13T11:48:30.9027337Z Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+2026-10-13T11:48:30.9027779Z ⚠ [3092/3108] Replayed EntropicRogersShephard.DominatedConvolution
+2026-10-13T11:48:30.9028269Z warning: EntropicRogersShephard/DominatedConvolution.lean:12:18: Variable name `hM` is not explicitly referenced.
+2026-10-13T11:48:30.9028606Z 
+2026-10-13T11:48:30.9029865Z Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+2026-10-13T11:48:30.9030493Z   [apply] _hM
+2026-10-13T11:48:30.9030616Z 
+2026-10-13T11:48:30.9030854Z Note: This linter can be disabled with `set_option linter.unusedVariables false`
+2026-10-13T11:48:30.9031444Z ⚠ [3094/3108] Replayed EntropicRogersShephard.GeneralDensityBound
+2026-10-13T11:48:30.9032103Z warning: EntropicRogersShephard/GeneralDensityBound.lean:11:52: Variable name `hM` is not explicitly referenced.
+2026-10-13T11:48:30.9032535Z 
+2026-10-13T11:48:30.9032969Z Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+2026-10-13T11:48:30.9033541Z   [apply] _hM
+2026-10-13T11:48:30.9033657Z 
+2026-10-13T11:48:30.9033886Z Note: This linter can be disabled with `set_option linter.unusedVariables false`
+2026-10-13T11:48:30.9034412Z warning: EntropicRogersShephard/GeneralDensityBound.lean:72:2: Try this: 
+2026-10-13T11:48:30.9034832Z   letI̵
+2026-10-13T11:48:30.9034938Z 
+2026-10-13T11:48:30.9035107Z The goal is a proposition, so `let` is preferred over `letI`.
+2026-10-13T11:48:30.9035565Z The difference between `let` and `letI` is that `letI` inlines the value.
+2026-10-13T11:48:30.9036022Z But this is not relevant for proofs because of proof irrelevance.
+2026-10-13T11:48:30.9036277Z 
+2026-10-13T11:48:30.9036505Z Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+2026-10-13T11:48:30.9037050Z ⚠ [3095/3108] Replayed EntropicRogersShephard.ProbabilityLaw
+2026-10-13T11:48:30.9037508Z warning: EntropicRogersShephard/ProbabilityLaw.lean:58:2: Try this: 
+2026-10-13T11:48:30.9037879Z   letI̵
+2026-10-13T11:48:30.9037983Z 
+2026-10-13T11:48:30.9038144Z The goal is a proposition, so `let` is preferred over `letI`.
+2026-10-13T11:48:30.9038581Z The difference between `let` and `letI` is that `letI` inlines the value.
+2026-10-13T11:48:30.9039168Z But this is not relevant for proofs because of proof irrelevance.
+2026-10-13T11:48:30.9039426Z 
+2026-10-13T11:48:30.9039646Z Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+2026-10-13T11:48:30.9040142Z warning: EntropicRogersShephard/ProbabilityLaw.lean:60:2: Try this: 
+2026-10-13T11:48:30.9040526Z   letI̵
+2026-10-13T11:48:30.9040621Z 
+2026-10-13T11:48:30.9040783Z The goal is a proposition, so `let` is preferred over `letI`.
+2026-10-13T11:48:30.9041399Z The difference between `let` and `letI` is that `letI` inlines the value.
+2026-10-13T11:48:30.9041843Z But this is not relevant for proofs because of proof irrelevance.
+2026-10-13T11:48:30.9042094Z 
+2026-10-13T11:48:30.9042316Z Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+2026-10-13T11:48:30.9042806Z warning: EntropicRogersShephard/ProbabilityLaw.lean:85:2: Try this: 
+2026-10-13T11:48:30.9043174Z   letI̵
+2026-10-13T11:48:30.9043274Z 
+2026-10-13T11:48:30.9043433Z The goal is a proposition, so `let` is preferred over `letI`.
+2026-10-13T11:48:30.9043980Z The difference between `let` and `letI` is that `letI` inlines the value.
+2026-10-13T11:48:30.9044421Z But this is not relevant for proofs because of proof irrelevance.
+2026-10-13T11:48:30.9044674Z 
+2026-10-13T11:48:30.9044890Z Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+2026-10-13T11:48:30.9045444Z ⚠ [3099/3108] Replayed EntropicRogersShephard.AffineLaw
+2026-10-13T11:48:30.9046000Z warning: EntropicRogersShephard/AffineLaw.lean:11:63: Variable name `hn` is not explicitly referenced.
+2026-10-13T11:48:30.9046399Z 
+2026-10-13T11:48:30.9046825Z Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+2026-10-13T11:48:30.9047404Z   [apply] _hn
+2026-10-13T11:48:30.9047514Z 
+2026-10-13T11:48:30.9047737Z Note: This linter can be disabled with `set_option linter.unusedVariables false`
+2026-10-13T11:48:30.9048282Z ⚠ [3103/3108] Replayed EntropicRogersShephard.ExponentialExample
+2026-10-13T11:48:30.9049044Z warning: EntropicRogersShephard/ExponentialExample.lean:20:28: Variable name `x` is not explicitly referenced.
+2026-10-13T11:48:30.9049486Z 
+2026-10-13T11:48:30.9049919Z Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+2026-10-13T11:48:30.9050484Z   [apply] _x
+2026-10-13T11:48:30.9050598Z 
+2026-10-13T11:48:30.9050824Z Note: This linter can be disabled with `set_option linter.unusedVariables false`
+2026-10-13T11:48:30.9051419Z warning: EntropicRogersShephard/ExponentialExample.lean:89:41: try 'simp' instead of 'simpa'
+2026-10-13T11:48:30.9051884Z 
+2026-10-13T11:48:30.9052146Z Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+2026-10-13T11:48:30.9053663Z Build completed successfully (3108 jobs).
+2026-10-13T11:49:47.4074901Z Exporting #[EntropicRogersShephardFC.density_bound, EntropicRogersShephardFC.entropic_rogers_shephard, EntropicRogersShephardFC.affine_density_law, EntropicRogersShephardFC.affine_exponential_equality, EntropicRogersShephardFC.constant_optimal, propext, Classical.choice, Quot.sound, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce] from FCSolution
+2026-10-13T11:49:47.4076667Z Running Lean default kernel on solution.
+2026-10-13T11:49:47.4077169Z Lean default kernel accepts the solution
+2026-10-13T11:49:47.4077497Z Your solution is okay!
+2026-10-13T11:49:47.4595590Z Finished with result: success
+2026-10-13T11:49:47.4596074Z Main processes terminated with: code=exited/status=0
+2026-10-13T11:49:47.4596494Z Service runtime: 1min 32.768s
+2026-10-13T11:49:47.4596811Z CPU time consumed: 1min 32.079s
+2026-10-13T11:49:47.4597112Z Memory peak: 6.3M
+2026-10-13T11:49:47.4597361Z Memory swap peak: 0B
+2026-10-13T11:49:47.7894580Z PASS: two definitions and the primary FC theorem match the canonical target.
+2026-10-13T11:49:47.7948131Z PASS: 5 targets, 65 identical shared sources, pinned 4.33.1 proof sources.
+2026-10-13T11:49:50.1724380Z 'EntropicRogersShephardFC.density_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:50.1725253Z 'EntropicRogersShephardFC.entropic_rogers_shephard' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:50.1726360Z 'EntropicRogersShephardFC.affine_density_law' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:50.1727199Z 'EntropicRogersShephardFC.affine_exponential_equality' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:50.1728010Z 'EntropicRogersShephardFC.constant_optimal' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:50.1728759Z 'EntropicRogersShephard.complete_sharp_entropic_rogers_shephard' depends on axioms: [propext,
+2026-10-13T11:49:50.1729433Z  Classical.choice,
+2026-10-13T11:49:50.1729660Z  Quot.sound]
+2026-10-13T11:49:50.3032164Z PASS: all five comparator targets and the complete main theorem use permitted axioms.
+2026-10-13T11:49:52.7909685Z EntropicRogersShephard.SharpEntropicRogersShephard : Prop
+2026-10-13T11:49:52.7911300Z EntropicRogersShephard.volume_overlap_superlevel (m : ℕ) {a b t : ℝ} (ht : 0 < t) (hta : t < a) (htb : t < b) :
+2026-10-13T11:49:52.7912311Z   MeasureTheory.volume {z | t ≤ EntropicRogersShephard.overlapRadius a b z} =
+2026-10-13T11:49:52.7912863Z     ∑ s,
+2026-10-13T11:49:52.7913921Z       ENNReal.ofReal ((a - t) ^ Fintype.card ↥s) * MeasureTheory.volume (EntropicRogersShephard.simplexOn (↥s) 1) *
+2026-10-13T11:49:52.7914901Z         (ENNReal.ofReal ((b - t) ^ Fintype.card { i // i ∉ s }) *
+2026-10-13T11:49:52.7915841Z           MeasureTheory.volume (EntropicRogersShephard.simplexOn { i // i ∉ s } 1))
+2026-10-13T11:49:52.7916835Z EntropicRogersShephard.orthant_polynomial_moment_normalization (m : ℕ) [NeZero m] {a b : ℝ} (ha : 0 < a) (hb : 0 < b)
+2026-10-13T11:49:52.7917556Z   (hba : b ≤ a) :
+2026-10-13T11:49:52.7918289Z   ∫ (t : ℝ) in 0..b, EntropicRogersShephard.orthantVolumePolynomial m a b t * (↑m * t ^ (m - 1)) =
+2026-10-13T11:49:52.7926616Z     a ^ m * b ^ m * (MeasureTheory.volume (EntropicRogersShephard.simplex m 1)).toReal
+2026-10-13T11:49:52.7927776Z EntropicRogersShephard.differentialEntropy_uniformSimplexDifference (m : ℕ) [NeZero m] {a b : ℝ} (ha : 0 < a)
+2026-10-13T11:49:52.7928557Z   (hb : 0 < b) (hba : b ≤ a) :
+2026-10-13T11:49:52.7929124Z   EntropicRogersShephard.differentialEntropy
+2026-10-13T11:49:52.7929695Z       (EntropicRogersShephard.crossDifferenceDensity
+2026-10-13T11:49:52.7930516Z         (EntropicRogersShephard.uniformDensity (EntropicRogersShephard.simplex m a))
+2026-10-13T11:49:52.7931482Z         (EntropicRogersShephard.uniformDensity (EntropicRogersShephard.simplex m b)))
+2026-10-13T11:49:52.7932114Z       MeasureTheory.volume =
+2026-10-13T11:49:52.7932895Z     ↑m * Real.log a + Real.log (MeasureTheory.volume (EntropicRogersShephard.simplex m 1)).toReal +
+2026-10-13T11:49:52.7933558Z       ↑m *
+2026-10-13T11:49:52.7933948Z         (∑ j ∈ Finset.range (m + 1),
+2026-10-13T11:49:52.7934933Z             EntropicRogersShephard.binomialWeight m (1 - b / a) j * EntropicRogersShephard.H (2 * m - j) -
+2026-10-13T11:49:52.7935715Z           EntropicRogersShephard.H m)
+2026-10-13T11:49:52.7936489Z EntropicRogersShephard.simplex_difference_entropy_scale_bound_all (m : ℕ) [NeZero m] {a b : ℝ} (ha : 0 < a)
+2026-10-13T11:49:52.7937138Z   (hb : 0 < b) :
+2026-10-13T11:49:52.7937492Z   EntropicRogersShephard.differentialEntropy
+2026-10-13T11:49:52.7938083Z         (EntropicRogersShephard.crossDifferenceDensity
+2026-10-13T11:49:52.7941845Z           (EntropicRogersShephard.uniformDensity (EntropicRogersShephard.simplex m 1))
+2026-10-13T11:49:52.7942892Z           (EntropicRogersShephard.uniformDensity (EntropicRogersShephard.simplex m 1)))
+2026-10-13T11:49:52.7943585Z         MeasureTheory.volume +
+2026-10-13T11:49:52.7944113Z       ↑m / 2 * (Real.log a + Real.log b) ≤
+2026-10-13T11:49:52.7944595Z     EntropicRogersShephard.differentialEntropy
+2026-10-13T11:49:52.7945165Z       (EntropicRogersShephard.crossDifferenceDensity
+2026-10-13T11:49:52.7945996Z         (EntropicRogersShephard.uniformDensity (EntropicRogersShephard.simplex m a))
+2026-10-13T11:49:52.7946981Z         (EntropicRogersShephard.uniformDensity (EntropicRogersShephard.simplex m b)))
+2026-10-13T11:49:52.7947638Z       MeasureTheory.volume
+2026-10-13T11:49:52.7948623Z EntropicRogersShephard.compact_convex_exhaustion {n : ℕ} {C : Set (Fin n → ℝ)} (hC : Convex ℝ C) :
+2026-10-13T11:49:52.7949488Z   ∃ K,
+2026-10-13T11:49:52.7949757Z     Monotone K ∧
+2026-10-13T11:49:52.7950141Z       (∀ (j : ℕ), IsCompact (K j)) ∧
+2026-10-13T11:49:52.7950603Z         (∀ (j : ℕ), Convex ℝ (K j)) ∧
+2026-10-13T11:49:52.7951502Z           (∀ (j : ℕ), K j ⊆ interior C) ∧ ⋃ j, K j = interior C ∧ ⋃ j, K j =ᵐ[MeasureTheory.volume] C
+2026-10-13T11:49:52.7952470Z EntropicRogersShephard.convex_isBounded_of_volume_ne_top {n : ℕ} [NeZero n] {C : Set (Fin n → ℝ)} (hC : Convex ℝ C)
+2026-10-13T11:49:52.7953770Z   (hfin : MeasureTheory.volume C ≠ ⊤) {x : Fin n → ℝ} {r : ℝ} (hr : 0 < r) (hball : Metric.ball x r ⊆ C) :
+2026-10-13T11:49:52.7954357Z   Bornology.IsBounded C
+2026-10-13T11:49:52.7955081Z EntropicRogersShephard.integral_mul_le_product_of_monotone_antitone.{u_1} {α : Type u_1} [LinearOrder α]
+2026-10-13T11:49:52.7956246Z   [MeasurableSpace α] {μ : MeasureTheory.Measure α} [MeasureTheory.IsProbabilityMeasure μ] {S : Set α} {r l : α → ℝ}
+2026-10-13T11:49:52.7957326Z   (hS : ∀ᵐ (x : α) ∂μ, x ∈ S) (hr : MeasureTheory.Integrable r μ) (hl : MeasureTheory.Integrable l μ)
+2026-10-13T11:49:52.7958333Z   (hrl : MeasureTheory.Integrable (fun x => r x * l x) μ) (hrmono : MonotoneOn r S) (hlanti : AntitoneOn l S) :
+2026-10-13T11:49:52.7959270Z   ∫ (x : α), r x * l x ∂μ ≤ (∫ (x : α), r x ∂μ) * ∫ (x : α), l x ∂μ
+2026-10-13T11:49:52.7960125Z EntropicRogersShephard.uniform_convex_body_entropy_bound {n : ℕ} [NeZero n] {B : Set (Fin n → ℝ)} (hB : IsCompact B)
+2026-10-13T11:49:52.7961025Z   (hconv : Convex ℝ B) (hpos : MeasureTheory.volume B ≠ 0) :
+2026-10-13T11:49:52.7961539Z   EntropicRogersShephard.differentialEntropy
+2026-10-13T11:49:52.7962449Z         (EntropicRogersShephard.crossDifferenceDensity (EntropicRogersShephard.uniformDensity B)
+2026-10-13T11:49:52.7963282Z           (EntropicRogersShephard.uniformDensity B))
+2026-10-13T11:49:52.7963779Z         MeasureTheory.volume -
+2026-10-13T11:49:52.7964790Z       EntropicRogersShephard.differentialEntropy (EntropicRogersShephard.uniformDensity B) MeasureTheory.volume ≤
+2026-10-13T11:49:52.8283376Z     EntropicRogersShephard.F n
+2026-10-13T11:49:52.8285028Z EntropicRogersShephard.differentialEntropy_powerDensity {n m : ℕ} {K : Set (Fin n → ℝ)} {ρ : (Fin n → ℝ) → ℝ} {c C : ℝ}
+2026-10-13T11:49:52.8286651Z   (hK : MeasurableSet K) (hfin : MeasureTheory.volume K ≠ ⊤) (hpos : MeasureTheory.volume K ≠ 0) (hρ : Measurable ρ)
+2026-10-13T11:49:52.8287520Z   (hc : 0 < c) (hC : 0 < C) (hb : ∀ x ∈ K, ρ x ∈ Set.Icc c C) :
+2026-10-13T11:49:52.8288551Z   EntropicRogersShephard.differentialEntropy (EntropicRogersShephard.powerDensity m K ρ) MeasureTheory.volume =
+2026-10-13T11:49:52.8289771Z     Real.log (EntropicRogersShephard.powerMass m K ρ) -
+2026-10-13T11:49:52.8290682Z       ↑m * ∫ (x : Fin n → ℝ), EntropicRogersShephard.powerDensity m K ρ x * Real.log (ρ x)
+2026-10-13T11:49:52.8291731Z EntropicRogersShephard.differentialEntropy_fiberUniformDensity {n m : ℕ} {K : Set (Fin n → ℝ)} {ρ : (Fin n → ℝ) → ℝ}
+2026-10-13T11:49:52.8292909Z   {c C : ℝ} (hK : MeasurableSet K) (hfin : MeasureTheory.volume K ≠ ⊤) (hpos : MeasureTheory.volume K ≠ 0)
+2026-10-13T11:49:52.8293825Z   (hρ : Measurable ρ) (hc : 0 < c) (hC : 0 < C) (hb : ∀ x ∈ K, ρ x ∈ Set.Icc c C) :
+2026-10-13T11:49:52.8294914Z   EntropicRogersShephard.differentialEntropy (EntropicRogersShephard.fiberUniformDensity K ρ) MeasureTheory.volume =
+2026-10-13T11:49:52.8296349Z     EntropicRogersShephard.differentialEntropy (EntropicRogersShephard.powerDensity m K ρ) MeasureTheory.volume +
+2026-10-13T11:49:52.8297517Z         Real.log (MeasureTheory.volume (EntropicRogersShephard.simplex m 1)).toReal +
+2026-10-13T11:49:52.8298535Z       ↑m * ∫ (x : Fin n → ℝ), EntropicRogersShephard.powerDensity m K ρ x * Real.log (ρ x)
+2026-10-13T11:49:52.8299765Z EntropicRogersShephard.fiberDifferenceDensity_eq_mixture {n m : ℕ} {K : Set (Fin n → ℝ)} {ρ : (Fin n → ℝ) → ℝ} {c C : ℝ}
+2026-10-13T11:49:52.8300998Z   (hK : MeasurableSet K) (hfin : MeasureTheory.volume K ≠ ⊤) (hpos : MeasureTheory.volume K ≠ 0) (hρ : Measurable ρ)
+2026-10-13T11:49:52.8302231Z   (hc : 0 < c) (hC : 0 ≤ C) (hb : ∀ x ∈ K, ρ x ∈ Set.Icc c C) (s : Fin n → ℝ) (t : Fin m → ℝ) :
+2026-10-13T11:49:52.8302972Z   EntropicRogersShephard.fiberDifferenceDensity K ρ (s, t) =
+2026-10-13T11:49:52.8303492Z     ∫ (x : Fin n → ℝ),
+2026-10-13T11:49:52.8304380Z       EntropicRogersShephard.powerDensity m K ρ x * EntropicRogersShephard.powerDensity m K ρ (x - s) *
+2026-10-13T11:49:52.8305241Z         EntropicRogersShephard.crossDifferenceDensity
+2026-10-13T11:49:52.8306272Z           (EntropicRogersShephard.uniformDensity (EntropicRogersShephard.simplex m (ρ x)))
+2026-10-13T11:49:52.8307806Z           (EntropicRogersShephard.uniformDensity (EntropicRogersShephard.simplex m (ρ (x - s)))) t
+2026-10-13T11:49:52.8308767Z EntropicRogersShephard.positiveInterior_nonempty {n : ℕ} {f : (Fin n → ℝ) → ℝ}
+2026-10-13T11:49:52.8326637Z   (hf : EntropicRogersShephard.IsProbabilityDensity n f) (hl : EntropicRogersShephard.IsLogConcave n f) :
+2026-10-13T11:49:52.8327407Z   (interior {x | 0 < f x}).Nonempty
+2026-10-13T11:49:52.8328258Z EntropicRogersShephard.fiber_difference_entropy_upper_bound {n m : ℕ} [NeZero (n + m)] {K : Set (Fin n → ℝ)}
+2026-10-13T11:49:52.8329519Z   {ρ : (Fin n → ℝ) → ℝ} {c C : ℝ} (hK : IsCompact K) (hpos : MeasureTheory.volume K ≠ 0) (hρ : Measurable ρ)
+2026-10-13T11:49:52.8330184Z   (hcont : ContinuousOn ρ K) (hconc : ConcaveOn ℝ K ρ) (hc : 0 < c) (hC : 0 < C) (hb : ∀ x ∈ K, ρ x ∈ Set.Icc c C) :
+2026-10-13T11:49:52.8330931Z   EntropicRogersShephard.differentialEntropy (EntropicRogersShephard.fiberDifferenceDensity K ρ) MeasureTheory.volume ≤
+2026-10-13T11:49:52.8331792Z     (EntropicRogersShephard.differentialEntropy (EntropicRogersShephard.powerDensity m K ρ) MeasureTheory.volume +
+2026-10-13T11:49:52.8332476Z           Real.log (MeasureTheory.volume (EntropicRogersShephard.simplex m 1)).toReal +
+2026-10-13T11:49:52.8333107Z         ↑m * ∫ (x : Fin n → ℝ), EntropicRogersShephard.powerDensity m K ρ x * Real.log (ρ x)) +
+2026-10-13T11:49:52.8333515Z       EntropicRogersShephard.F (n + m)
+2026-10-13T11:49:52.8333929Z EntropicRogersShephard.simplex_mixture_entropy_scale_lower_bound {n m : ℕ} [NeZero m]
+2026-10-13T11:49:52.8334547Z   {μ : MeasureTheory.Measure (Fin n → ℝ)} [MeasureTheory.IsProbabilityMeasure μ] {ρ : (Fin n → ℝ) → ℝ} {c C : ℝ}
+2026-10-13T11:49:52.8335116Z   (hm : Measurable ρ) (hc : 0 < c) (hb : ∀ (x : Fin n → ℝ), ρ x ∈ Set.Icc c C) (s : Fin n → ℝ) :
+2026-10-13T11:49:52.8335485Z   EntropicRogersShephard.differentialEntropy
+2026-10-13T11:49:52.8335847Z         (EntropicRogersShephard.crossDifferenceDensity
+2026-10-13T11:49:52.8336373Z           (EntropicRogersShephard.uniformDensity (EntropicRogersShephard.simplex m 1))
+2026-10-13T11:49:52.8336973Z           (EntropicRogersShephard.uniformDensity (EntropicRogersShephard.simplex m 1)))
+2026-10-13T11:49:52.8337364Z         MeasureTheory.volume +
+2026-10-13T11:49:52.8337832Z       ↑m / 2 * (∫ (x : Fin n → ℝ), Real.log (ρ x) ∂μ + ∫ (x : Fin n → ℝ), Real.log (ρ (x - s)) ∂μ) ≤
+2026-10-13T11:49:52.8338219Z     EntropicRogersShephard.differentialEntropy
+2026-10-13T11:49:52.8457147Z       (fun t => ∫ (x : Fin n → ℝ), EntropicRogersShephard.simplexFiberKernel m ρ s x t ∂μ) MeasureTheory.volume
+2026-10-13T11:49:52.8457891Z EntropicRogersShephard.fiber_row_entropy_lower_bound {n m : ℕ} [NeZero m] {K : Set (Fin n → ℝ)} {ρ : (Fin n → ℝ) → ℝ}
+2026-10-13T11:49:52.8458715Z   {c C : ℝ} (hK : IsCompact K) (hpos : MeasureTheory.volume K ≠ 0) (hρ : Measurable ρ) (hc : 0 < c) (hC : 0 < C)
+2026-10-13T11:49:52.8459357Z   (hb : ∀ (x : Fin n → ℝ), ρ x ∈ Set.Icc c C) (s : Fin n → ℝ) :
+2026-10-13T11:49:52.8459938Z   (EntropicRogersShephard.differenceDensity (EntropicRogersShephard.powerDensity m K ρ) s).negMulLog +
+2026-10-13T11:49:52.8460714Z         EntropicRogersShephard.differenceDensity (EntropicRogersShephard.powerDensity m K ρ) s *
+2026-10-13T11:49:52.8461221Z           EntropicRogersShephard.differentialEntropy
+2026-10-13T11:49:52.8461628Z             (EntropicRogersShephard.crossDifferenceDensity
+2026-10-13T11:49:52.8462400Z               (EntropicRogersShephard.uniformDensity (EntropicRogersShephard.simplex m 1))
+2026-10-13T11:49:52.8463073Z               (EntropicRogersShephard.uniformDensity (EntropicRogersShephard.simplex m 1)))
+2026-10-13T11:49:52.8463490Z             MeasureTheory.volume +
+2026-10-13T11:49:52.8463743Z       ↑m / 2 *
+2026-10-13T11:49:52.8463975Z         ((∫ (x : Fin n → ℝ),
+2026-10-13T11:49:52.8464617Z             EntropicRogersShephard.powerDensity m K ρ x * EntropicRogersShephard.powerDensity m K ρ (x - s) *
+2026-10-13T11:49:52.8465610Z               Real.log (ρ x)) +
+2026-10-13T11:49:52.8466022Z           ∫ (x : Fin n → ℝ),
+2026-10-13T11:49:52.8467067Z             EntropicRogersShephard.powerDensity m K ρ x * EntropicRogersShephard.powerDensity m K ρ (x - s) *
+2026-10-13T11:49:52.8467895Z               Real.log (ρ (x - s))) ≤
+2026-10-13T11:49:52.8468579Z     EntropicRogersShephard.differentialEntropy (fun t => EntropicRogersShephard.fiberDifferenceDensity K ρ (s, t))
+2026-10-13T11:49:52.8469261Z       MeasureTheory.volume
+2026-10-13T11:49:52.8469748Z EntropicRogersShephard.power_density_entropy_increment_bound {n m : ℕ} [NeZero m] [NeZero (n + m)] {K : Set (Fin n → ℝ)}
+2026-10-13T11:49:52.8470416Z   {ρ : (Fin n → ℝ) → ℝ} {c C : ℝ} (hK : IsCompact K) (hpos : MeasureTheory.volume K ≠ 0) (hρ : Measurable ρ)
+2026-10-13T11:49:52.8471013Z   (hcont : ContinuousOn ρ K) (hconc : ConcaveOn ℝ K ρ) (hc : 0 < c) (hC : 0 < C) (hb : ∀ x ∈ K, ρ x ∈ Set.Icc c C) :
+2026-10-13T11:49:52.8471426Z   EntropicRogersShephard.differentialEntropy
+2026-10-13T11:49:52.8472147Z         (EntropicRogersShephard.differenceDensity (EntropicRogersShephard.powerDensity m K ρ)) MeasureTheory.volume -
+2026-10-13T11:49:52.8472993Z       EntropicRogersShephard.differentialEntropy (EntropicRogersShephard.powerDensity m K ρ) MeasureTheory.volume ≤
+2026-10-13T11:49:52.8473557Z     EntropicRogersShephard.F (n + m) - EntropicRogersShephard.F m
+2026-10-13T11:49:52.8474082Z EntropicRogersShephard.difference_entropy_tendsto_of_compact_support {n : ℕ} {K : Set (Fin n → ℝ)}
+2026-10-13T11:49:52.8474659Z   {f : ℕ → (Fin n → ℝ) → ℝ} {g : (Fin n → ℝ) → ℝ} {M : ℝ} (hK : IsCompact K) (hM : 0 ≤ M)
+2026-10-13T11:49:52.8475095Z   (hf : ∀ (j : ℕ), EntropicRogersShephard.IsProbabilityDensity n (f j))
+2026-10-13T11:49:52.8475557Z   (hb : ∀ (j : ℕ) (x : Fin n → ℝ), f j x ∈ Set.Icc 0 M) (hsupp : ∀ (j : ℕ), ∀ x ∉ K, f j x = 0)
+2026-10-13T11:49:52.8476035Z   (hlim : ∀ (x : Fin n → ℝ), Filter.Tendsto (fun j => f j x) Filter.atTop (nhds (g x))) :
+2026-10-13T11:49:52.8476347Z   Filter.Tendsto
+2026-10-13T11:49:52.8476543Z     (fun j =>
+2026-10-13T11:49:52.8477081Z       EntropicRogersShephard.differentialEntropy (EntropicRogersShephard.differenceDensity (f j)) MeasureTheory.volume)
+2026-10-13T11:49:52.8477553Z     Filter.atTop
+2026-10-13T11:49:52.8477729Z     (nhds
+2026-10-13T11:49:52.8478249Z       (EntropicRogersShephard.differentialEntropy (EntropicRogersShephard.differenceDensity g) MeasureTheory.volume))
+2026-10-13T11:49:52.8479107Z EntropicRogersShephard.sharp_entropic_rogers_shephard_density : EntropicRogersShephard.SharpEntropicRogersShephard
+2026-10-13T11:49:52.8479832Z EntropicRogersShephard.sharp_entropic_rogers_shephard_random_vectors.{u_1} {Ω : Type u_1} [MeasurableSpace Ω]
+2026-10-13T11:49:52.8480531Z   {P : MeasureTheory.Measure Ω} [MeasureTheory.IsProbabilityMeasure P] {n : ℕ} (hn : 0 < n) {X Y : Ω → Fin n → ℝ}
+2026-10-13T11:49:52.8481092Z   {f : (Fin n → ℝ) → ℝ} (hf : EntropicRogersShephard.IsProbabilityDensity n f)
+2026-10-13T11:49:52.8481439Z   (hl : EntropicRogersShephard.IsLogConcave n f)
+2026-10-13T11:49:52.8481934Z   (hX : ProbabilityTheory.HasLaw X (EntropicRogersShephard.realDensityMeasure MeasureTheory.volume f) P)
+2026-10-13T11:49:52.8482541Z   (hY : ProbabilityTheory.HasLaw Y (EntropicRogersShephard.realDensityMeasure MeasureTheory.volume f) P)
+2026-10-13T11:49:52.8482965Z   (hXY : ProbabilityTheory.IndepFun X Y P) :
+2026-10-13T11:49:52.8483494Z   ProbabilityTheory.HasLaw (fun ω => X ω - Y ω)
+2026-10-13T11:49:52.8484327Z       (EntropicRogersShephard.realDensityMeasure MeasureTheory.volume (EntropicRogersShephard.differenceDensity f)) P ∧
+2026-10-13T11:49:52.8484983Z     MeasureTheory.Integrable (fun x => (f x).negMulLog) MeasureTheory.volume ∧
+2026-10-13T11:49:52.8537700Z       MeasureTheory.Integrable (fun s => (EntropicRogersShephard.differenceDensity f s).negMulLog)
+2026-10-13T11:49:52.8538462Z           MeasureTheory.volume ∧
+2026-10-13T11:49:52.8539231Z         EntropicRogersShephard.differentialEntropy (EntropicRogersShephard.differenceDensity f) MeasureTheory.volume -
+2026-10-13T11:49:52.8540127Z             EntropicRogersShephard.differentialEntropy f MeasureTheory.volume ≤
+2026-10-13T11:49:52.8540524Z           ↑n * Real.log 2
+2026-10-13T11:49:52.8540841Z EntropicRogersShephard.sharpness_exponential_product (n : ℕ) :
+2026-10-13T11:49:52.8541194Z   EntropicRogersShephard.IsProbabilityDensity n
+2026-10-13T11:49:52.8541721Z       (EntropicRogersShephard.productDensity n EntropicRogersShephard.oneSidedExponential) ∧
+2026-10-13T11:49:52.8542162Z     EntropicRogersShephard.IsLogConcave n
+2026-10-13T11:49:52.8542707Z         (EntropicRogersShephard.productDensity n EntropicRogersShephard.oneSidedExponential) ∧
+2026-10-13T11:49:52.8543116Z       MeasureTheory.Integrable
+2026-10-13T11:49:52.8543711Z           (fun x => (EntropicRogersShephard.productDensity n EntropicRogersShephard.oneSidedExponential x).negMulLog)
+2026-10-13T11:49:52.8544205Z           MeasureTheory.volume ∧
+2026-10-13T11:49:52.8544451Z         MeasureTheory.Integrable
+2026-10-13T11:49:52.8544684Z             (fun s =>
+2026-10-13T11:49:52.8545027Z               (EntropicRogersShephard.differenceDensity
+2026-10-13T11:49:52.8545790Z                   (EntropicRogersShephard.productDensity n EntropicRogersShephard.oneSidedExponential) s).negMulLog)
+2026-10-13T11:49:52.8546280Z             MeasureTheory.volume ∧
+2026-10-13T11:49:52.8546610Z           EntropicRogersShephard.differentialEntropy
+2026-10-13T11:49:52.8547053Z                 (EntropicRogersShephard.differenceDensity
+2026-10-13T11:49:52.8547752Z                   (EntropicRogersShephard.productDensity n EntropicRogersShephard.oneSidedExponential))
+2026-10-13T11:49:52.8548231Z                 MeasureTheory.volume -
+2026-10-13T11:49:52.8548601Z               EntropicRogersShephard.differentialEntropy
+2026-10-13T11:49:52.8549408Z                 (EntropicRogersShephard.productDensity n EntropicRogersShephard.oneSidedExponential)
+2026-10-13T11:49:52.8549879Z                 MeasureTheory.volume =
+2026-10-13T11:49:52.8550173Z             ↑n * Real.log 2
+2026-10-13T11:49:52.8550524Z EntropicRogersShephard.entropy_increment_constant_optimal (n : ℕ) {C : ℝ}
+2026-10-13T11:49:52.8550839Z   (hC :
+2026-10-13T11:49:52.8551049Z     ∀ (f : (Fin n → ℝ) → ℝ),
+2026-10-13T11:49:52.8551385Z       EntropicRogersShephard.IsProbabilityDensity n f →
+2026-10-13T11:49:52.8551763Z         EntropicRogersShephard.IsLogConcave n f →
+2026-10-13T11:49:52.8552459Z           EntropicRogersShephard.differentialEntropy (EntropicRogersShephard.differenceDensity f) MeasureTheory.volume -
+2026-10-13T11:49:52.8553218Z               EntropicRogersShephard.differentialEntropy f MeasureTheory.volume ≤
+2026-10-13T11:49:52.8553555Z             C) :
+2026-10-13T11:49:52.8553758Z   ↑n * Real.log 2 ≤ C
+2026-10-13T11:49:52.8554077Z EntropicRogersShephard.CompleteSharpEntropicRogersShephard.{u} : Prop
+2026-10-13T11:49:52.8554499Z EntropicRogersShephard.complete_sharp_entropic_rogers_shephard.{u} :
+2026-10-13T11:49:52.8554904Z   EntropicRogersShephard.CompleteSharpEntropicRogersShephard
+2026-10-13T11:49:52.8555490Z EntropicRogersShephard.sharpness_linearEquiv_affine_exponential_product (n : ℕ) (A : (Fin n → ℝ) ≃ₗ[ℝ] Fin n → ℝ)
+2026-10-13T11:49:52.8555930Z   (b : Fin n → ℝ) :
+2026-10-13T11:49:52.8556183Z   EntropicRogersShephard.AttainsSharpEntropicBound n
+2026-10-13T11:49:52.8556583Z     (EntropicRogersShephard.affineDensity A.toContinuousLinearEquiv b
+2026-10-13T11:49:52.8557123Z       (EntropicRogersShephard.productDensity n EntropicRogersShephard.oneSidedExponential))
+2026-10-13T11:49:52.8557871Z EntropicRogersShephard.map_affine_realDensityMeasure {n : ℕ} (A : (Fin n → ℝ) ≃L[ℝ] Fin n → ℝ) (b : Fin n → ℝ)
+2026-10-13T11:49:52.8558414Z   {f : (Fin n → ℝ) → ℝ} (hf : Measurable f) (hn : ∀ (x : Fin n → ℝ), 0 ≤ f x) :
+2026-10-13T11:49:52.8559125Z   MeasureTheory.Measure.map (fun x => A x + b) (EntropicRogersShephard.realDensityMeasure MeasureTheory.volume f) =
+2026-10-13T11:49:52.8559841Z     EntropicRogersShephard.realDensityMeasure MeasureTheory.volume (EntropicRogersShephard.affineDensity A b f)
+2026-10-13T11:49:52.8560495Z 'brunn_minkowski' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8560977Z 'EntropicRogersShephard.harmonic_term_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8561533Z 'EntropicRogersShephard.neg_log_one_sub_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8562075Z 'EntropicRogersShephard.scale_gap_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8562632Z 'EntropicRogersShephard.positiveMass_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8563187Z 'EntropicRogersShephard.negativeMass_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8563791Z 'EntropicRogersShephard.sum_eq_positiveMass_sub_negativeMass' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8564401Z 'EntropicRogersShephard.mem_simplex_coordinate_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8564979Z 'EntropicRogersShephard.simplex_empty_of_neg' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8565948Z 'EntropicRogersShephard.simplex_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8566767Z 'EntropicRogersShephard.convex_simplex' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8567630Z 'EntropicRogersShephard.isClosed_simplex' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8568540Z 'EntropicRogersShephard.isCompact_simplex' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8569689Z 'EntropicRogersShephard.mem_overlap_iff_shifted_simplex' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8570731Z 'EntropicRogersShephard.overlap_eq_translated_simplex' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8571463Z 'EntropicRogersShephard.overlapRadius_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8572061Z 'EntropicRogersShephard.overlapRadius_le_right' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8572634Z 'EntropicRogersShephard.overlapRadius_gt_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8573188Z 'EntropicRogersShephard.simplex_pos_eq_smul' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8573739Z 'EntropicRogersShephard.volume_simplex_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8574281Z 'EntropicRogersShephard.volume_simplex_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8574842Z 'EntropicRogersShephard.volume_simplex_eq_clamped' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8575415Z 'EntropicRogersShephard.volume_simplex_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8575985Z 'EntropicRogersShephard.volume_simplex_overlap' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8576552Z 'EntropicRogersShephard.binomialWeight_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8577104Z 'EntropicRogersShephard.sum_binomialWeight' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8577808Z 'EntropicRogersShephard.sum_binomialWeight_succ' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8578404Z 'EntropicRogersShephard.sum_binomialWeight_mul_index' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8579130Z 'EntropicRogersShephard.sum_binomialWeight_mul_factorialMoment' depends on axioms: [propext,
+2026-10-13T11:49:52.8579510Z  Classical.choice,
+2026-10-13T11:49:52.8579697Z  Quot.sound]
+2026-10-13T11:49:52.8580056Z 'EntropicRogersShephard.sum_choose_sq_mul_choose' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8580695Z 'EntropicRogersShephard.H_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8581171Z 'EntropicRogersShephard.H_succ' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8581693Z 'EntropicRogersShephard.harmonic_drop_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8582261Z 'EntropicRogersShephard.binomial_harmonic_drop_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8582850Z 'EntropicRogersShephard.binomial_scale_gap_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8583459Z 'EntropicRogersShephard.sum_binomialWeight_harmonic_drop' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8584077Z 'EntropicRogersShephard.harmonic_average_scale_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8584686Z 'EntropicRogersShephard.harmonic_average_scale_strict' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8585246Z 'EntropicRogersShephard.F_succ_sub' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8585798Z 'EntropicRogersShephard.tendsto_harmonic_double_sub' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8586362Z 'EntropicRogersShephard.tendsto_F_succ_sub' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8586909Z 'EntropicRogersShephard.tendsto_F_shift_sub' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8587499Z 'EntropicRogersShephard.intervalIntegrable_pow_mul_log' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8588113Z 'EntropicRogersShephard.continuous_pow_succ_mul_log' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8588680Z 'EntropicRogersShephard.integral_pow_mul_log' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8589377Z 'EntropicRogersShephard.integral_pow_mul_neg_log' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8589941Z 'EntropicRogersShephard.integerBeta_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8590500Z 'EntropicRogersShephard.integerBeta_succ_right' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8592866Z 'EntropicRogersShephard.integerBeta_succ_left' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8593523Z 'EntropicRogersShephard.intervalIntegrable_betaMoment' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8594117Z 'EntropicRogersShephard.betaMoment_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8594649Z 'EntropicRogersShephard.betaMoment_succ' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8595210Z 'EntropicRogersShephard.betaMoment_eq_integerBeta' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8595836Z 'EntropicRogersShephard.intervalIntegrable_betaLogMoment' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8596434Z 'EntropicRogersShephard.betaLogMoment_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8596986Z 'EntropicRogersShephard.betaLogMoment_succ' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8597694Z 'EntropicRogersShephard.betaLogMoment_eq_harmonic' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8598292Z 'EntropicRogersShephard.exists_negMulLog_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8598843Z 'EntropicRogersShephard.integrable_negMulLog_of_bounded_support' depends on axioms: [propext,
+2026-10-13T11:49:52.8599373Z  Classical.choice,
+2026-10-13T11:49:52.8599551Z  Quot.sound]
+2026-10-13T11:49:52.8599944Z 'EntropicRogersShephard.entropy_tendsto_of_bounded_support' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8600692Z 'EntropicRogersShephard.average_entropy_le_entropy_mixture' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8601327Z 'EntropicRogersShephard.powerApproximation_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8601960Z 'EntropicRogersShephard.powerApproximation_mem_Icc' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8602570Z 'EntropicRogersShephard.powerApproximation_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8603145Z 'EntropicRogersShephard.convex_fiberBody' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8603687Z 'EntropicRogersShephard.bodyOverlap_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8604243Z 'EntropicRogersShephard.isCompact_bodyOverlap' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8604834Z 'EntropicRogersShephard.measurableSet_bodyOverlap' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8605431Z 'EntropicRogersShephard.weighted_mem_bodyOverlap' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8606013Z 'EntropicRogersShephard.measurable_affineDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8606598Z 'EntropicRogersShephard.affineDensity_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8607180Z 'EntropicRogersShephard.integrable_affineDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8607756Z 'EntropicRogersShephard.integral_affineDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8608376Z 'EntropicRogersShephard.isProbabilityDensity_affineDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8609127Z 'EntropicRogersShephard.affine_inverse_combo' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8609738Z 'EntropicRogersShephard.isLogConcave_affineDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8610340Z 'EntropicRogersShephard.affine_inverse_difference' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8610956Z 'EntropicRogersShephard.differenceDensity_affineDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8611577Z 'EntropicRogersShephard.affineDensity_entropy' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8612176Z 'EntropicRogersShephard.entropy_increment_affineDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8612811Z 'EntropicRogersShephard.logconcave_affine_entropy_increment' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8613441Z 'EntropicRogersShephard.map_affine_realDensityMeasure' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8614028Z 'EntropicRogersShephard.hasLaw_affineDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8614637Z 'EntropicRogersShephard.sharpness_affine_exponential_product' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8615250Z 'EntropicRogersShephard.sharpness_linearEquiv_affine_exponential_product' depends on axioms: [propext,
+2026-10-13T11:49:52.8615649Z  Classical.choice,
+2026-10-13T11:49:52.8615991Z  Quot.sound]
+2026-10-13T11:49:52.8618686Z 'EntropicRogersShephard.hasLaw_affine_exponential_product' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8619704Z 'EntropicRogersShephard.affineJacobian_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8620311Z 'EntropicRogersShephard.map_affine_inverse_linear_volume' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8620909Z 'EntropicRogersShephard.integral_affine_inverse' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8621640Z 'EntropicRogersShephard.integrable_affine_inverse' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8622223Z 'EntropicRogersShephard.lintegral_affine_inverse' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8622827Z 'EntropicRogersShephard.isCompact_bodyDifferenceSupport' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8623431Z 'EntropicRogersShephard.uniformBodyDifference_eq_zero_of_not_mem' depends on axioms: [propext,
+2026-10-13T11:49:52.8623819Z  Classical.choice,
+2026-10-13T11:49:52.8624008Z  Quot.sound]
+2026-10-13T11:49:52.8624400Z 'EntropicRogersShephard.uniformBodyDifference_eq_overlap' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8625027Z 'EntropicRogersShephard.uniformBodyDifference_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8625604Z 'EntropicRogersShephard.integrable_negMulLog_uniformBodyDifference' depends on axioms: [propext,
+2026-10-13T11:49:52.8625979Z  Classical.choice,
+2026-10-13T11:49:52.8626151Z  Quot.sound]
+2026-10-13T11:49:52.8626516Z 'EntropicRogersShephard.bodyOverlapRoot_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8627091Z 'EntropicRogersShephard.bodyOverlapRoot_pow' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8627691Z 'EntropicRogersShephard.bodyOverlapRoot_pow_eq_density' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8628286Z 'EntropicRogersShephard.bodyOverlapRoot_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8628863Z 'EntropicRogersShephard.bodyOverlapRoot_le_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8629658Z 'EntropicRogersShephard.bodyOverlapRoot_eq_zero_of_not_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8630296Z 'EntropicRogersShephard.bodyOverlap_nonempty_of_root_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8630913Z 'EntropicRogersShephard.measurable_bodyOverlapRoot' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8631478Z 'EntropicRogersShephard.integerBeta_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8632029Z 'EntropicRogersShephard.integral_beta_Ioo' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8632592Z 'EntropicRogersShephard.integral_log_beta_Ioo' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8633160Z 'EntropicRogersShephard.body_log_layer_mean_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8633750Z 'EntropicRogersShephard.body_log_primitive_upper_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8634366Z 'EntropicRogersShephard.uniform_convex_body_entropy_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8634977Z 'EntropicRogersShephard.bodyLevelVolume_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8635548Z 'EntropicRogersShephard.bodyLevelVolume_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8636137Z 'EntropicRogersShephard.antitone_bodyLevelVolume' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8636853Z 'EntropicRogersShephard.measurable_bodyLevelVolume' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8637472Z 'EntropicRogersShephard.bodyLevelVolume_le_support' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8638069Z 'EntropicRogersShephard.measurable_bodyLevelTilt' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8638646Z 'EntropicRogersShephard.monotoneOn_bodyLevelTilt' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8639510Z 'EntropicRogersShephard.bodyPowerLayer_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8640104Z 'EntropicRogersShephard.bodyPowerLayer_le_support' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8640711Z 'EntropicRogersShephard.integrableOn_bodyPowerLayer' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8641329Z 'EntropicRogersShephard.integrableOn_bodyLogLayer' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8641940Z 'EntropicRogersShephard.integrable_bodyTilt_beta' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8643317Z 'EntropicRogersShephard.integrable_bodyTilt_log_beta' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8644359Z 'EntropicRogersShephard.logPrimitive_eq_scaled_entropy' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8644991Z 'EntropicRogersShephard.integrable_bodyRoot_power' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8645576Z 'EntropicRogersShephard.integral_bodyRoot_power' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8646198Z 'EntropicRogersShephard.integrable_bodyRoot_logPrimitive' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8646803Z 'EntropicRogersShephard.integral_bodyRoot_logPrimitive_eq_entropy' depends on axioms: [propext,
+2026-10-13T11:49:52.8647205Z  Classical.choice,
+2026-10-13T11:49:52.8647384Z  Quot.sound]
+2026-10-13T11:49:52.8647766Z 'EntropicRogersShephard.integral_bodyRoot_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8648379Z 'EntropicRogersShephard.bodyPowerLayer_normalization' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8649056Z 'EntropicRogersShephard.bodyLogLayer_moment' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8649608Z 'EntropicRogersShephard.integrable_difference_slice_of_bounded' depends on axioms: [propext,
+2026-10-13T11:49:52.8649977Z  Classical.choice,
+2026-10-13T11:49:52.8650144Z  Quot.sound]
+2026-10-13T11:49:52.8650542Z 'EntropicRogersShephard.crossDifferenceDensity_le_of_bounded' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8651170Z 'EntropicRogersShephard.crossDifferenceDensity_eq_zero_of_not_mem_support' depends on axioms: [propext,
+2026-10-13T11:49:52.8651564Z  Classical.choice,
+2026-10-13T11:49:52.8651729Z  Quot.sound]
+2026-10-13T11:49:52.8652104Z 'EntropicRogersShephard.integrable_negMulLog_differenceDensity_of_bounded_support' depends on axioms: [propext,
+2026-10-13T11:49:52.8652517Z  Classical.choice,
+2026-10-13T11:49:52.8652681Z  Quot.sound]
+2026-10-13T11:49:52.8653067Z 'EntropicRogersShephard.integrable_kernel_slice_of_bounded' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8653652Z 'EntropicRogersShephard.integrable_negMulLog_kernel_slice_of_bounded' depends on axioms: [propext,
+2026-10-13T11:49:52.8654032Z  Classical.choice,
+2026-10-13T11:49:52.8654195Z  Quot.sound]
+2026-10-13T11:49:52.8654542Z 'EntropicRogersShephard.integrable_negMulLog_kernel_prod_of_bounded_support' depends on axioms: [propext,
+2026-10-13T11:49:52.8654931Z  Classical.choice,
+2026-10-13T11:49:52.8729216Z  Quot.sound]
+2026-10-13T11:49:52.8730065Z 'EntropicRogersShephard.integrable_entropy_kernel_of_bounded_support' depends on axioms: [propext,
+2026-10-13T11:49:52.8730722Z  Classical.choice,
+2026-10-13T11:49:52.8730948Z  Quot.sound]
+2026-10-13T11:49:52.8731298Z 'EntropicRogersShephard.average_entropy_le_entropy_bounded_mixture' depends on axioms: [propext,
+2026-10-13T11:49:52.8731681Z  Classical.choice,
+2026-10-13T11:49:52.8731853Z  Quot.sound]
+2026-10-13T11:49:52.8732243Z 'EntropicRogersShephard.integrable_negMulLog_const_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8732915Z 'EntropicRogersShephard.differentialEntropy_const_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8733645Z 'EntropicRogersShephard.differenceDensity_tendsto_of_bounded_support' depends on axioms: [propext,
+2026-10-13T11:49:52.8734033Z  Classical.choice,
+2026-10-13T11:49:52.8734207Z  Quot.sound]
+2026-10-13T11:49:52.8734550Z 'EntropicRogersShephard.difference_entropy_tendsto_of_compact_support' depends on axioms: [propext,
+2026-10-13T11:49:52.8734930Z  Classical.choice,
+2026-10-13T11:49:52.8735100Z  Quot.sound]
+2026-10-13T11:49:52.8735437Z 'EntropicRogersShephard.shifted_normalizedPowerApproximation_bound' depends on axioms: [propext,
+2026-10-13T11:49:52.8735818Z  Classical.choice,
+2026-10-13T11:49:52.8735979Z  Quot.sound]
+2026-10-13T11:49:52.8736304Z 'EntropicRogersShephard.compact_exponential_entropy_increment_bound' depends on axioms: [propext,
+2026-10-13T11:49:52.8736668Z  Classical.choice,
+2026-10-13T11:49:52.8736827Z  Quot.sound]
+2026-10-13T11:49:52.8737157Z 'EntropicRogersShephard.compact_exponential_entropy_finite_and_bound' depends on axioms: [propext,
+2026-10-13T11:49:52.8737521Z  Classical.choice,
+2026-10-13T11:49:52.8737677Z  Quot.sound]
+2026-10-13T11:49:52.8738063Z 'EntropicRogersShephard.compact_restrictions_approximation' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8738705Z 'EntropicRogersShephard.measurable_concavePowerSize' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8739458Z 'EntropicRogersShephard.continuousOn_concavePowerSize' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8740098Z 'EntropicRogersShephard.concaveOn_concavePowerSize' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8740704Z 'EntropicRogersShephard.concavePowerSize_mem_Icc' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8741313Z 'EntropicRogersShephard.exponential_size_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8742174Z 'EntropicRogersShephard.compact_exponential_mass_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8742799Z 'EntropicRogersShephard.isProbabilityDensity_compactExponentialDensity' depends on axioms: [propext,
+2026-10-13T11:49:52.8743202Z  Classical.choice,
+2026-10-13T11:49:52.8743378Z  Quot.sound]
+2026-10-13T11:49:52.8743747Z 'EntropicRogersShephard.concave_power_weight_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8744388Z 'EntropicRogersShephard.concave_power_mass_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8744961Z 'EntropicRogersShephard.concave_power_mass_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8745554Z 'EntropicRogersShephard.isProbabilityDensity_normalizedPowerApproximation' depends on axioms: [propext,
+2026-10-13T11:49:52.8745958Z  Classical.choice,
+2026-10-13T11:49:52.8746123Z  Quot.sound]
+2026-10-13T11:49:52.8746536Z 'EntropicRogersShephard.normalizedPowerApproximation_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8747200Z 'EntropicRogersShephard.normalizedPowerApproximation_entropy_increment_bound' depends on axioms: [propext,
+2026-10-13T11:49:52.8747610Z  Classical.choice,
+2026-10-13T11:49:52.8747777Z  Quot.sound]
+2026-10-13T11:49:52.8748138Z 'EntropicRogersShephard.compact_convex_exhaustion' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8748949Z 'EntropicRogersShephard.convex_isBounded_of_volume_ne_top' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8749595Z 'EntropicRogersShephard.exists_seq_isOpen_convex_isCompact_closure_subset_iUnion_eq' depends on axioms: [propext,
+2026-10-13T11:49:52.8750008Z  Classical.choice,
+2026-10-13T11:49:52.8750187Z  Quot.sound]
+2026-10-13T11:49:52.8750556Z 'EntropicRogersShephard.convex_ball_point_volume_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8751171Z 'EntropicRogersShephard.crossDifferenceDensity_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8751936Z 'EntropicRogersShephard.measurable_crossDifferenceDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8752536Z 'EntropicRogersShephard.crossDifferenceDensity_eq_convolution' depends on axioms: [propext,
+2026-10-13T11:49:52.8752906Z  Classical.choice,
+2026-10-13T11:49:52.8753074Z  Quot.sound]
+2026-10-13T11:49:52.8753465Z 'EntropicRogersShephard.integrable_crossDifferenceDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8754118Z 'EntropicRogersShephard.integral_crossDifferenceDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8754724Z 'EntropicRogersShephard.isProbabilityDensity_crossDifferenceDensity' depends on axioms: [propext,
+2026-10-13T11:49:52.8755108Z  Classical.choice,
+2026-10-13T11:49:52.8755279Z  Quot.sound]
+2026-10-13T11:49:52.8755606Z 'EntropicRogersShephard.isProbabilityDensity_differenceDensity' depends on axioms: [propext,
+2026-10-13T11:49:52.8755983Z  Classical.choice,
+2026-10-13T11:49:52.8756146Z  Quot.sound]
+2026-10-13T11:49:52.8756512Z 'EntropicRogersShephard.measurable_uniformDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8757102Z 'EntropicRogersShephard.uniformDensity_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8757688Z 'EntropicRogersShephard.integrable_uniformDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8758275Z 'EntropicRogersShephard.integral_uniformDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8758983Z 'EntropicRogersShephard.isProbabilityDensity_uniformDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8759652Z 'EntropicRogersShephard.integrable_negMulLog_uniformDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8760313Z 'EntropicRogersShephard.differentialEntropy_uniformDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8760928Z 'EntropicRogersShephard.volume_simplex_ne_top' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8761495Z 'EntropicRogersShephard.small_box_subset_simplex' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8762069Z 'EntropicRogersShephard.volume_unit_simplex_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8762638Z 'EntropicRogersShephard.volume_simplex_pos_of_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8763260Z 'EntropicRogersShephard.isProbabilityDensity_uniformSimplex' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8763919Z 'EntropicRogersShephard.differentialEntropy_uniformSimplex' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8764537Z 'EntropicRogersShephard.realDensityMeasure_univ' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8765111Z 'EntropicRogersShephard.isProbabilityMeasure_realDensityMeasure' depends on axioms: [propext,
+2026-10-13T11:49:52.8765487Z  Classical.choice,
+2026-10-13T11:49:52.8765659Z  Quot.sound]
+2026-10-13T11:49:52.8766031Z 'EntropicRogersShephard.integral_realDensityMeasure' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8766922Z 'EntropicRogersShephard.integrable_realDensityMeasure_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8768040Z 'EntropicRogersShephard.measurable_differenceSliceDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8768697Z 'EntropicRogersShephard.differenceSliceDensity_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8769507Z 'EntropicRogersShephard.integrable_differenceSliceDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8770275Z 'EntropicRogersShephard.integral_differenceSliceDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8770879Z 'EntropicRogersShephard.isProbabilityMeasure_differenceSliceMeasure' depends on axioms: [propext,
+2026-10-13T11:49:52.8771268Z  Classical.choice,
+2026-10-13T11:49:52.8771440Z  Quot.sound]
+2026-10-13T11:49:52.8771824Z 'EntropicRogersShephard.integral_differenceSliceMeasure' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8772403Z 'EntropicRogersShephard.differenceDensity_tendsto_of_dominated' depends on axioms: [propext,
+2026-10-13T11:49:52.8772768Z  Classical.choice,
+2026-10-13T11:49:52.8772936Z  Quot.sound]
+2026-10-13T11:49:52.8773249Z 'EntropicRogersShephard.differenceDensity_exponential_envelope' depends on axioms: [propext,
+2026-10-13T11:49:52.8773608Z  Classical.choice,
+2026-10-13T11:49:52.8773769Z  Quot.sound]
+2026-10-13T11:49:52.8774131Z 'EntropicRogersShephard.logconcave_probability_density_entropies_integrable' depends on axioms: [propext,
+2026-10-13T11:49:52.8774535Z  Classical.choice,
+2026-10-13T11:49:52.8774701Z  Quot.sound]
+2026-10-13T11:49:52.8775019Z 'EntropicRogersShephard.entropy_tendsto_of_exponential_envelope' depends on axioms: [propext,
+2026-10-13T11:49:52.8775381Z  Classical.choice,
+2026-10-13T11:49:52.8775540Z  Quot.sound]
+2026-10-13T11:49:52.8775916Z 'EntropicRogersShephard.measurable_oneSidedExponential' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8776542Z 'EntropicRogersShephard.oneSidedExponential_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8777168Z 'EntropicRogersShephard.oneSidedExponential_of_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8777781Z 'EntropicRogersShephard.oneSidedExponential_of_neg' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8778401Z 'EntropicRogersShephard.integrable_oneSidedExponential' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8779190Z 'EntropicRogersShephard.integral_oneSidedExponential' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8779847Z 'EntropicRogersShephard.scalarLogConcave_oneSidedExponential' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8780504Z 'EntropicRogersShephard.integrable_comp_abs_of_integrableOn' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8781087Z 'EntropicRogersShephard.integrableOn_exponential_first_moment' depends on axioms: [propext,
+2026-10-13T11:49:52.8781452Z  Classical.choice,
+2026-10-13T11:49:52.8781620Z  Quot.sound]
+2026-10-13T11:49:52.8782003Z 'EntropicRogersShephard.integral_exponential_first_moment' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8782632Z 'EntropicRogersShephard.oneSidedExponential_entropy' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8783229Z 'EntropicRogersShephard.integrable_unitLaplace' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8783808Z 'EntropicRogersShephard.integral_unitLaplace' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8784381Z 'EntropicRogersShephard.unitLaplace_first_moment' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8784956Z 'EntropicRogersShephard.unitLaplace_entropy' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8785615Z 'EntropicRogersShephard.oneSidedExponential_difference_kernel' depends on axioms: [propext,
+2026-10-13T11:49:52.8785994Z  Classical.choice,
+2026-10-13T11:49:52.8786162Z  Quot.sound]
+2026-10-13T11:49:52.8786497Z 'EntropicRogersShephard.integral_oneSidedExponential_difference' depends on axioms: [propext,
+2026-10-13T11:49:52.8786862Z  Classical.choice,
+2026-10-13T11:49:52.8787026Z  Quot.sound]
+2026-10-13T11:49:52.8787380Z 'EntropicRogersShephard.integrable_exp_neg_mul_abs' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8788091Z 'EntropicRogersShephard.integrable_exp_neg_mul_norm' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8788698Z 'EntropicRogersShephard.abs_negMulLog_le_square_add_sqrt' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8789424Z 'EntropicRogersShephard.sqrt_exp_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8790005Z 'EntropicRogersShephard.entropy_exponential_envelope' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8790594Z 'EntropicRogersShephard.integrable_negMulLog_of_exponential_envelope' depends on axioms: [propext,
+2026-10-13T11:49:52.8790971Z  Classical.choice,
+2026-10-13T11:49:52.8791134Z  Quot.sound]
+2026-10-13T11:49:52.8791491Z 'EntropicRogersShephard.integrable_negMulLog_logconcave_probability_density' depends on axioms: [propext,
+2026-10-13T11:49:52.8791879Z  Classical.choice,
+2026-10-13T11:49:52.8792041Z  Quot.sound]
+2026-10-13T11:49:52.8792690Z 'EntropicRogersShephard.differenceDensity_productDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8793309Z 'EntropicRogersShephard.isProbabilityDensity_exponential_product' depends on axioms: [propext,
+2026-10-13T11:49:52.8793686Z  Classical.choice,
+2026-10-13T11:49:52.8793846Z  Quot.sound]
+2026-10-13T11:49:52.8794226Z 'EntropicRogersShephard.isLogConcave_exponential_product' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8794807Z 'EntropicRogersShephard.differenceDensity_exponential_product' depends on axioms: [propext,
+2026-10-13T11:49:52.8795167Z  Classical.choice,
+2026-10-13T11:49:52.8795325Z  Quot.sound]
+2026-10-13T11:49:52.8795688Z 'EntropicRogersShephard.exponential_product_entropy' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8796256Z 'EntropicRogersShephard.exponential_product_difference_entropy' depends on axioms: [propext,
+2026-10-13T11:49:52.8796618Z  Classical.choice,
+2026-10-13T11:49:52.8796787Z  Quot.sound]
+2026-10-13T11:49:52.8797155Z 'EntropicRogersShephard.sharpness_exponential_product' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8797785Z 'EntropicRogersShephard.entropy_increment_constant_optimal' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8798387Z 'EntropicRogersShephard.logconcave_ray_log_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8799050Z 'EntropicRogersShephard.logconcave_probability_density_exponential_envelope' depends on axioms: [propext,
+2026-10-13T11:49:52.8799450Z  Classical.choice,
+2026-10-13T11:49:52.8799614Z  Quot.sound]
+2026-10-13T11:49:52.8799949Z 'EntropicRogersShephard.differenceLogLeft_eq_crossDifferenceDensity' depends on axioms: [propext,
+2026-10-13T11:49:52.8800328Z  Classical.choice,
+2026-10-13T11:49:52.8800485Z  Quot.sound]
+2026-10-13T11:49:52.8800824Z 'EntropicRogersShephard.differenceLogRight_eq_crossDifferenceDensity' depends on axioms: [propext,
+2026-10-13T11:49:52.8801209Z  Classical.choice,
+2026-10-13T11:49:52.8801367Z  Quot.sound]
+2026-10-13T11:49:52.8801727Z 'EntropicRogersShephard.power_logDifference_moments' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8802355Z 'EntropicRogersShephard.fiber_difference_entropy_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8803046Z 'EntropicRogersShephard.global_power_density_entropy_increment_bound' depends on axioms: [propext,
+2026-10-13T11:49:52.8803423Z  Classical.choice,
+2026-10-13T11:49:52.8803593Z  Quot.sound]
+2026-10-13T11:49:52.8803952Z 'EntropicRogersShephard.fiberUniformDensity_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8804601Z 'EntropicRogersShephard.integrable_fiberDifference_slice' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8805242Z 'EntropicRogersShephard.measurable_fiberDifferenceDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8805988Z 'EntropicRogersShephard.fiberDifferenceDensity_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8806626Z 'EntropicRogersShephard.fiberDifferenceDensity_eq_mixture' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8807267Z 'EntropicRogersShephard.isCompact_fiberDifferenceSupport' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8807868Z 'EntropicRogersShephard.fiberDifferenceDensity_eq_zero_of_not_mem' depends on axioms: [propext,
+2026-10-13T11:49:52.8808248Z  Classical.choice,
+2026-10-13T11:49:52.8808411Z  Quot.sound]
+2026-10-13T11:49:52.8808775Z 'EntropicRogersShephard.fiberDifferenceDensity_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8809554Z 'EntropicRogersShephard.integrable_negMulLog_fiberDifferenceDensity' depends on axioms: [propext,
+2026-10-13T11:49:52.8809934Z  Classical.choice,
+2026-10-13T11:49:52.8810113Z  Quot.sound]
+2026-10-13T11:49:52.8810500Z 'EntropicRogersShephard.measurable_fiberUniformDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8811133Z 'EntropicRogersShephard.fiberUniformDensity_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8811748Z 'EntropicRogersShephard.integrable_fiberUniformDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8812369Z 'EntropicRogersShephard.integral_fiberUniformDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8813008Z 'EntropicRogersShephard.fiberUniformDensity_factorization' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8813649Z 'EntropicRogersShephard.fiberUniformDensity_marginal' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8814224Z 'EntropicRogersShephard.integrable_negMulLog_fiberUniformDensity' depends on axioms: [propext,
+2026-10-13T11:49:52.8814594Z  Classical.choice,
+2026-10-13T11:49:52.8814762Z  Quot.sound]
+2026-10-13T11:49:52.8815093Z 'EntropicRogersShephard.differentialEntropy_fiberUniformDensity' depends on axioms: [propext,
+2026-10-13T11:49:52.8815461Z  Classical.choice,
+2026-10-13T11:49:52.8815622Z  Quot.sound]
+2026-10-13T11:49:52.8815954Z 'EntropicRogersShephard.integrable_negMulLog_powerDifferenceDensity' depends on axioms: [propext,
+2026-10-13T11:49:52.8816329Z  Classical.choice,
+2026-10-13T11:49:52.8816535Z  Quot.sound]
+2026-10-13T11:49:52.8817148Z 'EntropicRogersShephard.positiveFiberExtension_eq_on' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8818061Z 'EntropicRogersShephard.measurable_positiveFiberExtension' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8818709Z 'EntropicRogersShephard.positiveFiberExtension_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8819410Z 'EntropicRogersShephard.powerWeight_congr_on_support' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8820025Z 'EntropicRogersShephard.powerDensity_congr_on_support' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8820581Z 'EntropicRogersShephard.power_density_entropy_increment_bound' depends on axioms: [propext,
+2026-10-13T11:49:52.8820940Z  Classical.choice,
+2026-10-13T11:49:52.8821107Z  Quot.sound]
+2026-10-13T11:49:52.8821600Z 'EntropicRogersShephard.differenceWeight_ae_zero_of_density_zero' depends on axioms: [propext,
+2026-10-13T11:49:52.8821983Z  Classical.choice,
+2026-10-13T11:49:52.8822153Z  Quot.sound]
+2026-10-13T11:49:52.8822467Z 'EntropicRogersShephard.integral_differenceWeight_mul_eq_zero' depends on axioms: [propext,
+2026-10-13T11:49:52.8822824Z  Classical.choice,
+2026-10-13T11:49:52.8822992Z  Quot.sound]
+2026-10-13T11:49:52.8823316Z 'EntropicRogersShephard.fiberDifferenceDensity_eq_slice_mixture' depends on axioms: [propext,
+2026-10-13T11:49:52.8823684Z  Classical.choice,
+2026-10-13T11:49:52.8823841Z  Quot.sound]
+2026-10-13T11:49:52.8824319Z 'EntropicRogersShephard.fiberDifferenceDensity_zero_of_powerDifference_zero' depends on axioms: [propext,
+2026-10-13T11:49:52.8824725Z  Classical.choice,
+2026-10-13T11:49:52.8824889Z  Quot.sound]
+2026-10-13T11:49:52.8825266Z 'EntropicRogersShephard.fiber_row_entropy_lower_bound_of_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8825894Z 'EntropicRogersShephard.fiber_row_entropy_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8826510Z 'EntropicRogersShephard.volume_preserving_coordinateJoin' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8827121Z 'EntropicRogersShephard.volume_coordinateJoin_image' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8827722Z 'EntropicRogersShephard.isCompact_joinedFiberBody' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8828304Z 'EntropicRogersShephard.convex_joinedFiberBody' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8829008Z 'EntropicRogersShephard.volume_joinedFiberBody' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8829657Z 'EntropicRogersShephard.uniformDensity_joinedFiberBody' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8830242Z 'EntropicRogersShephard.crossDifferenceDensity_joinedFiberBody' depends on axioms: [propext,
+2026-10-13T11:49:52.8830622Z  Classical.choice,
+2026-10-13T11:49:52.8830791Z  Quot.sound]
+2026-10-13T11:49:52.8831192Z 'EntropicRogersShephard.differentialEntropy_joinedFiberBody' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8831797Z 'EntropicRogersShephard.differentialEntropy_joinedFiberDifference' depends on axioms: [propext,
+2026-10-13T11:49:52.8832172Z  Classical.choice,
+2026-10-13T11:49:52.8832336Z  Quot.sound]
+2026-10-13T11:49:52.8832714Z 'EntropicRogersShephard.fiber_body_entropy_increment_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8833353Z 'EntropicRogersShephard.fiber_difference_entropy_upper_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8833964Z 'EntropicRogersShephard.measurableSet_fiberBody' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8834546Z 'EntropicRogersShephard.fiberBody_subset_product' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8835122Z 'EntropicRogersShephard.isCompact_fiberBody' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8835666Z 'EntropicRogersShephard.fiberBody_slice' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8836202Z 'EntropicRogersShephard.volume_fiberBody' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8836753Z 'EntropicRogersShephard.volume_fiberBody_real' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8837313Z 'EntropicRogersShephard.volume_fiberBody_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8837908Z 'EntropicRogersShephard.integral_tendsto_of_bounded_support' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8838531Z 'EntropicRogersShephard.positive_mass_lower_after_shift' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8839335Z 'EntropicRogersShephard.powerDensity_one_const_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8839965Z 'EntropicRogersShephard.differenceDensity_le_of_domination' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8840786Z 'EntropicRogersShephard.logconcave_probability_density_entropy_increment_bound' depends on axioms: [propext,
+2026-10-13T11:49:52.8841197Z  Classical.choice,
+2026-10-13T11:49:52.8841363Z  Quot.sound]
+2026-10-13T11:49:52.8841674Z 'EntropicRogersShephard.sharp_entropic_rogers_shephard_density' depends on axioms: [propext,
+2026-10-13T11:49:52.8842152Z  Classical.choice,
+2026-10-13T11:49:52.8842323Z  Quot.sound]
+2026-10-13T11:49:52.8842682Z 'EntropicRogersShephard.convex_positive_superlevel' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8843265Z 'EntropicRogersShephard.exists_density_anchor_ball' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8843869Z 'EntropicRogersShephard.logconcave_superlevel_isBounded' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8844473Z 'EntropicRogersShephard.logconcave_probability_density_bounded' depends on axioms: [propext,
+2026-10-13T11:49:52.8844835Z  Classical.choice,
+2026-10-13T11:49:52.8845012Z  Quot.sound]
+2026-10-13T11:49:52.8845376Z 'EntropicRogersShephard.add_pow_mul_pow_common_degree' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8845980Z 'EntropicRogersShephard.orthantCoefficient_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8846624Z 'EntropicRogersShephard.orthantVolumePolynomial_binomial' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8847249Z 'EntropicRogersShephard.orthantCoefficient_moment' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8847828Z 'EntropicRogersShephard.orthantCoefficient_polynomial_normalization' depends on axioms: [propext,
+2026-10-13T11:49:52.8848209Z  Classical.choice,
+2026-10-13T11:49:52.8848376Z  Quot.sound]
+2026-10-13T11:49:52.8848737Z 'EntropicRogersShephard.orthantCoefficient_beta' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8849536Z 'EntropicRogersShephard.intervalIntegrable_radiusLogKernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8850161Z 'EntropicRogersShephard.radiusLogKernel_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8850750Z 'EntropicRogersShephard.integral_radiusLogKernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8851374Z 'EntropicRogersShephard.orthant_polynomial_log_moment' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8851973Z 'EntropicRogersShephard.radiusLogPrimitive_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8852530Z 'EntropicRogersShephard.lintegral_overlapRadius_log_primitive' depends on axioms: [propext,
+2026-10-13T11:49:52.8852891Z  Classical.choice,
+2026-10-13T11:49:52.8853065Z  Quot.sound]
+2026-10-13T11:49:52.8853424Z 'EntropicRogersShephard.continuous_positiveMass' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8854005Z 'EntropicRogersShephard.continuous_negativeMass' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8854584Z 'EntropicRogersShephard.continuous_overlapRadius' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8855169Z 'EntropicRogersShephard.overlapRadius_layercake' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8855791Z 'EntropicRogersShephard.overlapRadius_layer_integral_bounded' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8856427Z 'EntropicRogersShephard.overlapRadius_layercake_bounded' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8857731Z 'EntropicRogersShephard.overlapRadius_layercake_orthants' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8858999Z 'EntropicRogersShephard.integral_pow_derivative' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8860076Z 'EntropicRogersShephard.lintegral_overlapRadius_pow_orthants' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8860751Z 'EntropicRogersShephard.isCompact_simplexOn' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8861327Z 'EntropicRogersShephard.volume_simplexOn_ne_top' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8862048Z 'EntropicRogersShephard.orthantVolumePolynomial_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8862706Z 'EntropicRogersShephard.continuous_orthantVolumePolynomial' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8863308Z 'EntropicRogersShephard.volume_overlap_superlevel_eq_ofReal_polynomial' depends on axioms: [propext,
+2026-10-13T11:49:52.8863687Z  Classical.choice,
+2026-10-13T11:49:52.8863865Z  Quot.sound]
+2026-10-13T11:49:52.8864238Z 'EntropicRogersShephard.volume_overlap_superlevel_real' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8864823Z 'EntropicRogersShephard.lintegral_overlapRadius_pow_normalization' depends on axioms: [propext,
+2026-10-13T11:49:52.8865194Z  Classical.choice,
+2026-10-13T11:49:52.8865361Z  Quot.sound]
+2026-10-13T11:49:52.8865681Z 'EntropicRogersShephard.orthant_polynomial_moment_normalization' depends on axioms: [propext,
+2026-10-13T11:49:52.8866040Z  Classical.choice,
+2026-10-13T11:49:52.8866199Z  Quot.sound]
+2026-10-13T11:49:52.8866556Z 'EntropicRogersShephard.measurable_logPotential' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8867131Z 'EntropicRogersShephard.convexOn_logPotential' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8867699Z 'EntropicRogersShephard.logPotential_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8868290Z 'EntropicRogersShephard.exponential_logPotential_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8868859Z 'EntropicRogersShephard.compact_restriction_entropy_finite_and_bound' depends on axioms: [propext,
+2026-10-13T11:49:52.8869495Z  Classical.choice,
+2026-10-13T11:49:52.8869664Z  Quot.sound]
+2026-10-13T11:49:52.8870052Z 'EntropicRogersShephard.convex_positiveSet_of_isLogConcave' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8870681Z 'EntropicRogersShephard.concaveOn_log_of_isLogConcave' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8871309Z 'EntropicRogersShephard.continuousOn_log_positiveInterior' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8871947Z 'EntropicRogersShephard.continuousOn_positiveInterior' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8872554Z 'EntropicRogersShephard.positiveInterior_ae_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8873143Z 'EntropicRogersShephard.positiveInterior_nonempty' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8873755Z 'EntropicRogersShephard.compact_positiveInterior_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8874329Z 'EntropicRogersShephard.complete_sharp_entropic_rogers_shephard' depends on axioms: [propext,
+2026-10-13T11:49:52.8874688Z  Classical.choice,
+2026-10-13T11:49:52.8874856Z  Quot.sound]
+2026-10-13T11:49:52.8875180Z 'EntropicRogersShephard.integrable_kernel_prod_of_bounded_support' depends on axioms: [propext,
+2026-10-13T11:49:52.8875544Z  Classical.choice,
+2026-10-13T11:49:52.8875703Z  Quot.sound]
+2026-10-13T11:49:52.8876030Z 'EntropicRogersShephard.integrable_kernel_mixture_of_bounded_support' depends on axioms: [propext,
+2026-10-13T11:49:52.8876397Z  Classical.choice,
+2026-10-13T11:49:52.8876560Z  Quot.sound]
+2026-10-13T11:49:52.8877010Z 'EntropicRogersShephard.integral_kernel_mixture_of_bounded_support' depends on axioms: [propext,
+2026-10-13T11:49:52.8877392Z  Classical.choice,
+2026-10-13T11:49:52.8877557Z  Quot.sound]
+2026-10-13T11:49:52.8877915Z 'EntropicRogersShephard.integral_pair_difference' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8878454Z 'EntropicRogersShephard.integral_mul_le_product_of_pair_nonpos' depends on axioms: [propext,
+2026-10-13T11:49:52.8878805Z  Classical.choice,
+2026-10-13T11:49:52.8879061Z  Quot.sound]
+2026-10-13T11:49:52.8879492Z 'EntropicRogersShephard.integral_mul_le_product_of_monotone_antitone' depends on axioms: [propext,
+2026-10-13T11:49:52.8879860Z  Classical.choice,
+2026-10-13T11:49:52.8880019Z  Quot.sound]
+2026-10-13T11:49:52.8880355Z 'EntropicRogersShephard.isClosed_simplexOn' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8880917Z 'EntropicRogersShephard.simplexOn_pos_eq_smul' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8881480Z 'EntropicRogersShephard.volume_simplexOn_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8882063Z 'EntropicRogersShephard.measurePreserving_signFlip' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8882660Z 'EntropicRogersShephard.positiveMass_on_orthant' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8883230Z 'EntropicRogersShephard.negativeMass_on_orthant' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8883819Z 'EntropicRogersShephard.orthantSector_eq_preimage' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8884422Z 'EntropicRogersShephard.measurableSet_orthantSector' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8885013Z 'EntropicRogersShephard.volume_orthantSector' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8885591Z 'EntropicRogersShephard.coordinateOrthant_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8886197Z 'EntropicRogersShephard.aedisjoint_coordinateOrthants' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8886790Z 'EntropicRogersShephard.overlapRadius_ge_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8887391Z 'EntropicRogersShephard.overlap_superlevel_eq_union_sectors' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8887999Z 'EntropicRogersShephard.volume_overlap_superlevel' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8888585Z 'EntropicRogersShephard.measurable_powerWeight' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8889326Z 'EntropicRogersShephard.powerWeight_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8889913Z 'EntropicRogersShephard.powerWeight_eq_zero_of_not_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8890486Z 'EntropicRogersShephard.powerWeight_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8891095Z 'EntropicRogersShephard.integrable_powerWeight' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8891645Z 'EntropicRogersShephard.powerMass_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8892195Z 'EntropicRogersShephard.measurable_powerDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8892796Z 'EntropicRogersShephard.powerDensity_eq_zero_of_not_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8893390Z 'EntropicRogersShephard.powerDensity_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8893941Z 'EntropicRogersShephard.powerDensity_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8894620Z 'EntropicRogersShephard.integrable_powerDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8895211Z 'EntropicRogersShephard.integral_powerDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8895829Z 'EntropicRogersShephard.isProbabilityDensity_powerDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8896473Z 'EntropicRogersShephard.integrable_negMulLog_powerDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8897078Z 'EntropicRogersShephard.negMulLog_powerDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8897777Z 'EntropicRogersShephard.integrable_powerDensity_mul_log' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8898412Z 'EntropicRogersShephard.differentialEntropy_powerDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8899120Z 'EntropicRogersShephard.map_neg_realDensityMeasure' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8899746Z 'EntropicRogersShephard.conv_realDensityMeasure_reflection' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8900319Z 'EntropicRogersShephard.hasLaw_difference_of_logconcave_density' depends on axioms: [propext,
+2026-10-13T11:49:52.8900681Z  Classical.choice,
+2026-10-13T11:49:52.8900855Z  Quot.sound]
+2026-10-13T11:49:52.8901191Z 'EntropicRogersShephard.sharp_entropic_rogers_shephard_random_vectors' depends on axioms: [propext,
+2026-10-13T11:49:52.8901567Z  Classical.choice,
+2026-10-13T11:49:52.8901734Z  Quot.sound]
+2026-10-13T11:49:52.8902104Z 'EntropicRogersShephard.measurable_productDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8902701Z 'EntropicRogersShephard.productDensity_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8903281Z 'EntropicRogersShephard.integrable_productDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8903867Z 'EntropicRogersShephard.integral_productDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8904550Z 'EntropicRogersShephard.isProbabilityDensity_productDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8905196Z 'EntropicRogersShephard.isLogConcave_productDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8905816Z 'EntropicRogersShephard.productDensity_coordinate_moment' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8906436Z 'EntropicRogersShephard.productDensity_sum_moment' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8907020Z 'EntropicRogersShephard.negMulLog_productDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8907600Z 'EntropicRogersShephard.productDensity_entropy' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8908157Z 'EntropicRogersShephard.volume_smul_real' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8908689Z 'EntropicRogersShephard.volume_root_smul' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8909392Z 'EntropicRogersShephard.brunn_minkowski_volume_roots' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8909979Z 'EntropicRogersShephard.bodyOverlapRoot_radial' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8910582Z 'EntropicRogersShephard.measurableSet_bodyRootLevel' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8911180Z 'EntropicRogersShephard.bodyRootLevel_subset_support' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8911773Z 'EntropicRogersShephard.volume_bodyRootLevel_ne_top' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8912489Z 'EntropicRogersShephard.bodyRootLevel_homothety_subset' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8913135Z 'EntropicRogersShephard.monotoneOn_bodyLevelVolumeRatio' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8913721Z 'EntropicRogersShephard.crossDifferenceDensity_uniformDensity' depends on axioms: [propext,
+2026-10-13T11:49:52.8914092Z  Classical.choice,
+2026-10-13T11:49:52.8914266Z  Quot.sound]
+2026-10-13T11:49:52.8914587Z 'EntropicRogersShephard.crossDifferenceDensity_uniformSimplex' depends on axioms: [propext,
+2026-10-13T11:49:52.8915134Z  Classical.choice,
+2026-10-13T11:49:52.8915299Z  Quot.sound]
+2026-10-13T11:49:52.8915662Z 'EntropicRogersShephard.integral_overlapRadius_pow' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8916266Z 'EntropicRogersShephard.integrable_overlapRadius_pow' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8916839Z 'EntropicRogersShephard.crossDifferenceDensity_uniformSimplex_le' depends on axioms: [propext,
+2026-10-13T11:49:52.8917216Z  Classical.choice,
+2026-10-13T11:49:52.8917385Z  Quot.sound]
+2026-10-13T11:49:52.8917777Z 'EntropicRogersShephard.isCompact_simplexDifferenceSupport' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8918416Z 'EntropicRogersShephard.crossDifferenceDensity_uniformSimplex_eq_zero_of_not_mem' depends on axioms: [propext,
+2026-10-13T11:49:52.8918836Z  Classical.choice,
+2026-10-13T11:49:52.8919105Z  Quot.sound]
+2026-10-13T11:49:52.8919444Z 'EntropicRogersShephard.integrable_negMulLog_uniformSimplexDifference' depends on axioms: [propext,
+2026-10-13T11:49:52.8919834Z  Classical.choice,
+2026-10-13T11:49:52.8919993Z  Quot.sound]
+2026-10-13T11:49:52.8920362Z 'EntropicRogersShephard.polynomial_eq_of_eval_eq_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8920923Z 'EntropicRogersShephard.coefficients_eq_choose_of_normalization' depends on axioms: [propext,
+2026-10-13T11:49:52.8921282Z  Classical.choice,
+2026-10-13T11:49:52.8921443Z  Quot.sound]
+2026-10-13T11:49:52.8921768Z 'EntropicRogersShephard.layer_coefficients_forced_by_normalization' depends on axioms: [propext,
+2026-10-13T11:49:52.8922129Z  Classical.choice,
+2026-10-13T11:49:52.8922289Z  Quot.sound]
+2026-10-13T11:49:52.8922602Z 'EntropicRogersShephard.radiusLogPrimitive_eq_density_entropy' depends on axioms: [propext,
+2026-10-13T11:49:52.8922965Z  Classical.choice,
+2026-10-13T11:49:52.8923122Z  Quot.sound]
+2026-10-13T11:49:52.8923422Z 'EntropicRogersShephard.integrable_radiusLogPrimitive_overlap' depends on axioms: [propext,
+2026-10-13T11:49:52.8923776Z  Classical.choice,
+2026-10-13T11:49:52.8923938Z  Quot.sound]
+2026-10-13T11:49:52.8924255Z 'EntropicRogersShephard.integral_radiusLogPrimitive_eq_entropy' depends on axioms: [propext,
+2026-10-13T11:49:52.8924643Z  Classical.choice,
+2026-10-13T11:49:52.8924822Z  Quot.sound]
+2026-10-13T11:49:52.8925223Z 'EntropicRogersShephard.integral_overlapRadius_log_primitive' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8925855Z 'EntropicRogersShephard.binomialWeight_unit_ratio' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8926461Z 'EntropicRogersShephard.differentialEntropy_uniformSimplexDifference_unit' depends on axioms: [propext,
+2026-10-13T11:49:52.8926863Z  Classical.choice,
+2026-10-13T11:49:52.8927031Z  Quot.sound]
+2026-10-13T11:49:52.8927405Z 'EntropicRogersShephard.measurable_simplexFiberKernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8928016Z 'EntropicRogersShephard.simplexFiberKernel_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8928625Z 'EntropicRogersShephard.simplexFiberKernel_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8929368Z 'EntropicRogersShephard.uniformSimplexDensity_zero_outside_larger_simplex' depends on axioms: [propext,
+2026-10-13T11:49:52.8929763Z  Classical.choice,
+2026-10-13T11:49:52.8929925Z  Quot.sound]
+2026-10-13T11:49:52.8930385Z 'EntropicRogersShephard.simplexFiberKernel_zero_outside_common_support' depends on axioms: [propext,
+2026-10-13T11:49:52.8930777Z  Classical.choice,
+2026-10-13T11:49:52.8930942Z  Quot.sound]
+2026-10-13T11:49:52.8931275Z 'EntropicRogersShephard.isProbabilityDensity_simplexFiberKernel' depends on axioms: [propext,
+2026-10-13T11:49:52.8931655Z  Classical.choice,
+2026-10-13T11:49:52.8931815Z  Quot.sound]
+2026-10-13T11:49:52.8932212Z 'EntropicRogersShephard.isProbabilityDensity_simplex_mixture' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8932919Z 'EntropicRogersShephard.average_entropy_le_simplex_mixture_entropy' depends on axioms: [propext,
+2026-10-13T11:49:52.8933292Z  Classical.choice,
+2026-10-13T11:49:52.8933458Z  Quot.sound]
+2026-10-13T11:49:52.8933799Z 'EntropicRogersShephard.abs_log_le_of_mem_Icc' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8934400Z 'EntropicRogersShephard.integrable_log_of_bounded_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8934981Z 'EntropicRogersShephard.integrable_entropy_simplexFiberKernel' depends on axioms: [propext,
+2026-10-13T11:49:52.8935337Z  Classical.choice,
+2026-10-13T11:49:52.8935510Z  Quot.sound]
+2026-10-13T11:49:52.8935907Z 'EntropicRogersShephard.integrable_negMulLog_simplex_mixture' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8936493Z 'EntropicRogersShephard.simplex_mixture_entropy_scale_lower_bound' depends on axioms: [propext,
+2026-10-13T11:49:52.8936858Z  Classical.choice,
+2026-10-13T11:49:52.8937019Z  Quot.sound]
+2026-10-13T11:49:52.8937382Z 'EntropicRogersShephard.positiveMass_smul' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8937933Z 'EntropicRogersShephard.negativeMass_smul' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8938478Z 'EntropicRogersShephard.overlapRadius_smul' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8939125Z 'EntropicRogersShephard.crossDifferenceDensity_uniformSimplex_scaling' depends on axioms: [propext,
+2026-10-13T11:49:52.8939526Z  Classical.choice,
+2026-10-13T11:49:52.8939688Z  Quot.sound]
+2026-10-13T11:49:52.8940057Z 'EntropicRogersShephard.differentialEntropy_scaling' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8940670Z 'EntropicRogersShephard.differentialEntropy_uniformSimplexDifference_scaling' depends on axioms: [propext,
+2026-10-13T11:49:52.8941077Z  Classical.choice,
+2026-10-13T11:49:52.8941238Z  Quot.sound]
+2026-10-13T11:49:52.8941574Z 'EntropicRogersShephard.differentialEntropy_uniformSimplexDifference' depends on axioms: [propext,
+2026-10-13T11:49:52.8941954Z  Classical.choice,
+2026-10-13T11:49:52.8942116Z  Quot.sound]
+2026-10-13T11:49:52.8942457Z 'EntropicRogersShephard.sum_binomialWeight_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8943044Z 'EntropicRogersShephard.differentialEntropy_uniformSimplexDifference_equal' depends on axioms: [propext,
+2026-10-13T11:49:52.8943439Z  Classical.choice,
+2026-10-13T11:49:52.8943599Z  Quot.sound]
+2026-10-13T11:49:52.8943926Z 'EntropicRogersShephard.simplex_difference_entropy_scale_bound' depends on axioms: [propext,
+2026-10-13T11:49:52.8944278Z  Classical.choice,
+2026-10-13T11:49:52.8944437Z  Quot.sound]
+2026-10-13T11:49:52.8944752Z 'EntropicRogersShephard.simplex_difference_entropy_scale_strict' depends on axioms: [propext,
+2026-10-13T11:49:52.8945104Z  Classical.choice,
+2026-10-13T11:49:52.8945262Z  Quot.sound]
+2026-10-13T11:49:52.8945610Z 'EntropicRogersShephard.overlapRadius_swap_neg' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8946188Z 'EntropicRogersShephard.crossDifferenceDensity_uniformSimplex_swap_neg' depends on axioms: [propext,
+2026-10-13T11:49:52.8946573Z  Classical.choice,
+2026-10-13T11:49:52.8946732Z  Quot.sound]
+2026-10-13T11:49:52.8947080Z 'EntropicRogersShephard.differentialEntropy_uniformSimplexDifference_swap' depends on axioms: [propext,
+2026-10-13T11:49:52.8947590Z  Classical.choice,
+2026-10-13T11:49:52.8947756Z  Quot.sound]
+2026-10-13T11:49:52.8948075Z 'EntropicRogersShephard.simplex_difference_entropy_scale_bound_all' depends on axioms: [propext,
+2026-10-13T11:49:52.8948435Z  Classical.choice,
+2026-10-13T11:49:52.8948596Z  Quot.sound]
+2026-10-13T11:49:52.8949174Z 'EntropicRogersShephard.weighted_integral_pair_difference' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-13T11:49:52.8949808Z 'EntropicRogersShephard.weighted_integral_mul_le_product_of_pair_nonpos' depends on axioms: [propext,
+2026-10-13T11:49:52.8950296Z  Classical.choice,
+2026-10-13T11:49:52.8950470Z  Quot.sound]
+2026-10-13T11:49:52.8950820Z 'EntropicRogersShephard.weighted_integral_mul_le_product_of_monotone_antitone' depends on axioms: [propext,
+2026-10-13T11:49:52.8951205Z  Classical.choice,
+2026-10-13T11:49:52.8951368Z  Quot.sound]
+2026-10-13T11:49:53.0748336Z PASS: all 451 targets use only the three permitted logical axioms.
+2026-10-13T11:49:53.0846521Z ##[group]Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+2026-10-13T11:49:53.0846849Z with:
+2026-10-13T11:49:53.0847026Z   name: comparator-38391396740-1
+2026-10-13T11:49:53.0847243Z   path: comparator-receipt/
+2026-10-13T11:49:53.0847438Z   retention-days: 90
+2026-10-13T11:49:53.0847618Z   if-no-files-found: error
+2026-10-13T11:49:53.0847811Z   compression-level: 6
+2026-10-13T11:49:53.0847988Z   overwrite: false
+2026-10-13T11:49:53.0848163Z   include-hidden-files: false
+2026-10-13T11:49:53.0848387Z ##[endgroup]
+2026-10-13T11:49:53.8807346Z (node:5030) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-13T11:49:53.8807944Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-13T11:49:53.8871650Z With the provided path, there will be 19 files uploaded
+2026-10-13T11:49:53.8875860Z Artifact name is valid!
+2026-10-13T11:49:53.8876250Z Root directory input is valid!
+2026-10-13T11:49:54.2910986Z Beginning upload of artifact content to blob storage
+2026-10-13T11:49:54.3218707Z (node:5030) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+2026-10-13T11:49:54.5649632Z Uploaded bytes 35354
+2026-10-13T11:49:54.6213009Z Finished uploading artifact content to blob storage!
+2026-10-13T11:49:54.6213771Z SHA256 digest of uploaded artifact zip is d0142325310f40a209f09b2eee496b7391130a05758bc77ec060b23c3deb3748
+2026-10-13T11:49:54.6214908Z Finalizing artifact upload
+2026-10-13T11:49:54.8862393Z Artifact comparator-38391396740-1.zip successfully finalized. Artifact ID 11810486596
+2026-10-13T11:49:54.8863192Z Artifact comparator-38391396740-1 has been successfully uploaded! Final size is 35354 bytes. Artifact ID is 11810486596
+2026-10-13T11:49:54.8867821Z Artifact download URL: https://github.com/KitaKen1/entropic-rogers-shephard/actions/runs/38391396740/artifacts/11810486596
+2026-10-13T11:49:54.9025158Z Post job cleanup.
+2026-10-13T11:49:55.0968458Z (node:5042) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-13T11:49:55.0969200Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-13T11:49:55.1024756Z [command]/opt/hostedtoolcache/go/1.27.2/x64/bin/go env GOMODCACHE
+2026-10-13T11:49:55.1079666Z [command]/opt/hostedtoolcache/go/1.27.2/x64/bin/go env GOCACHE
+2026-10-13T11:49:55.1113490Z /home/runner/go/pkg/mod
+2026-10-13T11:49:55.1122696Z /home/runner/.cache/go-build
+2026-10-13T11:49:55.1131142Z Primary key was not generated. Please check the log messages above for more errors or information
+2026-10-13T11:49:55.1275932Z Post job cleanup.
+2026-10-13T11:49:55.3474071Z [command]/usr/bin/git version
+2026-10-13T11:49:55.3504803Z git version 2.55.0
+2026-10-13T11:49:55.3531667Z Temporarily overriding HOME='/home/runner/work/_temp/32b7a73d-2d13-4c9e-912f-d721eedba034' before making global git config changes
+2026-10-13T11:49:55.3532592Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-13T11:49:55.3536321Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/entropic-rogers-shephard/entropic-rogers-shephard
+2026-10-13T11:49:55.3563375Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-13T11:49:55.3590976Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-13T11:49:55.3780027Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-13T11:49:55.3805928Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-13T11:49:55.3984990Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-13T11:49:55.4008860Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-13T11:49:55.4306977Z Cleaning up orphan processes
+2026-10-13T11:49:55.4611849Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/cache/restore@v4, actions/checkout@11d5960a326750d5838078e36cf38b85af677262, actions/setup-go@v5, actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

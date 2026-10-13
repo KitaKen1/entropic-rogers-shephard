@@ -1,0 +1,2265 @@
+{
+  "status": "PASS",
+  "audited_targets": 451,
+  "original_targets": 446,
+  "new_fc_targets": 5,
+  "sorryAx": false,
+  "new_axioms": false,
+  "targets": {
+    "EntropicRogersShephard.F_succ_sub": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.H_succ": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.H_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.abs_log_le_of_mem_Icc": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.abs_negMulLog_le_square_add_sqrt": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.add_pow_mul_pow_common_degree": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.aedisjoint_coordinateOrthants": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.affineDensity_entropy": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.affineDensity_nonneg": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.affineJacobian_pos": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.affine_inverse_combo": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.affine_inverse_difference": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.antitone_bodyLevelVolume": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.average_entropy_le_entropy_bounded_mixture": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.average_entropy_le_entropy_mixture": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.average_entropy_le_simplex_mixture_entropy": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.betaLogMoment_eq_harmonic": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.betaLogMoment_succ": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.betaLogMoment_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.betaMoment_eq_integerBeta": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.betaMoment_succ": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.betaMoment_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.binomialWeight_nonneg": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.binomialWeight_unit_ratio": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.binomial_harmonic_drop_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.binomial_scale_gap_lower": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.bodyLevelVolume_eq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.bodyLevelVolume_le_support": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.bodyLevelVolume_nonneg": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.bodyLogLayer_moment": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.bodyOverlapRoot_eq_zero_of_not_mem": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.bodyOverlapRoot_le_one": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.bodyOverlapRoot_nonneg": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.bodyOverlapRoot_pow": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.bodyOverlapRoot_pow_eq_density": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.bodyOverlapRoot_radial": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.bodyOverlapRoot_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.bodyOverlap_nonempty_of_root_pos": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.bodyOverlap_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.bodyPowerLayer_le_support": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.bodyPowerLayer_nonneg": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.bodyPowerLayer_normalization": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.bodyRootLevel_homothety_subset": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.bodyRootLevel_subset_support": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.body_log_layer_mean_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.body_log_primitive_upper_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.brunn_minkowski_volume_roots": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.coefficients_eq_choose_of_normalization": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.compact_convex_exhaustion": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.compact_exponential_entropy_finite_and_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.compact_exponential_entropy_increment_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.compact_exponential_mass_pos": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.compact_positiveInterior_bounds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.compact_restriction_entropy_finite_and_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.compact_restrictions_approximation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.complete_sharp_entropic_rogers_shephard": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.concaveOn_concavePowerSize": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.concaveOn_log_of_isLogConcave": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.concavePowerSize_mem_Icc": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.concave_power_mass_pos": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.concave_power_mass_tendsto": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.concave_power_weight_tendsto": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.continuousOn_concavePowerSize": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.continuousOn_log_positiveInterior": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.continuousOn_positiveInterior": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.continuous_negativeMass": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.continuous_orthantVolumePolynomial": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.continuous_overlapRadius": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.continuous_positiveMass": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.continuous_pow_succ_mul_log": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.conv_realDensityMeasure_reflection": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.convexOn_logPotential": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.convex_ball_point_volume_lower": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.convex_fiberBody": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.convex_isBounded_of_volume_ne_top": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.convex_joinedFiberBody": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.convex_positiveSet_of_isLogConcave": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.convex_positive_superlevel": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.convex_simplex": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.coordinateOrthant_cover": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.crossDifferenceDensity_eq_convolution": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.crossDifferenceDensity_eq_zero_of_not_mem_support": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.crossDifferenceDensity_joinedFiberBody": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.crossDifferenceDensity_le_of_bounded": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.crossDifferenceDensity_nonneg": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.crossDifferenceDensity_uniformDensity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.crossDifferenceDensity_uniformSimplex": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.crossDifferenceDensity_uniformSimplex_eq_zero_of_not_mem": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.crossDifferenceDensity_uniformSimplex_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.crossDifferenceDensity_uniformSimplex_scaling": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.crossDifferenceDensity_uniformSimplex_swap_neg": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.differenceDensity_affineDensity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.differenceDensity_exponential_envelope": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.differenceDensity_exponential_product": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.differenceDensity_le_of_domination": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.differenceDensity_productDensity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.differenceDensity_tendsto_of_bounded_support": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.differenceDensity_tendsto_of_dominated": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.differenceLogLeft_eq_crossDifferenceDensity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.differenceLogRight_eq_crossDifferenceDensity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.differenceSliceDensity_nonneg": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.differenceWeight_ae_zero_of_density_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.difference_entropy_tendsto_of_compact_support": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.differentialEntropy_const_mul": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.differentialEntropy_fiberUniformDensity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.differentialEntropy_joinedFiberBody": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.differentialEntropy_joinedFiberDifference": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.differentialEntropy_powerDensity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.differentialEntropy_scaling": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.differentialEntropy_uniformDensity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.differentialEntropy_uniformSimplex": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.differentialEntropy_uniformSimplexDifference": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.differentialEntropy_uniformSimplexDifference_equal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.differentialEntropy_uniformSimplexDifference_scaling": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.differentialEntropy_uniformSimplexDifference_swap": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.differentialEntropy_uniformSimplexDifference_unit": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.entropy_exponential_envelope": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.entropy_increment_affineDensity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.entropy_increment_constant_optimal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.entropy_tendsto_of_bounded_support": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.entropy_tendsto_of_exponential_envelope": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.exists_density_anchor_ball": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.exists_negMulLog_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.exists_seq_isOpen_convex_isCompact_closure_subset_iUnion_eq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.exponential_logPotential_eq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.exponential_product_difference_entropy": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.exponential_product_entropy": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.exponential_size_bounds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.fiberBody_slice": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.fiberBody_subset_product": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.fiberDifferenceDensity_eq_mixture": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.fiberDifferenceDensity_eq_slice_mixture": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.fiberDifferenceDensity_eq_zero_of_not_mem": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.fiberDifferenceDensity_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.fiberDifferenceDensity_nonneg": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.fiberDifferenceDensity_zero_of_powerDifference_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.fiberUniformDensity_factorization": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.fiberUniformDensity_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.fiberUniformDensity_marginal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.fiberUniformDensity_nonneg": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.fiber_body_entropy_increment_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.fiber_difference_entropy_lower_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.fiber_difference_entropy_upper_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.fiber_row_entropy_lower_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.fiber_row_entropy_lower_bound_of_pos": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.global_power_density_entropy_increment_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.harmonic_average_scale_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.harmonic_average_scale_strict": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.harmonic_drop_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.harmonic_term_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.hasLaw_affineDensity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.hasLaw_affine_exponential_product": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.hasLaw_difference_of_logconcave_density": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.integerBeta_pos": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.integerBeta_succ_left": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.integerBeta_succ_right": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.integerBeta_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.integrableOn_bodyLogLayer": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.integrableOn_bodyPowerLayer": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.integrableOn_exponential_first_moment": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.integrable_affineDensity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.integrable_affine_inverse": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.integrable_bodyRoot_logPrimitive": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.integrable_bodyRoot_power": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.integrable_bodyTilt_beta": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.integrable_bodyTilt_log_beta": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.integrable_comp_abs_of_integrableOn": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.integrable_crossDifferenceDensity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.integrable_differenceSliceDensity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.integrable_difference_slice_of_bounded": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.integrable_entropy_kernel_of_bounded_support": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.integrable_entropy_simplexFiberKernel": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.integrable_exp_neg_mul_abs": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.integrable_exp_neg_mul_norm": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.integrable_fiberDifference_slice": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.integrable_fiberUniformDensity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.integrable_kernel_mixture_of_bounded_support": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.integrable_kernel_prod_of_bounded_support": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.integrable_kernel_slice_of_bounded": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.integrable_log_of_bounded_positive": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.integrable_negMulLog_const_mul": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.integrable_negMulLog_differenceDensity_of_bounded_support": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.integrable_negMulLog_fiberDifferenceDensity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.integrable_negMulLog_fiberUniformDensity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.integrable_negMulLog_kernel_prod_of_bounded_support": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.integrable_negMulLog_kernel_slice_of_bounded": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.integrable_negMulLog_logconcave_probability_density": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.integrable_negMulLog_of_bounded_support": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.integrable_negMulLog_of_exponential_envelope": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.integrable_negMulLog_powerDensity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.integrable_negMulLog_powerDifferenceDensity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.integrable_negMulLog_simplex_mixture": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.integrable_negMulLog_uniformBodyDifference": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.integrable_negMulLog_uniformDensity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.integrable_negMulLog_uniformSimplexDifference": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.integrable_oneSidedExponential": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.integrable_overlapRadius_pow": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.integrable_powerDensity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.integrable_powerDensity_mul_log": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.integrable_powerWeight": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.integrable_productDensity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.integrable_radiusLogPrimitive_overlap": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.integrable_realDensityMeasure_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.integrable_uniformDensity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.integrable_unitLaplace": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.integral_affineDensity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.integral_affine_inverse": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.integral_beta_Ioo": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.integral_bodyRoot_kernel": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.integral_bodyRoot_logPrimitive_eq_entropy": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.integral_bodyRoot_power": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.integral_crossDifferenceDensity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.integral_differenceSliceDensity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.integral_differenceSliceMeasure": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.integral_differenceWeight_mul_eq_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.integral_exponential_first_moment": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.integral_fiberUniformDensity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.integral_kernel_mixture_of_bounded_support": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.integral_log_beta_Ioo": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.integral_mul_le_product_of_monotone_antitone": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.integral_mul_le_product_of_pair_nonpos": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.integral_oneSidedExponential": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.integral_oneSidedExponential_difference": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.integral_overlapRadius_log_primitive": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.integral_overlapRadius_pow": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.integral_pair_difference": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.integral_pow_derivative": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.integral_pow_mul_log": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.integral_pow_mul_neg_log": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.integral_powerDensity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.integral_productDensity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.integral_radiusLogKernel": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.integral_radiusLogPrimitive_eq_entropy": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.integral_realDensityMeasure": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.integral_tendsto_of_bounded_support": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.integral_uniformDensity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.integral_unitLaplace": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.intervalIntegrable_betaLogMoment": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.intervalIntegrable_betaMoment": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.intervalIntegrable_pow_mul_log": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.intervalIntegrable_radiusLogKernel": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.isClosed_simplex": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.isClosed_simplexOn": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.isCompact_bodyDifferenceSupport": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.isCompact_bodyOverlap": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.isCompact_fiberBody": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.isCompact_fiberDifferenceSupport": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.isCompact_joinedFiberBody": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.isCompact_simplex": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.isCompact_simplexDifferenceSupport": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.isCompact_simplexOn": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.isLogConcave_affineDensity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.isLogConcave_exponential_product": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.isLogConcave_productDensity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.isProbabilityDensity_affineDensity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.isProbabilityDensity_compactExponentialDensity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.isProbabilityDensity_crossDifferenceDensity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.isProbabilityDensity_differenceDensity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.isProbabilityDensity_exponential_product": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.isProbabilityDensity_normalizedPowerApproximation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.isProbabilityDensity_powerDensity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.isProbabilityDensity_productDensity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.isProbabilityDensity_simplexFiberKernel": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.isProbabilityDensity_simplex_mixture": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.isProbabilityDensity_uniformDensity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.isProbabilityDensity_uniformSimplex": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.isProbabilityMeasure_differenceSliceMeasure": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.isProbabilityMeasure_realDensityMeasure": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.layer_coefficients_forced_by_normalization": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.lintegral_affine_inverse": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.lintegral_overlapRadius_log_primitive": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.lintegral_overlapRadius_pow_normalization": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.lintegral_overlapRadius_pow_orthants": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.logPotential_bounds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.logPrimitive_eq_scaled_entropy": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.logconcave_affine_entropy_increment": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.logconcave_probability_density_bounded": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.logconcave_probability_density_entropies_integrable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.logconcave_probability_density_entropy_increment_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.logconcave_probability_density_exponential_envelope": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.logconcave_ray_log_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.logconcave_superlevel_isBounded": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.map_affine_inverse_linear_volume": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.map_affine_realDensityMeasure": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.map_neg_realDensityMeasure": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.measurableSet_bodyOverlap": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.measurableSet_bodyRootLevel": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.measurableSet_fiberBody": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.measurableSet_orthantSector": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.measurable_affineDensity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.measurable_bodyLevelTilt": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.measurable_bodyLevelVolume": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.measurable_bodyOverlapRoot": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.measurable_concavePowerSize": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.measurable_crossDifferenceDensity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.measurable_differenceSliceDensity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.measurable_fiberDifferenceDensity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.measurable_fiberUniformDensity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.measurable_logPotential": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.measurable_oneSidedExponential": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.measurable_positiveFiberExtension": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.measurable_powerDensity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.measurable_powerWeight": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.measurable_productDensity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.measurable_simplexFiberKernel": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.measurable_uniformDensity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.measurePreserving_signFlip": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.mem_overlap_iff_shifted_simplex": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.mem_simplex_coordinate_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.monotoneOn_bodyLevelTilt": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.monotoneOn_bodyLevelVolumeRatio": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.negMulLog_powerDensity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.negMulLog_productDensity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.neg_log_one_sub_lower": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.negativeMass_nonneg": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.negativeMass_on_orthant": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.negativeMass_smul": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.normalizedPowerApproximation_entropy_increment_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.normalizedPowerApproximation_tendsto": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.oneSidedExponential_difference_kernel": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.oneSidedExponential_entropy": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.oneSidedExponential_nonneg": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.oneSidedExponential_of_neg": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.oneSidedExponential_of_nonneg": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.orthantCoefficient_beta": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.orthantCoefficient_moment": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.orthantCoefficient_nonneg": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.orthantCoefficient_polynomial_normalization": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.orthantSector_eq_preimage": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.orthantVolumePolynomial_binomial": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.orthantVolumePolynomial_nonneg": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.orthant_polynomial_log_moment": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.orthant_polynomial_moment_normalization": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.overlapRadius_ge_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.overlapRadius_gt_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.overlapRadius_layer_integral_bounded": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.overlapRadius_layercake": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.overlapRadius_layercake_bounded": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.overlapRadius_layercake_orthants": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.overlapRadius_le_right": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.overlapRadius_nonneg": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.overlapRadius_smul": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.overlapRadius_swap_neg": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.overlap_eq_translated_simplex": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.overlap_superlevel_eq_union_sectors": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.polynomial_eq_of_eval_eq_nonneg": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.positiveFiberExtension_bounds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.positiveFiberExtension_eq_on": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.positiveInterior_ae_eq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.positiveInterior_nonempty": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.positiveMass_nonneg": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.positiveMass_on_orthant": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.positiveMass_smul": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.positive_mass_lower_after_shift": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.powerApproximation_mem_Icc": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.powerApproximation_pos": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.powerApproximation_tendsto": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.powerDensity_congr_on_support": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.powerDensity_eq_zero_of_not_mem": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.powerDensity_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.powerDensity_nonneg": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.powerDensity_one_const_mul": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.powerMass_pos": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.powerWeight_congr_on_support": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.powerWeight_eq_zero_of_not_mem": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.powerWeight_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.powerWeight_nonneg": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.power_density_entropy_increment_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.power_logDifference_moments": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.productDensity_coordinate_moment": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.productDensity_entropy": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.productDensity_nonneg": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.productDensity_sum_moment": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.radiusLogKernel_nonneg": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.radiusLogPrimitive_eq_density_entropy": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.radiusLogPrimitive_nonneg": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.realDensityMeasure_univ": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.scalarLogConcave_oneSidedExponential": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.scale_gap_lower": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.sharp_entropic_rogers_shephard_density": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.sharp_entropic_rogers_shephard_random_vectors": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.sharpness_affine_exponential_product": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.sharpness_exponential_product": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.sharpness_linearEquiv_affine_exponential_product": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.shifted_normalizedPowerApproximation_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.simplexFiberKernel_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.simplexFiberKernel_nonneg": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.simplexFiberKernel_zero_outside_common_support": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.simplexOn_pos_eq_smul": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.simplex_difference_entropy_scale_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.simplex_difference_entropy_scale_bound_all": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.simplex_difference_entropy_scale_strict": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.simplex_empty_of_neg": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.simplex_mixture_entropy_scale_lower_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.simplex_pos_eq_smul": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.simplex_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.small_box_subset_simplex": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.sqrt_exp_eq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.sum_binomialWeight": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.sum_binomialWeight_harmonic_drop": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.sum_binomialWeight_mul_factorialMoment": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.sum_binomialWeight_mul_index": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.sum_binomialWeight_succ": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.sum_binomialWeight_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.sum_choose_sq_mul_choose": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.sum_eq_positiveMass_sub_negativeMass": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.tendsto_F_shift_sub": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.tendsto_F_succ_sub": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.tendsto_harmonic_double_sub": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.uniformBodyDifference_eq_overlap": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.uniformBodyDifference_eq_zero_of_not_mem": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.uniformBodyDifference_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.uniformDensity_joinedFiberBody": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.uniformDensity_nonneg": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.uniformSimplexDensity_zero_outside_larger_simplex": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.uniform_convex_body_entropy_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.unitLaplace_entropy": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.unitLaplace_first_moment": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.volume_bodyRootLevel_ne_top": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.volume_coordinateJoin_image": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.volume_fiberBody": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.volume_fiberBody_pos": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.volume_fiberBody_real": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.volume_joinedFiberBody": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.volume_orthantSector": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.volume_overlap_superlevel": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.volume_overlap_superlevel_eq_ofReal_polynomial": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.volume_overlap_superlevel_real": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.volume_preserving_coordinateJoin": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.volume_root_smul": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.volume_simplexOn_ne_top": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.volume_simplexOn_pos": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.volume_simplex_eq_clamped": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.volume_simplex_ne_top": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.volume_simplex_nonneg": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.volume_simplex_overlap": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.volume_simplex_pos": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.volume_simplex_pos_of_pos": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.volume_simplex_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.volume_smul_real": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.volume_unit_simplex_pos": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.weighted_integral_mul_le_product_of_monotone_antitone": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.weighted_integral_mul_le_product_of_pair_nonpos": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.weighted_integral_pair_difference": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephard.weighted_mem_bodyOverlap": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephardFC.affine_density_law": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephardFC.affine_exponential_equality": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephardFC.constant_optimal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephardFC.density_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EntropicRogersShephardFC.entropic_rogers_shephard": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "brunn_minkowski": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  }
+}

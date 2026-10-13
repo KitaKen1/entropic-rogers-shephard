@@ -1,0 +1,24 @@
+﻿2026-10-13T11:55:39.7200330Z ##[group]Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+2026-10-13T11:55:39.7200789Z with:
+2026-10-13T11:55:39.7201003Z   name: replay-38391396740-1
+2026-10-13T11:55:39.7201280Z   path: replay-receipt/
+2026-10-13T11:55:39.7201522Z   retention-days: 90
+2026-10-13T11:55:39.7201758Z   if-no-files-found: warn
+2026-10-13T11:55:39.7201997Z   compression-level: 6
+2026-10-13T11:55:39.7202220Z   overwrite: false
+2026-10-13T11:55:39.7202445Z   include-hidden-files: false
+2026-10-13T11:55:39.7202698Z ##[endgroup]
+2026-10-13T11:55:40.0699088Z (node:3995) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-13T11:55:40.0700401Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-13T11:55:40.0773938Z With the provided path, there will be 3 files uploaded
+2026-10-13T11:55:40.0780958Z Artifact name is valid!
+2026-10-13T11:55:40.0782268Z Root directory input is valid!
+2026-10-13T11:55:40.3554895Z Beginning upload of artifact content to blob storage
+2026-10-13T11:55:40.3801767Z (node:3995) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+2026-10-13T11:55:40.4899038Z Uploaded bytes 761
+2026-10-13T11:55:40.5232639Z Finished uploading artifact content to blob storage!
+2026-10-13T11:55:40.5234368Z SHA256 digest of uploaded artifact zip is bafdff76ace81fa5bb1d6a64c766ea168c042d3c00c83fbdc736be75a04c8eee
+2026-10-13T11:55:40.5235727Z Finalizing artifact upload
+2026-10-13T11:55:40.7725779Z Artifact replay-38391396740-1.zip successfully finalized. Artifact ID 11810597555
+2026-10-13T11:55:40.7727111Z Artifact replay-38391396740-1 has been successfully uploaded! Final size is 761 bytes. Artifact ID is 11810597555
+2026-10-13T11:55:40.7735907Z Artifact download URL: https://github.com/KitaKen1/entropic-rogers-shephard/actions/runs/38391396740/artifacts/11810597555
