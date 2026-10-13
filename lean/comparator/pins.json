@@ -40,7 +40,7 @@
     "lean/comparator/check-fc-draft.py": "bf6b8e4b4f925dda24d2d89dd8395e5ef97dcb3e52ee4a466f45e1eb8f93f04c",
     "lean/comparator/check-axioms.py": "6cb247ba692e51691b98fe5740eca98ec1bcc23e51646feff7213a5f9452ec59",
     "lean/comparator/check-inputs.py": "803bb3aaa60c1404d927a8604ef748f3f8dda875b000d83558db2e3ed51fd596",
-    "lean/comparator/prepare-runner.sh": "7bb23fe884227475fbda2eb609e81840efcce4b56c677b6638a0db863935b6ff",
+    "lean/comparator/prepare-runner.sh": "5d12f8901bf6f289f828ffc28dc6c91739e08feabfb0026a37d257990eb99506",
     "lean/comparator/install-tools.sh": "edba9458870bdafe5a48338d5b0cff3a43955c08bd8b43f1cf9c36108c0f8130",
     "lean/comparator/build-proof.sh": "8a5bf7c149b45b2168b13b1ecccb76ec82eddde84c884e50e8868855eb3c7206",
     "lean/comparator/run-check.sh": "9a96e157bb35c0a19478817707b258006a5e0ae09adc09812e1012ecb9b1fe9f",
