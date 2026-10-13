@@ -1,0 +1,10 @@
+These three files are copied without modification from Vilin97/lean-pool,
+commit 01db1d7049cf9668bda1e9e106875ee1278b43e6:
+LeanPool/Isoperimetric/Basic.lean
+LeanPool/Isoperimetric/PrekopaLeindler.lean
+LeanPool/Isoperimetric/BrunnMinkowski.lean
+
+Source: https://github.com/Vilin97/lean-pool
+The original copyright and author headers are preserved.
+The files are licensed under the Apache License, Version 2.0.
+See LICENSE in this directory.

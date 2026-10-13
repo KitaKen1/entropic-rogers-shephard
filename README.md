@@ -26,7 +26,7 @@ the [complete main theorem](lean/EntropicRogersShephard/Main.lean). The
 ## Proof
 
 For uniform convex bodies, Brunn–Minkowski and an overlap-density logarithmic moment
-give the entropy increment bound F(N)=N(H₂N−H_N).
+give the entropy increment bound $F(N)=N(H_{2N}-H_N)$.
 Explicit scaled-simplex difference densities give the corresponding fiber comparison.
 A convex simplex-fiber lift bounds a concave-power density by F(n+m)−F(m).
 Compact approximation and exponential tail bounds pass to every log-concave probability
